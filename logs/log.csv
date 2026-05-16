@@ -1,0 +1,11 @@
+date,book,chapter_slug,word_count,sources_count,verify_flag_count,pantry_notes_found,pantry_lib_files_used,thin_pantry,mechanism_explained,contested_claims_flagged
+2026-05-14,physics-plus-one-electromagnetism,00-how-to-use-the-simulations,2437,3,0,yes,0,no,"Brutalist three-file system + four-move prompt for D3 v7 simulation generation",0
+2026-05-14,physics-plus-one-electromagnetism,01-electric-charge-coulombs-law,2448,4,0,no,0,yes,"Coulomb's law as inverse-square force + superposition principle",0
+2026-05-14,physics-plus-one-electromagnetism,02-electric-field,2718,3,0,no,0,yes,"Field formulation: E as force per unit test charge; superposition; field lines for visualization",0
+2026-05-14,physics-plus-one-electromagnetism,03-gauss-law,2887,5,0,yes,0,no,"Solid-angle derivation of Gauss's law from Coulomb; symmetry-based Gaussian-surface computation",0
+2026-05-14,physics-plus-one-electromagnetism,05-capacitance-dielectrics,2993,5,0,yes,0,no,"Capacitance as geometric property; energy density u_E = ε₀E²/2 lives in the field; RC charging dynamics",0
+2026-05-14,physics-plus-one-electromagnetism,07-dc-circuits,2693,3,0,no,0,yes,"Kirchhoff's laws as conservation of charge (KCL) and energy (KVL); nodal-analysis method for multi-loop circuits",0
+2026-05-14,physics-plus-one-electromagnetism,08-magnetism-magnetic-force,2847,4,0,no,0,yes,"Lorentz force F = qv×B as perpendicular-to-motion deflector; cyclotron motion at frequency qB/m",0
+2026-05-14,physics-plus-one-electromagnetism,09-sources-magnetic-fields,2929,6,0,yes,0,no,"Biot-Savart for arbitrary current sources; Ampère's law for symmetric configurations; 2019 SI ampere via fixed e",0
+2026-05-14,physics-plus-one-electromagnetism,11-maxwells-equations,3056,6,0,yes,0,no,"Displacement current restores charge conservation in Ampère's law; wave equation derivation gives c = 1/sqrt(μ₀ε₀)",0
+2026-05-14,physics-plus-one-electromagnetism,12-capstone-unified-field,2799,5,0,yes,0,no,"Six threads from Maxwell to optics, antennas, photoelectric, relativity, and wireless",0
