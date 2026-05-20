@@ -1,20 +1,25 @@
 # Pantry Index
 
-Last updated: 2026-05-14
+Last updated: 2026-05-16
 
 Scratch storage for fragments, snippets, research notes, and material not yet ready for `chapters/`.
 Nothing here is compiled into the book. Move material into `chapters/` when it's ready.
 
-## Research notes (generated 2026-05-14 by the Chapter Research Gatherer prompt)
+## Research notes
 
-Six chapters in `TIKTOC.md` are new ("Consolidates existing chapters: 01+02 → Ch01+Ch02 split; 06+08 → Ch08; 04+07 → Ch07; **adds Ch03 (Gauss), Ch05 (Capacitance), Ch09 (Sources of B), Ch12 (Capstone)**" — plus Ch00 setup and Ch11 Maxwell-synthesis). Research notes were produced for these six. The other seven chapters (01, 02, 04, 06, 07, 08, 10) have substantive existing drafts in `chapters/` and were not re-researched in this pass.
+Two passes have been run:
+- **Pass 1 (2026-05-14):** Six new-content chapters researched (Chs 00, 03, 05, 09, 11, 12).
+- **Pass 2 (2026-05-16):** Three missing TIKTOC chapters researched after chapters/ cleanup archived 10 OpenStax-named duplicates/leftovers — Chs 04, 06, 10. The new chapters/ folder is now TIKTOC-aligned: Ch 01, 02, 03, 05, 07, 08, 09, 11, 12 have drafted chapters; Chs 00, 04, 06, 10 have research notes only and need chapter prose written; the 10 archived files in `chapters/_archive/` are source material for the missing-chapter writers.
 
 | File | Chapter | Description |
 |------|---------|-------------|
-| `00-how-to-use-the-simulations_notes.md` | Ch 0 | Brutalist three-file system, four-move prompt, D3 v7 vector-field rendering, point-charge first simulation |
-| `03-gauss-law_notes.md` | Ch 3 | Flux, Gauss's law derivation from Coulomb via solid angle, symmetry-based Gaussian surfaces, conductor properties, Faraday cage, Earnshaw's theorem, PER on symmetry recognition |
-| `05-capacitance-dielectrics_notes.md` | Ch 5 | C = Q/V for canonical geometries, energy density u = ½ε₀E² (energy in the field), dielectric polarization and κ, RC circuit dynamics, modern supercapacitor research |
-| `09-sources-magnetic-fields_notes.md` | Ch 9 | Biot-Savart and Ampère's law, infinite wire and solenoid derivations, parallel-wires force, 2019 SI redefinition of the ampere (e fixed), magnetic materials, magnetic monopole status |
+| `00-how-to-use-the-simulations_notes.md` | Ch 00 | Brutalist three-file system, four-move prompt, D3 v7 vector-field rendering, point-charge first simulation |
+| `03-gauss-law_notes.md` | Ch 03 | Flux, Gauss's law derivation from Coulomb via solid angle, symmetry-based Gaussian surfaces, conductor properties, Faraday cage, Earnshaw's theorem, PER on symmetry recognition |
+| `04-electric-potential_notes.md` | Ch 04 | ∇×E = 0 → scalar potential exists (independent of Gauss); V = U/q as scalar; equipotential surfaces; eV as unit; clinical/applied cases (ECG, EEG, membrane Nernst, accelerators, HVDC); ~5,650w |
+| `05-capacitance-dielectrics_notes.md` | Ch 05 | C = Q/V for canonical geometries, energy density u = ½ε₀E² (energy in the field), dielectric polarization and κ, RC circuit dynamics, modern supercapacitor research |
+| `06-electric-current-resistance_notes.md` | Ch 06 | Drude 1900 derivation of Ohm's law; four-speeds-of-electricity (Fermi ~10⁶, thermal ~10⁵, drift ~10⁻⁴, signal ~10⁸ m/s); resistivity table; superconductivity from Onnes 1911 through BCS 1957 through LK-99 2023 retraction; ~6,200w |
+| `09-sources-magnetic-fields_notes.md` | Ch 09 | Biot-Savart and Ampère's law, infinite wire and solenoid derivations, parallel-wires force, 2019 SI redefinition of the ampere (e fixed), magnetic materials, magnetic monopole status |
+| `10-electromagnetic-induction_notes.md` | Ch 10 | Faraday's law and Lenz as energy conservation; motional EMF; AC/DC generator geometry; transformer math; RL circuit τ = L/R; magnetic energy density; eddy currents; modern applications (Qi/MagSafe, EV wireless charging, MHD); ~6,300w. Flags TIKTOC's "99% US electricity" claim as overstated post-PV. |
 | `11-maxwells-equations_notes.md` | Ch 11 | Displacement-current motivation (charging-capacitor inconsistency), wave-equation derivation from curl-of-curl, plane-wave geometry, Poynting vector and energy density, EM spectrum, Hertz 1887–1888 confirmation |
 | `12-capstone-unified-field_notes.md` | Ch 12 | Geometric and wave optics from Maxwell, antenna radiation and Larmor formula, photoelectric effect as Maxwell's breakdown, Maxwell-Lorentz covariance and the historical motivation for special relativity, wireless communication |
 

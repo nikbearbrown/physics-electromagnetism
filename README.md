@@ -88,3 +88,80 @@ placeholder images in `images/`, ready to replace; CSS log appends to
 ## Publish
 
 Upload `output/physics-plus-one-electromagnetism.epub` to [KDP](https://kdp.amazon.com).
+
+---
+
+## What This Book Is
+
+<!-- TODO: populate from chapter content -->
+
+---
+
+## Who This Book Is For
+
+<!-- TODO: populate from chapter content -->
+
+---
+
+## How to Read It
+
+<!-- TODO: populate from chapter content -->
+
+---
+
+## Table of Contents
+
+| Chapter | Title | File |
+|---------|-------|------|
+| 0 | Chapter 0 — How to Use the Simulations | [chapters/00-how-to-use-the-simulations.md](chapters/00-how-to-use-the-simulations.md) |
+| Intro | Introduction | [chapters/00b-introduction.md](chapters/00b-introduction.md) |
+| 1 | Chapter 1 — Electric Charge and Coulomb's Law | [chapters/01-electric-charge-coulombs-law.md](chapters/01-electric-charge-coulombs-law.md) |
+| 2 | Chapter 2 — The Electric Field | [chapters/02-electric-field.md](chapters/02-electric-field.md) |
+| 3 | Chapter 3 — Gauss's Law | [chapters/03-gauss-law.md](chapters/03-gauss-law.md) |
+| 4 | Chapter 4 — Electric Potential | [chapters/04-electric-potential.md](chapters/04-electric-potential.md) |
+| 5 | Chapter 5 — Capacitance and Dielectrics | [chapters/05-capacitance-dielectrics.md](chapters/05-capacitance-dielectrics.md) |
+| 6 | Chapter 6 — Electric Current and Resistance | [chapters/06-current-resistance.md](chapters/06-current-resistance.md) |
+| 7 | Chapter 7 — DC Circuits | [chapters/07-dc-circuits.md](chapters/07-dc-circuits.md) |
+| 8 | Chapter 8 — Magnetism and the Magnetic Force | [chapters/08-magnetism-magnetic-force.md](chapters/08-magnetism-magnetic-force.md) |
+| 9 | Chapter 9 — Sources of Magnetic Fields | [chapters/09-sources-magnetic-fields.md](chapters/09-sources-magnetic-fields.md) |
+| 10 | Chapter 10 — Electromagnetic Induction and Faraday's Law | [chapters/10-electromagnetic-induction.md](chapters/10-electromagnetic-induction.md) |
+| 11 | Chapter 11 — Maxwell's Equations and Electromagnetic Waves | [chapters/11-maxwells-equations.md](chapters/11-maxwells-equations.md) |
+| 12 | Chapter 12 — Capstone: Light, Radiation, and the Unified Field | [chapters/12-capstone-unified-field.md](chapters/12-capstone-unified-field.md) |
+
+---
+
+## Signature Simulations
+
+| Chapter | Topic | Simulation |
+|---------|-------|------------|
+|  | Chapter 0 | LLM Exercise |
+| 1 | Chapter 1 | LLM Exercise |
+| 2 | Chapter 2 | LLM Exercise |
+| 3 | Chapter 3 | LLM Exercise |
+| 5 | Chapter 5 | LLM Exercise |
+| 7 | Chapter 7 | LLM Exercise |
+| 8 | Chapter 8 | LLM Exercise |
+| 9 | Chapter 9 | LLM Exercise |
+| 12 | Chapter 12 | LLM Exercise |
+
+---
+
+## The +1 Layer
+
+This book contains a chapter explaining how to use the LLM Exercise blocks embedded across the chapters. Each exercise is a structured prompt the reader can paste into an LLM tool of their choice; the chapter explains the pattern and when each variant applies.
+
+---
+
+## Copyright
+
+Copyright © 2026 Nik Bear Brown. All rights reserved.
+
+Published by Bear Brown, LLC.
+
+No part of this publication may be reproduced, distributed, or transmitted
+in any form or by any means without the prior written permission of the
+publisher, except in the case of brief quotations in critical reviews and
+certain other noncommercial uses permitted by copyright law.
+
+ISBN: [INSERT ISBN]
+

@@ -9,3 +9,6 @@ date,book,chapter_slug,word_count,sources_count,verify_flag_count,pantry_notes_f
 2026-05-14,physics-plus-one-electromagnetism,09-sources-magnetic-fields,2929,6,0,yes,0,no,"Biot-Savart for arbitrary current sources; Ampère's law for symmetric configurations; 2019 SI ampere via fixed e",0
 2026-05-14,physics-plus-one-electromagnetism,11-maxwells-equations,3056,6,0,yes,0,no,"Displacement current restores charge conservation in Ampère's law; wave equation derivation gives c = 1/sqrt(μ₀ε₀)",0
 2026-05-14,physics-plus-one-electromagnetism,12-capstone-unified-field,2799,5,0,yes,0,no,"Six threads from Maxwell to optics, antennas, photoelectric, relativity, and wireless",0
+2026-05-16,physics-plus-one-electromagnetism,04-electric-potential,4432,8,0,yes,0,no,Conservative force argument (curl-free E) → scalar potential exists; gradient relationship E = -∇V; ring-of-charge worked from scalar approach,0
+2026-05-16,physics-plus-one-electromagnetism,06-current-resistance,5252,11,0,yes,0,no,Drude 1900 microscopic derivation of Ohm's law; four-speeds-of-electricity (Fermi/thermal/drift/signal) distinction,0
+2026-05-16,physics-plus-one-electromagnetism,10-electromagnetic-induction,5425,8,0,yes,0,no,Faraday's law as one statement read two ways (magnitude + Lenz sign from energy conservation); generator + transformer + RL + eddy currents,0
