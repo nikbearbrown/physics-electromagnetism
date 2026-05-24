@@ -12,7 +12,7 @@
 
 # Physics +1: Electromagnetism
 
-**Author:** Nik Bear Brown
+**Author:** Humanitarians AI
 
 ---
 

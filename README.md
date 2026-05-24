@@ -1,6 +1,6 @@
 # Physics +1: Electromagnetism
 
-**Author:** Nik Bear Brown
+**Author:** Humanitarians AI
 **Series:** Physics +1 (Volume 3)
 **Publisher:** Bear Brown, LLC
 **Status:** Draft

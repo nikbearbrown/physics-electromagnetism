@@ -3,7 +3,7 @@
 
 **Working title:** Physics +1: Electromagnetism — Interactive Field Simulations with Claude and D3
 **Series:** Physics +1 Series (Volume 3)
-**Author:** Nik Bear Brown · ni.brown@neu.edu · Bear Brown & Company
+**Author:** Humanitarians AI · ni.brown@neu.edu · Bear Brown & Company
 **Repo:** physics-plus-one-electromagnetism
 **Version:** 1.0
 **Status:** TIKTOC complete — ready for research gathering and chapter drafting
