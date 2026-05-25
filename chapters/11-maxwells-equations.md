@@ -4,215 +4,225 @@
 
 ---
 
-## Learning objectives
+In 1862, James Clerk Maxwell was working at King's College London on a mathematical theory of electricity and magnetism. He had taken Faraday's intuitive picture of fields filling space and translated it into equations. Coulomb, Ampère, Faraday — he had them all. And then he found a contradiction.
 
-By the end of this chapter you will be able to:
+The pre-Maxwell version of Ampère's law says: the line integral of $\vec{B}$ around any closed loop equals $\mu_0$ times the current passing through that loop. Take a wire charging a capacitor. Draw an Amperian loop around the wire. Now choose two different surfaces bounded by that same loop: a flat disk pierced by the wire, and a bag-shaped surface that slips between the capacitor plates. Both surfaces share the same boundary — the loop — so Ampère's law gives the same left-hand side. But the right-hand sides differ. The flat disk has a real current through it. The bag, which threads through the gap between the plates where no charge moves, has no current through it at all. Same loop, same equation, two different answers.
 
-1. **(Understand)** State the four Maxwell equations in integral form and identify which preceding chapter each one corresponds to.
-2. **(Analyze)** Explain the physical motivation for the displacement current: the charging-capacitor inconsistency in pre-Maxwell Ampère's law.
-3. **(Apply)** Derive the wave equation from Maxwell's equations in vacuum and identify the wave speed $c = 1/\sqrt{\mu_0 \varepsilon_0}$.
-4. **(Apply)** Use plane-wave solutions: relate $E_0$, $B_0$, $\omega$, $k$, and the transverse geometry.
-5. **(Apply)** Compute the Poynting vector, intensity, and radiation pressure for a plane wave.
-6. **(Apply)** Build a transverse-EM-wave visualizer showing $\vec{E}$ and $\vec{B}$ oscillating perpendicular to each other and to the direction of propagation.
+Maxwell's fix was to add a term. Where pre-Maxwell Ampère saw only current as the source of $\vec{B}$, Maxwell added the *changing electric flux* as an equally valid source:
 
----
-
-## Opening case: Maxwell's surprise
-
-In 1862, James Clerk Maxwell was working at King's College London on a unified mathematical theory of electricity and magnetism. He had taken Faraday's intuitive picture of fields filling space and translated it into equations. He had taken the experimental relations — Coulomb, Ampère, Faraday — and assembled them into a coherent set. There was one problem.
-
-The pre-Maxwell Ampère's law said that the line integral of $\vec{B}$ around any closed loop equals $\mu_0$ times the current passing through that loop. Maxwell noticed an inconsistency that only shows up in non-steady situations — specifically, a charging capacitor. Apply Ampère's law to an Amperian loop encircling a wire that runs into a capacitor plate. Now choose two different surfaces bounded by that loop: one a flat disk pierced by the wire (encloses the wire's current), the other a bag-shape detoured between the capacitor plates (encloses no wire). Both surfaces are bounded by the *same* loop, so Ampère's law gives the same left-hand side. But the right-hand sides differ. Same equation, two different answers. Contradiction.
-
-Maxwell's fix was a missing term — the **displacement current** — that counts the changing electric flux *as if it were a current*. Adding it, the equation becomes
 $$\oint \vec{B} \cdot d\vec{\ell} = \mu_0 I_{\text{enc}} + \mu_0 \varepsilon_0 \frac{d\Phi_E}{dt}$$
-and the contradiction dissolves: the bag-shape surface that encloses no wire still encloses the *changing electric flux* between the plates; the displacement current through that surface exactly equals the conduction current through the disk surface.
 
-Then Maxwell did one more thing. He combined his completed equations and asked: in a vacuum, with no charges or currents, are there nontrivial solutions? Yes — oscillating ones. And those oscillations have a speed:
-$$c = 1/\sqrt{\mu_0 \varepsilon_0}$$
-Plugging in the measured values of $\mu_0$ and $\varepsilon_0$ (from electrostatic and magnetostatic experiments, which had nothing to do with light):
-$$c = 1/\sqrt{(4\pi \times 10^{-7})(8.854 \times 10^{-12})} \approx 3 \times 10^8 \text{ m/s}$$
-That is the speed of light, measured by Fizeau, Foucault, and others in the 1850s. Maxwell wrote, in 1864:
-> "We can scarcely avoid the inference that light consists in the transverse undulations of the same medium which is the cause of electric and magnetic phenomena."
+The extra term is the **displacement current** $I_d = \varepsilon_0\, d\Phi_E/dt$. Between the capacitor plates, the electric flux is growing as charge builds; the displacement current through the bag-shaped surface exactly equals the conduction current through the flat disk. Contradiction resolved.
 
-This is the chapter where everything in Chapters 1–10 pays off. Maxwell's equations unify electricity, magnetism, and light into one framework. Hertz confirmed it experimentally in 1887. Marconi commercialized it as radio in 1901. Every wireless device you use is applied Maxwell. Every photon of sunlight that hits your skin is an oscillation in the very fields you've been building all semester.
+Then Maxwell did something else. He asked: in a vacuum — no charges, no currents — are there nontrivial solutions to the completed equations? And he found oscillating ones. And those oscillations have a speed:
+
+$$c = \frac{1}{\sqrt{\mu_0 \varepsilon_0}}$$
+
+Plugging in the measured values of $\mu_0$ and $\varepsilon_0$, which had been determined from electrostatic and magnetostatic bench experiments with no reference to light:
+
+$$c = \frac{1}{\sqrt{(4\pi \times 10^{-7})(8.854 \times 10^{-12})}} \approx 3 \times 10^8 \text{ m/s}$$
+
+That is the speed of light, measured by Fizeau and Foucault in the 1850s. In 1864, Maxwell wrote: *"We can scarcely avoid the inference that light consists in the transverse undulations of the same medium which is the cause of electric and magnetic phenomena."*
+
+Every equation in the ten preceding chapters was building toward this moment.
 
 ---
 
-## Core concept
+## The four equations
 
-### Maxwell's four equations (integral form)
+Here, together for the first time, are Maxwell's equations in integral form. Each one is a chapter you've already read.
 
-| # | Name | Equation | Physical content |
-|---|---|---|---|
-| 1 | Gauss's law for $\vec{E}$ | $\oint \vec{E} \cdot d\vec{A} = Q_{\text{enc}}/\varepsilon_0$ | Electric flux out of a closed surface = enclosed charge / $\varepsilon_0$ |
-| 2 | Gauss's law for $\vec{B}$ | $\oint \vec{B} \cdot d\vec{A} = 0$ | No magnetic monopoles |
-| 3 | Faraday's law | $\oint \vec{E} \cdot d\vec{\ell} = -d\Phi_B/dt$ | Changing magnetic flux drives circulation of $\vec{E}$ |
-| 4 | Ampère-Maxwell law | $\oint \vec{B} \cdot d\vec{\ell} = \mu_0 I_{\text{enc}} + \mu_0\varepsilon_0 \, d\Phi_E/dt$ | Current AND changing $\Phi_E$ drive circulation of $\vec{B}$ |
+$$\oint \vec{E} \cdot d\vec{A} = \frac{Q_{\text{enc}}}{\varepsilon_0} \tag{1}$$
 
-Chapter mappings:
-- Equation 1: Chapter 3.
-- Equation 2: Chapter 9.
-- Equation 3: Chapter 10.
-- Equation 4: Chapter 9 (Ampère part); the displacement current term is *new* — Maxwell's contribution.
+$$\oint \vec{B} \cdot d\vec{A} = 0 \tag{2}$$
 
-### The displacement current
+$$\oint \vec{E} \cdot d\vec{\ell} = -\frac{d\Phi_B}{dt} \tag{3}$$
 
-The added term in (4) is
+$$\oint \vec{B} \cdot d\vec{\ell} = \mu_0 I_{\text{enc}} + \mu_0 \varepsilon_0 \frac{d\Phi_E}{dt} \tag{4}$$
 
-$$I_d = \varepsilon_0 \frac{d\Phi_E}{dt}$$
+Equation (1) is Gauss's law from Chapter 3: electric flux through any closed surface equals the enclosed charge divided by $\varepsilon_0$. Equation (2) is Gauss's law for magnetism from Chapter 9: no magnetic monopoles. Equation (3) is Faraday's law from Chapter 10: changing magnetic flux drives circulation of the electric field. Equation (4) is Ampère's law from Chapter 9, plus Maxwell's new term.
 
-It has units of current but it is not a flow of charge. It is the *magnetic effect of a changing electric field*. In the charging-capacitor scenario from the chapter opening, no charge flows through the space between the plates, but the electric flux between them grows as charge builds on the plates. The displacement current accounts for this and makes the equation consistent with charge conservation.
+The four equations say everything. Every electric and magnetic phenomenon — static fields, circuits, induction, light, radio, X-rays — follows from them. The rest of physics, including quantum mechanics, is a separate subject. But the classical electromagnetic world is entirely encoded here.
 
-**Maxwell's claim, more carefully.** Before Maxwell: a steady current creates $\vec{B}$; nothing else does. With Maxwell: either a steady current *or* a changing electric flux creates $\vec{B}$. The second clause is what makes electromagnetic waves possible.
+<!-- → [TABLE: four Maxwell equations — columns: number, name, integral equation, physical content in plain English, chapter where it was introduced] -->
 
-### Maxwell's equations in differential form
+For students who have seen divergence and curl, the differential forms are:
 
-For students who have seen the divergence and curl operators:
+$$\nabla \cdot \vec{E} = \rho/\varepsilon_0, \qquad \nabla \cdot \vec{B} = 0, \qquad \nabla \times \vec{E} = -\frac{\partial \vec{B}}{\partial t}, \qquad \nabla \times \vec{B} = \mu_0 \vec{J} + \mu_0\varepsilon_0 \frac{\partial \vec{E}}{\partial t}$$
 
-| # | Equation |
-|---|---|
-| 1 | $\nabla \cdot \vec{E} = \rho/\varepsilon_0$ |
-| 2 | $\nabla \cdot \vec{B} = 0$ |
-| 3 | $\nabla \times \vec{E} = -\partial \vec{B}/\partial t$ |
-| 4 | $\nabla \times \vec{B} = \mu_0 \vec{J} + \mu_0 \varepsilon_0 \, \partial \vec{E}/\partial t$ |
+These are local statements at every point in space — equivalent to the integral forms via Stokes' theorem and the divergence theorem, but more elegant, and the form in which they're typically written in graduate physics.
 
-These are local statements at every point in space, equivalent to the integral forms via Stokes' theorem and the divergence theorem.
+---
 
-### Deriving the wave equation
+## The displacement current
 
-In a *source-free* region (vacuum, no charges, no currents): $\rho = 0$, $\vec{J} = 0$. Maxwell's equations become:
-$$\nabla \cdot \vec{E} = 0, \quad \nabla \cdot \vec{B} = 0, \quad \nabla \times \vec{E} = -\frac{\partial \vec{B}}{\partial t}, \quad \nabla \times \vec{B} = \mu_0 \varepsilon_0 \frac{\partial \vec{E}}{\partial t}$$
+The added term in equation (4) deserves careful attention, because it is the thing that makes everything else in this chapter possible.
 
-Take the curl of equation (3):
+$I_d = \varepsilon_0\, d\Phi_E/dt$ has units of current but is not a flow of charge. It is the magnetic effect of a *changing electric field*. Before Maxwell, the known sources of $\vec{B}$ were: moving charges (steady currents). After Maxwell, the sources are: moving charges *and* changing electric flux.
+
+Symmetry-seekers will notice what this does: Faraday's law (equation 3) says changing $\vec{B}$ creates circulating $\vec{E}$. Maxwell's addition to equation (4) says changing $\vec{E}$ creates circulating $\vec{B}$. The two fields can create each other. And when they do, the creation is self-sustaining. A changing $\vec{E}$ makes a changing $\vec{B}$; that changing $\vec{B}$ makes a changing $\vec{E}$; which makes a changing $\vec{B}$; and so on, propagating through empty space.
+
+That propagation is light.
+
+<!-- → [IMAGE: side-by-side panels showing the two cross-creation laws — left: Faraday, a changing B (shown as decreasing flux through a loop) driving circulating E; right: Maxwell, a changing E (growing flux between capacitor plates) driving circulating B — arrows and labels showing the direction of each induced field] -->
+
+---
+
+## The wave equation
+
+In a source-free vacuum — no charges, no currents — Maxwell's equations become:
+
+$$\nabla \cdot \vec{E} = 0, \qquad \nabla \cdot \vec{B} = 0, \qquad \nabla \times \vec{E} = -\frac{\partial \vec{B}}{\partial t}, \qquad \nabla \times \vec{B} = \mu_0 \varepsilon_0 \frac{\partial \vec{E}}{\partial t}$$
+
+Take the curl of the third equation:
+
 $$\nabla \times (\nabla \times \vec{E}) = -\frac{\partial}{\partial t}(\nabla \times \vec{B}) = -\mu_0 \varepsilon_0 \frac{\partial^2 \vec{E}}{\partial t^2}$$
 
-Use the vector identity $\nabla \times (\nabla \times \vec{E}) = \nabla(\nabla \cdot \vec{E}) - \nabla^2 \vec{E}$. With $\nabla \cdot \vec{E} = 0$:
-$$-\nabla^2 \vec{E} = -\mu_0 \varepsilon_0 \frac{\partial^2 \vec{E}}{\partial t^2}$$
+Apply the vector identity $\nabla \times (\nabla \times \vec{E}) = \nabla(\nabla \cdot \vec{E}) - \nabla^2 \vec{E}$. In source-free vacuum, $\nabla \cdot \vec{E} = 0$, so the first term vanishes:
 
-Or:
 $$\boxed{\nabla^2 \vec{E} = \mu_0 \varepsilon_0 \frac{\partial^2 \vec{E}}{\partial t^2}}$$
 
-This is the **wave equation** for $\vec{E}$. Comparing to the canonical wave equation $\nabla^2 f = (1/v^2)\partial^2 f/\partial t^2$, the wave speed is
+This is the wave equation. Compare it to the standard form $\nabla^2 f = (1/v^2)\,\partial^2 f/\partial t^2$: the wave speed is $v = 1/\sqrt{\mu_0\varepsilon_0} = c$. An identical derivation starting from the fourth equation gives the same wave equation for $\vec{B}$.
 
-$$v = \frac{1}{\sqrt{\mu_0 \varepsilon_0}}$$
+The manipulation is clean, but the surprise is not in the algebra. The surprise is that $\mu_0$ and $\varepsilon_0$ were measured independently — one from the force between magnets, one from the force between charges — and their product, when combined here, gives $1/c^2$. Maxwell did not put $c$ into the equations. He found it there.
 
-Plugging in values: $v \approx 2.998 \times 10^8$ m/s = $c$, the measured speed of light.
-
-The same derivation works for $\vec{B}$ (take curl of equation 4, substitute equation 3). Both $\vec{E}$ and $\vec{B}$ satisfy the same wave equation with the same speed.
-
-### Plane wave solutions
-
-The simplest solutions: traveling plane waves. For a wave propagating in $+\hat{x}$:
-$$\vec{E}(x, t) = E_0 \cos(kx - \omega t)\,\hat{y}, \qquad \vec{B}(x, t) = B_0 \cos(kx - \omega t)\,\hat{z}$$
-
-Three constraints from Maxwell's equations:
-1. **Dispersion**: $\omega = ck$, equivalently $\lambda f = c$.
-2. **Amplitude ratio**: $E_0 = c B_0$.
-3. **Transverse geometry**: $\vec{E} \perp \vec{B} \perp$ direction of propagation; $\vec{E} \times \vec{B}$ points in the propagation direction.
-
-Why transverse: Gauss's law in source-free vacuum is $\nabla \cdot \vec{E} = 0$, which for a plane wave requires the wave's variation to be perpendicular to the propagation direction.
-
-**Polarization** refers to the direction of $\vec{E}$ in the transverse plane. Linear polarization: $\vec{E}$ oscillates along a fixed direction. Circular: $\vec{E}$ rotates while maintaining magnitude. Elliptical: the general case.
-
-### Energy and the Poynting vector
-
-The energy density of an EM field is
-$$u = \frac{1}{2}\varepsilon_0 E^2 + \frac{1}{2\mu_0} B^2$$
-
-In a plane wave, these two contributions are equal at every instant: $u_E = u_B$. The wave carries equal energy in $\vec{E}$ and $\vec{B}$.
-
-The **Poynting vector** is the energy flux:
-$$\vec{S} = \frac{1}{\mu_0} \vec{E} \times \vec{B}$$
-
-Direction: along propagation. Magnitude: power per unit area (W/m²). For a plane wave, the time-averaged magnitude (intensity) is
-$$I = \langle |\vec{S}|\rangle = \frac{E_0^2}{2\mu_0 c} = \frac{c \varepsilon_0}{2} E_0^2$$
-
-For sunlight at Earth's surface: $I \approx 1000$ W/m². Peak $E_0 \approx 870$ V/m. Peak $B_0 \approx 2.9$ µT.
-
-### Radiation pressure
-
-EM waves carry momentum. For a wave with intensity $I$ absorbed by a surface:
-$$P_{\text{rad}} = I/c \text{ (absorber)}, \quad P_{\text{rad}} = 2I/c \text{ (perfect reflector)}$$
-
-Solar radiation pressure at Earth: $\sim 9 \times 10^{-6}$ N/m² for an absorber. Small but cumulative — the basis of solar-sail propulsion (JAXA's IKAROS, 2010, was the first interplanetary demonstration).
-
-### The electromagnetic spectrum
-
-All EM waves obey the same equation. They differ only in frequency (and wavelength: $\lambda = c/f$).
-
-| Region | Frequency (Hz) | Wavelength | Photon energy | Examples |
-|---|---|---|---|---|
-| Radio | $< 10^9$ | $> 30$ cm | $< 4$ µeV | FM, AM, mobile |
-| Microwave | $10^9$ to $10^{12}$ | 30 cm to 0.3 mm | 4 µeV to 4 meV | WiFi, GPS, radar, ovens |
-| Infrared | $10^{12}$ to $4\times10^{14}$ | 0.3 mm to 700 nm | 4 meV to 1.7 eV | Heat, fiber optics |
-| Visible | $4\times10^{14}$ to $8\times10^{14}$ | 700 to 400 nm | 1.7 to 3.1 eV | Sight |
-| UV | $8\times10^{14}$ to $10^{16}$ | 400 to 10 nm | 3.1 to 124 eV | Sunburn |
-| X-ray | $10^{16}$ to $10^{19}$ | 10 nm to 0.01 nm | 124 eV to 124 keV | Medical imaging |
-| Gamma | $> 10^{19}$ | $< 0.01$ nm | $> 124$ keV | Nuclear, cosmic |
-
-Radio waves and gamma rays are the same wave at frequencies separated by $10^{14}$. Their physics is one chapter's worth of equations.
-
-### Hertz's confirmation
-
-In 1887, Heinrich Hertz at the Technische Hochschule Karlsruhe built the first device to deliberately *generate and detect* EM waves. A spark-gap oscillator (a capacitor discharging through an inductor) produced oscillations near 100 MHz. A small wire loop placed across the lab developed sparks when the oscillator fired, even with the receiver shielded from the transmitter's light. Hertz confirmed:
-1. Waves propagate at speed $c$ (measured by reflection and standing-wave techniques).
-2. Waves can be reflected, refracted, polarized — same as light.
-3. Waves are transverse (polarization filters work).
-
-Maxwell's 1864 prediction became experimental fact in 1887. Hertz himself dismissed the practical utility ("it's of no use whatsoever..."). Marconi (1895–1901) commercialized it as radio. Within a century, radio engineering had reshaped human communication.
+<!-- → [IMAGE: diagram of the wave equation derivation — starting from Faraday and Ampère-Maxwell equations at the top, arrow down showing "take curl of Faraday", arrow to "substitute Ampère-Maxwell on the right", arrow to the boxed wave equation, final arrow to "wave speed = 1/√(μ₀ε₀) = c"] -->
 
 ---
 
-## Worked example: a charging capacitor
+## Plane wave solutions
 
-A parallel-plate capacitor, plate area $A$, separation $d$, is charging at rate $dV/dt = 10^6$ V/s. Show that the displacement current between the plates equals the conduction current in the wire.
+The simplest solutions to the wave equation are **plane waves** — fields that depend only on one spatial coordinate and time. For a wave propagating in the $+\hat{x}$ direction:
 
-**Setup.** As the capacitor charges, $Q = CV = (\varepsilon_0 A/d) V$. Conduction current in the wire: $I_c = dQ/dt = (\varepsilon_0 A/d)(dV/dt)$.
+$$\vec{E}(x, t) = E_0 \cos(kx - \omega t)\,\hat{y}, \qquad \vec{B}(x, t) = B_0 \cos(kx - \omega t)\,\hat{z}$$
 
-**Electric field between the plates** (treating plates as infinite, ignoring fringing): $E = V/d$. Electric flux through a surface placed between the plates: $\Phi_E = EA = (V/d)A$.
+Substituting into Maxwell's equations in vacuum yields three constraints that the fields must satisfy:
 
-**Displacement current** through that same surface:
-$$I_d = \varepsilon_0 \frac{d\Phi_E}{dt} = \varepsilon_0 \frac{A}{d} \frac{dV}{dt} = \frac{\varepsilon_0 A}{d}\frac{dV}{dt}$$
+**Dispersion**: $\omega = ck$, equivalently $\lambda f = c$. The wave's temporal and spatial oscillation rates are tied together by the wave speed.
 
-Compare to $I_c = (\varepsilon_0 A/d)(dV/dt)$. They're identical.
+**Amplitude ratio**: $E_0 = cB_0$. In SI units, $E$ is much larger than $B$ in absolute terms — for sunlight at Earth, $E_0 \approx 870$ V/m while $B_0 \approx 2.9$ µT. The ratio $E_0/B_0 = c \approx 3 \times 10^8$ m/s.
 
-The bag-shape surface (Maxwell's worry) and the flat disk give the same answer for the Ampère-Maxwell integral. The displacement current term is the bridge that connects "current piercing the disk" to "changing flux through the bag."
+**Transverse geometry**: $\vec{E}$, $\vec{B}$, and the propagation direction are mutually perpendicular. $\vec{E} \times \vec{B}$ points along the propagation direction. Neither $\vec{E}$ nor $\vec{B}$ has a component along the propagation direction. This is not an assumption — it follows from $\nabla \cdot \vec{E} = 0$ in vacuum: the spatial variation of a plane wave along $\hat{x}$ requires the field components perpendicular to $\hat{x}$ to be the wave.
 
-**Numerical check.** Take $A = 1$ cm² = $10^{-4}$ m², $d = 1$ mm, $dV/dt = 10^6$ V/s. Then $I_c = I_d = (8.85 \times 10^{-12} \cdot 10^{-4}/10^{-3})(10^6) = 8.85 \times 10^{-7}$ A = 0.9 µA. A small but real current.
+**Polarization** is the direction of $\vec{E}$ in the transverse plane. Linear polarization: $\vec{E}$ oscillates back and forth along a fixed direction. Circular: $\vec{E}$ rotates while maintaining constant magnitude. Elliptical: the general case. Sunlight is unpolarized — a superposition of all polarization orientations; a polarizing filter selects one.
 
-**The lesson.** Charge conservation requires Maxwell's added term. The displacement current is not a flow of charge; it's the magnetic effect of a changing $\vec{E}$. Without it, the equations contradict each other in non-steady situations.
+<!-- → [IMAGE: 3D perspective diagram of a plane EM wave propagating along +x̂ — E field shown as orange arrows oscillating along ŷ, B field as purple arrows oscillating along ẑ, propagation direction along x̂, the three vectors labeled and shown perpendicular to each other, a few wavelengths of the wave shown along x] -->
 
-**The limit.** The derivation treats the capacitor's geometry idealized (infinite plates, neglected fringing). For real, finite capacitors, $\vec{E}$ leaks out the edges and the displacement-current argument requires more care — but the fundamental result, that $I_c + I_d$ is the right driving term, is correct.
+---
+
+## Energy and the Poynting vector
+
+Where is the energy in an electromagnetic wave?
+
+The energy density of an EM field is
+
+$$u = \frac{1}{2}\varepsilon_0 E^2 + \frac{B^2}{2\mu_0}$$
+
+The first term is the electric energy density from Chapter 5. The second is the magnetic energy density. In a plane wave, they are equal at every instant: $u_E = u_B$. You can verify this from $E_0 = cB_0$ and $c = 1/\sqrt{\mu_0\varepsilon_0}$ — the numbers work out exactly.
+
+The energy flux — power per unit area carried by the wave — is described by the **Poynting vector**:
+
+$$\vec{S} = \frac{1}{\mu_0} \vec{E} \times \vec{B}$$
+
+The direction is along propagation (since $\vec{E} \times \vec{B}$ points that way). The magnitude $|\vec{S}|$ is the instantaneous power per unit area passing through a surface perpendicular to the propagation direction. For a plane wave, $\vec{S}$ oscillates in time; the time-averaged intensity is:
+
+$$I = \langle|\vec{S}|\rangle = \frac{E_0^2}{2\mu_0 c} = \frac{c\varepsilon_0 E_0^2}{2}$$
+
+For sunlight at Earth's surface: $I \approx 1000$ W/m². Plug in to find the peak fields: $E_0 \approx 870$ V/m, $B_0 \approx 2.9$ µT.
+
+This is also the result Feynman found strange enough to spend several lectures on. In a simple DC circuit, the energy does not flow through the wires — it flows through the electromagnetic field surrounding the wires, described by exactly this Poynting vector. The wires guide the field; the field carries the energy. The result surprised many when it was first understood, and it should surprise you too.
+
+EM waves also carry momentum. For a wave with intensity $I$ hitting a surface:
+
+$$P_{\text{rad}} = I/c \text{ (absorbed)}, \qquad P_{\text{rad}} = 2I/c \text{ (perfectly reflected)}$$
+
+Solar radiation pressure at Earth: roughly $9 \times 10^{-6}$ N/m² — small enough to ignore for most purposes, but real enough to matter for spacecraft trajectory planning and to provide the thrust for solar sails. JAXA's IKAROS spacecraft, launched in 2010, was the first to demonstrate interplanetary propulsion by photon pressure alone.
+
+<!-- → [IMAGE: radiation pressure diagram — a plane wave (labeled intensity I) incident on two surfaces side by side: left surface labeled "absorber, P_rad = I/c" with a single arrow showing force in propagation direction; right surface labeled "perfect reflector, P_rad = 2I/c" with wave bouncing back and a double arrow — student should see the factor-of-2 comes from momentum reversal] -->
+
+<!-- → [IMAGE: Poynting vector diagram — plane wave propagating along +x̂ with E along ŷ and B along ẑ, the cross product E×B shown pointing along +x̂ labeled as S (energy flux), with a flat surface perpendicular to propagation showing "I watts per square meter flowing through this surface"] -->
+
+---
+
+## The electromagnetic spectrum
+
+All electromagnetic waves obey the same wave equation and travel at the same speed $c$ in vacuum. They differ only in frequency — and therefore in wavelength ($\lambda = c/f$) and in photon energy ($E = hf$, though that's Chapter 13's quantum story).
+
+Radio waves and gamma rays are not different phenomena that happen to share a name. They are literally the same wave — Maxwell's oscillating fields — separated by fourteen orders of magnitude in frequency. That their effects are so different (you can hear a radio wave's effect through a speaker; a gamma ray's effect is ionizing radiation that damages DNA) is a consequence of how much energy each photon carries and how matter responds to fields at different frequencies. The underlying wave is one thing.
+
+<!-- → [TABLE: electromagnetic spectrum — columns: region name, approximate frequency range, approximate wavelength, photon energy range, representative applications — rows from radio through gamma] -->
+
+The span from radio to gamma is not the full story. Below radio, there are extremely-low-frequency (ELF) waves used to communicate with submerged submarines; above gamma, there is no known upper limit. The entire range is one family.
+
+---
+
+## Hertz's confirmation
+
+Maxwell predicted EM waves in 1864. In 1887, Heinrich Hertz at Karlsruhe deliberately generated and detected them for the first time.
+
+His apparatus: a spark-gap oscillator, essentially a capacitor discharging rapidly through an inductor, producing oscillations near 100 MHz. His detector: a small wire loop across the lab, sized to be resonant at the same frequency. When the oscillator fired, sparks appeared in the detector loop — even when the detector was shielded from the oscillator's light.
+
+Hertz then did exactly what a physicist should do: he measured. He showed the waves propagate at $c$ by reflecting them off a metal wall and producing standing waves whose spacing he measured. He showed they could be reflected, refracted, and polarized — all properties of Maxwell's predicted transverse oscillations. His experiments were definitive.
+
+Hertz reportedly dismissed the practical implications: *"It's of no use whatsoever... this is just an experiment that proves Maestro Maxwell was right."* Marconi began commercial radio telegraphy between England and Newfoundland in 1901, fourteen years after Hertz's experiment, four years after Hertz's death. Every wireless device in the world runs on the physics Hertz confirmed.
+
+<!-- → [IMAGE: Hertz experiment schematic — left: spark-gap oscillator (inductor + capacitor, sparking electrode) labeled "transmitter, ~100 MHz"; right: small resonant wire loop with gap labeled "receiver — sparks appear when transmitter fires"; between them: wavy lines representing the EM wave; a metal wall shown to the right of the receiver labeled "reflecting wall used to create standing waves and measure λ"] -->
+
+---
+
+## Worked example: the displacement current in a charging capacitor
+
+A parallel-plate capacitor with plate area $A$ and separation $d$ is charging at rate $dV/dt$. Show that the displacement current between the plates equals the conduction current in the wire.
+
+**Conduction current.** The charge on the plates is $Q = CV = (\varepsilon_0 A/d)V$. The current in the wire is $I_c = dQ/dt = (\varepsilon_0 A/d)(dV/dt)$.
+
+**Electric flux between the plates.** The field between (parallel-plate approximation) is $E = V/d$. The flux through a surface placed between the plates is $\Phi_E = EA = VA/d$.
+
+**Displacement current through that surface:**
+
+$$I_d = \varepsilon_0 \frac{d\Phi_E}{dt} = \varepsilon_0 \cdot \frac{A}{d} \cdot \frac{dV}{dt}$$
+
+This equals $I_c$ exactly. The flat disk surface (real current) and the bag-shaped surface (no real current, only growing flux) give the same answer for the Ampère-Maxwell integral. The added term is not an approximation or a patch — it is required by charge conservation.
+
+**Numbers.** With $A = 10^{-4}$ m², $d = 10^{-3}$ m, $dV/dt = 10^6$ V/s:
+
+$$I_c = I_d = \frac{(8.85 \times 10^{-12})(10^{-4})}{10^{-3}} \times 10^6 \approx 0.9 \text{ µA}$$
+
+Small, but measurable. And the magnetic field this displacement current creates between the plates is the same as if a wire had carried 0.9 µA through the gap. Maxwell's term is physically real.
 
 ---
 
 ## Common misconceptions
 
-**"Maxwell invented the displacement current to save his equations from inconsistency."** Backwards. The physical issue is *charge conservation*: charge has to be conserved at every point, every instant. Maxwell noticed Ampère's law violated this at a charging capacitor. The added term restores conservation. The mathematical consistency of the equations falls out.
+**"Maxwell invented the displacement current to make his equations consistent."** The displacement current is required by charge conservation, not by mathematical aesthetics. At a charging capacitor, the pre-Maxwell equations violate charge conservation in non-steady situations. The fix restores conservation; mathematical consistency is a consequence.
 
-**"The displacement current is a real flow of charge between the capacitor plates."** No. There is no charge moving between the plates in a vacuum gap. The displacement current is a term in Ampère's law that captures the magnetic effect of a changing electric field. It has units of current but is not a current.
+**"The displacement current is a real flow of charge between the plates."** No. In a vacuum gap, no charge moves. The displacement current is the magnetic effect of a changing electric field. It has the units and the magnetic consequences of a current, but it is not a movement of charge.
 
-**"Light is different from radio waves."** Both are EM waves obeying the same wave equation with the same speed. Their only difference is frequency.
+**"Light is a different phenomenon from radio waves."** Same wave, different frequency. One equation, one speed, fourteen decades of frequency.
 
-**"The speed of light is constant everywhere."** It is constant in vacuum. In a material with dielectric constant $\kappa$ and relative permeability $\mu_r$, the wave speed is $v = c/\sqrt{\kappa \mu_r}$ — slower. In glass, light moves at about $2 \times 10^8$ m/s.
-
-**"$\vec{E}$ and $\vec{B}$ are independent fields."** They're not. They are components of one electromagnetic field; what is "electric" to one observer is partly "magnetic" to another moving observer. Chapter 12 returns to this Lorentz-mixing.
+**"Light travels at $c$ everywhere."** In vacuum. In a dielectric with constant $\kappa$ and relative permeability $\mu_r$, the wave speed is $c/\sqrt{\kappa\mu_r}$. In glass, roughly $2 \times 10^8$ m/s. This slowing is the basis of refraction and of fiber-optic dispersion management.
 
 ---
 
 ## Exercises
 
-**Warm-up (Apply).** State the four Maxwell equations in integral form. For each, identify (a) which preceding chapter it comes from, (b) whether it relates a *flux* or a *circulation* of $\vec{E}$ or $\vec{B}$ to its source.
+**Warm-up 1.** *(Maxwell's equations — tests: matching equations to physical content)* State the four Maxwell equations in integral form. For each one: (a) identify which earlier chapter first introduced it, (b) state in one plain-English sentence what it says, (c) identify whether it involves a flux integral or a circulation integral of $\vec{E}$ or $\vec{B}$.
 
-**Apply.** Compute the speed of EM waves from $\mu_0 = 4\pi \times 10^{-7}$ and $\varepsilon_0 = 8.854 \times 10^{-12}$. Show the units work out to m/s.
+**Warm-up 2.** *(Wave speed — tests: computing $c$ from $\mu_0$ and $\varepsilon_0$)* Using $\mu_0 = 4\pi \times 10^{-7}$ T·m/A and $\varepsilon_0 = 8.854 \times 10^{-12}$ C²/(N·m²), compute $c = 1/\sqrt{\mu_0\varepsilon_0}$. Show explicitly that the units of $1/\sqrt{\mu_0\varepsilon_0}$ reduce to m/s.
 
-**Apply.** A plane EM wave in vacuum has electric-field amplitude $E_0 = 200$ V/m, frequency $f = 10^{12}$ Hz (infrared). Find: (a) wavelength, (b) magnetic-field amplitude, (c) average intensity, (d) radiation pressure on a perfect absorber.
+**Warm-up 3.** *(Plane wave properties — tests: three constraints from Maxwell's equations)* A plane EM wave in vacuum has electric field amplitude $E_0 = 300$ V/m and frequency $f = 2.4 \times 10^9$ Hz (WiFi band). Find: (a) wavelength $\lambda$, (b) wavenumber $k = 2\pi/\lambda$, (c) magnetic field amplitude $B_0$, (d) the direction of $\vec{B}$ if $\vec{E}$ points along $\hat{y}$ and the wave propagates along $+\hat{z}$.
 
-**Apply.** A capacitor with circular plates of radius 5 cm and separation 1 mm is charging at $dV/dt = 10^4$ V/s. (a) Find the conduction current in the wire. (b) Find the displacement current between the plates. (c) Verify they're equal.
+**Application 1.** *(Displacement current — tests: $I_d = \varepsilon_0\, d\Phi_E/dt$ and equality with conduction current)* A parallel-plate capacitor has circular plates of radius $r = 6$ cm and plate separation $d = 2$ mm. It is charging at $dV/dt = 5 \times 10^4$ V/s. (a) Find the conduction current in the wire. (b) Find the electric field between the plates as a function of $V$. (c) Find the displacement current through a surface placed between the plates. (d) Verify (a) and (c) are equal. (e) What is the magnetic field at the rim of the plates ($r = 6$ cm) due to the displacement current?
 
-**Apply + Analyze.** Show that for a plane EM wave, the magnetic energy density equals the electric energy density at every instant. Start from $E_0 = cB_0$ and the expressions $u_E = \frac{1}{2}\varepsilon_0 E^2$ and $u_B = B^2/(2\mu_0)$.
+**Application 2.** *(Intensity and Poynting vector — tests: $I = c\varepsilon_0 E_0^2/2$, field amplitudes from intensity)* A laser pointer delivers $P = 5$ mW through a circular beam of diameter 2 mm. (a) Find the intensity $I$ in W/m². (b) Find the peak electric field $E_0$. (c) Find the peak magnetic field $B_0$. (d) Compare $E_0$ to the electric field 1 cm from a 1 µC point charge in vacuum. (e) Compare $B_0$ to Earth's surface magnetic field (~$5 \times 10^{-5}$ T).
 
-**Challenge (Synthesize).** Derive the wave equation for $\vec{E}$ from Maxwell's equations starting from $\nabla \times \vec{E} = -\partial \vec{B}/\partial t$. Show each step: take curl, apply the identity $\nabla \times (\nabla \times \vec{E}) = \nabla(\nabla \cdot \vec{E}) - \nabla^2 \vec{E}$, use Gauss's law to set $\nabla \cdot \vec{E} = 0$ in vacuum, substitute Maxwell's 4th equation. Identify the wave speed.
+**Application 3.** *(Radiation pressure — tests: $P_\text{rad} = I/c$ and $2I/c$, force on an area)* A solar sail has area $A = 196$ m² (14 m × 14 m, like IKAROS). Solar intensity at Earth is $I \approx 1360$ W/m². (a) Find the radiation force on the sail, assuming it is a perfect reflector. (b) Find the acceleration if the sail plus spacecraft has mass 310 kg. (c) Express the force in comparison to 1 µN (about the thrust of an ion engine at minimum). (d) After one year of continuous thrust, what velocity would the spacecraft accumulate from this force alone? Comment on whether solar sails are practical.
+
+**Synthesis 1.** *(Equal energy densities — tests: $u_E = u_B$ in a plane wave)* For a plane wave with $E_0 = 500$ V/m: (a) Find $B_0$. (b) Compute $u_E = \frac{1}{2}\varepsilon_0 E_0^2$ and $u_B = B_0^2/(2\mu_0)$ at the instant both fields are at their peak amplitude. (c) Verify they are equal by substituting $B_0 = E_0/c$ and using $c^2 = 1/(\mu_0\varepsilon_0)$. (d) The time-averaged intensity is $I = c\varepsilon_0 E_0^2/2$ — explain in one sentence why there is a factor of $\frac{1}{2}$ compared to the peak energy density times $c$.
+
+**Synthesis 2.** *(Spectrum and wave properties — tests: $\lambda = c/f$, recognizing the span)* For each of the following, find the wavelength and classify the wave as radio, microwave, infrared, visible, UV, X-ray, or gamma: (a) $f = 87.9$ MHz (an FM radio station), (b) $f = 2.45$ GHz (microwave oven), (c) $f = 6 \times 10^{14}$ Hz (orange light), (d) $f = 3 \times 10^{17}$ Hz (medical X-ray), (e) $f = 10^{20}$ Hz (cosmic gamma ray). For (c), find $E_0$ from the intensity of sunlight ($I \approx 1000$ W/m²).
+
+**Challenge.** *(Wave equation from Maxwell's equations)* Starting from Faraday's law in differential form $\nabla \times \vec{E} = -\partial \vec{B}/\partial t$ and the Ampère-Maxwell law in vacuum $\nabla \times \vec{B} = \mu_0\varepsilon_0\,\partial \vec{E}/\partial t$, derive the wave equation for $\vec{E}$ in the following steps: (a) take the curl of both sides of Faraday's law; (b) apply the vector identity $\nabla \times (\nabla \times \vec{E}) = \nabla(\nabla \cdot \vec{E}) - \nabla^2 \vec{E}$; (c) use Gauss's law in vacuum ($\nabla \cdot \vec{E} = 0$) to simplify; (d) substitute the Ampère-Maxwell law for $\nabla \times \vec{B}$; (e) identify the wave speed. Then repeat the analogous steps starting from the Ampère-Maxwell law to obtain the wave equation for $\vec{B}$.
 
 ---
 
@@ -251,17 +261,18 @@ Save as `11b-two-slit-preview.html`. This is the lead-in to Chapter 12.
 
 ## What would change my mind
 
-Maxwell's equations are mature, exact, and confirmed at every scale where classical EM applies. The displacement current is needed for self-consistency; without it, the equations contradict charge conservation. A confirmed deviation — a measurable phenomenon Maxwell's equations cannot explain in their domain — would force a rewrite. None has been observed. At very small scales, quantum electrodynamics (QED) supersedes classical Maxwell; the classical equations are the appropriate-limit description, not the deepest one. At cosmic scales, general relativity provides curvature corrections; for laboratory experiments these are utterly negligible.
+Maxwell's equations are exact in the classical domain. A confirmed deviation at any scale where classical EM currently works would force a rewrite — none has been found. At very small scales, quantum electrodynamics supersedes them; the classical equations are the appropriate limit. At cosmological scales, general relativity provides corrections; for laboratory work these are immeasurable.
 
-The 1887 Hertz experiment showed that the predicted EM waves *exist* and propagate at $c$. A century of antennas, broadcast radios, microwave links, optical fibers, lasers, and wireless networks have engineered Maxwell to spec, with no failure.
+Hertz's 1887 experiment confirmed the predicted waves exist and propagate at $c$. The century-plus of engineering that followed — radio, radar, television, fiber optics, mobile phones, GPS — has been continuous engineering validation. When Maxwell's equations predict the gain of an antenna, the cutoff frequency of a waveguide, or the dispersion of a pulse in optical fiber, they are right.
 
 ## Still puzzling
 
-- *Why is $\mu_0 \varepsilon_0 = 1/c^2$?* In SI units, this looks like a coincidence. In natural units (where $c = 1$), it's a tautology. The deeper structure (Maxwell's equations are Lorentz-covariant; $\vec{E}$ and $\vec{B}$ are components of a single tensor) shows the unification.
-- *The displacement current and the photon.* In QED, the displacement current corresponds to virtual-photon exchange between charges. The classical picture is the smooth-limit version of a quantum process. The chapter ignores this; for intro purposes, the classical picture suffices.
-- *What if no monopoles exist?* If they're not out there, $\nabla \cdot \vec{B} = 0$ stands. The symmetry between $\vec{E}$ and $\vec{B}$ remains asymmetric — only $\vec{E}$ has explicit sources (charges). The asymmetry is uncomfortable but empirical.
+*Why is $\mu_0\varepsilon_0 = 1/c^2$?* In SI units this looks like a numerical coincidence. In natural units where $c = 1$, it's a tautology. The deeper structure is that Maxwell's equations are Lorentz-covariant — $\vec{E}$ and $\vec{B}$ are components of a single antisymmetric tensor, mixed into each other by changes of reference frame. The "coincidence" is the covariance; the speed of light is not a property of light specifically but of the geometry of spacetime.
+
+*The displacement current and the photon.* In quantum electrodynamics, what classical theory calls a displacement current corresponds to virtual-photon exchange. The oscillating field that carries the wave is quantized into photons. The classical picture is the smooth limit of a quantum process.
+
+*The asymmetry between $\vec{E}$ and $\vec{B}$.* Equation (1) has a source on the right-hand side: charge. Equation (2) has zero. If magnetic monopoles existed, equation (2) would acquire a source term, and the full symmetry between $\vec{E}$ and $\vec{B}$ in Maxwell's equations would be restored. Without them, the equations are asymmetric in a way that has no deep theoretical explanation — only the empirical fact that no monopole has ever been found.
 
 ---
 
-**Tags:** Maxwell's equations, displacement current, wave equation, electromagnetic wave, Poynting vector, EM spectrum, Hertz, light
-
+**Tags:** Maxwell's equations, displacement current, wave equation, electromagnetic wave, Poynting vector, EM spectrum, Hertz, light, plane wave
