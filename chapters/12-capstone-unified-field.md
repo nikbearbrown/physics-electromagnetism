@@ -4,177 +4,233 @@
 
 ---
 
-## Learning objectives
+Right now, in the room where you are reading this, there are between five and twenty electromagnetic fields propagating through you.
 
-By the end of this chapter you will be able to:
+WiFi at 2.4 GHz and 5 GHz. Cellular at 700 MHz to 5 GHz. FM radio at 88–108 MHz. AM at 530–1700 kHz. Bluetooth at 2.4 GHz. GPS at 1.5 GHz. They are passing through the walls, through the air, through your body, at the speed of light. You cannot feel them. They have been there, more or less, since the 1880s when Hertz first detected the radio waves Maxwell had predicted.
 
-1. **(Apply)** Apply Snell's law to compute refraction angles and identify total internal reflection.
-2. **(Apply)** Predict the fringe spacing in a two-slit interference experiment using $d\sin\theta = m\lambda$.
-3. **(Understand)** Describe a dipole antenna's radiation pattern (sin²θ donut) and identify where intensity is maximum.
-4. **(Analyze)** Explain why the photoelectric effect cannot be accounted for by classical EM and state Einstein's quantum hypothesis $E = hf$.
-5. **(Understand)** State the historical motivation for special relativity: Maxwell's equations predict a unique $c$ in all reference frames.
-6. **(Apply)** Build a two-slit interference simulator OR an antenna radiation pattern visualizer.
+Every one of those signals is a solution to four equations — Maxwell's equations, which you finished deriving in Chapter 11. The antenna in your phone is designed using those equations. The path loss from tower to handset is calculated from those equations. The modulation scheme encodes bits onto those waves using properties of those equations. The whole apparatus is engineering applied to one set of differential equations.
+
+This capstone does not introduce new fundamental physics. It uses what you have to follow five threads outward: into optics, into antenna design, into the place where classical Maxwell breaks down at the quantum level, into the historical link from Maxwell to Einstein's special relativity, and back into the wireless world around you. By the end of the chapter, you should be able to look at any electromagnetic system — a fiber-optic cable, a telescope, a phone call, an X-ray — and recognize Maxwell at work.
 
 ---
 
-## Opening case: WiFi is Maxwell
+## Thread one: geometric optics
 
-Right now, in the room where you are reading this, there are probably between five and twenty radio-frequency signals propagating around you. WiFi at 2.4 GHz and 5 GHz. Cellular at 700 MHz to 5 GHz. FM radio at 88–108 MHz. AM at 530–1700 kHz. Bluetooth at 2.4 GHz. GPS at 1.5 GHz. They are all electromagnetic waves: oscillations of the electric and magnetic fields, propagating at the speed of light, governed by Maxwell's four equations.
+When the wavelength is much shorter than every feature of a system — every lens, mirror, slit, aperture — electromagnetic waves behave like rays. The wave nature is still there, but it only matters when dimensions approach the wavelength. For most of everyday optics, rays are an excellent description.
 
-Your phone has a small antenna that emits EM waves in a known frequency band when transmitting, and that responds to incoming EM waves by developing a small current that the receiver electronics decode. The whole apparatus — the antenna geometry, the modulation scheme, the path loss between phone and tower, the encoding of bits into RF — is engineering applied to one set of equations. The equations are the ones you finished deriving in Chapter 11.
+Two laws govern what happens at a boundary between two media.
 
-This capstone does not introduce new fundamental physics. It uses Maxwell's equations to understand five threads of the world that the previous eleven chapters have prepared you for: optics, antennas, the photoelectric effect (where classical EM breaks down), the historical link from Maxwell to special relativity, and wireless communication.
+**Reflection.** The angle of incidence equals the angle of reflection. Both measured from the *normal* to the surface, not from the surface itself — the single most common error in this material.
 
-By the end, you should be able to recognize Maxwell at work in the systems around you and explain why classical EM is *almost* the whole story — and where it has to hand off to quantum mechanics.
+**Refraction** (Snell's law). Light crossing from medium 1 to medium 2:
+
+$$n_1\sin\theta_1 = n_2\sin\theta_2$$
+
+The refractive index $n = c/v$ — the ratio of $c$ to the wave's speed in that medium. Vacuum: $n = 1$. Water: 1.33. Glass: approximately 1.5. Diamond: 2.42. The higher the index, the slower the wave and the more steeply it bends toward the normal when entering.
+
+The wave's *frequency* does not change at a boundary. What changes is the speed, and therefore the wavelength: $\lambda = \lambda_0/n$ inside a medium. The wavefront bends because one part of it enters the denser medium and slows down before the rest of the wavefront does — it pivots, like a line of marching soldiers stepping into mud on one end.
+
+<!-- → [IMAGE: Snell's law diagram — a ray crossing from medium n₁ (above) to medium n₂ > n₁ (below), with the normal perpendicular to the boundary, angles θ₁ and θ₂ labeled from the normal, showing the ray bending toward the normal in the denser medium — plus a second diagram showing total internal reflection when the ray exceeds the critical angle going from dense to less dense] -->
+
+**Total internal reflection.** Going from a denser medium to a less dense one — glass to air, water to air — there is a critical angle $\theta_c$ where $\sin\theta_c = n_2/n_1$. At angles larger than $\theta_c$, no transmitted ray exists; the wave reflects entirely back. For glass-air, $\theta_c \approx 42°$. This is fiber-optic communication: a light pulse enters a glass fiber and bounces along it by total internal reflection for kilometers, with losses measured in dB/km rather than the catastrophic losses of free-space propagation at optical frequencies.
 
 ---
 
-## Core concept
+## Thread two: wave optics and interference
 
-### Thread 1: Geometric optics from Maxwell
+When wavelengths are comparable to the geometry — slits, apertures, gratings — the ray picture breaks down and wave phenomena appear. The most important is interference.
 
-When the wavelength is much shorter than every feature of the system, EM waves behave *ray-like*. Two laws govern reflection and refraction at a boundary:
+**Young's two-slit experiment, 1801.** Two slits, separated by distance $d$, illuminated by coherent monochromatic light. On a screen at distance $L$, bright fringes appear wherever waves from the two slits arrive with a path-length difference that is an integer multiple of the wavelength:
 
-**Reflection.** Angle of incidence = angle of reflection, both measured from the normal.
+$$d\sin\theta = m\lambda$$
 
-**Refraction (Snell's law).** Light passing from medium 1 (refractive index $n_1$) to medium 2 ($n_2$):
-$$n_1 \sin\theta_1 = n_2 \sin\theta_2$$
+Fringe spacing on the screen: $\Delta y = \lambda L/d$. For green light ($\lambda = 500$ nm), 0.1 mm slit separation, 1 m to the screen: $\Delta y \approx 5$ mm. Visible to the naked eye.
 
-The refractive index $n = c/v = \sqrt{\kappa}$ for non-magnetic materials. Glass: $n \approx 1.5$. Water: 1.33. Diamond: 2.42. Vacuum: 1 (definition).
+<!-- → [IMAGE: two-slit interference diagram — two slits separated by d, screen at distance L, path-length difference from the two slits shown for the first bright fringe (m = 1), the interference pattern on the screen showing alternating bright and dark fringes — with fringe spacing Δy = λL/d labeled] -->
 
-The wave's frequency stays fixed in any medium; its *speed* (and hence wavelength) drops to $v = c/n$ and $\lambda = \lambda_0/n$ inside the medium. The wavefront bends because the part of the wave in the denser medium moves slower.
+Young's experiment was the decisive evidence that light is a wave. It resolved a century-long debate between Newton (who favored particles) and Huygens (who favored waves). The experiment produced the characteristic interference fringes that are simply not possible if light were a stream of independent particles — they require that the "something" passing through both slits simultaneously can add constructively in some places and cancel in others.
 
-**Total internal reflection** when going from dense to less-dense: above a critical angle $\theta_c$ where $\sin\theta_c = n_2/n_1$, the wave reflects entirely back. Glass-air: $\theta_c \approx 42°$. This is the principle of fiber-optic communication — light bounces along the fiber by total internal reflection, traveling kilometers with low loss.
+Maxwell explains *why*: his linear wave equation allows solutions to be superposed, and the superposition of two plane waves of the same frequency and phase produces exactly the interference pattern Young observed. The calculation is the same calculation we did in any wave context, applied to the electric field.
 
-### Thread 2: Wave optics — interference and diffraction
+The single-slit diffraction pattern limits how bright the fringes can be as a function of angle — the diffraction envelope $|\text{sinc}(\pi a\sin\theta/\lambda)|^2$ modulates the interference. And the **Rayleigh criterion** for angular resolution of a circular aperture of diameter $D$:
 
-When wavelengths are comparable to features (slits, obstacles), wave behavior dominates.
+$$\theta_{\min} \approx \frac{1.22\lambda}{D}$$
 
-**Two-slit interference** (Young 1801). Two coherent point sources separated by distance $d$ illuminate a screen at distance $L \gg d$. Bright fringes appear where the path-length difference is an integer wavelength:
-$$d \sin\theta = m\lambda$$
+This is why telescopes need to be large. A 200 mm telescope at 500 nm has $\theta_{\min} \approx 3$ µrad — about 0.6 arcseconds. The human eye (pupil $\approx 3$ mm) resolves about 1 arcminute. It's not a failure of design; it's a consequence of diffraction, set by $\lambda/D$.
 
-Fringe spacing on the screen (small angle approximation): $\Delta y = \lambda L/d$. For green light ($\lambda = 500$ nm), $d = 0.1$ mm, $L = 1$ m: $\Delta y \approx 5$ mm. Visible to the naked eye.
+<!-- → [IMAGE: Rayleigh criterion visualization — two point sources at increasing angular separation shown through a circular aperture: (1) unresolved — single merged blob; (2) just resolved — Rayleigh limit, first minimum of one Airy disk on center of other; (3) clearly resolved — two distinct Airy disks — with the criterion θ_min = 1.22λ/D labeled at the transition] -->
 
-Young's 1801 experiment was the decisive evidence that light is a wave. Maxwell explains *why*: superposing two plane-wave solutions of his linear wave equation gives interference, exactly as observed.
+---
 
-**Single-slit diffraction.** A single slit of width $a$ produces a diffraction pattern with first dark fringes at:
-$$a \sin\theta = m\lambda \quad (m = \pm 1, \pm 2, ...)$$
+## Thread three: antennas and radiation
 
-**Rayleigh criterion** for resolving two point sources separated by angle $\theta$ with a circular aperture of diameter $D$:
-$$\sin\theta_{\min} \approx 1.22 \lambda/D$$
+An accelerating charge radiates electromagnetic energy. This is the source of all electromagnetic waves: the electrons in an antenna are driven by an AC current into oscillating motion; their acceleration produces an outward-propagating EM wave.
 
-For a 200 mm telescope at 500 nm: $\theta_{\min} \approx 3$ µrad — about 0.6 arcsec. This is why bigger telescopes resolve more detail; it's also why your eye (pupil ~3 mm) resolves about 1 arcmin.
+The **Larmor formula** gives the total radiated power from a non-relativistic charge of magnitude $q$ with acceleration $a$:
 
-### Thread 3: Antenna radiation
-
-An oscillating charge or current radiates EM waves. The simplest model: a *dipole antenna*, two opposing currents oscillating sinusoidally.
-
-**Larmor formula** (1897). A non-relativistic point charge with acceleration $a$ radiates total power:
 $$P_{\text{rad}} = \frac{q^2 a^2}{6\pi\varepsilon_0 c^3}$$
 
-Power $\propto a^2$. A charge moving at constant velocity does not radiate; an accelerating one does.
+Notice: power goes as $a^2$. A charge moving at constant velocity does not radiate — no acceleration, no radiation. This is consistent with the electrostatics and magnetostatics of previous chapters, where steady configurations produce static fields, not waves. Radiation requires *change*, in the same sense that Faraday's law required a *changing* flux to produce an EMF.
 
-**Dipole radiation pattern.** A short dipole antenna oscillating along $\hat{z}$ has radiation intensity per solid angle:
+The simplest radiating structure is the **dipole antenna** — two conductors carrying oscillating currents in opposite directions along $\hat{z}$. The radiation pattern (power per unit solid angle as a function of direction) is:
+
 $$\frac{dP}{d\Omega} \propto \sin^2\theta$$
 
-where $\theta$ is the polar angle from the antenna axis. Maximum radiation at $\theta = 90°$ (perpendicular to the antenna); zero along the axis ($\theta = 0, 180°$). This "donut" pattern is why a vertical broadcast antenna radiates strongly toward the horizon and weakly straight up.
+where $\theta$ is the polar angle measured from the antenna axis. This is a **donut shape**: maximum radiation in the plane perpendicular to the antenna ($\theta = 90°$), zero along the axis ($\theta = 0°$ and $180°$). A vertical broadcast antenna radiates strongly toward the horizon and not at all straight up or straight down.
 
-Phased arrays (multiple dipoles with controlled phase relationships) produce directional beams used in radar, cell-tower sectors, and beamforming for 5G.
+<!-- → [IMAGE: dipole radiation pattern — antenna shown as a vertical line, the sin²θ donut pattern shown as a 3D toroidal shape around it, with the equatorial maximum labeled and the zero on the axis labeled — also a cross-sectional polar plot in a vertical plane showing the figure-eight shape] -->
 
-### Thread 4: The photoelectric effect
+Phased arrays control the direction of radiation by adjusting the phase of the signal fed to each element: constructive interference in the desired direction, destructive everywhere else. 5G base stations use phased arrays to focus beams toward individual user devices — "beamforming" — rather than broadcasting uniformly in all directions. The physics is exactly Young's two-slit interference, applied to antenna elements.
 
-Shine light on a clean metal surface; electrons emerge. Two experimental facts that classical EM cannot explain:
+<!-- → [IMAGE: phased array beamforming diagram — four antenna elements in a row, each fed with a slightly different phase delay shown as shifting sinusoidal signals; the resulting constructive interference lobe shown pointing at angle θ away from broadside — contrasted with a single antenna broadcasting equally in all directions, to show the gain from phasing] -->
 
-1. **Threshold frequency.** Below some frequency $f_0$, no electrons emerge at any intensity. Above $f_0$, electrons emerge immediately.
-2. **Frequency, not intensity, sets electron energy.** The maximum kinetic energy of ejected electrons grows linearly with $f$, but is independent of intensity. Intensity controls *how many* electrons emerge, not how energetic each one is.
+---
 
-Classical EM predicts the opposite. A wave's energy is in the field; more intensity = more field energy = more electron energy. Threshold should depend on energy delivered (so on intensity × time), not on frequency.
+## Thread four: where Maxwell breaks down
 
-**Einstein (1905).** Light arrives in *quanta* — photons — each carrying energy $E = hf$ where $h = 6.626 \times 10^{-34}$ J·s is Planck's constant. An electron absorbs one quantum. If $hf > \phi$ (the work function, an empirical property of the metal), the electron escapes with kinetic energy
+In 1887, Heinrich Hertz confirmed Maxwell's prediction of radio waves — a triumph of the theory. In the same experimental setup, he also observed something odd: ultraviolet light falling on a metal surface made it easier to produce sparks. He noted the effect and moved on.
+
+Eleven years later, Philipp Lenard investigated it carefully. He found that light shining on a clean metal surface could eject electrons. Two facts emerged that made no sense with classical electromagnetic wave theory.
+
+**First: there is a threshold frequency.** Below some frequency $f_0$, no electrons are emitted no matter how bright the light. Above $f_0$, electrons come out immediately, even in very dim light.
+
+**Second: frequency, not intensity, sets how energetic the electrons are.** The maximum kinetic energy of ejected electrons grows linearly with frequency. Intensity — the wave amplitude squared — controls how *many* electrons come out, but not how energetic each one is.
+
+Classical electromagnetic theory predicts the opposite behavior. A wave's energy is distributed continuously across its field. More intensity means more energy per unit area per unit time delivered to the surface. Given enough time, or enough intensity, any electron should eventually accumulate enough energy to escape, regardless of frequency. There should be no threshold. And more intensity should produce more energetic electrons.
+
+The data said otherwise.
+
+**Einstein's 1905 explanation.** Light comes in discrete quanta — what we now call photons. Each photon carries energy:
+
+$$E = hf$$
+
+where $h = 6.626 \times 10^{-34}$ J·s is Planck's constant. Each ejected electron absorbs exactly one photon. If the photon's energy exceeds the metal's **work function** $\phi$ — the minimum energy needed to pull an electron free — the electron escapes with kinetic energy:
+
 $$K_{\max} = hf - \phi$$
 
-Below the threshold $f_0 = \phi/h$, no ejection. The 1921 Nobel Prize was awarded to Einstein for this paper (not for relativity, which was still considered too speculative).
+If $hf < \phi$, no ejection, regardless of intensity. The threshold frequency is $f_0 = \phi/h$.
 
-The photoelectric effect is where classical Maxwell breaks down. The deeper theory — quantum electrodynamics (QED) — recovers Maxwell in the classical limit and predicts the photon in the quantum limit. The chapter's job is to point to this boundary, not cross it.
+<!-- → [IMAGE: photoelectric effect diagram — left: low-frequency light (hf < φ) hitting a metal surface, no electrons ejected; right: high-frequency light (hf > φ) hitting the same surface, electrons ejected with kinetic energy K = hf − φ — with the work function φ shown as a potential barrier the electron must climb — bottom panel: graph of K_max vs. frequency showing a straight line with slope h and x-intercept f₀ = φ/h] -->
 
-### Thread 5: Maxwell to special relativity
+This is not a modification of Maxwell's equations. It is a place where they genuinely fail — where the continuous-wave description of light is inadequate and the photon description is required. The 1921 Nobel Prize went to Einstein for this paper. (Not for relativity, which the Nobel committee considered too theoretical.)
 
-Maxwell's equations have a hidden symmetry. They are **Lorentz-covariant** — invariant under the coordinate transformations Einstein would write down in 1905. Maxwell wrote his equations in 1865; the relativity was already there.
-
-The physical issue: Maxwell's equations predict a unique speed $c$ for EM waves. *In what reference frame?* Galilean intuition (the inherited Newtonian relativity) says different observers in relative motion should see light at different speeds.
-
-Michelson and Morley (1887), trying to measure Earth's motion relative to the supposed luminiferous ether, found *no difference* — Earth seemed to move at the same speed relative to the ether regardless of its orbital direction. The ether hypothesis collapsed.
-
-**Einstein (1905, "On the Electrodynamics of Moving Bodies"):** drop Galilean relativity; keep Maxwell. The speed of light is the same in all inertial frames. Derive the consequences: time dilation, length contraction, $E = mc^2$.
-
-The deepest consequence: $\vec{E}$ and $\vec{B}$ are not separate fields. They are components of a single antisymmetric tensor $F^{\mu\nu}$ in spacetime. Different observers in relative motion see different mixtures of $\vec{E}$ and $\vec{B}$ from the same physical situation. A current-carrying wire (only $\vec{B}$ in its rest frame) appears, to an observer moving along the wire, as a moving line of charges (with $\vec{E}$ and $\vec{B}$).
-
-This unification was discovered before relativity itself; the framework just needed Einstein's 1905 reorganization to be recognized.
-
-### Thread 6: Wireless communication
-
-EM waves at radio and microwave frequencies are the substrate of every wireless system. Information rides on a **carrier wave** via modulation:
-- **AM** (amplitude modulation): the carrier's amplitude varies with the signal.
-- **FM** (frequency modulation): the carrier's frequency varies.
-- **Digital** (BPSK, QAM, OFDM): both amplitude and phase encode bits.
-
-WiFi (2.4 / 5 / 6 GHz), 5G (sub-6 GHz, mmWave 24–47 GHz), Bluetooth (2.4 GHz), GPS (~1.5 GHz), AM/FM radio (kHz–MHz), satellite TV (GHz) — all are Maxwell's equations engineered into protocols.
-
-Practical example: a phone–tower link. Tower transmits at 5 W; antenna gain 10 dBi (factor 10); distance 1 km. Free-space path loss at 2 GHz: about $20 \log_{10}(4\pi r / \lambda) = 20\log_{10}(4\pi \cdot 1000/0.15) = 98$ dB. Received power: 5 W × 10 / 10^{9.8} ≈ $8 \times 10^{-9}$ W = 8 nW. A modern phone receiver detects signals down to about $10^{-13}$ W. Plenty of margin.
-
-The whole calculation is Maxwell, engineered.
+The resolution lives in quantum electrodynamics: light is the quantized excitation of the electromagnetic field. For most phenomena — propagation, reflection, refraction, interference — the classical Maxwell description is excellent. For the photoelectric effect, Compton scattering, and the emission and absorption of light by atoms, the photon picture is required. Both pictures are correct in their domains. The tension between them is not a contradiction; it is the empirical fact that drove the development of quantum mechanics.
 
 ---
 
-## Worked example: the photoelectric effect
+## Thread five: Maxwell to Einstein
 
-Sodium has work function $\phi = 2.36$ eV. (a) Find the threshold frequency and wavelength. (b) Illuminate with 400 nm violet light. Find the maximum kinetic energy of ejected electrons and the stopping voltage needed to halt them.
+Here is something remarkable about Maxwell's equations: they were already relativistic in 1865, forty years before Einstein.
 
-**(a) Threshold frequency.** $f_0 = \phi/h$. Using $hc = 1240$ eV·nm:
-$$\lambda_0 = hc/\phi = 1240/2.36 \approx 525 \text{ nm}$$
-That's green light. Frequency: $f_0 = c/\lambda_0 = (3 \times 10^8)/(525 \times 10^{-9}) \approx 5.7 \times 10^{14}$ Hz.
+Maxwell's equations predict a unique speed for electromagnetic waves in vacuum:
 
-**(b) Violet light, $\lambda = 400$ nm.** Photon energy:
-$$hf = hc/\lambda = 1240/400 = 3.10 \text{ eV}$$
+$$c = \frac{1}{\sqrt{\mu_0\varepsilon_0}}$$
+
+The constants $\mu_0$ and $\varepsilon_0$ were measured from static electric and magnetic experiments. They give $c = 3 \times 10^8$ m/s — the measured speed of light. But the equations say nothing about *which reference frame* this speed is measured in. This was deeply disturbing to 19th-century physicists, because Galilean relativity — the Newtonian rule for adding velocities — said that if light travels at $c$ in one frame, it should travel at $c + v$ or $c - v$ in a frame moving at $v$. But Maxwell's equations had no preferred frame.
+
+Michelson and Morley's 1887 experiment tried to measure Earth's velocity through the hypothetical "luminiferous ether" — the medium light was supposed to wave in. They split a light beam, sent the halves in two perpendicular directions, and looked for an interference shift as Earth moved through the ether in different directions at different times of year. The shift should have been detectable. They found nothing.
+
+The ether hypothesis failed. Light apparently traveled at the same speed regardless of the observer's motion.
+
+**Einstein's 1905 step.** He took Maxwell's equations seriously and followed the logic. If Maxwell's equations are the correct description of light, and if they predict a unique $c$, then $c$ is the same in all inertial frames. Period. Drop the ether. Drop Galilean velocity addition. Accept the consequences and derive them carefully.
+
+The consequences: time dilation, length contraction, the relativity of simultaneity, mass-energy equivalence $E = mc^2$. The whole structure of special relativity falls out of taking Maxwell's equations at face value.
+
+The deepest consequence for electromagnetism itself: $\vec{E}$ and $\vec{B}$ are not independent fields. They are components of a single **electromagnetic field tensor** $F^{\mu\nu}$ in four-dimensional spacetime. What one observer calls a pure magnetic field, a different observer moving relative to the first will see as a mixture of electric and magnetic fields. A current-carrying wire — which in its rest frame produces only a magnetic field — will appear, to an observer moving along the wire, as a line of charges whose Lorentz contraction creates a net charge density, producing an electric field. The two observers are seeing the same physical situation through different coordinate systems.
+
+This was implicit in Maxwell's 1865 equations. It took Einstein to make it explicit.
+
+<!-- → [INFOGRAPHIC: two reference frames for a current-carrying wire — left frame (wire at rest): wire is electrically neutral, B field shown circling the wire, no E field; right frame (observer moving along wire): Lorentz contraction makes the electron spacing slightly different from the ion spacing, net charge density appears, E field shown radiating outward — same physics, different decomposition into E and B] -->
+
+---
+
+## Thread six: wireless
+
+Everything in the previous five threads converges in a wireless link.
+
+A phone transmitting a call accelerates electrons in its antenna (Thread three) at roughly 2.4 GHz. Those accelerating electrons radiate EM waves (Maxwell, Larmor). The waves propagate at $c$ (Thread five, the invariant speed). They arrive at a receiving antenna and accelerate electrons there, producing an induced current (Chapter 10, Faraday). The electronics decode the signal from that current.
+
+The link budget is a calculation that tracks the power from transmitter to receiver using Maxwell's equations all the way through. Start with the transmitter power. Apply the antenna gain — the directional enhancement from shaping the radiation pattern (Thread three). Calculate the spreading loss as the wave expands through space — intensity falls as $1/r^2$ because the same power spreads over a sphere of area $4\pi r^2$. Apply any atmospheric or obstruction losses. What arrives at the receiving antenna is typically nanowatts or less; modern receivers detect signals down to $10^{-13}$ W.
+
+At 2.4 GHz over 1 km in free space, the path loss is about 98 dB — the received power is a factor of $10^{9.8}$ smaller than the transmitted power. A 5 W transmitter with a 10 dBi antenna (factor-10 directional gain) delivers about 8 nW to a receiver 1 km away. A phone's receiver sensitivity is around $10^{-13}$ W = 0.1 pW. The margin is comfortable: the received signal is roughly $10^4$ times the minimum detectable level.
+
+The whole calculation is engineering applied to Maxwell's equations. The distance scaling, the antenna pattern, the frequency dependence of path loss — all derivable from the Poynting vector $\vec{S} = \frac{1}{\mu_0}\vec{E}\times\vec{B}$ and the radiation pattern of the antenna.
+
+<!-- → [CHART: link budget waterfall diagram — starting bar at transmitted power (e.g. 37 dBm = 5 W), adding antenna gain (+10 dBi), subtracting free-space path loss (−98 dB at 1 km, 2.4 GHz), showing received power (about −51 dBm = 8 nW), with receiver sensitivity floor (−103 dBm) shown as a horizontal line and the link margin labeled as the gap — makes the dB arithmetic visual and shows why the link works] -->
+
+---
+
+## The worked numbers: photoelectric effect on sodium
+
+Sodium has work function $\phi = 2.36$ eV. Illuminate it with 400 nm violet light.
+
+**Threshold.** Using the convenient conversion $hc = 1240$ eV·nm, the threshold wavelength is:
+
+$$\lambda_0 = \frac{hc}{\phi} = \frac{1240}{2.36} \approx 525 \text{ nm}$$
+
+That's green light. Sodium's threshold is in the visible — longer wavelengths (red, orange, yellow) produce no electrons; shorter ones (green, blue, violet) do.
+
+**Violet light at 400 nm.** Photon energy:
+
+$$hf = \frac{hc}{\lambda} = \frac{1240}{400} = 3.10 \text{ eV}$$
+
 Maximum kinetic energy of ejected electrons:
+
 $$K_{\max} = hf - \phi = 3.10 - 2.36 = 0.74 \text{ eV}$$
-Stopping voltage: $V_s = K_{\max}/e = 0.74$ V. Apply $-0.74$ V to a collector facing the metal and the most energetic electrons just barely fail to reach it.
 
-**The lesson.** Light at $hf < \phi$ (below threshold) produces no electrons regardless of how bright. Light at $hf > \phi$ produces electrons regardless of how dim — with kinetic energy set by $f$, not intensity. Both facts are quantum-mechanical, not classical.
+**Stopping voltage.** Apply $-0.74$ V to a collector facing the sodium surface and the most energetic electrons just barely fail to reach it. That voltage directly measures $K_{\max}/e$.
 
-**The limit.** This treats light as a stream of independent particles (photons) and ignores the wave description entirely. Modern QED resolves the wave-particle tension: light is the quantized excitation of the EM field. For most everyday optics, the classical wave picture is fine; for the photoelectric effect, the photon picture is required.
+**What happens if you double the intensity?** Twice as many photons arrive per second. Twice as many electrons are ejected. $K_{\max}$ is unchanged — it depends only on $hf$, not on how many photons there are. This is the anti-intuitive heart of the photoelectric effect: the energy budget per event is set by frequency, not by brightness.
 
 ---
 
-## Common misconceptions
+## What all five threads have in common
 
-**"Snell's law angles are measured from the surface."** No — from the *normal* to the surface. Easy to confuse.
+There is a single conceptual thread running through all five.
 
-**"In the photoelectric effect, intensity controls the energy per electron."** Backwards. Intensity controls the *number* of electrons emitted per second; frequency controls the *energy* per electron.
+In Chapter 2, we learned that charges produce electric fields. In Chapter 8, that moving charges produce magnetic forces. In Chapter 9, that currents produce magnetic fields. In Chapter 10, that changing magnetic fields produce electric fields. In Chapter 11, that Maxwell closed the loop: changing electric fields also produce magnetic fields, and together the two sustain each other as propagating waves at speed $c$.
 
-**"Relativity replaces Maxwell."** It doesn't. Maxwell's equations are *already relativistic* — they were Lorentz-covariant before Lorentz was born. Einstein's 1905 paper recognized this and reorganized mechanics to be compatible with Maxwell.
+Everything in this capstone is consequence.
 
-**"$E$ and $B$ are independent fields."** They are components of one electromagnetic field in spacetime. Different observers in different inertial frames see different mixtures. A pure-$\vec{B}$ field in one frame has $\vec{E}$ components in another.
+Optics follows from the wave nature of Maxwell's solutions, specialized to the short-wavelength limit. Interference follows from the linearity of Maxwell's equations — solutions superpose. Radiation follows from the fact that accelerating charges produce waves that carry energy away from the source. The photoelectric effect marks the boundary where Maxwell's classical description must be extended to quantum mechanics — where the discreteness of the photon becomes unavoidable. And special relativity is what you get when you take Maxwell's equations seriously in all inertial frames and demand consistency.
 
-**"WiFi is just radio waves."** WiFi *is* radio waves — EM waves in the microwave band. The engineering (modulation, antennas, MIMO arrays, error correction) is what makes the link useful. The physics is Maxwell's.
+The five threads are not separate subjects. They are five views of the same underlying structure.
 
-**"Photon energy is $hf$, so light intensity equals photon energy."** Intensity (W/m²) is photon energy × photon rate × ... carefully. Intensity has units of power per area; photon energy is per photon. The bridge is the *flux* of photons, not their energy individually.
+---
+
+## The thing that is still not understood
+
+Light is simultaneously a wave and a particle. That sentence was not understood in 1905 and it is still, in some sense, not understood today — not because we lack the mathematics (quantum field theory handles it), but because no one has a satisfying physical picture that is simpler than the mathematics.
+
+In a double-slit experiment, a single photon produces an interference fringe. But a photon is supposed to be a particle — a localized quantum of energy. How does a single particle "know" about both slits? The answer, formally, is that we track probability amplitudes rather than classical trajectories, and amplitudes interfere even when the corresponding probabilities would not. That is QED's answer, and it is correct in the sense of producing predictions that match every experiment ever done.
+
+Whether it is a satisfying *explanation* is a question physicists have argued about since 1927 and have not resolved. Feynman himself said, repeatedly, that nobody really understands quantum mechanics — that we only know how to calculate with it. That is not false modesty. It is an accurate description of where the subject stands.
+
+Maxwell took us to the edge. Quantum mechanics is the jump beyond. The book ends here.
 
 ---
 
 ## Exercises
 
-**Warm-up (Apply).** Light at 600 nm enters water ($n = 1.33$) from air at 30° from the normal. Find the refraction angle and the wavelength in water.
+**Warm-up.** Light at $\lambda = 600$ nm travels in air and strikes a water surface ($n = 1.33$) at an angle of incidence of 30° from the normal. (a) Find the refraction angle in water using Snell's law. (b) Find the wavelength of the light *inside* the water. (c) Does the frequency change? Explain in one sentence why or why not. *Tests: Snell's law, wavelength in a medium, frequency invariance.*
 
-**Apply.** Two-slit interference: slit separation $d = 50$ µm, screen distance $L = 2$ m, light $\lambda = 500$ nm. Find the fringe spacing. Predict the color you'd see if the wavelength were 700 nm instead.
+**Warm-up.** A two-slit setup has slit separation $d = 50$ µm and a screen at distance $L = 2$ m. Illuminated with green light at $\lambda = 500$ nm: (a) find the fringe spacing $\Delta y$; (b) predict how $\Delta y$ changes if $d$ is doubled; (c) predict how $\Delta y$ changes if $\lambda$ is changed to red light at 700 nm. *Tests: two-slit fringe spacing formula, parameter scaling.*
 
-**Apply.** Sodium work function 2.36 eV. (a) Threshold wavelength? (b) UV light at $\lambda = 200$ nm. Find $K_{\max}$. (c) The intensity doubles. Does $K_{\max}$ change? Does anything change?
+**Warm-up.** Sodium's work function is $\phi = 2.36$ eV. (a) Find the threshold wavelength $\lambda_0$. (b) Illuminate with UV at $\lambda = 200$ nm; find $K_\text{max}$ in eV. (c) The intensity is now doubled at the same 200 nm wavelength. What happens to $K_\text{max}$? What happens to the number of electrons ejected per second? (d) Now switch to infrared at $\lambda = 1000$ nm at very high intensity. Do any electrons emerge? *Tests: photoelectric threshold, $K_\text{max} = hf - \phi$, intensity vs. frequency distinction.*
 
-**Apply + Analyze.** A vertical dipole antenna with radiation pattern $\propto \sin^2\theta$. (a) Sketch the radiation pattern in a vertical plane through the antenna. (b) Where is intensity maximum? (c) At what angle from the axis does the intensity drop to half its maximum?
+**Application.** A glass fiber has core refractive index $n_1 = 1.50$ and cladding index $n_2 = 1.46$. (a) Find the critical angle $\theta_c$ for total internal reflection at the core-cladding interface. (b) A light ray enters the fiber end-face and hits the core-cladding interface at 82°. Does it undergo total internal reflection? (c) A ray at 70° — does it? (d) Explain in one sentence why fiber-optic cables must keep bend radii above a minimum value. *Tests: critical angle formula, comparison to threshold, physical reasoning about bend losses.*
 
-**Apply (link budget).** A WiFi router transmits 100 mW (20 dBm). The path loss from router to a phone 10 m away (2.4 GHz) is about 60 dB. (a) What is the received power in dBm? (b) WiFi receivers can detect down to about –90 dBm. By how many dB does the received signal exceed the receiver sensitivity?
+**Application.** A vertical dipole antenna has radiation pattern $dP/d\Omega \propto \sin^2\theta$. (a) At what angle $\theta$ from the antenna axis is the radiated intensity maximum? (b) At what angle does it fall to half the maximum? (c) A broadcast station wants to cover listeners on the ground, not satellites overhead. Should the antenna be vertical or horizontal? Justify using the radiation pattern. (d) If a second identical antenna is placed parallel to the first, separated by $\lambda/2$, and driven 180° out of phase, qualitatively describe how the combined pattern changes compared to a single antenna. *Tests: reading the radiation pattern, zero-intensity axis, phased array intuition.*
 
-**Challenge.** Show that Maxwell's equations imply the same speed $c$ for EM waves in vacuum regardless of the observer's frame, *provided* the equations themselves transform correctly. (This is the historical motivation for Einstein's 1905 postulate.)
+**Application.** A WiFi router transmits 100 mW at 2.4 GHz. The free-space path loss to a laptop 10 m away is approximately 60 dB. (a) What is the received power in milliwatts? In dBm (where 0 dBm = 1 mW)? (b) If the router's antenna has a gain of 3 dBi (factor ~2 directional enhancement), what is the effective transmitted power? (c) WiFi receivers detect down to about −90 dBm. How much margin (in dB) does the received signal have above the sensitivity floor? (d) If the distance doubles to 20 m, by how many dB does the received power drop, and why? *Tests: dB arithmetic, free-space path loss, $1/r^2$ spreading.*
+
+**Synthesis.** The Larmor formula says $P_\text{rad} \propto q^2 a^2$. (a) A charge oscillates sinusoidally: $x(t) = x_0\cos(\omega t)$. Find its acceleration as a function of time. (b) Find the time-averaged radiated power $\langle P_\text{rad}\rangle$ in terms of $q$, $x_0$, $\omega$, and physical constants. (c) Show that $\langle P_\text{rad}\rangle \propto \omega^4$ — radiated power grows as the fourth power of frequency. (d) This $\omega^4$ dependence is also responsible for Rayleigh scattering, the reason the sky is blue. Blue light ($\lambda \approx 450$ nm) scatters roughly how many times more strongly than red light ($\lambda \approx 700$ nm) as it passes through the atmosphere? *Tests: kinematics of oscillation, time-averaging, frequency scaling, application to natural phenomenon.*
+
+**Synthesis.** A Michelson interferometer splits a light beam into two perpendicular arms of length $L$ each, reflects both back, and recombines them. If the apparatus moves at velocity $v$ relative to the ether, classical physics predicts a round-trip time difference of $\Delta t \approx Lv^2/c^3$ between the two arms. (a) For $L = 11$ m (the Michelson-Morley setup), Earth's orbital velocity $v \approx 3 \times 10^4$ m/s, and $\lambda = 590$ nm, compute the expected fringe shift $\Delta\phi = c\Delta t/\lambda$ in units of fringe widths. (b) Michelson and Morley measured a shift of less than 0.01 fringes. Compare this to your answer. (c) State in one sentence what this null result implies about the ether hypothesis, and what it forced Einstein to assume. *Tests: the Michelson-Morley calculation, null result interpretation, bridge to special relativity.*
+
+**Challenge.** Starting from the two-slit condition $d\sin\theta = m\lambda$ and the single-slit envelope $|\text{sinc}(\pi a\sin\theta/\lambda)|^2$, find the conditions under which an interference maximum is *missing* — i.e., falls exactly on a single-slit diffraction minimum. (a) Derive the general condition on the ratio $d/a$ for the $m$-th order maximum to be missing. (b) For $d/a = 3$, which orders are missing? Sketch the resulting intensity pattern. (c) A student claims that the central maximum is never missing. Prove this claim using your condition. *Tests: combining two-slit and single-slit formulas, missing orders, mathematical proof.*
+
+<!-- → [TABLE: the six threads of Chapter 12 — columns: thread, key phenomenon, the Maxwell connection, where classical EM is sufficient, where it must be extended — rows: geometric optics (Snell's law, n = c/v, short-wavelength limit of Maxwell, always), wave optics (interference, linear superposition, always), antenna radiation (Larmor, accelerating charges, always), photoelectric effect (E = hf, classical prediction is wrong, needs photon/QED), special relativity (E and B as one tensor, Maxwell already covariant, Einstein recognized it), wireless (link budget, Poynting vector + radiation pattern, always) — to show which threads stay within Maxwell and which point beyond] -->
 
 ---
 
@@ -209,19 +265,4 @@ Choose one of:
 
 ---
 
-## What would change my mind
-
-The threads in this chapter rest on twelve chapters of foundation. If any of them turned out to be wrong, the chapter would change. The photoelectric effect's quantum interpretation has been overwhelmingly confirmed by Millikan (1916), single-photon double-slit experiments (post-2000), and ongoing QED measurements. The Maxwell-relativity covariance has been the basis of all relativistic physics since 1905. Wireless engineering is a $10^{12}$-dollar industry built on Maxwell; if the physics were wrong, the industry would have noticed.
-
-What *would* change my mind: a confirmed deviation from Maxwell's equations at any tested scale, or a confirmed alternative to quantum mechanics that doesn't recover the photoelectric effect. Neither has happened in 130+ years.
-
-## Still puzzling
-
-- *Why is the speed of light invariant?* Special relativity is built on the empirical fact, not a deeper derivation. Why nature chose $c$ as a universal speed limit is unresolved.
-- *Are there phenomena at energies beyond known particle physics where Maxwell needs corrections?* In quantum field theory, $\vec{E}$ and $\vec{B}$ emerge from a U(1) gauge theory. Grand unified theories link this gauge structure to other forces. At very high energies, Maxwell may not be the whole story. We don't know yet.
-- *The light-as-wave vs. light-as-particle tension.* Resolved at QED's level; conceptually still strange. The photoelectric effect requires the photon picture; double-slit interference requires the wave picture. Both pictures are correct in their domain; QED reconciles them.
-
----
-
 **Tags:** Snell's law, interference, diffraction, antenna, Larmor, photoelectric effect, Einstein, special relativity, wireless, photon
-
