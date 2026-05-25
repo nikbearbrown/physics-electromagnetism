@@ -4,183 +4,246 @@
 
 ---
 
-## Learning objectives
+Here is a force unlike any we have seen.
 
-By the end of this chapter you will be able to:
+In Chapter 2, the electric force pointed along the line between charges — directly at the thing causing it, proportional to distance in a clean inverse-square law. That is the kind of force Newtonian mechanics trained us to expect: push or pull, along the line of action, doing work, changing speed.
 
-1. **(Understand)** State the Lorentz force law $\vec{F} = q\vec{v} \times \vec{B}$ and identify why the magnetic force does no work on a moving charge.
-2. **(Apply)** Compute the trajectory of a charged particle in a uniform magnetic field — circular when $\vec{v} \perp \vec{B}$, helical otherwise.
-3. **(Apply)** Compute the cyclotron radius $r = mv/|q|B$ and frequency $\omega_c = |q|B/m$ for a given particle and field.
-4. **(Apply)** Find the force on a current-carrying conductor in a magnetic field, $\vec{F} = I\vec{L} \times \vec{B}$, and the torque on a current loop, $\vec{\tau} = \vec{m} \times \vec{B}$.
-5. **(Analyze)** Use the Hall effect to determine the sign of charge carriers in a conductor.
-6. **(Apply)** Build a charged-particle trajectory simulator showing circular and helical motion in configurable fields.
+The magnetic force does none of those things. It acts perpendicular to the velocity of the charge — not toward any source, not along any obvious line. It cannot speed a charge up or slow it down; it can only change direction. And it vanishes entirely if the charge is standing still.
 
----
+This is strange enough that it's worth sitting with before we write down the formula. A charged particle at rest in a magnetic field feels nothing. Move it, and a force appears — sideways, not forward, always perpendicular to the motion. Move it faster, and the force grows proportionally, still perpendicular. The particle circles. It never gains or loses speed. It traces a circle of precise radius and returns to where it started, over and over, in a fixed period that doesn't depend on how fast it's going.
 
-## Opening case: the mass spectrometer
-
-A mass spectrometer is a device used in chemistry, biology, and forensic science to identify and weigh molecules. The principle is simple. Ionize the sample so each molecule carries a known charge (typically $+e$). Accelerate the ions through a known potential difference $V$ — they emerge with kinetic energy $\frac{1}{2}mv^2 = qV$, so $v = \sqrt{2qV/m}$. Inject them into a region of uniform magnetic field $\vec{B}$ perpendicular to their motion. They follow circular paths whose radius depends on $m$ and $v$:
-
-$$r = \frac{mv}{qB}$$
-
-Ions of different masses land at different positions on a detector. From the position, you read the mass; from the count, the abundance. A modern time-of-flight or quadrupole instrument can measure molecular masses to parts per million, distinguishing isotopologues, identifying drugs in urine, sequencing peptides.
-
-The whole machine is one equation, $\vec{F} = q\vec{v} \times \vec{B}$, applied to a clean geometry. The chapter ahead is that force law, its consequences for particle trajectories, and the way it generates almost every magnetic device you use — motors, MRI scanners, hard drives, oscilloscopes, particle accelerators.
+That last fact — period independent of speed — is what makes the cyclotron work. It is what makes mass spectrometers possible. It is the physics behind MRI machines, particle accelerators, and the aurora borealis. Let's find out where it comes from.
 
 ---
 
-## Core concept
+## The force law
 
-### The Lorentz force
+A charge $q$ moving with velocity $\vec{v}$ in a magnetic field $\vec{B}$ feels a force:
 
-A charge $q$ moving with velocity $\vec{v}$ in a magnetic field $\vec{B}$ feels a force
+$$\vec{F} = q\vec{v} \times \vec{B}$$
 
-$$\vec{F} = q \vec{v} \times \vec{B}$$
+The full **Lorentz force**, including an electric field, is:
 
-Three immediate observations:
-- **Direction.** $\vec{F}$ is perpendicular to both $\vec{v}$ and $\vec{B}$. Right-hand rule: fingers point along $\vec{v}$, curl toward $\vec{B}$, thumb gives $\vec{v} \times \vec{B}$ (for positive $q$; for negative, reverse).
-- **Magnitude.** $|\vec{F}| = |q| v B \sin\theta$ where $\theta$ is the angle between $\vec{v}$ and $\vec{B}$. Zero when $\vec{v} \parallel \vec{B}$; maximum when $\vec{v} \perp \vec{B}$.
-- **A charge at rest feels no magnetic force.** Magnetic forces require motion.
-
-Combined with the electric force, the total force on a charge is the **Lorentz force**:
 $$\vec{F} = q(\vec{E} + \vec{v} \times \vec{B})$$
 
-Units: $\vec{B}$ measured in **tesla** (T) = kg/(A·s²). For scale: Earth's surface field ≈ 25–65 µT. A bar magnet a few cm away: ~0.01 T. A clinical MRI: 1.5–3 T. A research MRI: 7 T. The Large Hadron Collider's bending magnets: 8.3 T.
+Three things to notice immediately.
 
-### The magnetic force does no work
+**Direction.** The cross product $\vec{v} \times \vec{B}$ is perpendicular to both $\vec{v}$ and $\vec{B}$. Right-hand rule: fingers along $\vec{v}$, curl toward $\vec{B}$, thumb gives the direction of the force for positive charge. For negative charge, reverse. The force is never in the direction of motion, never toward the source of the field — it's sideways, always sideways.
 
-Crucial property. $\vec{F} \cdot \vec{v} = q(\vec{v} \times \vec{B}) \cdot \vec{v} = 0$ (any cross product is perpendicular to either factor). So the rate of work done by the magnetic force on the charge is identically zero:
+**Magnitude.** $|\vec{F}| = |q|vB\sin\theta$, where $\theta$ is the angle between $\vec{v}$ and $\vec{B}$. When $\vec{v}$ and $\vec{B}$ are parallel, the force vanishes. When they are perpendicular, it is maximum. A charge moving exactly along a field line feels nothing; a charge moving perpendicular to the field feels the full force.
 
-$$P_{\text{mag}} = \vec{F} \cdot \vec{v} = 0$$
+**A charge at rest feels nothing.** Magnetic forces require motion. This is the deepest clue that magnetism and electricity are not as separate as they first appear — in Chapter 11 we will see that a magnetic field in one reference frame can look like an electric field in another. For now, accept the law as given.
 
-The kinetic energy of a charge in a magnetic field is conserved. The force *deflects* the charge — changes its direction — but never speeds it up or slows it down.
+The unit of magnetic field is the **tesla** (T). For scale: Earth's surface field is 25–65 µT. A bar magnet at arm's length, ~0.01 T. A clinical MRI, 1.5–3 T. The LHC's bending dipoles, 8.3 T.
 
-This is the magnetic force's deepest peculiarity. Newtonian intuition wants force to change speed. Magnetic forces only change direction. The work-energy theorem still holds; it's just that the work done by $\vec{F}_{\text{mag}}$ is structurally zero.
+<!-- → [IMAGE: diagram of the Lorentz force — a positive charge moving right with velocity v, a magnetic field B pointing into the page, and the resulting force F pointing upward, with the right-hand rule illustrated — then the same diagram for a negative charge showing force downward — to establish the direction rule concretely before any discussion] -->
 
-(Electric and other forces *can* do work and accelerate the particle; if $\vec{E}$ is also present, $W = \int q\vec{E} \cdot d\vec{r} \neq 0$ in general.)
+---
 
-### Circular motion in a uniform B
+## The magnetic force does no work
 
-Set up: $\vec{B} = B\hat{z}$ uniform. Initial velocity $\vec{v}_0 = v_0 \hat{x}$ in the $xy$-plane. Initial force: $\vec{F} = q\vec{v}_0 \times \vec{B} = qv_0 B (\hat{x} \times \hat{z}) = -q v_0 B \hat{y}$ (for $q > 0$, force is in $-\hat{y}$).
+This is the magnetic force's central peculiarity, and it is worth a careful argument.
 
-The force is perpendicular to $\vec{v}$ and constant in magnitude (since $|\vec{v}|$ is constant). This is exactly the setup for uniform circular motion. Equating centripetal force to magnetic force:
-$$|q|vB = mv^2/r \implies r = \frac{mv}{|q|B}$$
+The rate at which a force does work on a particle is $P = \vec{F} \cdot \vec{v}$. For the magnetic force:
 
-The **cyclotron frequency** at which the charge orbits:
-$$\omega_c = v/r = \frac{|q|B}{m}, \qquad f_c = \frac{|q|B}{2\pi m}$$
+$$P_{\text{mag}} = \vec{F}_{\text{mag}} \cdot \vec{v} = q(\vec{v} \times \vec{B}) \cdot \vec{v} = 0$$
 
-Notice: the frequency is *independent of $v$*. All charges with the same $q/m$ orbit at the same rate, regardless of how fast they're moving (in the non-relativistic limit). This is why the cyclotron — Lawrence's 1930 invention — works: synchronizing the polarity of an accelerating gap to the cyclotron frequency works for any energy.
+The last equality follows from the fact that a cross product is always perpendicular to each of the factors — $\vec{v} \times \vec{B}$ is perpendicular to $\vec{v}$, so their dot product is zero. This is exact, always, without approximation.
 
-### Helical motion: $\vec{v}$ not perpendicular to $\vec{B}$
+The kinetic energy of a charged particle moving in a pure magnetic field is conserved. The speed never changes. Only the direction changes.
 
-Decompose the velocity into components parallel and perpendicular to $\vec{B}$: $\vec{v} = \vec{v}_\parallel + \vec{v}_\perp$.
+Newtonian intuition rebels slightly here. We are used to thinking "force causes acceleration causes speed change." But acceleration means rate of change of velocity — a vector — and changing direction is acceleration just as much as changing speed. The magnetic force produces centripetal acceleration: it constantly deflects the particle but never adds to its kinetic energy.
 
-The parallel component feels no force ($\vec{v}_\parallel \times \vec{B} = 0$); it propagates at constant speed along the field line.
+If you watch a particle spiral in a magnetic field and it *is* gaining speed, there is an electric field somewhere. The electric force does work; the magnetic force does not.
 
-The perpendicular component circles at radius $r = mv_\perp/(|q|B)$ and frequency $\omega_c = |q|B/m$.
+<!-- → [IMAGE: circular orbit of a positive charge in a uniform B field (into page) — the velocity vector tangent to the circle, the magnetic force vector pointing radially inward (centripetal), and the speed labeled as constant — to make the work-free deflection visual] -->
 
-The combined motion is a **helix** — circular motion superimposed on uniform straight-line motion. Pitch (distance traveled along $\vec{B}$ per revolution): $p = v_\parallel \cdot (2\pi/\omega_c) = 2\pi m v_\parallel/(|q|B)$.
+---
 
-This is how charged particles spiral along Earth's magnetic field lines into the polar atmosphere, producing auroras.
+## Circles
 
-### Mass spectrometer (the worked-example case)
+Put a charge $q$ in a uniform field $\vec{B} = B\hat{z}$, with initial velocity $\vec{v}_0$ entirely in the $xy$-plane (perpendicular to $\vec{B}$). The magnetic force is always in the $xy$-plane, perpendicular to $\vec{v}$, and constant in magnitude since $|\vec{v}|$ is constant. That is precisely the condition for uniform circular motion.
 
-Apply the formulas to the chapter opening. An ion of charge $+e$ accelerated through potential difference $V$ has KE $eV$ and speed $v = \sqrt{2eV/m}$. In a uniform $\vec{B}$ perpendicular to motion, it traces a circle of radius:
+Equate the magnetic force to the centripetal force needed for a circle of radius $r$:
+
+$$|q|vB = \frac{mv^2}{r}$$
+
+Solve for the **cyclotron radius**:
+
+$$\boxed{\;r = \frac{mv}{|q|B}\;}$$
+
+The period of one complete orbit — the time to go around the circle once:
+
+$$T = \frac{2\pi r}{v} = \frac{2\pi m}{|q|B}$$
+
+And the **cyclotron frequency**:
+
+$$\boxed{\;\omega_c = \frac{|q|B}{m}\;}$$
+
+Look at what is not in that last formula: $v$ is absent. The cyclotron frequency depends on the charge-to-mass ratio and the field strength, but not on how fast the particle is moving. A fast particle traces a bigger circle; a slow particle traces a smaller circle; but they both complete one revolution in the same time. This is the fundamental fact that makes the cyclotron possible — and it is not obvious from the original force law. It emerges from the combination of circular geometry and the linear dependence of force on speed.
+
+Ernest Lawrence figured this out in 1930 and built the first cyclotron. You accelerate a particle across a gap between two D-shaped electrodes at the cyclotron frequency; each time the particle crosses the gap it gains energy and spirals outward, but the frequency needed to synchronize the kicks stays constant. You can keep adding energy indefinitely (up to the relativistic corrections that set the practical upper limit on cyclotrons).
+
+<!-- → [IMAGE: cyclotron schematic — two D-shaped electrodes (dees) with a particle spiraling outward from center, each half-circle labeled with increasing radius, the accelerating gap labeled with the alternating voltage — showing how the constant cyclotron frequency allows repeated kicks at every crossing] -->
+
+---
+
+## Helices
+
+What if the initial velocity has a component along $\vec{B}$, not just perpendicular to it?
+
+Decompose: $\vec{v} = \vec{v}_\parallel + \vec{v}_\perp$ where $\vec{v}_\parallel$ is along $\vec{B}$ and $\vec{v}_\perp$ is perpendicular to it. The magnetic force on $\vec{v}_\parallel$ is $q\vec{v}_\parallel \times \vec{B} = 0$ — no force. The magnetic force on $\vec{v}_\perp$ produces circular motion as before, with radius $r = mv_\perp/(|q|B)$.
+
+The result: the particle spirals. The perpendicular component drives it around a circle; the parallel component carries it straight along the field line simultaneously. The combined motion is a **helix** — a corkscrew winding along $\vec{B}$.
+
+<!-- → [IMAGE: helical trajectory of a charged particle — the circular component shown in the plane perpendicular to B, the forward motion along B, and the resulting corkscrew path with pitch labeled as p = v_parallel × T_c — to make the superposition of circular + linear motion geometric] -->
+
+This is how charged particles from the sun get funneled into Earth's polar atmosphere. A solar-wind proton entering the magnetosphere has some velocity component along Earth's field lines and some perpendicular to them. The perpendicular component causes it to spiral; the parallel component carries it toward the poles, where the field lines converge and eventually dip into the atmosphere. The radius of the spiral is about 140 km (we'll compute this in a moment). The proton spirals down a field line into the upper atmosphere, where it collides with atmospheric molecules and produces the aurora.
+
+---
+
+## The mass spectrometer
+
+The circular-orbit formula contains mass. Every other quantity — charge, speed, field — can be set or measured independently. That means you can *measure mass* by measuring radius.
+
+Ionize a sample: each molecule acquires charge $+e$. Accelerate the ions through a potential difference $V$: the kinetic energy is $\frac{1}{2}mv^2 = eV$, so $v = \sqrt{2eV/m}$. Inject them perpendicular to a uniform field $\vec{B}$. They follow circles of radius:
 
 $$r = \frac{mv}{eB} = \frac{1}{B}\sqrt{\frac{2mV}{e}}$$
 
-Two ions with the same charge and accelerating voltage but different masses: $r \propto \sqrt{m}$. A 0.1% mass difference produces a 0.05% radius difference; a detector at the right distance separates them spatially. Modern mass spectrometers refine the geometry but the core physics is this.
+Two isotopes of the same element have the same charge but different masses. They land at different positions on a detector strip. From the landing position, read the mass; from the count rate, read the abundance.
 
-### The Hall effect
+<!-- → [IMAGE: mass spectrometer schematic — ions accelerated through voltage V, entering a uniform B field region, following circular arcs of different radii for different masses, landing at separated spots on a detector strip — with radius formula labeled] -->
 
-A current-carrying conductor — a thin strip, current $I$ flowing in $+\hat{x}$ — placed in a transverse magnetic field $\vec{B} = B\hat{z}$. The charge carriers (typically electrons in metals) feel a magnetic force perpendicular to their drift velocity. They deflect to one edge of the strip, building up surface charge there. The surface charge produces a transverse electric field that opposes the deflection; in steady state, the electric and magnetic forces balance.
+This is the whole machine, on one equation. Modern instruments refine the geometry — time-of-flight analyzers, quadrupole filters, orbitrap mass analyzers — but every version is ultimately doing what this formula does: using $\vec{F} = q\vec{v} \times \vec{B}$ in a controlled geometry to separate charges by $m/q$.
 
-**The transverse Hall voltage** that develops across the strip's width $w$:
-$$V_H = \frac{I B}{n q t}$$
+---
 
-where $n$ is the carrier density, $q$ is the carrier charge (with sign), and $t$ is the strip thickness.
+## Worked numbers: a proton in Earth's field
 
-The Hall voltage's *sign* tells you the sign of the carriers. In most metals it's negative (electrons), as expected. But in some materials — copper iodide, semiconductors with hole conduction — it's positive, revealing carriers that move as if they had positive charge. This was first explained when band theory (Chapter 12 preview) showed that nearly-full bands can host current carriers that act like positive charges (holes).
+A solar-wind proton enters Earth's magnetosphere with $v = 4 \times 10^5$ m/s perpendicular to $\vec{B}$. At the relevant altitude, $B \approx 3 \times 10^{-5}$ T.
 
-Discovery: Edwin Hall, 1879. The quantum-Hall effect, discovered by von Klitzing in 1980 (Nobel 1985), is the deeply nontrivial generalization in 2D electron systems at high fields. Its precision is now used to define the SI ohm.
+**Cyclotron radius:**
+$$r = \frac{mv}{|q|B} = \frac{(1.67 \times 10^{-27})(4 \times 10^5)}{(1.6 \times 10^{-19})(3 \times 10^{-5})} \approx 1.4 \times 10^5 \text{ m} = 140 \text{ km}$$
 
-### Force on a current-carrying conductor
+**Cyclotron period:**
+$$T = \frac{2\pi m}{|q|B} = \frac{2\pi (1.67 \times 10^{-27})}{(1.6 \times 10^{-19})(3 \times 10^{-5})} \approx 2.2 \text{ ms}$$
 
-A current is moving charges. A wire of length $L$, carrying current $I$ in direction $\hat{L}$, in a magnetic field $\vec{B}$, feels force:
+One revolution in about two milliseconds. And $r = 140$ km is small compared to Earth's diameter ($\sim 12{,}000$ km), which means protons can't cross field lines easily — they spiral along them. This is what confines the Van Allen belt particles and is what shapes the aurora into ovals around the magnetic poles rather than a random scatter.
 
-$$\vec{F} = I \vec{L} \times \vec{B}$$
+For comparison: an ultra-high-energy cosmic-ray proton at $10^{20}$ eV has $\gamma mv/(|q|B) \sim$ a few megaparsecs in the galactic field. It barely curves on the scale of the galaxy. That's why we can't trace ultra-high-energy cosmic rays back to their sources with magnetic deflection: they travel almost straight across the universe before arriving at our detectors.
 
-For a more general wire shape, integrate along the wire: $\vec{F} = \int I \, d\vec{\ell} \times \vec{B}$.
+---
 
-This is the engine that drives electric motors. Run a current through a coil placed in a magnetic field; the resulting force on the wires pushes the coil to rotate. Every electric motor in your house — vacuum cleaner, refrigerator compressor, electric car drive — is this formula at work.
+## Force on a current-carrying wire
 
-### Torque on a current loop
+Current is moving charges. If moving charges feel a magnetic force, wires carrying current feel a magnetic force.
 
-A rectangular current loop of area $A$ in a uniform field $\vec{B}$ feels no net force (the forces on opposite sides cancel) but a net **torque**:
+A wire of length $L$ carrying current $I$ in direction $\hat{L}$, placed in a field $\vec{B}$:
+
+$$\vec{F} = I\vec{L} \times \vec{B}$$
+
+For a more general wire shape, integrate: $\vec{F} = \int I\,d\vec{\ell} \times \vec{B}$.
+
+This is the force law for the electric motor. Wind a coil of wire, run a current through it, place it in a magnetic field from a permanent magnet — the coil experiences a force on each of its sides, and the geometry is arranged so those forces produce a torque. The coil rotates. A commutator switches the current direction at the right moment to keep the torque always in the same sense. Every electric motor on the planet — from the servo in your car's power window to the megawatt drive in an electric locomotive — is this equation at work.
+
+<!-- → [IMAGE: rectangular current loop in a uniform magnetic field — forces on the two current-carrying sides shown as arrows (one up, one down, net torque) — the magnetic moment vector m shown normal to the loop, the field B shown horizontal, and the torque vector τ = m × B shown — to make the motor principle visible] -->
+
+---
+
+## Torque on a current loop
+
+A rectangular loop of area $A$, carrying current $I$, in a uniform field $\vec{B}$. The forces on opposite sides are equal and opposite — no net force on the loop as a whole. But they act at different locations, producing a net torque.
+
+Define the **magnetic dipole moment**:
+
+$$\vec{m} = NIA\hat{n}$$
+
+where $N$ is the number of turns, $A$ is the enclosed area, and $\hat{n}$ is the normal to the loop (direction by right-hand rule from the current circulation). The torque is:
 
 $$\vec{\tau} = \vec{m} \times \vec{B}$$
 
-where the **magnetic dipole moment** of the loop is
+The loop rotates to align $\vec{m}$ with $\vec{B}$. The potential energy is $U = -\vec{m} \cdot \vec{B}$, minimum when $\vec{m}$ and $\vec{B}$ point the same way.
 
-$$\vec{m} = NIA \hat{n}$$
+This is the analog of the electric dipole in Chapter 2. An electric dipole $\vec{p}$ in field $\vec{E}$ experiences torque $\vec{p} \times \vec{E}$ and potential energy $-\vec{p} \cdot \vec{E}$. The magnetic case is identical with $\vec{p} \to \vec{m}$ and $\vec{E} \to \vec{B}$. The parallel runs deep — both are dipole moments interacting with their respective fields.
 
-with $N$ the number of turns, $I$ the current, $A$ the area enclosed, and $\hat{n}$ the unit normal to the loop (direction set by right-hand rule from the current circulation).
-
-The loop rotates to align $\vec{m}$ with $\vec{B}$. This is the working principle of every analog ammeter, every electric motor (with commutator switching to keep the torque always in one direction), and every spinning piece of an MRI scanner (atomic magnetic moments precessing in the strong field).
-
-Potential energy of the loop in the field: $U = -\vec{m} \cdot \vec{B}$. Minimum when $\vec{m}$ aligns with $\vec{B}$.
+The same torque formula works for atomic-scale magnetic moments: a spinning electron or a nucleus with magnetic moment $\vec{m}$ in an external field $\vec{B}$ precesses under this torque. That precession — the Larmor precession — is the phenomenon MRI machines detect. Apply a strong static $\vec{B}$; the atomic moments precess at the Larmor frequency $\omega = |q|B/m$ (same cyclotron formula); hit them with a radiofrequency pulse at that frequency; they absorb and then reemit energy at a frequency that depends on the local chemical environment. From those frequencies, image the tissue.
 
 ---
 
-## Worked example: a proton in Earth's magnetic field
+## The Hall effect
 
-A solar-wind proton enters Earth's magnetosphere with $v = 4 \times 10^5$ m/s perpendicular to $\vec{B}$. Earth's field at the relevant altitude: $B \approx 3 \times 10^{-5}$ T. Find the cyclotron radius and period.
+Here is a subtler consequence of the magnetic force on moving charges — one that actually tells you something the force law alone cannot: the *sign* of the charge carriers.
 
-Proton mass $m_p = 1.67 \times 10^{-27}$ kg; charge $+e = 1.6 \times 10^{-19}$ C.
+A thin conducting strip carries current $I$ in the $+\hat{x}$ direction, and a magnetic field $\vec{B} = B\hat{z}$ is applied perpendicular to the strip. Whatever the charge carriers are, they are moving in the $+\hat{x}$ direction (if positive) or $-\hat{x}$ direction (if negative — electrons drifting opposite to conventional current).
 
-**Radius:**
-$$r = \frac{mv}{|q|B} = \frac{(1.67 \times 10^{-27})(4 \times 10^5)}{(1.6 \times 10^{-19})(3 \times 10^{-5})} \approx 1.4 \times 10^5 \text{ m} = 140 \text{ km}$$
+The magnetic force on positive carriers moving in $+\hat{x}$: $q\vec{v} \times \vec{B} = q v \hat{x} \times B\hat{z} = -qvB\hat{y}$ — toward the $-y$ edge.
 
-So a solar-wind proton circles in Earth's field on the scale of 100s of kilometers.
+The magnetic force on negative carriers moving in $-\hat{x}$: $(-e)(-v)\hat{x} \times B\hat{z} = evB(-\hat{y})$ — also toward the $-y$ edge.
 
-**Period:**
-$$T = \frac{2\pi m}{|q| B} = \frac{2\pi (1.67 \times 10^{-27})}{(1.6 \times 10^{-19})(3 \times 10^{-5})} \approx 2.2 \text{ ms}$$
+Wait. Both positive carriers going right and negative carriers going left accumulate on the same edge? No — I made a sign error. Let me redo it carefully.
 
-One revolution in a couple of milliseconds.
+Positive carriers moving in $+\hat{x}$: force is $qvB(\hat{x} \times \hat{z}) = qvB(-\hat{y})$ — toward $-y$.
+Negative carriers (electrons) moving in $-\hat{x}$: force is $(-e)(-v)B(\hat{x} \times \hat{z}) = (-e)(-v)B(-\hat{y}) = -evB\hat{y}$ — toward $-y$ again.
 
-**The lesson.** Same formulas as the mass spectrometer; vastly different scales. The cyclotron radius and frequency tell you whether a charged particle's motion can be approximated as straight-line (if $r \gg$ system size) or as tightly curved (if $r \ll$ system size). For solar-wind protons in Earth's field: $r = 140$ km is small compared to Earth's diameter ($\sim 12{,}000$ km), so the protons follow field lines rather than crossing them — leading to the auroral pattern at the magnetic poles where field lines dip into the atmosphere.
+So both push carriers toward the same edge, building up the same sign of surface charge there — *except* the surface charges have opposite signs because the carriers are opposite. In one case, positive charge accumulates on the $-y$ edge. In the other, negative charge accumulates there. The transverse voltage has opposite sign.
 
-**The limit.** This is non-relativistic. For very high-energy cosmic-ray protons ($v$ approaching $c$), the cyclotron radius is $\gamma m v/(|q|B)$ where $\gamma$ is the Lorentz factor — the trajectory bends less. For ultra-high-energy cosmic rays at $10^{20}$ eV, the cyclotron radius exceeds the size of our galaxy, so they aren't confined.
+This is the Hall effect. Edwin Hall discovered it in 1879. The transverse **Hall voltage** across the strip's width $w$ in steady state:
+
+$$V_H = \frac{IB}{nqt}$$
+
+where $t$ is the strip thickness and $q$ carries a sign. In most metals, $q = -e$ and $V_H$ is negative. In some semiconductors and a few exotic metals (copper iodide, certain hole-conducting materials), $V_H$ is positive — meaning the current is carried by positive quasi-particles called **holes**: vacancies in a nearly-full electron band that behave as positive charges. The Hall effect was, for years, the only way to determine the sign of carriers in a material, and it showed that classical Drude theory was incomplete.
+
+The **quantum Hall effect** (von Klitzing, 1980; Nobel 1985) is a different phenomenon: in two-dimensional electron systems at strong fields and low temperatures, the Hall resistance is quantized in exact integer or fractional multiples of $h/e^2 = 25{,}812.807\ldots$ Ω. The integer QHE is now used to define the standard resistance ohm. The fractional QHE reveals strongly correlated quantum states of matter that are active research in 2026.
+
+<!-- → [IMAGE: Hall effect setup diagram — current-carrying strip with B perpendicular (into page), electron drift direction labeled, force deflecting electrons to one edge, accumulated negative charge on that edge, and the resulting Hall voltage V_H shown across the width — then a second panel showing the same setup with holes as carriers, force deflecting them to the same edge but producing positive surface charge and opposite-sign V_H] -->
 
 ---
 
-## Common misconceptions
+## What the Lorentz force is not telling you
 
-**"Magnetic forces do work on moving charges."** They don't. $\vec{F} \perp \vec{v}$ always implies $W = 0$. The kinetic energy of a charge in a magnetic field is conserved. (If you observe acceleration, there's an electric field or another force at work — not the magnetic force alone.)
+There is something missing from this whole chapter that I should name.
 
-**"A current-carrying wire feels a force *because it's charged*."** It's not net-charged. The wire is electrically neutral; positive ions and electron sea cancel. The force is on the *moving charges* (the electrons), which then transfer momentum to the lattice through scattering. The macroscopic wire experiences the force.
+We have asked what a magnetic field *does* to charges. We have not asked where magnetic fields *come from*. That is Chapter 9: the Biot-Savart law, Ampère's law, the magnetic field produced by a straight wire and a solenoid and a magnetic dipole. The structure of that chapter mirrors Chapter 2 and 3 — there, charges are the sources of $\vec{E}$; here, *currents* are the sources of $\vec{B}$.
 
-**"Magnetic field lines start on north poles and end on south poles."** They form *closed loops*. The north and south poles are where the field lines emerge from / enter the material; the lines continue through the material's interior connecting them. There are no magnetic monopoles in the source equation (Chapter 9).
+There is also a deeper question: why does the magnetic force have the form $q\vec{v} \times \vec{B}$ at all? The answer, fully worked out, is special relativity. A charge moving through a magnetic field in one reference frame is, in a suitably boosted frame, a charge in a transformed electric field. Magnetism is what electric forces look like to a moving observer. Coulomb's law plus special relativity *implies* the magnetic force law. We will see the beginning of this in Chapter 11, when Maxwell's equations are shown to be Lorentz-covariant — built so that they look the same in all inertial frames.
 
-**"The cyclotron frequency depends on the particle's speed."** It doesn't (non-relativistically). $\omega_c = |q|B/m$. Faster particles trace bigger circles in the same time. This is why a fixed-frequency electric field can accelerate particles continuously in a cyclotron.
+For now: the Lorentz force is exact in classical electrodynamics. It has been confirmed in cyclotrons, mass spectrometers, particle accelerators, Hall sensors, and electric motors. Every result in this chapter — circular orbits, mass separation, motor torques, Hall voltages — is a consequence of $\vec{F} = q\vec{v} \times \vec{B}$ applied to clean geometries.
 
-**"The Hall effect shows that current is positive in 'positive-Hall-coefficient' materials."** The current direction is the conventional positive-charge flow direction; it's a sign convention, not a physical fact. What the Hall effect tells you is the *sign of the actual charge carriers* — electrons in most metals (negative Hall coefficient), but holes in some semiconductors (positive Hall coefficient).
+<!-- → [INFOGRAPHIC: map of chapter applications — central node "F = qv × B" with five branches: (1) circular orbit → cyclotron radius/frequency → cyclotron and MRI; (2) helical orbit → spiral along field lines → Van Allen belts and aurora; (3) mass separation → r ∝ √m → mass spectrometer; (4) force on wire → I L × B → electric motor; (5) carrier deflection → Hall voltage sign → sign of charge carriers — shows that one force law spans the whole chapter] -->
+
+---
+
+## One thing still genuinely puzzling
+
+If magnetic forces do no work, how do electric motors do work?
+
+The resolution is careful but correct. In a motor, current-carrying wires move through a magnetic field. The magnetic force on the current-carrying electrons is perpendicular to their total velocity — but their total velocity has two components: the drift velocity along the wire, and the macroscopic velocity of the wire itself as it moves. The magnetic force on the drift component does no work. But the magnetic force on the macroscopic velocity component has a component along the drift direction — which is exactly what opposes the current and is the "back-EMF" of the motor. The actual work comes from the electrical source driving the current against this back-EMF; the magnetic force mediates the transfer but does not supply the energy.
+
+More concisely: it's the electric field inside the wire — maintained by the source — that does work on the electrons. The magnetic force organizes the geometry; the electric source provides the energy. This is a subtle point that Feynman discusses explicitly in the Lectures, and it is one of the places where the macroscopic description ("force on the wire does work") and the microscopic description ("magnetic force on individual electrons does no work") need to be reconciled carefully.
 
 ---
 
 ## Exercises
 
-**Warm-up (Apply).** A proton enters a 0.5 T field at $10^6$ m/s perpendicular to $\vec{B}$. Compute the cyclotron radius and period.
+**Warm-up.** A proton enters a uniform magnetic field of $B = 0.5$ T with speed $v = 10^6$ m/s perpendicular to $\vec{B}$. Compute (a) the cyclotron radius, (b) the cyclotron period, (c) the cyclotron frequency. Use $m_p = 1.67 \times 10^{-27}$ kg and $e = 1.6 \times 10^{-19}$ C. Then repeat for an alpha particle ($m = 4m_p$, $q = +2e$) at the same speed. Which has the larger radius? Which has the larger period? *Tests: cyclotron radius and frequency formulas, $q/m$ ratio dependence.*
 
-**Apply.** Mass spectrometer geometry: ions of charge $+e$ accelerated through $V = 1000$ V enter a magnetic field $B = 0.2$ T perpendicular to motion. Find the radius for (a) singly-ionized $^{12}$C ($m = 12 \cdot 1.66 \times 10^{-27}$ kg = $2 \times 10^{-26}$ kg), (b) singly-ionized $^{13}$C. By how much do the radii differ?
+**Warm-up.** A charge $q = -3$ µC moves with velocity $\vec{v} = 4 \times 10^5\,\hat{x}$ m/s through a magnetic field $\vec{B} = 0.2\,\hat{z}$ T. (a) Compute $\vec{F} = q\vec{v} \times \vec{B}$, including sign and direction. (b) A second identical charge moves with $\vec{v} = 4 \times 10^5\,\hat{z}$ m/s (parallel to $\vec{B}$). What is the force on it? (c) Explain in one sentence why a stationary charge in a magnetic field feels no force. *Tests: cross-product mechanics, parallel-field case, conceptual foundation.*
 
-**Apply.** A horizontal wire of length 1 m carries a current of 10 A through a uniform magnetic field of 0.5 T directed perpendicular to the wire. Find the force on the wire (magnitude and direction).
+**Warm-up.** Show algebraically that the magnetic force does no work: starting from $P = \vec{F} \cdot \vec{v}$ and $\vec{F} = q\vec{v} \times \vec{B}$, prove $P = 0$. State which vector identity you use and why it applies here. *Tests: work calculation, cross-product perpendicularity, clean one-step proof.*
 
-**Apply + Analyze.** Two ions, with the same kinetic energy but different masses, enter a uniform magnetic field perpendicular to motion. Show that the ratio of their cyclotron radii is $r_1/r_2 = \sqrt{m_1/m_2}$. Why doesn't the heavier one travel slower with a smaller radius?
+**Application.** Mass spectrometer: singly-ionized $^{12}$C and $^{13}$C ions (masses $m_{12} = 1.993 \times 10^{-26}$ kg, $m_{13} = 2.159 \times 10^{-26}$ kg) are each accelerated through $V = 1{,}000$ V and injected into a uniform field $B = 0.2$ T perpendicular to their motion. (a) Find the speed of each ion after acceleration. (b) Find the cyclotron radius of each. (c) If both ions enter at the same point, by how many millimeters are their landing positions separated on a detector 2 radii away? *Tests: KE from acceleration, radius formula, precision mass measurement.*
 
-**Apply (Hall).** A copper strip carries 10 A current in the $+\hat{x}$ direction. The strip is 1 mm thick, 1 cm wide. A 0.5 T field is applied in $+\hat{z}$. Calculate the Hall voltage. (Copper carrier density $n \approx 8.5 \times 10^{28}$ m$^{-3}$.)
+**Application.** A horizontal copper wire of length $L = 0.8$ m carries current $I = 12$ A in the $+\hat{x}$ direction. A uniform field $\vec{B} = 0.3\,\hat{z}$ T fills the region. (a) Find the magnetic force on the wire. (b) If the wire has linear mass density $\lambda = 0.05$ kg/m, at what current would the magnetic force exactly balance gravity (take $g = 9.8$ m/s²)? (c) Explain why this principle — magnetic levitation of a current-carrying wire — requires an external current source to maintain, and why it isn't free energy. *Tests: $\vec{F} = I\vec{L} \times \vec{B}$, force balance, energy bookkeeping.*
 
-**Challenge.** A square current loop of side $a$ and current $I$ in a uniform magnetic field $\vec{B}$ (perpendicular to the loop's normal) feels a torque that rotates it toward alignment. Show that the torque is $\tau = IAB$ where $A = a^2$. Find the equilibrium orientation. Find the maximum potential energy difference.
+**Application (Hall).** A copper strip carries $I = 10$ A in $+\hat{x}$. The strip is $t = 1$ mm thick and $w = 1$ cm wide. A field $\vec{B} = 0.5\,\hat{z}$ T is applied. Using copper carrier density $n = 8.5 \times 10^{28}$ m$^{-3}$: (a) compute the Hall voltage $V_H = IB/(nqt)$; (b) identify which edge ($+y$ or $-y$) accumulates negative charge, and explain using the force on the drifting electrons; (c) if the same measurement gave a *positive* Hall voltage, what would that imply about the charge carriers? *Tests: Hall voltage formula, sign reasoning, physical interpretation of anomalous Hall coefficient.*
+
+**Synthesis.** A rectangular current loop of sides $a = 4$ cm and $b = 6$ cm carries $I = 2$ A and has $N = 50$ turns. It sits in a uniform field $B = 0.3$ T with its normal initially perpendicular to $\vec{B}$ (maximum torque configuration). (a) Compute the magnetic dipole moment $|\vec{m}|$. (b) Compute the torque $|\vec{\tau}| = mB\sin\theta$ at $\theta = 90°$. (c) Compute the potential energy $U = -\vec{m} \cdot \vec{B}$ at $\theta = 90°$ and at $\theta = 0°$ (aligned). (d) How much work does the field do as the loop rotates from $\theta = 90°$ to $\theta = 0°$? *Tests: magnetic moment formula, torque, potential energy, work from energy difference.*
+
+**Synthesis.** Two particles with the same kinetic energy $K$ but different masses $m_1$ and $m_2$ enter a uniform magnetic field perpendicular to their motion. (a) Express the speed of each in terms of $K$ and $m$. (b) Show that the ratio of cyclotron radii is $r_1/r_2 = \sqrt{m_1/m_2}$. (c) Explain physically why the heavier particle has the *larger* radius, despite moving more slowly. (The answer involves both $r = mv/(qB)$ and the relationship between $K$, $m$, and $v$.) *Tests: energy-to-velocity conversion, ratio derivation, physical reasoning about the competing effects.*
+
+**Challenge.** A particle of charge $q$ and mass $m$ moves in crossed fields: $\vec{E} = E\hat{y}$ and $\vec{B} = B\hat{z}$, with initial velocity $\vec{v}_0 = 0$. (a) Starting from Newton's second law $m\dot{\vec{v}} = q(\vec{E} + \vec{v} \times \vec{B})$, write the coupled differential equations for $v_x(t)$ and $v_y(t)$. (b) Show that the solution describes **cycloidal motion**: the particle circles while drifting in the $+\hat{x}$ direction at the $E \times B$ drift velocity $v_d = E/B$. (c) Verify that the drift velocity $E/B$ is independent of $q$ and $m$ — all particles drift at the same speed regardless of their charge-to-mass ratio. (d) Explain physically why this mass-independence is not a coincidence. *Tests: coupled ODEs from Lorentz force, cycloidal solution, E×B drift, physical insight into universality of the drift.*
+
+<!-- → [CHART: cyclotron radius r vs. kinetic energy K for three particles (electron, proton, alpha) in B = 1 T — log-log plot showing r ∝ √(mK) with three parallel lines offset by √(m/q²) — student should see how same-energy particles of different masses separate in radius, directly connecting to mass spectrometer operation] -->
 
 ---
 
@@ -216,17 +279,4 @@ This is the lead-in to Chapter 9.
 
 ---
 
-## What would change my mind
-
-The Lorentz force law is exact in classical EM. It has been confirmed countless times in particle accelerators, mass spectrometers, cyclotrons, and every-day electric motors. A confirmed deviation at any scale where classical EM applies would require rewriting this chapter and Chapter 11. At relativistic speeds, the *formula* doesn't change (mass becomes $\gamma m$ in $r = mv/qB$); only the kinematic interpretation. At quantum scales, the Lorentz force emerges from the more fundamental QED interaction; its classical form remains correct in the appropriate limit.
-
-## Still puzzling
-
-- *No magnetic monopoles.* Chapter 9 will state this empirically. If a single magnetic monopole were ever detected, the magnetic force law would expand to include a "magnetic Coulomb" term, and the symmetry between $\vec{E}$ and $\vec{B}$ would become complete.
-- *Magnetic forces don't do work — but motors do work.* Resolved by noticing that motors involve currents (so the electrons in the wire are accelerated by the magnetic force, which then transfer momentum to the lattice through scattering — and the *electric field* of the source does work on the electrons). The macroscopic motor's work comes from the source, not directly from the magnetic force on the wire. Subtle but correct.
-- *Hall effect with anomalous signs.* Some materials have Hall coefficients with the "wrong" sign — explained only by band theory's holes. Quantum-Hall and anomalous-Hall effects are active research topics in condensed-matter physics.
-
----
-
 **Tags:** Lorentz force, magnetic field, tesla, cyclotron, mass spectrometer, Hall effect, magnetic dipole moment, torque
-
