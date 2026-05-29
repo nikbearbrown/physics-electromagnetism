@@ -1,0 +1,111 @@
+<!--
+  Photoelectric Effect — Where Classical EM Breaks Down
+  Book: Physics +1: Electromagnetism
+  Chapter: 12-capstone-unified-field
+  Figure: 04
+  Type: Statistical / quantitative
+  Generated: 2026-05-25
+  Source: pantry/12-capstone-unified-field-cajal.md
+-->
+<svg viewBox="0 0 700 460" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title">
+  <title id="fig-title">Photoelectric Effect — Classical EM Breaks Here</title>
+  <desc>Two-panel figure. Panel A: light incident on a metal surface; electrons emerge with maximum kinetic energy K_max if photon energy h f exceeds work function phi. Panel B: plot of K_max versus frequency. Below threshold no electrons; above threshold a straight line with slope h (Planck's constant) and y-intercept negative phi. Light intensity controls the number of electrons, not their energy. Einstein 1905: light arrives in quanta of energy h f.</desc>
+  <metadata>
+    <cajal:figure
+      xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Physics +1: Electromagnetism"
+      book-slug="physics-electromagnetism"
+      chapter="12-capstone-unified-field"
+      figure-number="04"
+      figure-title="Photoelectric Effect"
+      figure-slug="photoelectric"
+      figure-type="quantitative"
+      priority="Critical"
+      author="Humanitarians AI"
+      date-generated="2026-05-25"
+      source-file="pantry/12-capstone-unified-field-cajal.md"
+    />
+  </metadata>
+  <defs>
+    <marker id="arrowoch" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#C8860E"/>
+    </marker>
+    <marker id="arrowred" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#C8102E"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="700" height="460" fill="#FFFFFF"/>
+
+  <text x="32" y="36" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="14" fill="#2a1a0e">Photoelectric Effect — Where Classical EM Breaks</text>
+  <text x="32" y="56" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="11" fill="#545454">Below threshold: no electrons regardless of intensity.  Above: K scales with f, not brightness.</text>
+
+  <line x1="280" y1="80" x2="280" y2="380" stroke="#2a1a0e" stroke-width="0.5"/>
+
+  <!-- Panel A: Schematic -->
+  <text x="150" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#2a1a0e" letter-spacing="0.08em">(A) THE EXPERIMENT</text>
+
+  <!-- Incoming light arrows -->
+  <g stroke="#C8860E" stroke-width="2" fill="none">
+    <line x1="60" y1="180" x2="120" y2="220" marker-end="url(#arrowoch)"/>
+    <line x1="60" y1="220" x2="120" y2="240" marker-end="url(#arrowoch)"/>
+    <line x1="60" y1="260" x2="120" y2="260" marker-end="url(#arrowoch)"/>
+  </g>
+  <text x="60" y="170" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#C8860E">light · hf</text>
+
+  <!-- Metal surface -->
+  <rect x="130" y="200" width="100" height="100" fill="#56B4E9" opacity="0.4" stroke="#2a1a0e" stroke-width="1.5"/>
+  <text x="180" y="254" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#2a1a0e">metal</text>
+  <text x="180" y="270" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">work function φ</text>
+
+  <!-- Emitted electrons -->
+  <g fill="#C8102E">
+    <circle cx="240" cy="200" r="3"/>
+    <circle cx="244" cy="220" r="3"/>
+    <circle cx="242" cy="240" r="3"/>
+  </g>
+  <line x1="248" y1="200" x2="290" y2="180" stroke="#C8102E" stroke-width="1" marker-end="url(#arrowred)"/>
+  <line x1="250" y1="220" x2="292" y2="208" stroke="#C8102E" stroke-width="1" marker-end="url(#arrowred)"/>
+  <line x1="248" y1="240" x2="290" y2="252" stroke="#C8102E" stroke-width="1" marker-end="url(#arrowred)"/>
+  <text x="260" y="304" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#C8102E">e⁻ with K_max = hf − φ</text>
+
+  <!-- Panel B: K_max vs f -->
+  <text x="490" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#2a1a0e" letter-spacing="0.08em">(B) K_max vs FREQUENCY</text>
+
+  <!-- Axes -->
+  <line x1="330" y1="320" x2="640" y2="320" stroke="#2a1a0e" stroke-width="1"/>
+  <line x1="330" y1="120" x2="330" y2="320" stroke="#2a1a0e" stroke-width="1"/>
+
+  <text x="324" y="124" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#2a1a0e">K_max</text>
+  <text x="324" y="324" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">0</text>
+  <text x="640" y="338" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">f</text>
+
+  <!-- −φ marker (below x-axis at f=0) -->
+  <circle cx="330" cy="360" r="3" fill="#3AAE3A"/>
+  <text x="324" y="364" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#3AAE3A">−φ</text>
+
+  <!-- Flat at zero before threshold -->
+  <line x1="330" y1="320" x2="410" y2="320" stroke="#3AAE3A" stroke-width="2.5"/>
+
+  <!-- Threshold frequency marker -->
+  <line x1="410" y1="320" x2="410" y2="330" stroke="#C8102E" stroke-width="0.75"/>
+  <text x="410" y="346" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">f_th</text>
+
+  <!-- Linear K_max = hf - φ (above threshold) -->
+  <line x1="410" y1="320" x2="630" y2="140" stroke="#3AAE3A" stroke-width="2.5"/>
+
+  <!-- Dashed extension showing y-intercept = -φ (below x axis) -->
+  <line x1="330" y1="360" x2="410" y2="320" stroke="#3AAE3A" stroke-width="1" stroke-dasharray="3 2"/>
+
+  <!-- Slope annotation -->
+  <text x="540" y="216" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#3AAE3A">slope = h</text>
+  <text x="540" y="232" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">(Planck's constant)</text>
+
+  <!-- Equation -->
+  <text x="490" y="160" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#2a1a0e">K_max = h f − φ</text>
+
+  <!-- Caption -->
+  <rect x="60" y="394" width="580" height="50" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.25"/>
+  <text x="350" y="414" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="12" fill="#2a1a0e">Intensity controls the *number* of electrons; frequency controls their *energy*.</text>
+  <text x="350" y="432" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#C8102E">Classical EM predicted the opposite. Einstein 1905: light arrives in quanta of hf.</text>
+</svg>

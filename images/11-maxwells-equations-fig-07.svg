@@ -1,0 +1,101 @@
+<!--
+  Radiation Pressure and Solar Sails
+  Book: Physics +1: Electromagnetism
+  Chapter: 11-maxwells-equations
+  Figure: 07
+  Type: Annotated example
+  Generated: 2026-05-25
+  Source: pantry/11-maxwells-equations-cajal.md
+-->
+<svg viewBox="0 0 700 460" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title">
+  <title id="fig-title">Radiation Pressure — Light Pushes Solar Sails</title>
+  <desc>A solar-sail spacecraft in space with the sail oriented perpendicular to incoming sunlight. EM waves impinge on the sail and reflect back. Force per area equals 2 I over c for a perfect reflector. Solar intensity at Earth is approximately 1370 watts per square meter, giving radiation pressure of about 9 micro-newtons per square meter for an absorber, doubled for a reflector. JAXA's IKAROS in 2010 was the first interplanetary solar-sail demonstration.</desc>
+  <metadata>
+    <cajal:figure
+      xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Physics +1: Electromagnetism"
+      book-slug="physics-electromagnetism"
+      chapter="11-maxwells-equations"
+      figure-number="07"
+      figure-title="Radiation Pressure"
+      figure-slug="radiation-pressure"
+      figure-type="annotated-example"
+      priority="Important"
+      author="Humanitarians AI"
+      date-generated="2026-05-25"
+      source-file="pantry/11-maxwells-equations-cajal.md"
+    />
+  </metadata>
+  <defs>
+    <marker id="arrowoch" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#C8860E"/>
+    </marker>
+    <marker id="arrowred" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#C8102E"/>
+    </marker>
+    <marker id="arrowpurp" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#7B61A8"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="700" height="460" fill="#FFFFFF"/>
+
+  <text x="32" y="36" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="14" fill="#2a1a0e">Radiation Pressure — Light Carries Momentum</text>
+  <text x="32" y="56" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="11" fill="#545454">Reflect a square meter of sunlight → push back with about 18 micronewtons. Constant. Free.</text>
+
+  <!-- Sun symbol (left) -->
+  <circle cx="80" cy="220" r="32" fill="#C8860E" opacity="0.8" stroke="#2a1a0e" stroke-width="1"/>
+  <g stroke="#C8860E" stroke-width="2">
+    <line x1="80" y1="180" x2="80" y2="160"/>
+    <line x1="80" y1="260" x2="80" y2="280"/>
+    <line x1="40" y1="220" x2="20" y2="220"/>
+    <line x1="120" y1="220" x2="140" y2="220"/>
+  </g>
+  <text x="80" y="306" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8860E">Sun · I ≈ 1370 W/m²</text>
+
+  <!-- Incoming light rays (orange) -->
+  <g stroke="#C8860E" stroke-width="1.5" fill="none">
+    <line x1="120" y1="200" x2="380" y2="200" marker-end="url(#arrowoch)"/>
+    <line x1="120" y1="220" x2="380" y2="220" marker-end="url(#arrowoch)"/>
+    <line x1="120" y1="240" x2="380" y2="240" marker-end="url(#arrowoch)"/>
+  </g>
+  <text x="240" y="184" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Converter New', monospace" font-size="9" fill="#C8860E">incoming photons</text>
+
+  <!-- Solar sail (vertical reflective surface) -->
+  <rect x="400" y="140" width="8" height="160" fill="#56B4E9" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="404" y="118" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#56B4E9">sail (reflector)</text>
+
+  <!-- Reflected rays (purple, going back) -->
+  <g stroke="#7B61A8" stroke-width="1.5" fill="none">
+    <line x1="398" y1="180" x2="220" y2="180" marker-end="url(#arrowpurp)"/>
+    <line x1="398" y1="220" x2="220" y2="220" marker-end="url(#arrowpurp)"/>
+    <line x1="398" y1="260" x2="220" y2="260" marker-end="url(#arrowpurp)"/>
+  </g>
+  <text x="280" y="276" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#7B61A8">reflected photons</text>
+
+  <!-- Spacecraft body (rectangle behind sail) -->
+  <rect x="420" y="200" width="60" height="40" fill="#F5F5F5" stroke="#2a1a0e" stroke-width="1.25"/>
+  <text x="450" y="224" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#2a1a0e">probe</text>
+
+  <!-- Force on sail (large red arrow pushing right) -->
+  <line x1="490" y1="220" x2="570" y2="220" stroke="#C8102E" stroke-width="3" marker-end="url(#arrowred)"/>
+  <text x="530" y="208" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#C8102E">F⃗ = 2I A / c</text>
+  <text x="530" y="240" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">≈ 18 µN per m²</text>
+
+  <!-- Formula box -->
+  <rect x="60" y="334" width="340" height="60" fill="#F5F5F5" stroke="#C8102E" stroke-width="1"/>
+  <text x="230" y="354" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#C8102E" letter-spacing="0.06em">RADIATION PRESSURE</text>
+  <line x1="76" y1="362" x2="384" y2="362" stroke="#C8102E" stroke-width="0.5"/>
+  <text x="230" y="380" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#2a1a0e">P_abs = I/c       P_refl = 2I/c</text>
+
+  <!-- IKAROS callout -->
+  <rect x="420" y="334" width="220" height="60" fill="#F5F5F5" stroke="#56B4E9" stroke-width="1"/>
+  <text x="530" y="352" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#56B4E9" letter-spacing="0.06em">PROOF — IKAROS</text>
+  <text x="530" y="370" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#2a1a0e">JAXA, 2010 · 196 m² sail</text>
+  <text x="530" y="386" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#2a1a0e">first interplanetary solar sail</text>
+
+  <!-- Caption -->
+  <rect x="60" y="404" width="580" height="40" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.25"/>
+  <text x="350" y="424" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="12" fill="#2a1a0e">A small force, but free and constant — solar sails ride sunlight between planets.</text>
+  <text x="350" y="438" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">Maxwell predicted radiation pressure; Lebedev measured it (1899); IKAROS rode it.</text>
+</svg>

@@ -1,0 +1,116 @@
+<!--
+  Parallel Wires — Same Direction Attract, Opposite Direction Repel
+  Book: Physics +1: Electromagnetism
+  Chapter: 09-sources-magnetic-fields
+  Figure: 04
+  Type: Mechanism cross-section
+  Generated: 2026-05-25
+  Source: pantry/09-sources-magnetic-fields-cajal.md
+-->
+<svg viewBox="0 0 700 460" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title">
+  <title id="fig-title">Parallel Wires — Same Direction Attract, Opposite Repel</title>
+  <desc>Two side-by-side panels of parallel wires viewed in cross-section. Panel A: both currents into the page. Field lines from each wire encircle it; between the wires the fields oppose; force arrows point toward each other — attraction. Panel B: one current in, one out. Between the wires the fields add and the force arrows point apart — repulsion. Formula: F over L equals mu zero I one I two over two pi d.</desc>
+  <metadata>
+    <cajal:figure
+      xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Physics +1: Electromagnetism"
+      book-slug="physics-electromagnetism"
+      chapter="09-sources-magnetic-fields"
+      figure-number="04"
+      figure-title="Parallel Wires Attract or Repel"
+      figure-slug="parallel-wires"
+      figure-type="mechanism"
+      priority="Important"
+      author="Humanitarians AI"
+      date-generated="2026-05-25"
+      source-file="pantry/09-sources-magnetic-fields-cajal.md"
+    />
+  </metadata>
+  <defs>
+    <marker id="arrowred" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#C8102E"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="700" height="460" fill="#FFFFFF"/>
+
+  <text x="32" y="36" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="14" fill="#2a1a0e">Parallel Wires — Attract or Repel by Current Direction</text>
+  <text x="32" y="56" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="11" fill="#545454">Each wire feels the other's B field through F⃗ = IL⃗ × B⃗.</text>
+
+  <line x1="350" y1="80" x2="350" y2="370" stroke="#2a1a0e" stroke-width="0.5"/>
+
+  <!-- Panel A: same direction (both into page) -->
+  <text x="180" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#C8102E" letter-spacing="0.08em">(A) SAME DIRECTION — ATTRACT</text>
+
+  <!-- Wire 1 (×) -->
+  <circle cx="110" cy="220" r="10" fill="none" stroke="#56B4E9" stroke-width="1.5"/>
+  <line x1="103" y1="213" x2="117" y2="227" stroke="#56B4E9" stroke-width="1.5"/>
+  <line x1="117" y1="213" x2="103" y2="227" stroke="#56B4E9" stroke-width="1.5"/>
+  <text x="110" y="252" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#56B4E9">I₁ in</text>
+
+  <!-- Wire 2 (×) -->
+  <circle cx="250" cy="220" r="10" fill="none" stroke="#56B4E9" stroke-width="1.5"/>
+  <line x1="243" y1="213" x2="257" y2="227" stroke="#56B4E9" stroke-width="1.5"/>
+  <line x1="257" y1="213" x2="243" y2="227" stroke="#56B4E9" stroke-width="1.5"/>
+  <text x="250" y="252" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#56B4E9">I₂ in</text>
+
+  <!-- Field lines around each wire (clockwise for current into page, right-hand rule) -->
+  <g fill="none" stroke="#7B61A8" stroke-width="1">
+    <circle cx="110" cy="220" r="26"/>
+    <circle cx="250" cy="220" r="26"/>
+  </g>
+
+  <!-- Force arrows (each wire pulled toward the other) -->
+  <line x1="124" y1="220" x2="170" y2="220" stroke="#C8102E" stroke-width="2" marker-end="url(#arrowred)"/>
+  <line x1="236" y1="220" x2="190" y2="220" stroke="#C8102E" stroke-width="2" marker-end="url(#arrowred)"/>
+
+  <!-- d distance -->
+  <line x1="110" y1="178" x2="250" y2="178" stroke="#545454" stroke-width="0.5"/>
+  <line x1="110" y1="174" x2="110" y2="182" stroke="#545454" stroke-width="0.5"/>
+  <line x1="250" y1="174" x2="250" y2="182" stroke="#545454" stroke-width="0.5"/>
+  <text x="180" y="172" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">d</text>
+
+  <text x="180" y="300" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="12" fill="#C8102E">attraction</text>
+
+  <!-- Panel B: opposite direction -->
+  <text x="510" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#C8102E" letter-spacing="0.08em">(B) OPPOSITE — REPEL</text>
+
+  <!-- Wire 1 (×, into page) -->
+  <circle cx="440" cy="220" r="10" fill="none" stroke="#56B4E9" stroke-width="1.5"/>
+  <line x1="433" y1="213" x2="447" y2="227" stroke="#56B4E9" stroke-width="1.5"/>
+  <line x1="447" y1="213" x2="433" y2="227" stroke="#56B4E9" stroke-width="1.5"/>
+  <text x="440" y="252" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#56B4E9">I₁ in</text>
+
+  <!-- Wire 2 (•, out of page) -->
+  <circle cx="580" cy="220" r="10" fill="none" stroke="#56B4E9" stroke-width="1.5"/>
+  <circle cx="580" cy="220" r="3" fill="#56B4E9"/>
+  <text x="580" y="252" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#56B4E9">I₂ out</text>
+
+  <!-- Field lines (opposite handedness around each) -->
+  <g fill="none" stroke="#7B61A8" stroke-width="1">
+    <circle cx="440" cy="220" r="26"/>
+    <circle cx="580" cy="220" r="26"/>
+  </g>
+
+  <!-- Force arrows (apart) -->
+  <line x1="426" y1="220" x2="394" y2="220" stroke="#C8102E" stroke-width="2" marker-end="url(#arrowred)"/>
+  <line x1="594" y1="220" x2="626" y2="220" stroke="#C8102E" stroke-width="2" marker-end="url(#arrowred)"/>
+
+  <!-- d -->
+  <line x1="440" y1="178" x2="580" y2="178" stroke="#545454" stroke-width="0.5"/>
+  <line x1="440" y1="174" x2="440" y2="182" stroke="#545454" stroke-width="0.5"/>
+  <line x1="580" y1="174" x2="580" y2="182" stroke="#545454" stroke-width="0.5"/>
+  <text x="510" y="172" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">d</text>
+
+  <text x="510" y="300" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="12" fill="#C8102E">repulsion</text>
+
+  <!-- Formula -->
+  <rect x="60" y="334" width="580" height="36" fill="#F5F5F5" stroke="#C8102E" stroke-width="1"/>
+  <text x="350" y="357" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="13" fill="#C8102E">F / L = μ₀ I₁ I₂ / (2π d)</text>
+
+  <!-- Caption -->
+  <rect x="60" y="384" width="580" height="60" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.25"/>
+  <text x="350" y="404" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="12" fill="#2a1a0e">Same direction attracts; opposite repels.</text>
+  <text x="350" y="424" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#C8102E">This force between two precisely defined wires was the SI ampere — until 2019.</text>
+  <text x="350" y="440" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">Post-2019: the elementary charge e is exact; the ampere is derived.</text>
+</svg>

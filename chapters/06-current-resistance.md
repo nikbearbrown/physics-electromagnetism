@@ -44,6 +44,9 @@ Units: amperes, where one ampere is one coulomb per second.
 
 A word on the sign convention. Benjamin Franklin set the direction of "positive current flow" in the 1750s, long before anyone knew that the actual charge carriers in metals are electrons. He was wrong about which thing moves, but he had a fifty-fifty chance and the convention stuck. **Conventional current** points the direction positive charges would move; in a copper wire, that is opposite to the direction the electrons actually drift. The two descriptions are physically identical — an electron drifting left is electrically indistinguishable from a positive charge drifting right — and every equation works the same way regardless of which you use. The convention is bookkeeping, not physics.
 
+![two-panel diagram — left: electrons drifting left in a wire with conventional current arrow pointing right, labeled "copper wire"; right: positive ions drifting right in a solution with conventional current arrow poin...](../images/06-current-resistance-fig-01.png)
+*Figure 6.1 — Four Speeds in a Copper Wire*
+
 <!-- → [IMAGE: two-panel diagram — left: electrons drifting left in a wire with conventional current arrow pointing right, labeled "copper wire"; right: positive ions drifting right in a solution with conventional current arrow pointing right, labeled "electrolyte" — showing that conventional current direction is the same in both cases regardless of carrier sign] -->
 
 For a wire of cross-section $A$ carrying current $I$, the **current density** is $\mathbf{J} = I/A$ (amperes per square meter), pointing in the direction of positive charge flow. In terms of microscopic quantities:
@@ -57,6 +60,9 @@ where $n$ is the carrier density, $q$ is the charge per carrier, and $\mathbf{v}
 ## The Drude model
 
 In 1900, three years after Thomson identified the electron and a quarter-century before quantum mechanics, Paul Drude proposed a microscopic model of conduction. The picture is unapologetically classical: each atom contributes a free electron to a gas filling the metal; between collisions an electron moves in a straight line, accelerated by any applied field; each collision randomizes its velocity back to a thermal distribution; the mean time between collisions is $\tau$. From these four assumptions the whole macroscopic theory of conductivity drops out.
+
+![cartoon of the Drude model — an electron (dot) accelerating rightward under a field E between two collision events, then having its velocity randomized by a collision (zigzag change of direction), then accelerating ag...](../images/06-current-resistance-fig-02.png)
+*Figure 6.2 — Resistivity from Silver to Fused Quartz*
 
 <!-- → [IMAGE: cartoon of the Drude model — an electron (dot) accelerating rightward under a field E between two collision events, then having its velocity randomized by a collision (zigzag change of direction), then accelerating again — the drift is the small net rightward bias accumulated between each pair of collisions] -->
 
@@ -112,6 +118,9 @@ A diode fails the first assumption geometrically — a p-n junction has asymmetr
 
 This is the chapter's central intellectual honesty: Ohm's law is not a law of nature in the way Coulomb's law is. It is a consequence of three reasonable approximations that happen to hold simultaneously over a wide range of conditions for most metals. The mature position is to know *why* it works when it works, and exactly *where* it stops.
 
+![three-column decision tree — column 1: "Is n fixed?" YES → ohmic candidate, NO → semiconductor/diode; column 2: "Is τ field-independent?" YES → continue, NO → breakdown regime; column 3: "Is v_d linear in E?" YES → Oh...](../images/06-current-resistance-fig-03.png)
+*Figure 6.3 — Drift Velocity*
+
 <!-- → [INFOGRAPHIC: three-column decision tree — column 1: "Is n fixed?" YES → ohmic candidate, NO → semiconductor/diode; column 2: "Is τ field-independent?" YES → continue, NO → breakdown regime; column 3: "Is v_d linear in E?" YES → Ohm's law holds, NO → non-linear response — shows which Drude assumption fails for each non-ohmic device] -->
 
 ---
@@ -131,6 +140,9 @@ Twenty-six orders of magnitude from silver to fused quartz. There is no smooth i
 Drude said electrons collide with ion cores. Quantum mechanics says that's wrong — and illuminatingly wrong.
 
 In a *perfectly periodic* lattice, electrons propagate as Bloch waves with *infinite* mean free path. The lattice doesn't scatter them at all. Only *departures from periodicity* do: lattice vibrations (phonons), substitutional impurities, vacancies, grain boundaries. At room temperature in pure copper, phonon scattering dominates and the mean free path is about 40 nm — roughly 150 lattice spacings. Cooling a pure metal toward absolute zero reduces phonon scattering dramatically, and the residual resistance comes almost entirely from defects.
+
+![resistivity vs. temperature for copper — showing the linear rise above the Debye temperature (phonon scattering) and the flat residual resistivity floor at low temperature (defect scattering) — the Matthiessen's rule...](../images/06-current-resistance-fig-04.png)
+*Figure 6.4 — Drude Model*
 
 <!-- → [CHART: resistivity vs. temperature for copper — showing the linear rise above the Debye temperature (phonon scattering) and the flat residual resistivity floor at low temperature (defect scattering) — the Matthiessen's rule picture: ρ(T) = ρ_defects + ρ_phonon(T)] -->
 
@@ -166,6 +178,9 @@ All three are correct. Pick the form that matches what you know. If you know the
 
 The microscopic picture is worth holding: each electron accelerates under the field, picking up kinetic energy between collisions. At each collision it dumps that energy into the lattice — a lattice vibration, which is heat. The process is called **Joule heating**: ordered drift energy converted to disordered thermal motion, one collision at a time. Every electrical device that warms up in operation is doing this. The $I^2R$ formula is not an approximation; it is the exact account of where the electrical energy goes.
 
+![microscopic Joule heating diagram — electron accelerating rightward under E, gaining kinetic energy (shown as speed), then colliding with a lattice site and emitting a phonon (shown as a vibrating lattice wave) — the...](../images/06-current-resistance-fig-05.png)
+*Figure 6.5 — Ohm's Law Is Not Fundamental*
+
 <!-- → [IMAGE: microscopic Joule heating diagram — electron accelerating rightward under E, gaining kinetic energy (shown as speed), then colliding with a lattice site and emitting a phonon (shown as a vibrating lattice wave) — the ordered-to-disordered energy conversion made visual] -->
 
 One practical warning about the three forms. For an ohmic resistor at fixed resistance $R$, doubling the voltage doubles the current, so the power goes as $V^2/R$ — it *quadruples*. A resistor rated for 0.25 W handles 5 V easily; double the voltage to 10 V and you are delivering four times the power. That is often above the part's rating, and the result is smoke. Students who reach for $P = IV$ and treat $V$ and $I$ as independent — not connected by Ohm's law — make this mistake.
@@ -184,6 +199,9 @@ A fresh AA alkaline has $\varepsilon \approx 1.5$ V and $r \approx 0.2$ Ω. As i
 
 From Chapter 4: in a static field, $\oint \vec{E}\cdot d\vec{\ell} = 0$ around any closed loop — no net work done going around a loop. That means no steady current can flow in a purely conservative field. The battery provides a *non-conservative* push — a chemical force on the charges inside it — that maintains a potential difference against the dissipation. The battery converts chemical energy to electrical energy; the resistor converts electrical energy to heat. The loop closes. Chapter 7 will use these ideas inside Kirchhoff's laws.
 
+![energy flow diagram for a simple circuit — battery labeled with ε and r showing chemical energy → electrical energy, wire showing small I²r loss, resistor showing I²R → heat, with arrows tracing the energy path around...](../images/06-current-resistance-fig-06.png)
+*Figure 6.6 — Superconductivity Timeline*
+
 <!-- → [IMAGE: energy flow diagram for a simple circuit — battery labeled with ε and r showing chemical energy → electrical energy, wire showing small I²r loss, resistor showing I²R → heat, with arrows tracing the energy path around the loop and labels for each conversion — makes the energy accounting concrete before Kirchhoff] -->
 
 ---
@@ -193,6 +211,9 @@ From Chapter 4: in a static field, $\oint \vec{E}\cdot d\vec{\ell} = 0$ around a
 Everything above assumes the resistance is nonzero. In April 1911, Heike Kamerlingh Onnes — who had been the first person to liquefy helium three years earlier — cooled mercury through 4.2 K and watched its resistance fall not to some small value but to *unmeasurably zero*. His lab notebook for 8 April 1911 reads: *"Kwik nagenoeg nul"* — "Mercury nearly zero."
 
 Below a **critical temperature** $T_c$, the resistance is not small but exactly zero. A current set up in a superconducting loop persists for years without measurable decay. The phenomenon went unexplained for forty-six years. In 1957, Bardeen, Cooper, and Schrieffer published the microscopic theory. The mechanism, counterintuitively, requires electrons to *attract* each other — mediated by a slight distortion of the lattice around one electron that draws another toward it. Bound pairs ("Cooper pairs") are bosons; they condense into a single coherent quantum state that carries current without scattering, because scattering would have to scatter the *entire* condensate, not a single electron.
+
+![conceptual diagram of Cooper pair formation — one electron moving right slightly deforms the positive ion lattice, creating a local positive charge density; a second electron is drawn toward this density — the indirec...](../images/06-current-resistance-fig-07.png)
+*Figure 6.7 — Joule Heating*
 
 <!-- → [IMAGE: conceptual diagram of Cooper pair formation — one electron moving right slightly deforms the positive ion lattice, creating a local positive charge density; a second electron is drawn toward this density — the indirect attraction mediated by the lattice that binds the pair] -->
 

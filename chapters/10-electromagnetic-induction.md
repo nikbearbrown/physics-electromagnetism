@@ -30,6 +30,9 @@ Flux is a measure of how much field passes through the loop — not just the fie
 
 Three things can change the flux through a loop. The field magnitude $B$ can change. The area $A$ can change. The angle $\theta$ between the loop and the field can change. Any one of these produces an EMF. Each corresponds to a different class of device: transformers respond to changing $B$; sliding-rod generators respond to changing $A$; rotating-coil generators respond to changing $\theta$. They are all one law.
 
+![flux visualization for a flat loop — top row: loop face-on to a strong B field (high flux, dense field lines through the surface); middle row: same loop tilted 45° (reduced flux, fewer lines threading through); bottom...](../images/10-electromagnetic-induction-fig-01.png)
+*Figure 10.1 — Three Routes to a Changing Flux*
+
 <!-- → [IMAGE: flux visualization for a flat loop — top row: loop face-on to a strong B field (high flux, dense field lines through the surface); middle row: same loop tilted 45° (reduced flux, fewer lines threading through); bottom row: loop edge-on (zero flux, all lines parallel to surface) — to build intuition for Φ_B = BA cosθ before the formula appears] -->
 
 ---
@@ -48,6 +51,9 @@ The EMF is in volts — the same units as a battery — because it does the same
 
 A comment on language. In Chapter 4, voltage was the line integral of a conservative electric field, path-independent. The induced EMF is the line integral of a *non-conservative* electric field around a closed loop. $\oint \vec{E}\cdot d\vec{\ell} = -d\Phi_B/dt \neq 0$: the integral around a closed loop is nonzero, which means the field is not conservative, which means path matters. The word "EMF" marks this distinction. After we have made it once, we will relax back to "voltage" in examples; the distinction has done its work.
 
+![three-panel diagram showing the three ways flux can change — panel 1: a stationary loop with B increasing (dB/dt ≠ 0, transformer case); panel 2: a rod sweeping out area at velocity v (dA/dt ≠ 0, motional EMF case); p...](../images/10-electromagnetic-induction-fig-02.png)
+*Figure 10.2 — Lenz's Law as Energy Conservation*
+
 <!-- → [INFOGRAPHIC: three-panel diagram showing the three ways flux can change — panel 1: a stationary loop with B increasing (dB/dt ≠ 0, transformer case); panel 2: a rod sweeping out area at velocity v (dA/dt ≠ 0, motional EMF case); panel 3: a loop rotating in a fixed B field (dθ/dt = ω, generator case) — each panel labeled with which device it corresponds to] -->
 
 ---
@@ -64,6 +70,9 @@ The only escape is the minus sign. The induced current must oppose the change. P
 
 Lenz's law is energy conservation, wearing electromagnetic clothing.
 
+![two-panel Lenz's law diagram — left panel: bar magnet approaching a coil, induced current direction shown circling the coil face, the coil's resulting magnetic moment shown opposing the approaching field — right panel...](../images/10-electromagnetic-induction-fig-03.png)
+*Figure 10.3 — Motional EMF*
+
 <!-- → [IMAGE: two-panel Lenz's law diagram — left panel: bar magnet approaching a coil, induced current direction shown circling the coil face, the coil's resulting magnetic moment shown opposing the approaching field — right panel: magnet receding, induced current reversed, coil moment now attracting the departing magnet — arrows showing the force on the magnet is always opposing the motion] -->
 
 ---
@@ -71,6 +80,9 @@ Lenz's law is energy conservation, wearing electromagnetic clothing.
 ## Motional EMF: the rod on rails
 
 Here is the simplest possible geometry for motional EMF. Two long parallel rails, connected at one end by a resistor $R$. A conducting rod of length $L$ slides along the rails at velocity $v$, perpendicular to both the rails and to a uniform magnetic field $\vec{B}$ pointing out of the page.
+
+![rod-on-rails diagram — two parallel horizontal rails connected at left by resistor R, rod of length L sliding right at velocity v, uniform B out of page shown as dots, the enclosed rectangular area growing as the rod...](../images/10-electromagnetic-induction-fig-04.png)
+*Figure 10.4 — AC Generator*
 
 <!-- → [IMAGE: rod-on-rails diagram — two parallel horizontal rails connected at left by resistor R, rod of length L sliding right at velocity v, uniform B out of page shown as dots, the enclosed rectangular area growing as the rod moves, and the induced current direction shown by an arrow] -->
 
@@ -92,6 +104,9 @@ $$P_{\text{elec}} = I^2R = \frac{(BLv)^2}{R}$$
 
 They are equal. Mechanical work in equals electrical energy out, exactly, always.
 
+![energy flow diagram for the rod-on-rails — external agent shown pushing rod right at velocity v, rod labeled with EMF = BLv and internal resistance r_rod, current I = BLv/R shown flowing around the circuit to the exte...](../images/10-electromagnetic-induction-fig-05.png)
+*Figure 10.5 — Transformer*
+
 <!-- → [IMAGE: energy flow diagram for the rod-on-rails — external agent shown pushing rod right at velocity v, rod labeled with EMF = BLv and internal resistance r_rod, current I = BLv/R shown flowing around the circuit to the external resistor R, power labels P_mech = F·v on the left and P_elec = I²R on the right, with an equals sign between them — the mechanical-to-electrical energy conversion made explicit] -->
 
 ---
@@ -111,6 +126,9 @@ $$\varepsilon(t) = -\frac{d\Phi_B}{dt} = NBA\omega\sin(\omega t)$$
 The output is sinusoidal. Peak value $\varepsilon_0 = NBA\omega$. RMS value $\varepsilon_{\text{rms}} = \varepsilon_0/\sqrt{2}$, which is what voltmeters read and what's labeled on appliances.
 
 The frequency is a mechanical choice. A generator with a two-pole rotor on a steam turbine running at 3600 rpm produces $\omega = 2\pi \times 60 = 120\pi$ rad/s — US line frequency, 60 Hz. European standard is 50 Hz, requiring 3000 rpm. These frequencies were chosen in the 1890s to match available steam-turbine shaft speeds and locked in by decades of installed infrastructure. There is nothing fundamental about 60 Hz; it is history calcified into electrical code.
+
+![rotating coil generator diagram — rectangular coil in uniform B field shown at three moments: normal parallel to B (maximum flux, zero EMF), normal at 45° (intermediate), normal perpendicular to B (zero flux, maximum...](../images/10-electromagnetic-induction-fig-06.png)
+*Figure 10.6 — RL Circuit*
 
 <!-- → [IMAGE: rotating coil generator diagram — rectangular coil in uniform B field shown at three moments: normal parallel to B (maximum flux, zero EMF), normal at 45° (intermediate), normal perpendicular to B (zero flux, maximum EMF) — with the sinusoidal output waveform plotted below showing the 90° phase relationship between flux and EMF] -->
 
@@ -133,6 +151,9 @@ Power is conserved — the transformer does not amplify energy:
 $$V_1 I_1 = V_2 I_2 \implies \frac{I_2}{I_1} = \frac{N_1}{N_2}$$
 
 Step up the voltage by ten, the current falls by ten. Power stays the same.
+
+![transformer schematic — iron core (shown as a rectangle) with primary coil (N₁ turns) on left and secondary coil (N₂ turns) on right, flux lines threading the core, input voltage V₁ and output voltage V₂ labeled, with...](../images/10-electromagnetic-induction-fig-07.png)
+*Figure 10.7 — RC and RL*
 
 <!-- → [IMAGE: transformer schematic — iron core (shown as a rectangle) with primary coil (N₁ turns) on left and secondary coil (N₂ turns) on right, flux lines threading the core, input voltage V₁ and output voltage V₂ labeled, with the ratio equation — both an isolation transformer (N₁ = N₂) and a step-up transformer (N₂ > N₁) shown side by side] -->
 

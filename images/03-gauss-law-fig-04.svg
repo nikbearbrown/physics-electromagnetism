@@ -1,0 +1,78 @@
+<!--
+  E(r) for a Uniformly Charged Solid Sphere
+  Book: Physics +1: Electromagnetism
+  Chapter: 03-gauss-law
+  Figure: 04
+  Type: Statistical / quantitative
+  Generated: 2026-05-25
+  Source: pantry/03-gauss-law-cajal.md
+-->
+<svg viewBox="0 0 700 460" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title">
+  <title id="fig-title">Electric Field Profile for a Uniformly Charged Solid Sphere</title>
+  <desc>Plot of E magnitude versus radius for a uniformly charged solid sphere. Inside the sphere (r less than R), the field grows linearly with r — only the enclosed fraction of charge contributes. Outside (r greater than R), the field falls as 1 over r squared like a point charge. The peak value is at the surface, r = R.</desc>
+  <metadata>
+    <cajal:figure
+      xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Physics +1: Electromagnetism"
+      book-slug="physics-electromagnetism"
+      chapter="03-gauss-law"
+      figure-number="04"
+      figure-title="E(r) for Uniformly Charged Sphere"
+      figure-slug="sphere-E-profile"
+      figure-type="quantitative"
+      priority="Important"
+      author="Humanitarians AI"
+      date-generated="2026-05-25"
+      source-file="pantry/03-gauss-law-cajal.md"
+    />
+  </metadata>
+  <rect x="0" y="0" width="700" height="460" fill="#FFFFFF"/>
+
+  <text x="32" y="36" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="14" fill="#2a1a0e">E(r) for a Uniformly Charged Sphere — Linear In, Inverse-Square Out</text>
+  <text x="32" y="56" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="11" fill="#545454">Inside, only the enclosed charge fraction acts. Outside, the sphere looks like a point.</text>
+
+  <!-- Axes -->
+  <line x1="100" y1="380" x2="640" y2="380" stroke="#2a1a0e" stroke-width="1"/>
+  <line x1="100" y1="100" x2="100" y2="380" stroke="#2a1a0e" stroke-width="1"/>
+
+  <!-- Y-axis labels -->
+  <g font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454" text-anchor="end">
+    <text x="94" y="384">0</text>
+    <text x="94" y="170">kQ/R²</text>
+  </g>
+  <line x1="95" y1="166" x2="105" y2="166" stroke="#2a1a0e" stroke-width="0.75"/>
+  <text x="50" y="240" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#545454" letter-spacing="0.06em" transform="rotate(-90 50 240)">FIELD MAGNITUDE |E|</text>
+
+  <!-- X-axis labels -->
+  <g font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454" text-anchor="middle">
+    <text x="100" y="396">0</text>
+    <text x="280" y="396">R</text>
+    <text x="640" y="396">3R</text>
+  </g>
+  <line x1="280" y1="375" x2="280" y2="385" stroke="#2a1a0e" stroke-width="0.75"/>
+  <text x="370" y="418" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#545454" letter-spacing="0.06em">DISTANCE r FROM CENTER</text>
+
+  <!-- Surface marker (vertical dashed line at r = R) -->
+  <line x1="280" y1="100" x2="280" y2="380" stroke="#C8102E" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="280" y="92" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">surface r = R</text>
+
+  <!-- Inside curve: linear from (100,380) to (280,166) -->
+  <line x1="100" y1="380" x2="280" y2="166" stroke="#56B4E9" stroke-width="2.5"/>
+  <text x="170" y="290" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#56B4E9">E = kQr/R³</text>
+  <text x="170" y="306" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">(linear, inside)</text>
+
+  <!-- Outside curve: 1/r² from (280,166) to (640, ~190) - inverse-square decay -->
+  <!-- E_outside = kQ/r²; at r=R, E=kQ/R² (y=166); at r=2R, E=kQ/(4R²) (y=294); at r=3R, E=kQ/(9R²) (y=357) -->
+  <path d="M 280 166 Q 340 230 400 280 Q 470 320 540 345 Q 600 360 640 370" stroke="#56B4E9" stroke-width="2.5" fill="none"/>
+  <text x="450" y="240" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#56B4E9">E = kQ/r²</text>
+  <text x="450" y="256" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">(1/r², outside)</text>
+
+  <!-- Peak marker at r = R -->
+  <circle cx="280" cy="166" r="4" fill="#C8102E"/>
+  <text x="290" y="158" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">peak</text>
+
+  <!-- Caption -->
+  <rect x="100" y="430" width="540" height="20" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.25"/>
+  <text x="370" y="445" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#2a1a0e">Peak at the surface. Inside grows linearly; outside the sphere looks like a point.</text>
+</svg>

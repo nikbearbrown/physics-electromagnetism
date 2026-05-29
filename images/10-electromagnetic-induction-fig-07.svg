@@ -1,0 +1,92 @@
+<!--
+  RC vs RL — The Mirror Pair
+  Book: Physics +1: Electromagnetism
+  Chapter: 10-electromagnetic-induction
+  Figure: 07
+  Type: Comparison panels (promoted table)
+  Generated: 2026-05-25
+  Source: pantry/10-electromagnetic-induction-cajal.md
+-->
+<svg viewBox="0 0 700 460" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title">
+  <title id="fig-title">RC and RL — Electric/Magnetic Mirror Pair</title>
+  <desc>Two-column comparison. RC column: time constant equals R C, stored energy equals one-half C V squared, stored in electric field, energy density equals one-half epsilon zero E squared, element resists changes in voltage. RL column: time constant equals L over R, stored energy equals one-half L I squared, stored in magnetic field, energy density equals B squared over two mu zero, element resists changes in current. R appears in opposite places.</desc>
+  <metadata>
+    <cajal:figure
+      xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Physics +1: Electromagnetism"
+      book-slug="physics-electromagnetism"
+      chapter="10-electromagnetic-induction"
+      figure-number="07"
+      figure-title="RC vs RL Mirror Pair"
+      figure-slug="rc-rl-mirror"
+      figure-type="comparison"
+      priority="Critical"
+      author="Humanitarians AI"
+      date-generated="2026-05-25"
+      source-file="pantry/10-electromagnetic-induction-cajal.md"
+    />
+  </metadata>
+  <rect x="0" y="0" width="700" height="460" fill="#FFFFFF"/>
+
+  <text x="32" y="36" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="14" fill="#2a1a0e">Capacitor and Inductor — The Electric/Magnetic Mirror Pair</text>
+  <text x="32" y="56" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="11" fill="#545454">Energy lives in the field. The element resists changes in whichever variable it stores.</text>
+
+  <!-- Table header row -->
+  <rect x="80" y="80" width="180" height="40" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="1"/>
+  <rect x="260" y="80" width="180" height="40" fill="#56B4E9" opacity="0.25" stroke="#2a1a0e" stroke-width="1"/>
+  <rect x="440" y="80" width="180" height="40" fill="#C8102E" opacity="0.25" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="170" y="104" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#545454" letter-spacing="0.06em">QUANTITY</text>
+  <text x="350" y="104" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#56B4E9" letter-spacing="0.06em">RC  (capacitor)</text>
+  <text x="530" y="104" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#C8102E" letter-spacing="0.06em">RL  (inductor)</text>
+
+  <!-- Row 1: Time constant -->
+  <rect x="80" y="120" width="180" height="44" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="0.75"/>
+  <rect x="260" y="120" width="180" height="44" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="0.75"/>
+  <rect x="440" y="120" width="180" height="44" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="0.75"/>
+  <text x="170" y="147" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#2a1a0e">Time constant</text>
+  <text x="350" y="147" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="13" fill="#C8860E">τ = R C</text>
+  <text x="530" y="147" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="13" fill="#C8860E">τ = L / R</text>
+
+  <!-- Row 2: Stored energy -->
+  <rect x="80" y="164" width="180" height="44" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="0.75"/>
+  <rect x="260" y="164" width="180" height="44" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="0.75"/>
+  <rect x="440" y="164" width="180" height="44" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="0.75"/>
+  <text x="170" y="191" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#2a1a0e">Stored energy</text>
+  <text x="350" y="191" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="12" fill="#2a1a0e">U = ½ C V²</text>
+  <text x="530" y="191" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="12" fill="#2a1a0e">U = ½ L I²</text>
+
+  <!-- Row 3: Stored in -->
+  <rect x="80" y="208" width="180" height="44" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="0.75"/>
+  <rect x="260" y="208" width="180" height="44" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="0.75"/>
+  <rect x="440" y="208" width="180" height="44" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="0.75"/>
+  <text x="170" y="235" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#2a1a0e">Stored in</text>
+  <text x="350" y="235" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#2a1a0e">electric field</text>
+  <text x="530" y="235" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#2a1a0e">magnetic field</text>
+
+  <!-- Row 4: Energy density -->
+  <rect x="80" y="252" width="180" height="44" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="0.75"/>
+  <rect x="260" y="252" width="180" height="44" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="0.75"/>
+  <rect x="440" y="252" width="180" height="44" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="0.75"/>
+  <text x="170" y="279" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#2a1a0e">Energy density</text>
+  <text x="350" y="279" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="12" fill="#2a1a0e">u = ½ ε₀ E²</text>
+  <text x="530" y="279" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="12" fill="#2a1a0e">u = B² / (2μ₀)</text>
+
+  <!-- Row 5: Resists changes in -->
+  <rect x="80" y="296" width="180" height="44" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="0.75"/>
+  <rect x="260" y="296" width="180" height="44" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="0.75"/>
+  <rect x="440" y="296" width="180" height="44" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="0.75"/>
+  <text x="170" y="323" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#2a1a0e">Resists changes in</text>
+  <text x="350" y="323" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#56B4E9">voltage</text>
+  <text x="530" y="323" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#C8102E">current</text>
+
+  <!-- Annotation arrow showing inversion of R -->
+  <line x1="350" y1="158" x2="530" y2="158" stroke="#C8860E" stroke-width="0.75" stroke-dasharray="3 2"/>
+  <text x="440" y="172" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8860E">R inverts position</text>
+
+  <!-- Caption -->
+  <rect x="60" y="370" width="580" height="74" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.25"/>
+  <text x="350" y="390" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="12" fill="#2a1a0e">Energy lives in the field; the element resists changes in the relevant variable.</text>
+  <text x="350" y="410" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#C8102E">Bigger R: slower for RC, faster for RL. The mirror is exact.</text>
+  <text x="350" y="430" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">Ch 11 will show ½ε₀E² + B²/(2μ₀) is the total energy density of a propagating EM wave.</text>
+</svg>

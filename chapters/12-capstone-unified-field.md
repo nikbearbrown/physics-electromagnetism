@@ -30,6 +30,9 @@ The refractive index $n = c/v$ — the ratio of $c$ to the wave's speed in that 
 
 The wave's *frequency* does not change at a boundary. What changes is the speed, and therefore the wavelength: $\lambda = \lambda_0/n$ inside a medium. The wavefront bends because one part of it enters the denser medium and slows down before the rest of the wavefront does — it pivots, like a line of marching soldiers stepping into mud on one end.
 
+![Snell's law diagram — a ray crossing from medium n₁ (above) to medium n₂ > n₁ (below), with the normal perpendicular to the boundary, angles θ₁ and θ₂ labeled from the normal, showing the ray bending toward the normal...](../images/12-capstone-unified-field-fig-01.png)
+*Figure 12.1 — Snell's Law and Total Internal Reflection*
+
 <!-- → [IMAGE: Snell's law diagram — a ray crossing from medium n₁ (above) to medium n₂ > n₁ (below), with the normal perpendicular to the boundary, angles θ₁ and θ₂ labeled from the normal, showing the ray bending toward the normal in the denser medium — plus a second diagram showing total internal reflection when the ray exceeds the critical angle going from dense to less dense] -->
 
 **Total internal reflection.** Going from a denser medium to a less dense one — glass to air, water to air — there is a critical angle $\theta_c$ where $\sin\theta_c = n_2/n_1$. At angles larger than $\theta_c$, no transmitted ray exists; the wave reflects entirely back. For glass-air, $\theta_c \approx 42°$. This is fiber-optic communication: a light pulse enters a glass fiber and bounces along it by total internal reflection for kilometers, with losses measured in dB/km rather than the catastrophic losses of free-space propagation at optical frequencies.
@@ -46,6 +49,9 @@ $$d\sin\theta = m\lambda$$
 
 Fringe spacing on the screen: $\Delta y = \lambda L/d$. For green light ($\lambda = 500$ nm), 0.1 mm slit separation, 1 m to the screen: $\Delta y \approx 5$ mm. Visible to the naked eye.
 
+![two-slit interference diagram — two slits separated by d, screen at distance L, path-length difference from the two slits shown for the first bright fringe (m = 1), the interference pattern on the screen showing alter...](../images/12-capstone-unified-field-fig-02.png)
+*Figure 12.2 — Two-Slit Interference Modulated by Diffraction Envelope*
+
 <!-- → [IMAGE: two-slit interference diagram — two slits separated by d, screen at distance L, path-length difference from the two slits shown for the first bright fringe (m = 1), the interference pattern on the screen showing alternating bright and dark fringes — with fringe spacing Δy = λL/d labeled] -->
 
 Young's experiment was the decisive evidence that light is a wave. It resolved a century-long debate between Newton (who favored particles) and Huygens (who favored waves). The experiment produced the characteristic interference fringes that are simply not possible if light were a stream of independent particles — they require that the "something" passing through both slits simultaneously can add constructively in some places and cancel in others.
@@ -57,6 +63,9 @@ The single-slit diffraction pattern limits how bright the fringes can be as a fu
 $$\theta_{\min} \approx \frac{1.22\lambda}{D}$$
 
 This is why telescopes need to be large. A 200 mm telescope at 500 nm has $\theta_{\min} \approx 3$ µrad — about 0.6 arcseconds. The human eye (pupil $\approx 3$ mm) resolves about 1 arcminute. It's not a failure of design; it's a consequence of diffraction, set by $\lambda/D$.
+
+![Rayleigh criterion visualization — two point sources at increasing angular separation shown through a circular aperture: (1) unresolved — single merged blob; (2) just resolved — Rayleigh limit, first minimum of one Ai...](../images/12-capstone-unified-field-fig-03.png)
+*Figure 12.3 — Dipole Antenna Pattern*
 
 <!-- → [IMAGE: Rayleigh criterion visualization — two point sources at increasing angular separation shown through a circular aperture: (1) unresolved — single merged blob; (2) just resolved — Rayleigh limit, first minimum of one Airy disk on center of other; (3) clearly resolved — two distinct Airy disks — with the criterion θ_min = 1.22λ/D labeled at the transition] -->
 
@@ -78,9 +87,15 @@ $$\frac{dP}{d\Omega} \propto \sin^2\theta$$
 
 where $\theta$ is the polar angle measured from the antenna axis. This is a **donut shape**: maximum radiation in the plane perpendicular to the antenna ($\theta = 90°$), zero along the axis ($\theta = 0°$ and $180°$). A vertical broadcast antenna radiates strongly toward the horizon and not at all straight up or straight down.
 
+![dipole radiation pattern — antenna shown as a vertical line, the sin²θ donut pattern shown as a 3D toroidal shape around it, with the equatorial maximum labeled and the zero on the axis labeled — also a cross-sectiona...](../images/12-capstone-unified-field-fig-04.png)
+*Figure 12.4 — Photoelectric Effect*
+
 <!-- → [IMAGE: dipole radiation pattern — antenna shown as a vertical line, the sin²θ donut pattern shown as a 3D toroidal shape around it, with the equatorial maximum labeled and the zero on the axis labeled — also a cross-sectional polar plot in a vertical plane showing the figure-eight shape] -->
 
 Phased arrays control the direction of radiation by adjusting the phase of the signal fed to each element: constructive interference in the desired direction, destructive everywhere else. 5G base stations use phased arrays to focus beams toward individual user devices — "beamforming" — rather than broadcasting uniformly in all directions. The physics is exactly Young's two-slit interference, applied to antenna elements.
+
+![phased array beamforming diagram — four antenna elements in a row, each fed with a slightly different phase delay shown as shifting sinusoidal signals; the resulting constructive interference lobe shown pointing at an...](../images/12-capstone-unified-field-fig-05.png)
+*Figure 12.5 — Maxwell to Relativity*
 
 <!-- → [IMAGE: phased array beamforming diagram — four antenna elements in a row, each fed with a slightly different phase delay shown as shifting sinusoidal signals; the resulting constructive interference lobe shown pointing at angle θ away from broadside — contrasted with a single antenna broadcasting equally in all directions, to show the gain from phasing] -->
 
@@ -109,6 +124,9 @@ where $h = 6.626 \times 10^{-34}$ J·s is Planck's constant. Each ejected electr
 $$K_{\max} = hf - \phi$$
 
 If $hf < \phi$, no ejection, regardless of intensity. The threshold frequency is $f_0 = \phi/h$.
+
+![photoelectric effect diagram — left: low-frequency light (hf < φ) hitting a metal surface, no electrons ejected; right: high-frequency light (hf > φ) hitting the same surface, electrons ejected with kinetic energy K =...](../images/12-capstone-unified-field-fig-06.png)
+*Figure 12.6 — Wireless Link Budget*
 
 <!-- → [IMAGE: photoelectric effect diagram — left: low-frequency light (hf < φ) hitting a metal surface, no electrons ejected; right: high-frequency light (hf > φ) hitting the same surface, electrons ejected with kinetic energy K = hf − φ — with the work function φ shown as a potential barrier the electron must climb — bottom panel: graph of K_max vs. frequency showing a straight line with slope h and x-intercept f₀ = φ/h] -->
 

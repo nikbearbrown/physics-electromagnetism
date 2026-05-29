@@ -42,6 +42,9 @@ $$\int_A^B \vec{E} \cdot d\vec{\ell} = \int_{r_A}^{r_B} \frac{kq}{r^2}\, dr = kq
 
 Only the starting and ending distances appear. Everything in between dropped out. The path was irrelevant.
 
+![diagram of a point charge at origin with two paths from point A to point B — one a curved arc, one a jagged radial-then-tangential route — with annotations showing that only r_A and r_B enter the integral, and tangent...](../images/04-electric-potential-fig-01.png)
+*Figure 4.1 — Path Independence*
+
 <!-- → [IMAGE: diagram of a point charge at origin with two paths from point A to point B — one a curved arc, one a jagged radial-then-tangential route — with annotations showing that only r_A and r_B enter the integral, and tangential steps contributing zero — the geometric proof of path-independence made visible] -->
 
 By superposition, any static charge distribution is a sum of point charges. Each one is path-independent. The sum is path-independent. **Every static electric field is path-independent.**
@@ -51,6 +54,9 @@ In the language of vector calculus, a path-independent vector field has zero cur
 $$\boxed{\;\vec{E} = -\nabla V\;}$$
 
 The minus sign is convention. It's chosen so that positive charges "roll downhill" in $V$, just as rocks roll downhill in gravitational potential.
+
+![side-by-side — left: a winding path and a straight path between two points A and B in an electric field, with integral values shown equal; right: the "landscape" picture of V as a surface, with E arrows pointing downh...](../images/04-electric-potential-fig-02.png)
+*Figure 4.2 — V Falls as 1/r, E Falls as 1/r squared*
 
 <!-- → [INFOGRAPHIC: side-by-side — left: a winding path and a straight path between two points A and B in an electric field, with integral values shown equal; right: the "landscape" picture of V as a surface, with E arrows pointing downhill perpendicular to contours — to make path-independence and the gradient connection visual simultaneously] -->
 
@@ -80,6 +86,9 @@ $$V(r) = -\int_\infty^r \frac{kq}{r'^2}\, dr' = \frac{kq}{r}$$
 
 $$\boxed{\;V(r) = \frac{kq}{r}\;}$$
 
+![side-by-side of E field (1/r² falloff, vector arrows radiating outward) and V potential (1/r falloff, scalar value as height above a surface) for the same positive point charge — making the one-more-power-of-r relatio...](../images/04-electric-potential-fig-03.png)
+*Figure 4.3 — Equipotential Atlas for Four Canonical Configurations*
+
 <!-- → [IMAGE: side-by-side of E field (1/r² falloff, vector arrows radiating outward) and V potential (1/r falloff, scalar value as height above a surface) for the same positive point charge — making the one-more-power-of-r relationship visually clear] -->
 
 The potential falls as $1/r$, one power slower than the field. The reason is just calculus: integrating $1/r^2$ gives $-1/r$, which has one fewer power of $r$ in the denominator. You can run it backwards to check: $-dV/dr = -d(kq/r)/dr = kq/r^2 = E_r$. The field comes back exactly.
@@ -108,6 +117,9 @@ This is the chapter's payoff. Most electrostatics problems that look hard in $\v
 
 An **equipotential surface** is the set of all points where $V$ has a single value. Topographic maps work exactly this way — contour lines are level sets of altitude.
 
+![topographic map analogy — contour lines of altitude on a hill, with arrows showing the steepest-descent direction (gradient) perpendicular to contours at every point — sets up equipotentials and field lines with a fam...](../images/04-electric-potential-fig-04.png)
+*Figure 4.4 — High V Does Not Mean High E*
+
 <!-- → [IMAGE: topographic map analogy — contour lines of altitude on a hill, with arrows showing the steepest-descent direction (gradient) perpendicular to contours at every point — sets up equipotentials and field lines with a familiar visual before the physics version] -->
 
 Three things follow immediately from the definition and the gradient relation.
@@ -115,6 +127,9 @@ Three things follow immediately from the definition and the gradient relation.
 **Moving a charge along an equipotential costs zero work.** No $\Delta V$ means no $\Delta U$. If $q$ moves on a surface of constant $V$, the field does nothing to it. This is exactly analogous to moving horizontally on a topographic map — no change in gravitational potential energy.
 
 **Field lines are perpendicular to equipotentials.** The gradient of any scalar function always points perpendicular to its level sets — this is a theorem of multivariable calculus. Since $\vec{E} = -\nabla V$, the field vector at every point is perpendicular to the equipotential through that point. Field lines and equipotential surfaces are always at right angles.
+
+![dipole field lines (solid curves from + to −) with equipotential contours (dashed curves) drawn on the same diagram, showing right-angle crossing everywhere — the visual confirmation of E = −∇V](../images/04-electric-potential-fig-05.png)
+*Figure 4.5 — Ring on Axis*
 
 <!-- → [IMAGE: dipole field lines (solid curves from + to −) with equipotential contours (dashed curves) drawn on the same diagram, showing right-angle crossing everywhere — the visual confirmation of E = −∇V] -->
 
@@ -177,6 +192,9 @@ The same answer as Chapter 2. The angular bookkeeping — the $\cos\theta$ facto
 **Limits.** At the center ($x = 0$): $V = kQ/R$, $E_x = 0$. The potential is large and finite; the field vanishes by symmetry. This is a clean example of the point worth laboring: $V$ and $E$ at a point have no fixed value-to-value relationship. Only the *derivative* of $V$ gives $E$.
 
 At $x \gg R$: $V \to kQ/x$, $E_x \to kQ/x^2$. The ring looks like a point charge from far away.
+
+![the ring in the yz-plane with the axial field point at distance x, the uniform distance r = √(x² + R²) from every ring element to the field point labeled, and the absence of any component decomposition — to contrast v...](../images/04-electric-potential-fig-06.png)
+*Figure 4.6 — Electron-Volt Energy Scales*
 
 <!-- → [IMAGE: diagram showing the ring in the yz-plane with the axial field point at distance x, the uniform distance r = √(x² + R²) from every ring element to the field point labeled, and the absence of any component decomposition — to contrast visually with the Chapter 2 vector diagram for the same geometry] -->
 

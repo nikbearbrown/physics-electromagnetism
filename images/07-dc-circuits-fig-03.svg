@@ -1,0 +1,110 @@
+<!--
+  Worked Two-Loop Circuit — Nodal Analysis
+  Book: Physics +1: Electromagnetism
+  Chapter: 07-dc-circuits
+  Figure: 03
+  Type: Annotated example
+  Generated: 2026-05-25
+  Source: pantry/07-dc-circuits-cajal.md
+-->
+<svg viewBox="0 0 700 460" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title">
+  <title id="fig-title">Two-Loop Circuit — One Node, One KCL Equation</title>
+  <desc>Two-loop circuit. Left branch: 12 volt battery in series with R one equals 4 ohms. Right branch: 8 volt battery in series with R two equals 6 ohms. Both branches join at the top node and return through R three equals 3 ohms to ground. Nodal analysis at the top node gives V equals 52 over 9 volts, currents I one equals 1.56 amps and I two equals 0.37 amps flow into the node, I three equals 1.93 amps flows out.</desc>
+  <metadata>
+    <cajal:figure
+      xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Physics +1: Electromagnetism"
+      book-slug="physics-electromagnetism"
+      chapter="07-dc-circuits"
+      figure-number="03"
+      figure-title="Two-Loop Nodal Analysis"
+      figure-slug="two-loop-circuit"
+      figure-type="annotated-example"
+      priority="Important"
+      author="Humanitarians AI"
+      date-generated="2026-05-25"
+      source-file="pantry/07-dc-circuits-cajal.md"
+    />
+  </metadata>
+  <defs>
+    <marker id="arrowoch" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#C8860E"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="700" height="460" fill="#FFFFFF"/>
+
+  <text x="32" y="36" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="14" fill="#2a1a0e">Worked Example — Two Loops, One KCL Equation</text>
+  <text x="32" y="56" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="11" fill="#545454">Pick a node. Write the KCL. Solve. The method scales.</text>
+
+  <!-- Top node V -->
+  <circle cx="300" cy="130" r="5" fill="#2a1a0e"/>
+  <text x="290" y="120" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#2a1a0e">V</text>
+
+  <!-- Ground node (bottom) -->
+  <line x1="290" y1="350" x2="310" y2="350" stroke="#2a1a0e" stroke-width="1.5"/>
+  <line x1="293" y1="356" x2="307" y2="356" stroke="#2a1a0e" stroke-width="1.25"/>
+  <line x1="296" y1="362" x2="304" y2="362" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="318" y="356" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#2a1a0e">0</text>
+
+  <!-- Left branch: down from V → R1 → battery ε1 → bottom -->
+  <line x1="300" y1="135" x2="160" y2="135" stroke="#2a1a0e" stroke-width="1"/>
+  <line x1="160" y1="135" x2="160" y2="180" stroke="#2a1a0e" stroke-width="1"/>
+  <!-- R1 -->
+  <path d="M 160 180 L 152 186 L 168 192 L 152 198 L 168 204 L 152 210 L 168 216 L 152 222 L 168 228 L 160 234" stroke="#C8102E" stroke-width="1.5" fill="none"/>
+  <text x="138" y="208" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#2a1a0e">R₁ = 4Ω</text>
+  <line x1="160" y1="234" x2="160" y2="280" stroke="#2a1a0e" stroke-width="1"/>
+  <!-- ε1 = 12V battery -->
+  <line x1="148" y1="280" x2="172" y2="280" stroke="#C8102E" stroke-width="3"/>
+  <line x1="154" y1="290" x2="166" y2="290" stroke="#C8102E" stroke-width="1.5"/>
+  <text x="138" y="290" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#56B4E9">ε₁ = 12V</text>
+  <line x1="160" y1="290" x2="160" y2="340" stroke="#2a1a0e" stroke-width="1"/>
+  <line x1="160" y1="340" x2="300" y2="340" stroke="#2a1a0e" stroke-width="1"/>
+
+  <!-- Right branch -->
+  <line x1="300" y1="135" x2="440" y2="135" stroke="#2a1a0e" stroke-width="1"/>
+  <line x1="440" y1="135" x2="440" y2="180" stroke="#2a1a0e" stroke-width="1"/>
+  <!-- R2 -->
+  <path d="M 440 180 L 432 186 L 448 192 L 432 198 L 448 204 L 432 210 L 448 216 L 432 222 L 448 228 L 440 234" stroke="#C8102E" stroke-width="1.5" fill="none"/>
+  <text x="462" y="208" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#2a1a0e">R₂ = 6Ω</text>
+  <line x1="440" y1="234" x2="440" y2="280" stroke="#2a1a0e" stroke-width="1"/>
+  <!-- ε2 = 8V -->
+  <line x1="428" y1="280" x2="452" y2="280" stroke="#C8102E" stroke-width="3"/>
+  <line x1="434" y1="290" x2="446" y2="290" stroke="#C8102E" stroke-width="1.5"/>
+  <text x="462" y="290" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#56B4E9">ε₂ = 8V</text>
+  <line x1="440" y1="290" x2="440" y2="340" stroke="#2a1a0e" stroke-width="1"/>
+  <line x1="300" y1="340" x2="440" y2="340" stroke="#2a1a0e" stroke-width="1"/>
+
+  <!-- Center branch: V down through R3 to ground -->
+  <line x1="300" y1="135" x2="300" y2="180" stroke="#2a1a0e" stroke-width="1"/>
+  <path d="M 300 180 L 292 186 L 308 192 L 292 198 L 308 204 L 292 210 L 308 216 L 292 222 L 308 228 L 300 234" stroke="#C8102E" stroke-width="1.5" fill="none"/>
+  <text x="320" y="208" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#2a1a0e">R₃ = 3Ω</text>
+  <line x1="300" y1="234" x2="300" y2="350" stroke="#2a1a0e" stroke-width="1"/>
+
+  <!-- Current arrows -->
+  <line x1="195" y1="120" x2="240" y2="120" stroke="#C8860E" stroke-width="1.5" marker-end="url(#arrowoch)"/>
+  <text x="195" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8860E">I₁</text>
+  <line x1="405" y1="120" x2="360" y2="120" stroke="#C8860E" stroke-width="1.5" marker-end="url(#arrowoch)"/>
+  <text x="412" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8860E">I₂</text>
+  <line x1="300" y1="146" x2="300" y2="174" stroke="#C8860E" stroke-width="1.5" marker-end="url(#arrowoch)"/>
+  <text x="282" y="158" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8860E">I₃</text>
+
+  <!-- Solution box -->
+  <rect x="500" y="100" width="180" height="190" fill="#F5F5F5" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="590" y="122" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#2a1a0e" letter-spacing="0.06em">SOLUTION</text>
+  <line x1="514" y1="132" x2="666" y2="132" stroke="#2a1a0e" stroke-width="0.5"/>
+  <g font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#2a1a0e">
+    <text x="520" y="156">V  = 52/9 ≈ 5.78 V</text>
+    <text x="520" y="180">I₁ = 1.56 A</text>
+    <text x="520" y="204">I₂ = 0.37 A</text>
+    <text x="520" y="228">I₃ = 1.93 A</text>
+  </g>
+  <line x1="514" y1="244" x2="666" y2="244" stroke="#56B4E9" stroke-width="0.5"/>
+  <text x="590" y="266" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#56B4E9">KCL: I₁ + I₂ = I₃ ✓</text>
+  <text x="590" y="282" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">1.56 + 0.37 = 1.93</text>
+
+  <!-- Caption -->
+  <rect x="60" y="394" width="580" height="50" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.25"/>
+  <text x="350" y="414" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="12" fill="#2a1a0e">One node equation: (ε₁−V)/R₁ + (ε₂−V)/R₂ = V/R₃.</text>
+  <text x="350" y="432" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#C8102E">Solve for V; back-substitute for currents. The KCL check closes the loop.</text>
+</svg>

@@ -1,0 +1,95 @@
+<!--
+  Maxwell's Paradox — Charging Capacitor, Two Surfaces
+  Book: Physics +1: Electromagnetism
+  Chapter: 11-maxwells-equations
+  Figure: 01
+  Type: Mechanism cross-section / annotated example
+  Generated: 2026-05-25
+  Source: pantry/11-maxwells-equations-cajal.md
+-->
+<svg viewBox="0 0 700 460" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title">
+  <title id="fig-title">Maxwell's Paradox — Two Surfaces, Two Different Answers</title>
+  <desc>A capacitor charging through a wire. An Amperian loop encircles the wire just before the capacitor. Two surfaces bounded by that loop: a flat disk pierced by the wire encloses conduction current I_c; a bag surface that detours between the plates encloses no wire, only changing electric flux. Pre-Maxwell Ampère's law gives two different answers. Maxwell's fix: add epsilon zero times d Phi E over d t — the displacement current — so both surfaces agree.</desc>
+  <metadata>
+    <cajal:figure
+      xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Physics +1: Electromagnetism"
+      book-slug="physics-electromagnetism"
+      chapter="11-maxwells-equations"
+      figure-number="01"
+      figure-title="Maxwell's Paradox"
+      figure-slug="maxwell-paradox"
+      figure-type="mechanism"
+      priority="Critical"
+      author="Humanitarians AI"
+      date-generated="2026-05-25"
+      source-file="pantry/11-maxwells-equations-cajal.md"
+    />
+  </metadata>
+  <defs>
+    <marker id="arrowoch" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#C8860E"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="700" height="460" fill="#FFFFFF"/>
+
+  <text x="32" y="36" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="14" fill="#2a1a0e">Maxwell's Paradox — Same Loop, Two Surfaces, Two Answers</text>
+  <text x="32" y="56" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="11" fill="#545454">The fix counts the changing electric flux as a current — and predicts light.</text>
+
+  <!-- Wire entering from left -->
+  <line x1="60" y1="220" x2="280" y2="220" stroke="#2a1a0e" stroke-width="3"/>
+  <!-- Current direction arrow -->
+  <line x1="100" y1="220" x2="140" y2="220" stroke="#C8860E" stroke-width="2" marker-end="url(#arrowoch)"/>
+  <text x="120" y="208" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#C8860E">I_c</text>
+
+  <!-- Capacitor plates -->
+  <line x1="280" y1="170" x2="280" y2="270" stroke="#C8102E" stroke-width="3"/>
+  <line x1="320" y1="170" x2="320" y2="270" stroke="#56B4E9" stroke-width="3"/>
+  <text x="280" y="288" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">+</text>
+  <text x="320" y="288" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#56B4E9">−</text>
+
+  <!-- Wire exiting from right -->
+  <line x1="320" y1="220" x2="540" y2="220" stroke="#2a1a0e" stroke-width="3"/>
+  <line x1="440" y1="220" x2="480" y2="220" stroke="#C8860E" stroke-width="2" marker-end="url(#arrowoch)"/>
+  <text x="460" y="208" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#C8860E">I_c</text>
+
+  <!-- Amperian loop (vertical circle around wire on left) -->
+  <ellipse cx="200" cy="220" rx="15" ry="60" fill="none" stroke="#2a1a0e" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="200" y="138" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#2a1a0e">Amperian loop</text>
+
+  <!-- Surface A: flat disk through the wire -->
+  <ellipse cx="200" cy="220" rx="15" ry="60" fill="#56B4E9" opacity="0.2"/>
+  <text x="200" y="305" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#56B4E9">(A) flat disk</text>
+  <text x="200" y="320" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#56B4E9">encloses I_c</text>
+
+  <!-- Surface B: bag surface detouring between plates -->
+  <path d="M 200 160 Q 240 130 280 145 Q 320 130 360 155 Q 380 200 360 250 Q 320 280 280 268 Q 240 280 200 280 Q 195 220 200 160 Z" fill="#C8860E" opacity="0.15" stroke="#C8860E" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="370" y="170" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8860E">(B) bag surface</text>
+  <text x="370" y="184" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8860E">no wire pierces it</text>
+
+  <!-- Changing E field between plates (vertical arrows growing) -->
+  <g stroke="#C8102E" stroke-width="1.5" fill="none">
+    <line x1="290" y1="200" x2="310" y2="200" marker-end="url(#arrowoch)"/>
+    <line x1="290" y1="220" x2="310" y2="220" marker-end="url(#arrowoch)"/>
+    <line x1="290" y1="240" x2="310" y2="240" marker-end="url(#arrowoch)"/>
+  </g>
+  <text x="296" y="252" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">dE/dt ≠ 0</text>
+
+  <!-- Pre-Maxwell paradox annotation -->
+  <rect x="60" y="340" width="280" height="48" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.25"/>
+  <text x="200" y="358" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E" letter-spacing="0.06em">PRE-MAXWELL — PARADOX</text>
+  <text x="200" y="376" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#2a1a0e">∮ B⃗·dℓ⃗ = μ₀ I_enc</text>
+  <text x="200" y="392" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">A: μ₀I_c    B: 0      ⊗</text>
+
+  <!-- Maxwell's fix -->
+  <rect x="360" y="340" width="280" height="48" fill="#F5F5F5" stroke="#3AAE3A" stroke-width="1.25"/>
+  <text x="500" y="358" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#3AAE3A" letter-spacing="0.06em">MAXWELL'S FIX</text>
+  <text x="500" y="376" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#2a1a0e">+ μ₀ε₀ dΦ_E/dt</text>
+  <text x="500" y="392" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#3AAE3A">both surfaces agree ✓</text>
+
+  <!-- Caption -->
+  <rect x="60" y="400" width="580" height="44" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.25"/>
+  <text x="350" y="420" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="12" fill="#2a1a0e">A changing electric flux acts like a current.</text>
+  <text x="350" y="438" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#C8102E">Add this term to Ampère's law — and waves of E and B fall out as a prediction.</text>
+</svg>

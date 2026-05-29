@@ -1,0 +1,114 @@
+<!--
+  Faraday's Law — Three Ways the Flux Can Change
+  Book: Physics +1: Electromagnetism
+  Chapter: 10-electromagnetic-induction
+  Figure: 01
+  Type: Comparison panels
+  Generated: 2026-05-25
+  Source: pantry/10-electromagnetic-induction-cajal.md
+-->
+<svg viewBox="0 0 700 460" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title">
+  <title id="fig-title">Three Routes to a Changing Flux — Faraday's Law</title>
+  <desc>Three side-by-side panels of the same loop. Panel A: B field ramps up while loop is fixed — d B over d t. Panel B: loop area changes — d A over d t. Panel C: loop rotates at angular velocity omega — d theta over d t. Each route produces an EMF via Faraday's law epsilon equals minus d Phi over d t. Generators, transformers, and motional-EMF circuits are these three routes engineered.</desc>
+  <metadata>
+    <cajal:figure
+      xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Physics +1: Electromagnetism"
+      book-slug="physics-electromagnetism"
+      chapter="10-electromagnetic-induction"
+      figure-number="01"
+      figure-title="Three Ways Flux Changes"
+      figure-slug="three-flux-changes"
+      figure-type="comparison"
+      priority="Critical"
+      author="Humanitarians AI"
+      date-generated="2026-05-25"
+      source-file="pantry/10-electromagnetic-induction-cajal.md"
+    />
+  </metadata>
+  <defs>
+    <marker id="arrowpurp" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#7B61A8"/>
+    </marker>
+    <marker id="arrowred" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#C8102E"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="700" height="460" fill="#FFFFFF"/>
+
+  <text x="32" y="36" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="14" fill="#2a1a0e">Three Ways Φ_B Can Change — Three Engineering Routes</text>
+  <text x="32" y="56" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="11" fill="#545454">ε = − dΦ/dt   where Φ = B A cos θ.   Differentiate any factor.</text>
+
+  <line x1="240" y1="80" x2="240" y2="380" stroke="#2a1a0e" stroke-width="0.5"/>
+  <line x1="460" y1="80" x2="460" y2="380" stroke="#2a1a0e" stroke-width="0.5"/>
+
+  <!-- Panel A: B changes -->
+  <text x="120" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#2a1a0e" letter-spacing="0.08em">(A) B CHANGES</text>
+
+  <!-- Loop -->
+  <ellipse cx="120" cy="220" rx="60" ry="40" fill="none" stroke="#56B4E9" stroke-width="2"/>
+  <!-- B field arrows through loop (purple, scaling) -->
+  <g stroke="#7B61A8" stroke-width="1.5" fill="none">
+    <line x1="90" y1="200" x2="90" y2="240" marker-end="url(#arrowpurp)"/>
+    <line x1="120" y1="200" x2="120" y2="240" marker-end="url(#arrowpurp)"/>
+    <line x1="150" y1="200" x2="150" y2="240" marker-end="url(#arrowpurp)"/>
+  </g>
+  <!-- Change indicator -->
+  <text x="120" y="288" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#C8102E">dB/dt ≠ 0</text>
+  <!-- Induced current (vermillion) -->
+  <path d="M 170 235 Q 188 230 188 220" stroke="#C8102E" stroke-width="1.5" fill="none" marker-end="url(#arrowred)"/>
+  <text x="195" y="216" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">i_ind</text>
+
+  <text x="120" y="346" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">example: electromagnet</text>
+  <text x="120" y="358" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">switching on</text>
+
+  <!-- Panel B: A changes -->
+  <text x="350" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#2a1a0e" letter-spacing="0.08em">(B) AREA CHANGES</text>
+
+  <!-- Loop (rectangle, with right edge moving) -->
+  <rect x="290" y="180" width="100" height="80" fill="none" stroke="#56B4E9" stroke-width="2"/>
+  <!-- Phantom enlarged outline -->
+  <rect x="290" y="180" width="140" height="80" fill="none" stroke="#56B4E9" stroke-width="1" stroke-dasharray="3 2" opacity="0.5"/>
+  <!-- B field arrows uniform throughout -->
+  <g stroke="#7B61A8" stroke-width="1" fill="none">
+    <line x1="310" y1="190" x2="310" y2="250" marker-end="url(#arrowpurp)"/>
+    <line x1="350" y1="190" x2="350" y2="250" marker-end="url(#arrowpurp)"/>
+    <line x1="390" y1="190" x2="390" y2="250" marker-end="url(#arrowpurp)"/>
+    <line x1="420" y1="190" x2="420" y2="250" marker-end="url(#arrowpurp)"/>
+  </g>
+  <!-- Motion arrow on right edge -->
+  <line x1="394" y1="220" x2="426" y2="220" stroke="#C8102E" stroke-width="2" marker-end="url(#arrowred)"/>
+  <text x="410" y="208" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">v</text>
+
+  <text x="350" y="288" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#C8102E">dA/dt ≠ 0</text>
+  <text x="350" y="346" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">example: rod on rails</text>
+  <text x="350" y="358" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">(motional EMF)</text>
+
+  <!-- Panel C: θ changes (rotation) -->
+  <text x="570" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#C8102E" letter-spacing="0.08em">(C) ANGLE CHANGES</text>
+
+  <!-- Loop tilted -->
+  <ellipse cx="570" cy="220" rx="50" ry="22" fill="none" stroke="#56B4E9" stroke-width="2"/>
+  <!-- Axis of rotation (vertical) -->
+  <line x1="570" y1="160" x2="570" y2="280" stroke="#545454" stroke-width="0.5" stroke-dasharray="3 2"/>
+  <!-- B field horizontal -->
+  <g stroke="#7B61A8" stroke-width="1" fill="none">
+    <line x1="495" y1="200" x2="535" y2="200" marker-end="url(#arrowpurp)"/>
+    <line x1="495" y1="240" x2="535" y2="240" marker-end="url(#arrowpurp)"/>
+    <line x1="605" y1="200" x2="645" y2="200" marker-end="url(#arrowpurp)"/>
+    <line x1="605" y1="240" x2="645" y2="240" marker-end="url(#arrowpurp)"/>
+  </g>
+  <!-- Rotation indicator -->
+  <path d="M 540 162 Q 570 152 600 162" stroke="#C8102E" stroke-width="1.5" fill="none" marker-end="url(#arrowred)"/>
+  <text x="570" y="146" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">ω</text>
+
+  <text x="570" y="288" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#C8102E">dθ/dt = ω</text>
+  <text x="570" y="346" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">example: AC generator</text>
+  <text x="570" y="358" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">(wall plug)</text>
+
+  <!-- Caption -->
+  <rect x="60" y="394" width="580" height="50" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.25"/>
+  <text x="350" y="414" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="12" fill="#2a1a0e">Three independent routes to a changing flux — and each one produces an EMF.</text>
+  <text x="350" y="432" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#C8102E">85% of US electricity is route (C): rotating coils in magnets.</text>
+</svg>

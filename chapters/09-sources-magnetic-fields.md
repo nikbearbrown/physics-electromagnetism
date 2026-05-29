@@ -26,6 +26,9 @@ First, the source is current $I\,d\vec{\ell}$ rather than charge $dq$. Second, a
 
 The right-hand rule handles the cross product geometrically. Point the right thumb along the current direction; the fingers curl in the direction of the magnetic field. For a long wire carrying current upward, the field circles it counterclockwise when viewed from above — the field lines are horizontal rings.
 
+![long straight wire with current I upward — magnetic field lines shown as horizontal circles around the wire, right-hand rule illustrated with thumb pointing up along current and fingers curling counterclockwise, arrow...](../images/09-sources-magnetic-fields-fig-01.png)
+*Figure 9.1 — Biot-Savart Law*
+
 <!-- → [IMAGE: long straight wire with current I upward — magnetic field lines shown as horizontal circles around the wire, right-hand rule illustrated with thumb pointing up along current and fingers curling counterclockwise, arrow labels showing the direction of B at several radii] -->
 
 ---
@@ -46,6 +49,9 @@ Same-direction currents attract; opposite-direction currents repel. This follows
 
 This formula was historically how the ampere was defined — the constant current in two parallel wires 1 meter apart that produces a force of $2 \times 10^{-7}$ N per meter. I'll return to what replaced that definition.
 
+![two parallel wires side by side — left panel: same-direction currents (both dots or both X marks), force arrows pointing inward (attraction), B field from wire 1 shown at wire 2's location with the cross product I₂L×B...](../images/09-sources-magnetic-fields-fig-02.png)
+*Figure 9.2 — Three Geometries*
+
 <!-- → [IMAGE: two parallel wires side by side — left panel: same-direction currents (both dots or both X marks), force arrows pointing inward (attraction), B field from wire 1 shown at wire 2's location with the cross product I₂L×B₁ pointing toward wire 1; right panel: opposite-direction currents, force arrows pointing outward (repulsion) — student should see the cross-product direction flip with the current reversal] -->
 
 ---
@@ -64,6 +70,9 @@ $$\vec{m} = I A \hat{n}$$
 
 where $A = \pi R^2$ is the loop's area and $\hat{n}$ is the normal by the right-hand rule. This is the same quantity that appears in atomic physics when we talk about the magnetic moment of an electron orbit — the fundamental quantum unit of magnetic moment, the **Bohr magneton** $\mu_B = e\hbar/2m_e$, is just this formula for an electron in a circular orbit.
 
+![B_z(z) vs. z for a circular current loop — curve peaking at B = μ₀I/2R at z=0, falling symmetrically on both sides, annotated with the 1/z³ asymptote for z≫R and the value at the center; student should see the field p...](../images/09-sources-magnetic-fields-fig-03.png)
+*Figure 9.3 — Ampère's Law*
+
 <!-- → [CHART: B_z(z) vs. z for a circular current loop — curve peaking at B = μ₀I/2R at z=0, falling symmetrically on both sides, annotated with the 1/z³ asymptote for z≫R and the value at the center; student should see the field profile is smooth and peaked, unlike a uniform solenoid] -->
 
 ---
@@ -78,6 +87,9 @@ Always true. Useful for computing $\vec{B}$ when the current configuration has e
 
 **Cylindrical symmetry.** A long straight wire or solid cylinder of current. Choose a circular Amperian loop of radius $r$ centered on the wire. Symmetry forces $\vec{B}$ to be tangential and constant in magnitude on the circle. The line integral collapses: $B \cdot 2\pi r = \mu_0 I_{\text{enc}}$, giving $B = \mu_0 I_{\text{enc}}/(2\pi r)$. Outside the wire, $I_{\text{enc}} = I$ (total current); inside a solid wire of radius $R$, $I_{\text{enc}} = I(r/R)^2$ (only the enclosed fraction). The field inside the wire rises linearly from zero at the center to a maximum at the surface; outside it falls as $1/r$. This is the exact magnetic analogue of the charged solid sphere from Chapter 3.
 
+![B(r) vs. r for a solid cylindrical current — linear rise from 0 at center to μ₀I/2πR at the surface, then 1/r falloff outside; kink at r=R labeled; student should compare to the E(r) profile of the uniformly charged s...](../images/09-sources-magnetic-fields-fig-04.png)
+*Figure 9.4 — Parallel Wires*
+
 <!-- → [CHART: B(r) vs. r for a solid cylindrical current — linear rise from 0 at center to μ₀I/2πR at the surface, then 1/r falloff outside; kink at r=R labeled; student should compare to the E(r) profile of the uniformly charged sphere from Chapter 3] -->
 
 **The solenoid.** The cleanest application of Ampère's law in this chapter. Apply a rectangular Amperian loop with one long side of length $L$ inside the solenoid (parallel to the axis), one long side outside, and two short sides perpendicular to the axis.
@@ -91,6 +103,9 @@ The loop encloses $nL$ turns, each carrying current $I$. So $I_{\text{enc}} = nL
 $$BL = \mu_0 n L I \implies B = \mu_0 n I$$
 
 This is a remarkably clean derivation. The uniformity of the field inside follows from the symmetry of the ideal solenoid; the $B \approx 0$ outside follows because the field lines must close, and with the loop field inside large and confined, the return path outside is spread over all of space and is negligible. Real solenoids deviate at the ends — at the geometric end of a long coil, $B$ drops to roughly $\frac{1}{2}\mu_0 n I$ — but near the center the formula is exact.
+
+![cross-section of a solenoid with the rectangular Amperian loop drawn in — inside leg labeled BL (contributing to the integral), outside leg labeled B≈0, perpendicular legs labeled "B⊥dl, no contribution", enclosed tur...](../images/09-sources-magnetic-fields-fig-05.png)
+*Figure 9.5 — Gauss's Law for B*
 
 <!-- → [IMAGE: cross-section of a solenoid with the rectangular Amperian loop drawn in — inside leg labeled BL (contributing to the integral), outside leg labeled B≈0, perpendicular legs labeled "B⊥dl, no contribution", enclosed turns labeled nL, the resulting equation B = μ₀nI written beside] -->
 
@@ -107,6 +122,9 @@ The right-hand side is zero — not $Q_{\text{magnetic}}/\mu_0$, just zero. Beca
 This is Maxwell's second equation. It is empirical in the same sense that Gauss's law for $\vec{E}$ would be empirical without knowing that electric charges exist — we accept it because it matches every measurement. In 1931, Dirac showed that if a single magnetic monopole existed anywhere in the universe, it would force the quantization of electric charge. The argument is beautiful: a monopole and an electron, interacting quantum-mechanically, produce a phase constraint that requires the product of their charges to be quantized. Since electric charges are quantized (they come in units of $e$), the existence of monopoles would explain why.
 
 Decades of searching have found nothing. The current limits from the LHC's MoEDAL experiment, from IceCube cosmic-ray data, and from dedicated underground detectors are very strong. If monopoles exist, they are either very rare, very heavy, or confined to conditions we haven't accessed. Until one is found, the right-hand side of Gauss's law for $\vec{B}$ is zero, and charge quantization remains an empirical fact without a theoretical explanation.
+
+![side-by-side comparison of Gauss's law for E and Gauss's law for B — left: closed surface with electric field lines diverging outward from a positive charge inside (∮E·dA = Q/ε₀, non-zero RHS), right: closed surface w...](../images/09-sources-magnetic-fields-fig-06.png)
+*Figure 9.6 — Inside the MRI*
 
 <!-- → [IMAGE: side-by-side comparison of Gauss's law for E and Gauss's law for B — left: closed surface with electric field lines diverging outward from a positive charge inside (∮E·dA = Q/ε₀, non-zero RHS), right: closed surface with magnetic field lines forming closed loops passing through — every line that enters also exits (∮B·dA = 0, zero RHS) — annotations explaining "electric charges exist" vs. "no magnetic charges observed"] -->
 

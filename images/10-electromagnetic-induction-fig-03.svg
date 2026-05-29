@@ -1,0 +1,101 @@
+<!--
+  Motional EMF — Rod on Rails, Two Derivations Agree
+  Book: Physics +1: Electromagnetism
+  Chapter: 10-electromagnetic-induction
+  Figure: 03
+  Type: Annotated example
+  Generated: 2026-05-25
+  Source: pantry/10-electromagnetic-induction-cajal.md
+-->
+<svg viewBox="0 0 700 460" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title">
+  <title id="fig-title">Motional EMF — Two Derivations, One Answer</title>
+  <desc>A rod of length L slides right with velocity v on parallel rails in a uniform B field out of the page. A resistor R closes the circuit on the left. Two views of the same physics. View A flux-rule: swept area equals L v d t so d Phi over d t equals B L v and EMF equals B L v. View B Lorentz force: each electron in the rod feels q v cross B along the rod, charges separate, end-to-end potential difference equals B L v. Mechanical power equals electrical power.</desc>
+  <metadata>
+    <cajal:figure
+      xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Physics +1: Electromagnetism"
+      book-slug="physics-electromagnetism"
+      chapter="10-electromagnetic-induction"
+      figure-number="03"
+      figure-title="Motional EMF"
+      figure-slug="motional-emf"
+      figure-type="annotated-example"
+      priority="Important"
+      author="Humanitarians AI"
+      date-generated="2026-05-25"
+      source-file="pantry/10-electromagnetic-induction-cajal.md"
+    />
+  </metadata>
+  <defs>
+    <marker id="arrowred" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#C8102E"/>
+    </marker>
+    <marker id="arrowoch" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#C8860E"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="700" height="460" fill="#FFFFFF"/>
+
+  <text x="32" y="36" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="14" fill="#2a1a0e">Rod on Rails — ε = BLv, Two Ways</text>
+  <text x="32" y="56" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="11" fill="#545454">Flux-rule view and Lorentz-force view agree — relativity already lurks here.</text>
+
+  <!-- B field dots (out of page) -->
+  <g fill="#7B61A8">
+    <circle cx="110" cy="140" r="2"/>
+    <circle cx="180" cy="140" r="2"/>
+    <circle cx="250" cy="140" r="2"/>
+    <circle cx="320" cy="140" r="2"/>
+    <circle cx="390" cy="140" r="2"/>
+    <circle cx="460" cy="140" r="2"/>
+    <circle cx="530" cy="140" r="2"/>
+    <circle cx="600" cy="140" r="2"/>
+    <circle cx="110" cy="290" r="2"/>
+    <circle cx="180" cy="290" r="2"/>
+    <circle cx="250" cy="290" r="2"/>
+    <circle cx="320" cy="290" r="2"/>
+    <circle cx="390" cy="290" r="2"/>
+    <circle cx="460" cy="290" r="2"/>
+    <circle cx="530" cy="290" r="2"/>
+    <circle cx="600" cy="290" r="2"/>
+  </g>
+  <text x="630" y="144" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#7B61A8">B⃗ out of page</text>
+
+  <!-- Rails (top and bottom) -->
+  <line x1="100" y1="170" x2="600" y2="170" stroke="#56B4E9" stroke-width="2"/>
+  <line x1="100" y1="260" x2="600" y2="260" stroke="#56B4E9" stroke-width="2"/>
+  <!-- External resistor on left -->
+  <line x1="100" y1="170" x2="100" y2="200" stroke="#56B4E9" stroke-width="2"/>
+  <path d="M 100 200 L 92 206 L 108 212 L 92 218 L 108 224 L 92 230 L 108 236 L 100 242" stroke="#C8102E" stroke-width="1.25" fill="none"/>
+  <line x1="100" y1="242" x2="100" y2="260" stroke="#56B4E9" stroke-width="2"/>
+  <text x="78" y="222" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#2a1a0e">R</text>
+
+  <!-- Sliding rod -->
+  <line x1="400" y1="166" x2="400" y2="264" stroke="#C8102E" stroke-width="3.5"/>
+  <text x="386" y="220" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#C8102E">L</text>
+
+  <!-- Velocity arrow on rod -->
+  <line x1="404" y1="216" x2="440" y2="216" stroke="#C8860E" stroke-width="2" marker-end="url(#arrowoch)"/>
+  <text x="445" y="220" font-family="'JetBrains Mono', 'Fira Code', 'Converter New', monospace" font-size="11" fill="#C8860E">v⃗</text>
+
+  <!-- Swept area shading (right of rod, on its path) -->
+  <rect x="400" y="172" width="80" height="86" fill="#C8860E" opacity="0.15"/>
+  <text x="440" y="290" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8860E">swept dA = L v dt</text>
+
+  <!-- View A (flux-rule) label -->
+  <rect x="40" y="320" width="280" height="56" fill="#F5F5F5" stroke="#56B4E9" stroke-width="1"/>
+  <text x="180" y="340" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#56B4E9" letter-spacing="0.06em">(A) FLUX-RULE VIEW</text>
+  <text x="180" y="358" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#2a1a0e">dΦ/dt = B L v</text>
+  <text x="180" y="372" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#C8102E">ε = B L v</text>
+
+  <!-- View B (Lorentz-force) inset on the rod -->
+  <rect x="380" y="320" width="280" height="56" fill="#F5F5F5" stroke="#C8102E" stroke-width="1"/>
+  <text x="520" y="340" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#C8102E" letter-spacing="0.06em">(B) LORENTZ-FORCE VIEW</text>
+  <text x="520" y="358" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#2a1a0e">each e⁻ feels q v⃗ × B⃗</text>
+  <text x="520" y="372" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#C8102E">ΔV across rod = B L v</text>
+
+  <!-- Energy balance -->
+  <rect x="60" y="394" width="580" height="50" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.25"/>
+  <text x="350" y="414" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#3AAE3A">P_mech = F v = (BIL) v   =   I²R = (BLv)²/R = P_elec</text>
+  <text x="350" y="432" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#C8102E">Same answer two ways — the relativistic unification is already lurking.</text>
+</svg>

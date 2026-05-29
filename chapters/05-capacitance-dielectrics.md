@@ -80,6 +80,9 @@ This is the **energy density of the electric field**. It doesn't just apply to t
 
 This is Maxwell's insight, and it matters far beyond this chapter. When we get to electromagnetic waves in Chapter 11, a propagating wave carries energy through empty space. There are no plates, no charges, nothing material. The energy is in the oscillating fields themselves, quantified by exactly this expression. The energy in sunlight crossing a square meter of ground, the energy transmitted by a radio antenna — all of it is accounted for by $\frac{1}{2}\varepsilon_0 E^2$ and its magnetic counterpart $\frac{1}{2\mu_0} B^2$.
 
+![parallel-plate capacitor cross-section with uniform E field between plates, shaded to indicate energy density u_E = ½ε₀E² — annotations showing that the energy is distributed throughout the field volume, not concentra...](../images/05-capacitance-dielectrics-fig-01.png)
+*Figure 5.1 — Three Canonical Capacitor Geometries*
+
 <!-- → [IMAGE: parallel-plate capacitor cross-section with uniform E field between plates, shaded to indicate energy density u_E = ½ε₀E² — annotations showing that the energy is distributed throughout the field volume, not concentrated on the plates] -->
 
 ---
@@ -99,6 +102,9 @@ $$\frac{1}{C_{\text{eq, series}}} = \frac{1}{C_1} + \frac{1}{C_2} + \cdots$$
 Series capacitances add reciprocally.
 
 This is the opposite of resistors: series resistors add directly, parallel resistors add reciprocally. The inversion is real and has a clean physical reason. Capacitance measures *ease of storing charge* — it is a kind of storage capacity. Putting two storage containers in parallel directly adds capacity. Putting them in series divides the applied voltage between them, so each stores less charge for a given total voltage; the combined system has less capacitance than either alone. Resistance, by contrast, measures obstruction; parallel paths share the obstruction and reduce it, while series paths stack it.
+
+![side-by-side circuit diagrams — left: two capacitors C₁ and C₂ in parallel, both connected across the same voltage V, with charge labels Q₁=C₁V and Q₂=C₂V and the equivalent single capacitor C₁+C₂; right: two capacito...](../images/05-capacitance-dielectrics-fig-02.png)
+*Figure 5.2 — Energy Density Lives in the Field Between the Plates*
 
 <!-- → [IMAGE: side-by-side circuit diagrams — left: two capacitors C₁ and C₂ in parallel, both connected across the same voltage V, with charge labels Q₁=C₁V and Q₂=C₂V and the equivalent single capacitor C₁+C₂; right: two capacitors in series, same charge Q on each, voltage labels V₁=Q/C₁ and V₂=Q/C₂ adding to total V, equivalent single capacitor 1/(1/C₁+1/C₂)] -->
 
@@ -121,6 +127,9 @@ With a dielectric filling the gap and the charge $Q$ fixed, the field drops by $
 $$C_{\text{die}} = \kappa C_0$$
 
 The dielectric multiplies the capacitance by $\kappa$. Practical consequence: modern ceramic capacitors with $\kappa$ in the thousands store microfarads in millimeter-scale packages. High-$\kappa$ dielectrics are why your phone's circuit board doesn't require a capacitor the size of a dinner plate.
+
+![parallel-plate capacitor with dielectric — left side shows free charges on plates (+Q, -Q), right side shows bound charges on dielectric faces (opposing sign) — arrows showing E₀ (external) and E_bound (opposing), net...](../images/05-capacitance-dielectrics-fig-03.png)
+*Figure 5.3 — Series vs Parallel*
 
 <!-- → [IMAGE: parallel-plate capacitor with dielectric — left side shows free charges on plates (+Q, -Q), right side shows bound charges on dielectric faces (opposing sign) — arrows showing E₀ (external) and E_bound (opposing), net E = E₀/κ in the middle] -->
 
@@ -166,7 +175,13 @@ To verify this: $W_R = \int_0^\infty I^2 R\,dt = \int_0^\infty (\varepsilon/R)^2
 
 The only escape: charge through an inductor instead of a resistor. The inductor-capacitor combination oscillates, and in the ideal (lossless) case no energy is dissipated. But real inductors have resistance, and real systems add damping. The chapter doesn't develop this further; it returns in Chapter 8.
 
+![Q(t) and I(t) for RC charging — Q curve rising from 0 toward Cε with asymptote, I curve decaying from ε/R toward 0, vertical reference line at t = τ = RC labeled "63% charged"](../images/05-capacitance-dielectrics-fig-04.png)
+*Figure 5.4 — Dielectric Microphysics*
+
 <!-- → [CHART: Q(t) and I(t) for RC charging — Q curve rising from 0 toward Cε with asymptote, I curve decaying from ε/R toward 0, vertical reference line at t = τ = RC labeled "63% charged"] -->
+
+![energy accounting for RC charging — battery supplies Cε², pie chart or bar chart showing exactly half (½Cε²) going to capacitor storage and exactly half (½Cε²) dissipated in resistor as heat — label "independent of R"](../images/05-capacitance-dielectrics-fig-05.png)
+*Figure 5.5 — RC Charging and Discharging*
 
 <!-- → [INFOGRAPHIC: energy accounting for RC charging — battery supplies Cε², pie chart or bar chart showing exactly half (½Cε²) going to capacitor storage and exactly half (½Cε²) dissipated in resistor as heat — label "independent of R"] -->
 
@@ -275,3 +290,6 @@ The energy density $u_E = \frac{1}{2}\varepsilon_0 E^2$ is not an isolated resul
 ---
 
 **Tags:** capacitance, dielectric, energy density, RC circuit, time constant, supercapacitor, polarization, coaxial cable
+![Half-Energy-Lost](../images/05-capacitance-dielectrics-fig-06.png)
+*Figure 5.6 — Half-Energy-Lost*
+

@@ -1,0 +1,82 @@
+<!--
+  Four Speeds of Electricity in a Copper Wire
+  Book: Physics +1: Electromagnetism
+  Chapter: 06-current-resistance
+  Figure: 01
+  Type: Statistical / quantitative (horizontal log bar chart)
+  Generated: 2026-05-25
+  Source: pantry/06-current-resistance-cajal.md
+-->
+<svg viewBox="0 0 700 460" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title">
+  <title id="fig-title">Four Speeds in a Copper Wire — 10 Orders of Magnitude</title>
+  <desc>Horizontal log bar chart. Drift velocity around ten to the minus four meters per second is the current. Thermal velocity around ten to the fifth is what classical electrons would do. Fermi velocity around one million six hundred thousand is the actual quantum speed. Signal speed around two hundred million sets when the bulb lights.</desc>
+  <metadata>
+    <cajal:figure
+      xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Physics +1: Electromagnetism"
+      book-slug="physics-electromagnetism"
+      chapter="06-current-resistance"
+      figure-number="01"
+      figure-title="Four Speeds of Electricity"
+      figure-slug="four-speeds"
+      figure-type="quantitative"
+      priority="Critical"
+      author="Humanitarians AI"
+      date-generated="2026-05-25"
+      source-file="pantry/06-current-resistance-cajal.md"
+    />
+  </metadata>
+  <rect x="0" y="0" width="700" height="460" fill="#FFFFFF"/>
+
+  <text x="32" y="36" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="14" fill="#2a1a0e">Four Speeds in a Copper Wire — Don't Mix Them Up</text>
+  <text x="32" y="56" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="11" fill="#545454">Twelve orders of magnitude span — log axis (y-from-zero exception documented).</text>
+
+  <!-- Axes -->
+  <line x1="180" y1="380" x2="640" y2="380" stroke="#2a1a0e" stroke-width="1"/>
+  <line x1="180" y1="100" x2="180" y2="380" stroke="#2a1a0e" stroke-width="1"/>
+
+  <!-- X-axis: log scale 10^-4 to 10^8 (12 decades). 460 px / 12 = ~38.3 px/decade. x=180 is 10^-4, x=640 is 10^8 -->
+  <g font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454" text-anchor="middle">
+    <text x="180" y="396">10⁻⁴</text>
+    <text x="257" y="396">10⁻²</text>
+    <text x="333" y="396">10⁰</text>
+    <text x="410" y="396">10²</text>
+    <text x="487" y="396">10⁴</text>
+    <text x="563" y="396">10⁶</text>
+    <text x="640" y="396">10⁸</text>
+  </g>
+  <g stroke="#2a1a0e" stroke-width="0.5">
+    <line x1="257" y1="375" x2="257" y2="385"/>
+    <line x1="333" y1="375" x2="333" y2="385"/>
+    <line x1="410" y1="375" x2="410" y2="385"/>
+    <line x1="487" y1="375" x2="487" y2="385"/>
+    <line x1="563" y1="375" x2="563" y2="385"/>
+  </g>
+  <text x="410" y="418" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#545454" letter-spacing="0.06em">SPEED (m/s, LOG)</text>
+
+  <!-- Bars. x_end = 180 + (log10(speed) - (-4)) * (460/12) = 180 + (log10+4)*38.33 -->
+  <!-- Drift v_d = 10^-4 (log = -4) → x_end = 180; tiny bar, but visualize from 10^-5 floor? Use minimum visible width -->
+  <!-- Drift 10^-4: x_end = 180. Display from 178 to 182 -->
+  <rect x="180" y="120" width="2" height="30" fill="#56B4E9"/>
+  <text x="190" y="140" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#56B4E9">drift v_d ≈ 10⁻⁴ m/s</text>
+  <text x="190" y="156" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">"this is the current"</text>
+
+  <!-- Thermal 10^5 → x_end = 180 + 9*38.33 = 525 -->
+  <rect x="180" y="180" width="345" height="30" fill="#C8860E"/>
+  <text x="535" y="200" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#C8860E">thermal v_T ≈ 10⁵ m/s</text>
+  <text x="535" y="216" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">classical guess</text>
+
+  <!-- Fermi 1.6e6 (log = 6.2) → x_end = 180 + 10.2*38.33 = 571 -->
+  <rect x="180" y="240" width="391" height="30" fill="#545454"/>
+  <text x="581" y="260" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#545454">Fermi v_F ≈ 1.6×10⁶ m/s</text>
+  <text x="581" y="276" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">actual quantum speed</text>
+
+  <!-- Signal 2e8 (log = 8.3) → x_end = 180 + 12.3*38.33 = 651 (clamp to 640) -->
+  <rect x="180" y="300" width="460" height="30" fill="#C8102E"/>
+  <text x="535" y="320" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#FFFFFF">signal ≈ 2×10⁸ m/s</text>
+
+  <!-- Caption -->
+  <rect x="180" y="430" width="460" height="20" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.25"/>
+  <text x="410" y="445" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#2a1a0e">Drift is the current. Signal is when the bulb lights. Don't confuse them.</text>
+</svg>

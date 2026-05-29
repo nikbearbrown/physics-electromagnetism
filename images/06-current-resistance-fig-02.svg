@@ -1,0 +1,100 @@
+<!--
+  Resistivity Ladder — 26 Orders of Magnitude
+  Book: Physics +1: Electromagnetism
+  Chapter: 06-current-resistance
+  Figure: 02
+  Type: Statistical / quantitative (vertical log bar chart)
+  Generated: 2026-05-25
+  Source: pantry/06-current-resistance-cajal.md
+-->
+<svg viewBox="0 0 700 460" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title">
+  <title id="fig-title">Resistivity from Silver to Fused Quartz — 26 Orders of Magnitude</title>
+  <desc>Vertical log bar chart of electrical resistivity. Silver, copper, aluminum, tungsten are good conductors near ten to the minus eight ohm meters. Nichrome is a resistive alloy near ten to the minus six. Silicon is a semiconductor near six hundred forty. Fused quartz is an insulator near ten to the seventeen point eight. Metals and insulators are qualitatively different states of matter.</desc>
+  <metadata>
+    <cajal:figure
+      xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Physics +1: Electromagnetism"
+      book-slug="physics-electromagnetism"
+      chapter="06-current-resistance"
+      figure-number="02"
+      figure-title="Resistivity Ladder"
+      figure-slug="resistivity-ladder"
+      figure-type="quantitative"
+      priority="Important"
+      author="Humanitarians AI"
+      date-generated="2026-05-25"
+      source-file="pantry/06-current-resistance-cajal.md"
+    />
+  </metadata>
+  <rect x="0" y="0" width="700" height="460" fill="#FFFFFF"/>
+
+  <text x="32" y="36" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="14" fill="#2a1a0e">Resistivity Ladder — Conductors to Insulators</text>
+  <text x="32" y="56" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="11" fill="#545454">26 orders of magnitude. There is no smooth interpolation — band gap is real.</text>
+
+  <!-- Axes -->
+  <line x1="100" y1="380" x2="640" y2="380" stroke="#2a1a0e" stroke-width="1"/>
+  <line x1="100" y1="80" x2="100" y2="380" stroke="#2a1a0e" stroke-width="1"/>
+
+  <!-- Y-axis: log from 10^-9 (380) to 10^19 (80). 300 px / 28 decades = ~10.7 px/decade -->
+  <g font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454" text-anchor="end">
+    <text x="94" y="384">10⁻⁹</text>
+    <text x="94" y="316">10⁻³</text>
+    <text x="94" y="248">10³</text>
+    <text x="94" y="180">10⁹</text>
+    <text x="94" y="112">10¹⁵</text>
+  </g>
+  <g stroke="#2a1a0e" stroke-width="0.5">
+    <line x1="95" y1="380" x2="105" y2="380"/>
+    <line x1="95" y1="312" x2="105" y2="312"/>
+    <line x1="95" y1="244" x2="105" y2="244"/>
+    <line x1="95" y1="176" x2="105" y2="176"/>
+    <line x1="95" y1="108" x2="105" y2="108"/>
+  </g>
+  <text x="48" y="230" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#545454" letter-spacing="0.06em" transform="rotate(-90 48 230)">RESISTIVITY ρ (Ω·m, LOG)</text>
+
+  <!-- Bars. y = 380 - (log10(ρ) + 9) * (300/28). Bar bottom at y=380. -->
+  <!-- Silver 1.59e-8: log = -7.80 → y = 380 - 1.20*10.7 = 367.2 -->
+  <rect x="135" y="367" width="50" height="13" fill="#56B4E9"/>
+  <text x="160" y="395" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#56B4E9">silver</text>
+  <text x="160" y="407" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="7" fill="#545454">1.59e-8</text>
+
+  <!-- Copper 1.68e-8: log = -7.77 → y = 367.0 -->
+  <rect x="205" y="367" width="50" height="13" fill="#56B4E9"/>
+  <text x="230" y="395" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#56B4E9">copper</text>
+  <text x="230" y="407" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="7" fill="#545454">1.68e-8</text>
+
+  <!-- Aluminum 2.65e-8: log = -7.58 → y = 364.8 -->
+  <rect x="275" y="365" width="50" height="15" fill="#56B4E9"/>
+  <text x="300" y="395" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#56B4E9">aluminum</text>
+  <text x="300" y="407" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="7" fill="#545454">2.65e-8</text>
+
+  <!-- Tungsten 5.6e-8: log = -7.25 → y = 361.3 -->
+  <rect x="345" y="361" width="50" height="19" fill="#56B4E9"/>
+  <text x="370" y="395" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#56B4E9">tungsten</text>
+  <text x="370" y="407" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="7" fill="#545454">5.60e-8</text>
+
+  <!-- Nichrome 1.1e-6: log = -5.96 → y = 347.5 -->
+  <rect x="415" y="348" width="50" height="32" fill="#C8860E"/>
+  <text x="440" y="395" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#C8860E">nichrome</text>
+  <text x="440" y="407" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="7" fill="#545454">1.1e-6</text>
+
+  <!-- Pure Si 640: log = 2.81 → y = 380 - 11.81*10.7 = 253.6 -->
+  <rect x="485" y="254" width="50" height="126" fill="#C8860E"/>
+  <text x="510" y="395" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#C8860E">silicon</text>
+  <text x="510" y="407" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="7" fill="#545454">~640</text>
+
+  <!-- Fused quartz 7.5e17: log = 17.88 → y = 380 - 26.88*10.7 = 92.4 -->
+  <rect x="555" y="92" width="50" height="288" fill="#C8102E"/>
+  <text x="580" y="395" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#C8102E">quartz</text>
+  <text x="580" y="407" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="7" fill="#545454">7.5e17</text>
+
+  <!-- Class divider annotations -->
+  <text x="640" y="370" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#56B4E9">conductors</text>
+  <text x="640" y="260" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8860E">semiconductors</text>
+  <text x="640" y="110" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">insulators</text>
+
+  <!-- Caption -->
+  <rect x="100" y="430" width="540" height="20" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.25"/>
+  <text x="370" y="445" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#2a1a0e">Metals and insulators are different states of matter, separated by a band gap.</text>
+</svg>

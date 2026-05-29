@@ -1,0 +1,108 @@
+<!--
+  Snell's Law and Total Internal Reflection
+  Book: Physics +1: Electromagnetism
+  Chapter: 12-capstone-unified-field
+  Figure: 01
+  Type: Annotated example
+  Generated: 2026-05-25
+  Source: pantry/12-capstone-unified-field-cajal.md
+-->
+<svg viewBox="0 0 700 460" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title">
+  <title id="fig-title">Snell's Law and Total Internal Reflection</title>
+  <desc>Two side-by-side panels showing light crossing a glass-air interface. Panel A: refraction below the critical angle — n one sin theta one equals n two sin theta two. Panel B: above the critical angle, the ray totally internally reflects. Critical angle equals arcsin of n air over n glass, about 42 degrees. Inset shows a fiber-optic cable where light bounces along by TIR.</desc>
+  <metadata>
+    <cajal:figure
+      xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Physics +1: Electromagnetism"
+      book-slug="physics-electromagnetism"
+      chapter="12-capstone-unified-field"
+      figure-number="01"
+      figure-title="Snell's Law and TIR"
+      figure-slug="snell-tir"
+      figure-type="annotated-example"
+      priority="Important"
+      author="Humanitarians AI"
+      date-generated="2026-05-25"
+      source-file="pantry/12-capstone-unified-field-cajal.md"
+    />
+  </metadata>
+  <defs>
+    <marker id="arrowred" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#C8102E"/>
+    </marker>
+    <marker id="arrowoch" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#C8860E"/>
+    </marker>
+    <marker id="arrowpurp" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#7B61A8"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="700" height="460" fill="#FFFFFF"/>
+
+  <text x="32" y="36" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="14" fill="#2a1a0e">Snell's Law and Total Internal Reflection</text>
+  <text x="32" y="56" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="11" fill="#545454">Above the critical angle, light reflects entirely. That's how fiber optics work.</text>
+
+  <line x1="350" y1="80" x2="350" y2="380" stroke="#2a1a0e" stroke-width="0.5"/>
+
+  <!-- Panel A: Refraction below critical -->
+  <text x="180" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#2a1a0e" letter-spacing="0.08em">(A) BELOW θ_c — REFRACTS</text>
+
+  <!-- Glass region (lower) -->
+  <rect x="60" y="220" width="240" height="120" fill="#56B4E9" opacity="0.25" stroke="#2a1a0e" stroke-width="0.75"/>
+  <text x="70" y="244" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#2a1a0e">glass · n = 1.5</text>
+  <text x="70" y="216" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">air · n = 1.0</text>
+
+  <!-- Interface line -->
+  <line x1="60" y1="220" x2="300" y2="220" stroke="#2a1a0e" stroke-width="1.5"/>
+
+  <!-- Normal -->
+  <line x1="180" y1="140" x2="180" y2="300" stroke="#545454" stroke-width="0.5" stroke-dasharray="3 2"/>
+
+  <!-- Incident ray (from below-left, glass to interface) -->
+  <line x1="110" y1="290" x2="180" y2="220" stroke="#C8102E" stroke-width="2" marker-end="url(#arrowred)"/>
+  <text x="118" y="284" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">θ₁</text>
+
+  <!-- Refracted ray (into air, bent away from normal) -->
+  <line x1="180" y1="220" x2="240" y2="140" stroke="#C8860E" stroke-width="2" marker-end="url(#arrowoch)"/>
+  <text x="244" y="146" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8860E">θ₂</text>
+
+  <!-- Formula -->
+  <rect x="60" y="350" width="240" height="36" fill="#F5F5F5" stroke="#C8102E" stroke-width="1"/>
+  <text x="180" y="372" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#C8102E">n₁ sin θ₁ = n₂ sin θ₂</text>
+
+  <!-- Panel B: TIR above critical -->
+  <text x="510" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#C8102E" letter-spacing="0.08em">(B) ABOVE θ_c — TIR</text>
+
+  <rect x="390" y="220" width="240" height="120" fill="#56B4E9" opacity="0.25" stroke="#2a1a0e" stroke-width="0.75"/>
+  <text x="400" y="244" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#2a1a0e">glass · n = 1.5</text>
+  <text x="400" y="216" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">air · n = 1.0</text>
+
+  <line x1="390" y1="220" x2="630" y2="220" stroke="#2a1a0e" stroke-width="1.5"/>
+  <line x1="510" y1="140" x2="510" y2="300" stroke="#545454" stroke-width="0.5" stroke-dasharray="3 2"/>
+
+  <!-- Incident ray at steeper angle (from below-left) -->
+  <line x1="420" y1="270" x2="510" y2="220" stroke="#C8102E" stroke-width="2" marker-end="url(#arrowred)"/>
+  <text x="436" y="266" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">θ &gt; θ_c</text>
+
+  <!-- TIR reflected ray (mirror image, still in glass) -->
+  <line x1="510" y1="220" x2="600" y2="270" stroke="#7B61A8" stroke-width="2.5" marker-end="url(#arrowpurp)"/>
+  <text x="586" y="266" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#7B61A8">all reflected</text>
+
+  <!-- Critical angle formula -->
+  <rect x="390" y="350" width="240" height="36" fill="#F5F5F5" stroke="#C8102E" stroke-width="1"/>
+  <text x="510" y="372" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#C8102E">sin θ_c = n_air / n_glass ≈ 42°</text>
+
+  <!-- Fiber-optic inset -->
+  <rect x="60" y="400" width="280" height="44" fill="#F5F5F5" stroke="#56B4E9" stroke-width="1"/>
+  <text x="200" y="416" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#56B4E9">→ FIBER-OPTIC CABLE</text>
+  <!-- Fiber drawn as long thin cylinder with zigzag light path -->
+  <rect x="80" y="426" width="240" height="10" fill="#56B4E9" opacity="0.3" stroke="#2a1a0e" stroke-width="0.5"/>
+  <polyline points="80,431 110,427 140,435 170,427 200,435 230,427 260,435 290,427 320,431" stroke="#C8102E" stroke-width="1.25" fill="none"/>
+
+  <text x="350" y="416" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454"></text>
+
+  <rect x="360" y="400" width="280" height="44" fill="#F5F5F5" stroke="#C8102E" stroke-width="1"/>
+  <text x="500" y="420" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#2a1a0e">Terabits/sec across oceans —</text>
+  <text x="500" y="436" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#C8102E">photons bouncing down glass tubes by TIR.</text>
+</svg>

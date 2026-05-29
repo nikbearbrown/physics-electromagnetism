@@ -1,0 +1,123 @@
+<!--
+  Three Canonical Capacitor Geometries
+  Book: Physics +1: Electromagnetism
+  Chapter: 05-capacitance-dielectrics
+  Figure: 01
+  Type: Comparison panels
+  Generated: 2026-05-25
+  Source: pantry/05-capacitance-dielectrics-cajal.md
+-->
+<svg viewBox="0 0 700 460" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title">
+  <title id="fig-title">Three Canonical Capacitor Geometries</title>
+  <desc>Three side-by-side cross-sections. Parallel plates with gap d and area A: C equals epsilon zero A over d. Coaxial cylinders with inner radius a and outer b, length L: C equals two pi epsilon zero L over log b over a. Concentric spheres with inner a and outer b: C equals four pi epsilon zero a b over b minus a. One recipe in three geometries.</desc>
+  <metadata>
+    <cajal:figure
+      xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Physics +1: Electromagnetism"
+      book-slug="physics-electromagnetism"
+      chapter="05-capacitance-dielectrics"
+      figure-number="01"
+      figure-title="Three Capacitor Geometries"
+      figure-slug="capacitor-geometries"
+      figure-type="comparison"
+      priority="Important"
+      author="Humanitarians AI"
+      date-generated="2026-05-25"
+      source-file="pantry/05-capacitance-dielectrics-cajal.md"
+    />
+  </metadata>
+  <defs>
+    <marker id="arrowoch" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#C8860E"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="700" height="460" fill="#FFFFFF"/>
+
+  <text x="32" y="36" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="14" fill="#2a1a0e">Three Geometries, One Recipe — C = Q / V</text>
+  <text x="32" y="56" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="11" fill="#545454">Use Gauss to get E. Integrate to get V. Divide. The geometry sets the answer.</text>
+
+  <line x1="240" y1="80" x2="240" y2="380" stroke="#2a1a0e" stroke-width="0.5"/>
+  <line x1="460" y1="80" x2="460" y2="380" stroke="#2a1a0e" stroke-width="0.5"/>
+
+  <!-- Panel A: Parallel plates -->
+  <text x="120" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#2a1a0e" letter-spacing="0.08em">(A) PARALLEL PLATES</text>
+  <rect x="60" y="150" width="120" height="6" fill="#56B4E9" stroke="#2a1a0e" stroke-width="0.75"/>
+  <rect x="60" y="280" width="120" height="6" fill="#56B4E9" stroke="#2a1a0e" stroke-width="0.75"/>
+  <g font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#C8102E" text-anchor="middle">
+    <text x="80" y="148">+</text>
+    <text x="110" y="148">+</text>
+    <text x="140" y="148">+</text>
+    <text x="170" y="148">+</text>
+  </g>
+  <g font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="13" fill="#56B4E9" text-anchor="middle">
+    <text x="80" y="300">−</text>
+    <text x="110" y="300">−</text>
+    <text x="140" y="300">−</text>
+    <text x="170" y="300">−</text>
+  </g>
+  <!-- E arrows downward -->
+  <g stroke="#C8860E" stroke-width="1.25" fill="none">
+    <line x1="80" y1="170" x2="80" y2="270" marker-end="url(#arrowoch)"/>
+    <line x1="120" y1="170" x2="120" y2="270" marker-end="url(#arrowoch)"/>
+    <line x1="160" y1="170" x2="160" y2="270" marker-end="url(#arrowoch)"/>
+  </g>
+  <!-- Dimension labels -->
+  <line x1="200" y1="156" x2="200" y2="280" stroke="#545454" stroke-width="0.5"/>
+  <text x="208" y="222" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">d</text>
+  <text x="120" y="138" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">area A</text>
+
+  <rect x="40" y="328" width="160" height="40" fill="#F5F5F5" stroke="#56B4E9" stroke-width="1"/>
+  <text x="120" y="354" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#56B4E9">C = ε₀ A / d</text>
+
+  <!-- Panel B: Coaxial cylinders -->
+  <text x="350" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#2a1a0e" letter-spacing="0.08em">(B) COAXIAL CYLINDERS</text>
+  <!-- Outer cylinder cross-section -->
+  <circle cx="350" cy="220" r="70" fill="none" stroke="#56B4E9" stroke-width="2"/>
+  <!-- Inner cylinder -->
+  <circle cx="350" cy="220" r="20" fill="#56B4E9" opacity="0.5" stroke="#2a1a0e" stroke-width="1"/>
+  <!-- Radial E arrows -->
+  <g stroke="#C8860E" stroke-width="1.25" fill="none">
+    <line x1="372" y1="220" x2="320" y2="220" marker-end="url(#arrowoch)"/>
+    <line x1="350" y1="242" x2="350" y2="290" marker-end="url(#arrowoch)"/>
+    <line x1="328" y1="220" x2="280" y2="220" marker-end="url(#arrowoch)"/>
+    <line x1="350" y1="198" x2="350" y2="150" marker-end="url(#arrowoch)"/>
+    <line x1="366" y1="236" x2="396" y2="266" marker-end="url(#arrowoch)"/>
+    <line x1="334" y1="204" x2="304" y2="174" marker-end="url(#arrowoch)"/>
+    <line x1="334" y1="236" x2="304" y2="266" marker-end="url(#arrowoch)"/>
+    <line x1="366" y1="204" x2="396" y2="174" marker-end="url(#arrowoch)"/>
+  </g>
+  <!-- Labels for a, b -->
+  <text x="350" y="224" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#2a1a0e">a</text>
+  <text x="408" y="180" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#2a1a0e">b</text>
+  <text x="350" y="305" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">length L</text>
+
+  <rect x="270" y="328" width="160" height="40" fill="#F5F5F5" stroke="#56B4E9" stroke-width="1"/>
+  <text x="350" y="354" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#56B4E9">C = 2πε₀ L / ln(b/a)</text>
+
+  <!-- Panel C: Concentric spheres -->
+  <text x="570" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#2a1a0e" letter-spacing="0.08em">(C) CONCENTRIC SPHERES</text>
+  <circle cx="570" cy="220" r="70" fill="none" stroke="#56B4E9" stroke-width="2"/>
+  <circle cx="570" cy="220" r="22" fill="#56B4E9" opacity="0.5" stroke="#2a1a0e" stroke-width="1"/>
+  <!-- Radial E arrows -->
+  <g stroke="#C8860E" stroke-width="1.25" fill="none">
+    <line x1="592" y1="220" x2="540" y2="220" marker-end="url(#arrowoch)"/>
+    <line x1="570" y1="242" x2="570" y2="290" marker-end="url(#arrowoch)"/>
+    <line x1="548" y1="220" x2="500" y2="220" marker-end="url(#arrowoch)"/>
+    <line x1="570" y1="198" x2="570" y2="150" marker-end="url(#arrowoch)"/>
+    <line x1="586" y1="236" x2="616" y2="266" marker-end="url(#arrowoch)"/>
+    <line x1="554" y1="204" x2="524" y2="174" marker-end="url(#arrowoch)"/>
+    <line x1="554" y1="236" x2="524" y2="266" marker-end="url(#arrowoch)"/>
+    <line x1="586" y1="204" x2="616" y2="174" marker-end="url(#arrowoch)"/>
+  </g>
+  <text x="570" y="224" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#2a1a0e">a</text>
+  <text x="628" y="180" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#2a1a0e">b</text>
+
+  <rect x="490" y="328" width="160" height="40" fill="#F5F5F5" stroke="#56B4E9" stroke-width="1"/>
+  <text x="570" y="354" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#56B4E9">C = 4πε₀ ab / (b−a)</text>
+
+  <!-- Caption -->
+  <rect x="60" y="396" width="580" height="44" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.25"/>
+  <text x="350" y="416" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="12" fill="#2a1a0e">Three derivations, same procedure — Gauss → ∫E·dℓ → Q/V.</text>
+  <text x="350" y="434" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#C8102E">Geometry sets capacitance. Materials enter only through κ.</text>
+</svg>

@@ -1,0 +1,109 @@
+<!--
+  Plane EM Wave — E, B, k Mutually Perpendicular
+  Book: Physics +1: Electromagnetism
+  Chapter: 11-maxwells-equations
+  Figure: 03
+  Type: Annotated example / mechanism diagram
+  Generated: 2026-05-25
+  Source: pantry/11-maxwells-equations-cajal.md
+-->
+<svg viewBox="0 0 700 460" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title">
+  <title id="fig-title">Plane Electromagnetic Wave — E and B in Sync, Perpendicular to k</title>
+  <desc>3D-perspective view of a plane wave propagating along x. The E field oscillates in y as an orange sinusoid; the B field oscillates in z as a purple sinusoid, in phase with E and perpendicular to it. The propagation direction k points along x. E cross B is parallel to k by the right-hand rule. Magnitudes related: E zero equals c times B zero. Angular frequency equals c times wavenumber.</desc>
+  <metadata>
+    <cajal:figure
+      xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Physics +1: Electromagnetism"
+      book-slug="physics-electromagnetism"
+      chapter="11-maxwells-equations"
+      figure-number="03"
+      figure-title="Plane EM Wave Geometry"
+      figure-slug="plane-wave-EBk"
+      figure-type="annotated-example"
+      priority="Critical"
+      author="Humanitarians AI"
+      date-generated="2026-05-25"
+      source-file="pantry/11-maxwells-equations-cajal.md"
+    />
+  </metadata>
+  <defs>
+    <marker id="arrowred" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#C8102E"/>
+    </marker>
+    <marker id="arrowoch" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#C8860E"/>
+    </marker>
+    <marker id="arrowpurp" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#7B61A8"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="700" height="460" fill="#FFFFFF"/>
+
+  <text x="32" y="36" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="14" fill="#2a1a0e">Plane Wave — E⃗ ⊥ B⃗ ⊥ k̂</text>
+  <text x="32" y="56" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="11" fill="#545454">E⃗ × B⃗ points where the energy goes — along k̂.</text>
+
+  <!-- 3D axes from origin (100, 220) -->
+  <!-- x axis (propagation, rightward) -->
+  <line x1="100" y1="220" x2="620" y2="220" stroke="#545454" stroke-width="0.75"/>
+  <text x="630" y="224" font-family="'JetBrains Mono', 'Fira Code', 'Converter New', monospace" font-size="11" fill="#2a1a0e">x (k̂)</text>
+
+  <!-- y axis (up) -->
+  <line x1="100" y1="220" x2="100" y2="100" stroke="#545454" stroke-width="0.75"/>
+  <text x="92" y="94" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#2a1a0e">y (E⃗)</text>
+
+  <!-- z axis (out toward viewer, drawn down-left) -->
+  <line x1="100" y1="220" x2="60" y2="290" stroke="#545454" stroke-width="0.75"/>
+  <text x="56" y="306" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#2a1a0e">z (B⃗)</text>
+
+  <!-- E field sinusoid in y direction (oscillating up/down at positions along x) -->
+  <!-- Draw E vectors as orange vertical arrows at multiple x positions following sin(kx) -->
+  <g stroke="#C8860E" stroke-width="1.75" fill="none">
+    <line x1="140" y1="220" x2="140" y2="180" marker-end="url(#arrowoch)"/>
+    <line x1="180" y1="220" x2="180" y2="140" marker-end="url(#arrowoch)"/>
+    <line x1="220" y1="220" x2="220" y2="180" marker-end="url(#arrowoch)"/>
+    <line x1="260" y1="220" x2="260" y2="260" marker-end="url(#arrowoch)"/>
+    <line x1="300" y1="220" x2="300" y2="300" marker-end="url(#arrowoch)"/>
+    <line x1="340" y1="220" x2="340" y2="260" marker-end="url(#arrowoch)"/>
+    <line x1="380" y1="220" x2="380" y2="180" marker-end="url(#arrowoch)"/>
+    <line x1="420" y1="220" x2="420" y2="140" marker-end="url(#arrowoch)"/>
+    <line x1="460" y1="220" x2="460" y2="180" marker-end="url(#arrowoch)"/>
+    <line x1="500" y1="220" x2="500" y2="260" marker-end="url(#arrowoch)"/>
+    <line x1="540" y1="220" x2="540" y2="300" marker-end="url(#arrowoch)"/>
+    <line x1="580" y1="220" x2="580" y2="260" marker-end="url(#arrowoch)"/>
+  </g>
+  <!-- E envelope curve -->
+  <path d="M 100 220 Q 140 180 180 140 Q 220 180 260 260 Q 300 300 340 260 Q 380 180 420 140 Q 460 180 500 260 Q 540 300 580 260 Q 620 220 620 220" stroke="#C8860E" stroke-width="1" fill="none" opacity="0.5"/>
+
+  <!-- B field sinusoid in z direction (oscillating in/out of page at positions along x) -->
+  <!-- Draw B vectors as purple arrows pointing along z (down-left axis), in-phase with E -->
+  <g stroke="#7B61A8" stroke-width="1.75" fill="none">
+    <line x1="140" y1="220" x2="126" y2="244" marker-end="url(#arrowpurp)"/>
+    <line x1="180" y1="220" x2="152" y2="269" marker-end="url(#arrowpurp)"/>
+    <line x1="220" y1="220" x2="206" y2="244" marker-end="url(#arrowpurp)"/>
+    <line x1="260" y1="220" x2="274" y2="196" marker-end="url(#arrowpurp)"/>
+    <line x1="300" y1="220" x2="328" y2="171" marker-end="url(#arrowpurp)"/>
+    <line x1="340" y1="220" x2="354" y2="196" marker-end="url(#arrowpurp)"/>
+    <line x1="380" y1="220" x2="366" y2="244" marker-end="url(#arrowpurp)"/>
+    <line x1="420" y1="220" x2="392" y2="269" marker-end="url(#arrowpurp)"/>
+    <line x1="460" y1="220" x2="446" y2="244" marker-end="url(#arrowpurp)"/>
+    <line x1="500" y1="220" x2="514" y2="196" marker-end="url(#arrowpurp)"/>
+    <line x1="540" y1="220" x2="568" y2="171" marker-end="url(#arrowpurp)"/>
+    <line x1="580" y1="220" x2="594" y2="196" marker-end="url(#arrowpurp)"/>
+  </g>
+
+  <!-- k̂ propagation arrow on top -->
+  <line x1="200" y1="80" x2="520" y2="80" stroke="#C8102E" stroke-width="2.5" marker-end="url(#arrowred)"/>
+  <text x="360" y="72" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#C8102E">k̂ (propagation at c)</text>
+
+  <!-- Wavelength annotation -->
+  <line x1="180" y1="356" x2="420" y2="356" stroke="#545454" stroke-width="0.75"/>
+  <line x1="180" y1="350" x2="180" y2="362" stroke="#545454" stroke-width="0.75"/>
+  <line x1="420" y1="350" x2="420" y2="362" stroke="#545454" stroke-width="0.75"/>
+  <text x="300" y="372" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#545454">λ (wavelength)</text>
+
+  <!-- Caption -->
+  <rect x="60" y="394" width="580" height="50" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.25"/>
+  <text x="350" y="414" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#2a1a0e">E⃗ × B⃗ ∥ k̂   ·   E₀ = c B₀   ·   ω = c k</text>
+  <text x="350" y="432" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#C8102E">Three vectors, mutually perpendicular. Energy flows along the propagation direction.</text>
+</svg>

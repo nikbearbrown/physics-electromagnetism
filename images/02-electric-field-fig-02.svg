@@ -1,0 +1,129 @@
+<!--
+  Field-Line Atlas: Single Charge, Dipole, Two Like Charges
+  Book: Physics +1: Electromagnetism
+  Chapter: 02-electric-field
+  Figure: 02
+  Type: Comparison panels
+  Generated: 2026-05-25
+  Source: pantry/02-electric-field-cajal.md
+-->
+<svg viewBox="0 0 700 460" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title">
+  <title id="fig-title">Field-Line Atlas — Three Canonical Configurations</title>
+  <desc>Three side-by-side panels. Panel A: a single positive charge with radial field lines emerging in all directions. Panel B: a dipole with lines emerging from the positive charge and curving to terminate on the negative. Panel C: two equal positive charges with a null point between them where field lines cannot pass.</desc>
+  <metadata>
+    <cajal:figure
+      xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Physics +1: Electromagnetism"
+      book-slug="physics-electromagnetism"
+      chapter="02-electric-field"
+      figure-number="02"
+      figure-title="Field-Line Atlas"
+      figure-slug="field-line-atlas"
+      figure-type="comparison"
+      priority="Important"
+      author="Humanitarians AI"
+      date-generated="2026-05-25"
+      source-file="pantry/02-electric-field-cajal.md"
+    />
+  </metadata>
+  <rect x="0" y="0" width="700" height="460" fill="#FFFFFF"/>
+
+  <text x="32" y="36" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="14" fill="#2a1a0e">Three Pictures You Carry — Single Charge, Dipole, Two Likes</text>
+  <text x="32" y="56" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="11" fill="#545454">Most of E&amp;M's intuition fits into these three patterns.</text>
+
+  <line x1="240" y1="80" x2="240" y2="380" stroke="#2a1a0e" stroke-width="0.5"/>
+  <line x1="460" y1="80" x2="460" y2="380" stroke="#2a1a0e" stroke-width="0.5"/>
+
+  <!-- Panel A: Single +q -->
+  <text x="120" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#2a1a0e" letter-spacing="0.08em">(A) SINGLE +q</text>
+
+  <g fill="none" stroke="#56B4E9" stroke-width="1.25">
+    <line x1="120" y1="220" x2="120" y2="140"/>
+    <line x1="120" y1="220" x2="120" y2="300"/>
+    <line x1="120" y1="220" x2="60" y2="220"/>
+    <line x1="120" y1="220" x2="180" y2="220"/>
+    <line x1="120" y1="220" x2="170" y2="170"/>
+    <line x1="120" y1="220" x2="70" y2="170"/>
+    <line x1="120" y1="220" x2="170" y2="270"/>
+    <line x1="120" y1="220" x2="70" y2="270"/>
+    <line x1="120" y1="220" x2="155" y2="148"/>
+    <line x1="120" y1="220" x2="85" y2="148"/>
+    <line x1="120" y1="220" x2="155" y2="292"/>
+    <line x1="120" y1="220" x2="85" y2="292"/>
+    <line x1="120" y1="220" x2="185" y2="190"/>
+    <line x1="120" y1="220" x2="55" y2="190"/>
+    <line x1="120" y1="220" x2="185" y2="250"/>
+    <line x1="120" y1="220" x2="55" y2="250"/>
+  </g>
+  <!-- arrowheads -->
+  <g fill="#56B4E9">
+    <polygon points="120 140, 116 150, 124 150"/>
+    <polygon points="120 300, 116 290, 124 290"/>
+    <polygon points="60 220, 70 216, 70 224"/>
+    <polygon points="180 220, 170 216, 170 224"/>
+  </g>
+
+  <circle cx="120" cy="220" r="11" fill="#C8102E" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="120" y="224" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#FFFFFF">+</text>
+  <text x="120" y="340" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#2a1a0e">radial, uniform angular density</text>
+
+  <!-- Panel B: Dipole -->
+  <text x="350" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#2a1a0e" letter-spacing="0.08em">(B) DIPOLE (+q, −q)</text>
+
+  <g fill="none" stroke="#56B4E9" stroke-width="1.25">
+    <path d="M 312 220 Q 350 220 388 220"/>
+    <path d="M 309 210 Q 350 188 391 210"/>
+    <path d="M 309 230 Q 350 252 391 230"/>
+    <path d="M 305 200 Q 350 164 395 200"/>
+    <path d="M 305 240 Q 350 276 395 240"/>
+    <path d="M 300 188 Q 350 130 400 188"/>
+    <path d="M 300 252 Q 350 310 400 252"/>
+    <path d="M 295 170 Q 350 100 405 170"/>
+    <path d="M 295 270 Q 350 340 405 270"/>
+  </g>
+
+  <circle cx="304" cy="220" r="11" fill="#C8102E" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="304" y="224" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#FFFFFF">+</text>
+  <circle cx="396" cy="220" r="11" fill="#56B4E9" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="396" y="225" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="13" fill="#2a1a0e">−</text>
+  <text x="350" y="340" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#2a1a0e">lines connect + to −</text>
+
+  <!-- Panel C: Two +q (with null point) -->
+  <text x="570" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#C8102E" letter-spacing="0.08em">(C) TWO LIKE +q — NULL POINT</text>
+
+  <g fill="none" stroke="#56B4E9" stroke-width="1.25">
+    <!-- Lines from left +q -->
+    <path d="M 522 220 L 482 220"/>
+    <path d="M 524 212 Q 502 200 484 188"/>
+    <path d="M 524 228 Q 502 240 484 252"/>
+    <path d="M 528 200 Q 520 160 510 130"/>
+    <path d="M 528 240 Q 520 280 510 310"/>
+    <path d="M 528 208 Q 538 170 540 130"/>
+    <path d="M 528 232 Q 538 270 540 310"/>
+    <!-- Lines from right +q -->
+    <path d="M 618 220 L 658 220"/>
+    <path d="M 616 212 Q 638 200 656 188"/>
+    <path d="M 616 228 Q 638 240 656 252"/>
+    <path d="M 612 200 Q 620 160 630 130"/>
+    <path d="M 612 240 Q 620 280 630 310"/>
+    <path d="M 612 208 Q 602 170 600 130"/>
+    <path d="M 612 232 Q 602 270 600 310"/>
+  </g>
+
+  <!-- Null point indicator -->
+  <circle cx="570" cy="220" r="3" fill="#C8102E"/>
+  <text x="570" y="206" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">null point</text>
+
+  <circle cx="530" cy="220" r="11" fill="#C8102E" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="530" y="224" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#FFFFFF">+</text>
+  <circle cx="610" cy="220" r="11" fill="#C8102E" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="610" y="224" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#FFFFFF">+</text>
+
+  <text x="570" y="340" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#2a1a0e">midline saddle — no line crosses</text>
+
+  <!-- Caption -->
+  <rect x="60" y="396" width="580" height="44" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.25"/>
+  <text x="350" y="416" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="12" fill="#2a1a0e">Three configurations cover most of E&amp;M's intuition.</text>
+  <text x="350" y="434" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#C8102E">Memorize them; the rest is superposition.</text>
+</svg>

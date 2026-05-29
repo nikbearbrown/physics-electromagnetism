@@ -1,0 +1,132 @@
+<!--
+  EM Spectrum — 14 Orders of Magnitude with Visible Rainbow
+  Book: Physics +1: Electromagnetism
+  Chapter: 11-maxwells-equations
+  Figure: 04
+  Type: Statistical / quantitative (promoted table)
+  Generated: 2026-05-25
+  Source: pantry/11-maxwells-equations-cajal.md
+-->
+<svg viewBox="0 0 700 460" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title">
+  <title id="fig-title">Electromagnetic Spectrum — Radio to Gamma, 14 Orders of Magnitude</title>
+  <desc>Horizontal log axis from radio waves at 10 to the 6 hertz up to gamma rays at 10 to the 22 hertz. Bands shown: radio, microwave, infrared, visible (rendered as rainbow from red to violet), ultraviolet, X-ray, gamma. Top axis shows photon energy from micro-eV to MeV. Examples annotated beneath each band: AM/FM, WiFi, GPS, heat, sunlight, sterilization, medical, nuclear.</desc>
+  <metadata>
+    <cajal:figure
+      xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Physics +1: Electromagnetism"
+      book-slug="physics-electromagnetism"
+      chapter="11-maxwells-equations"
+      figure-number="04"
+      figure-title="EM Spectrum"
+      figure-slug="em-spectrum"
+      figure-type="quantitative"
+      priority="Important"
+      author="Humanitarians AI"
+      date-generated="2026-05-25"
+      source-file="pantry/11-maxwells-equations-cajal.md"
+    />
+  </metadata>
+  <defs>
+    <linearGradient id="visiblerainbow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF0000"/>
+      <stop offset="20%" stop-color="#FF8C00"/>
+      <stop offset="40%" stop-color="#FFFF00"/>
+      <stop offset="60%" stop-color="#00FF00"/>
+      <stop offset="80%" stop-color="#0080FF"/>
+      <stop offset="100%" stop-color="#9400D3"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="700" height="460" fill="#FFFFFF"/>
+
+  <text x="32" y="36" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="14" fill="#2a1a0e">EM Spectrum — Same Wave, 14 Orders of Magnitude in Frequency</text>
+  <text x="32" y="56" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="11" fill="#545454">Radio and gamma are the same physics — separated by 10¹⁶.</text>
+
+  <!-- Top axis: photon energy -->
+  <line x1="60" y1="110" x2="640" y2="110" stroke="#2a1a0e" stroke-width="0.75"/>
+  <g font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#545454" text-anchor="middle">
+    <text x="60" y="100">μeV</text>
+    <text x="206" y="100">meV</text>
+    <text x="352" y="100">eV</text>
+    <text x="498" y="100">keV</text>
+    <text x="644" y="100">MeV</text>
+  </g>
+  <text x="350" y="90" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="9" fill="#545454" letter-spacing="0.06em">PHOTON ENERGY</text>
+
+  <!-- Bottom axis: frequency log scale 10^6 (60) to 10^22 (640) -->
+  <line x1="60" y1="320" x2="640" y2="320" stroke="#2a1a0e" stroke-width="0.75"/>
+  <g font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#545454" text-anchor="middle">
+    <text x="60" y="336">10⁶</text>
+    <text x="133" y="336">10⁸</text>
+    <text x="206" y="336">10¹⁰</text>
+    <text x="278" y="336">10¹²</text>
+    <text x="351" y="336">10¹⁴</text>
+    <text x="424" y="336">10¹⁶</text>
+    <text x="496" y="336">10¹⁸</text>
+    <text x="569" y="336">10²⁰</text>
+    <text x="640" y="336">10²² Hz</text>
+  </g>
+  <text x="350" y="354" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#545454" letter-spacing="0.06em">FREQUENCY (Hz, LOG)</text>
+
+  <!-- Bands. log scale: x = 60 + (log10(f) - 6) * 36.25 -->
+  <!-- Radio 10^6 - 10^9: x 60 to 169 -->
+  <rect x="60" y="140" width="109" height="60" fill="#56B4E9" opacity="0.55" stroke="#2a1a0e" stroke-width="0.5"/>
+  <text x="114" y="164" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#2a1a0e">radio</text>
+  <text x="114" y="180" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="7" fill="#545454">AM · FM · TV</text>
+
+  <!-- Microwave 10^9 - 10^12: x 169 to 278 -->
+  <rect x="169" y="140" width="109" height="60" fill="#3AAE3A" opacity="0.45" stroke="#2a1a0e" stroke-width="0.5"/>
+  <text x="223" y="164" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#2a1a0e">microwave</text>
+  <text x="223" y="180" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="7" fill="#545454">WiFi · GPS · radar</text>
+
+  <!-- Infrared 10^12 - 4e14: x 278 to ~370 -->
+  <rect x="278" y="140" width="92" height="60" fill="#C8102E" opacity="0.45" stroke="#2a1a0e" stroke-width="0.5"/>
+  <text x="324" y="164" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#2a1a0e">infrared</text>
+  <text x="324" y="180" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="7" fill="#545454">heat · fiber</text>
+
+  <!-- Visible 4e14 - 8e14: x 370 to 380 — rendered as RAINBOW gradient (the one exception) -->
+  <rect x="370" y="140" width="22" height="60" fill="url(#visiblerainbow)" stroke="#2a1a0e" stroke-width="0.5"/>
+  <text x="381" y="220" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#2a1a0e">visible</text>
+
+  <!-- UV 8e14 - 3e16: x 380 to ~445 -->
+  <rect x="392" y="140" width="63" height="60" fill="#7B61A8" opacity="0.55" stroke="#2a1a0e" stroke-width="0.5"/>
+  <text x="424" y="164" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#FFFFFF">UV</text>
+  <text x="424" y="180" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="7" fill="#545454">sterilization</text>
+
+  <!-- X-ray 3e16 - 3e19: x 445 to ~554 -->
+  <rect x="455" y="140" width="109" height="60" fill="#C8860E" opacity="0.55" stroke="#2a1a0e" stroke-width="0.5"/>
+  <text x="510" y="164" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#2a1a0e">X-ray</text>
+  <text x="510" y="180" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="7" fill="#545454">medical · crystallog.</text>
+
+  <!-- Gamma 3e19 - 10^22: x 554 to 640 -->
+  <rect x="564" y="140" width="76" height="60" fill="#2a1a0e" opacity="0.7" stroke="#2a1a0e" stroke-width="0.5"/>
+  <text x="602" y="164" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#FFFFFF">γ</text>
+  <text x="602" y="180" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="7" fill="#FFFFFF">nuclear · cosmic</text>
+
+  <!-- Tick marks linking the bands to frequency axis -->
+  <g stroke="#545454" stroke-width="0.5" stroke-dasharray="2 2">
+    <line x1="60" y1="200" x2="60" y2="320"/>
+    <line x1="169" y1="200" x2="169" y2="320"/>
+    <line x1="278" y1="200" x2="278" y2="320"/>
+    <line x1="370" y1="200" x2="370" y2="320"/>
+    <line x1="392" y1="200" x2="392" y2="320"/>
+    <line x1="455" y1="200" x2="455" y2="320"/>
+    <line x1="564" y1="200" x2="564" y2="320"/>
+    <line x1="640" y1="200" x2="640" y2="320"/>
+  </g>
+
+  <!-- Wavelength annotations along bottom -->
+  <text x="60" y="240" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#545454">300 m</text>
+  <text x="278" y="240" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#545454">300 µm</text>
+  <text x="381" y="240" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#545454">700→400 nm</text>
+  <text x="564" y="240" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#545454">3 pm</text>
+  <text x="640" y="240" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#545454">30 fm</text>
+
+  <text x="350" y="262" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="9" fill="#545454" letter-spacing="0.06em">WAVELENGTH (λ = c/f)</text>
+
+  <!-- Caption -->
+  <rect x="60" y="380" width="580" height="62" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.25"/>
+  <text x="350" y="402" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="12" fill="#2a1a0e">Radio waves and gamma rays are the same wave equation.</text>
+  <text x="350" y="420" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#C8102E">The visible band is a narrow strip where biology evolved sensitivity.</text>
+  <text x="350" y="436" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">Rainbow is the one exception to the Brutalist no-gradient rule — visible light IS rainbow.</text>
+</svg>

@@ -1,0 +1,100 @@
+<!--
+  Two-Slit Interference + Single-Slit Diffraction Envelope
+  Book: Physics +1: Electromagnetism
+  Chapter: 12-capstone-unified-field
+  Figure: 02
+  Type: Statistical / quantitative + mechanism diagram
+  Generated: 2026-05-25
+  Source: pantry/12-capstone-unified-field-cajal.md
+-->
+<svg viewBox="0 0 700 480" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title">
+  <title id="fig-title">Two-Slit Interference Modulated by Diffraction Envelope</title>
+  <desc>Schematic of two slits separated by d, screen at distance L. Spherical wavefronts emerge from each slit and interfere on the screen. The intensity plot shows two-slit interference fringes with spacing Delta y equals lambda L over d, modulated by a broader single-slit diffraction envelope with first dark fringe at y equals lambda L over a where a is the slit width. Two formulas operate simultaneously, controlled by two different lengths.</desc>
+  <metadata>
+    <cajal:figure
+      xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Physics +1: Electromagnetism"
+      book-slug="physics-electromagnetism"
+      chapter="12-capstone-unified-field"
+      figure-number="02"
+      figure-title="Two-Slit + Envelope"
+      figure-slug="two-slit-envelope"
+      figure-type="quantitative"
+      priority="Important"
+      author="Humanitarians AI"
+      date-generated="2026-05-25"
+      source-file="pantry/12-capstone-unified-field-cajal.md"
+    />
+  </metadata>
+  <rect x="0" y="0" width="700" height="480" fill="#FFFFFF"/>
+
+  <text x="32" y="36" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="14" fill="#2a1a0e">Two-Slit Fringes Ride on the Single-Slit Envelope</text>
+  <text x="32" y="56" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="11" fill="#545454">d sin θ = mλ for fringes; a sin θ = mλ for envelope minima.</text>
+
+  <!-- Top panel: schematic -->
+  <text x="350" y="84" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#2a1a0e" letter-spacing="0.06em">SCHEMATIC</text>
+
+  <!-- Slit screen (left) -->
+  <line x1="120" y1="100" x2="120" y2="140" stroke="#2a1a0e" stroke-width="2.5"/>
+  <line x1="120" y1="160" x2="120" y2="200" stroke="#2a1a0e" stroke-width="2.5"/>
+  <line x1="120" y1="220" x2="120" y2="260" stroke="#2a1a0e" stroke-width="2.5"/>
+  <text x="116" y="116" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">opaque</text>
+  <text x="114" y="155" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#2a1a0e">slit 1</text>
+  <text x="114" y="215" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#2a1a0e">slit 2</text>
+  <!-- d annotation -->
+  <line x1="135" y1="150" x2="135" y2="210" stroke="#545454" stroke-width="0.5"/>
+  <line x1="130" y1="150" x2="140" y2="150" stroke="#545454" stroke-width="0.5"/>
+  <line x1="130" y1="210" x2="140" y2="210" stroke="#545454" stroke-width="0.5"/>
+  <text x="144" y="184" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">d</text>
+
+  <!-- Wavefronts from each slit (semicircles) -->
+  <g fill="none" stroke="#56B4E9" stroke-width="1">
+    <path d="M 120 150 A 80 80 0 0 1 200 150"/>
+    <path d="M 120 150 A 130 130 0 0 1 250 150"/>
+    <path d="M 120 150 A 180 180 0 0 1 300 150"/>
+    <path d="M 120 210 A 80 80 0 0 1 200 210"/>
+    <path d="M 120 210 A 130 130 0 0 1 250 210"/>
+    <path d="M 120 210 A 180 180 0 0 1 300 210"/>
+  </g>
+
+  <!-- Screen (right vertical line) -->
+  <line x1="540" y1="80" x2="540" y2="280" stroke="#2a1a0e" stroke-width="2.5"/>
+  <text x="544" y="76" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#2a1a0e">screen</text>
+
+  <!-- L distance -->
+  <line x1="120" y1="290" x2="540" y2="290" stroke="#545454" stroke-width="0.5"/>
+  <line x1="120" y1="285" x2="120" y2="295" stroke="#545454" stroke-width="0.5"/>
+  <line x1="540" y1="285" x2="540" y2="295" stroke="#545454" stroke-width="0.5"/>
+  <text x="330" y="304" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">L</text>
+
+  <!-- Bottom panel: intensity plot -->
+  <line x1="100" y1="430" x2="600" y2="430" stroke="#2a1a0e" stroke-width="1"/>
+  <line x1="540" y1="320" x2="540" y2="430" stroke="#2a1a0e" stroke-width="0.5" stroke-dasharray="3 2"/>
+  <text x="600" y="446" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">y on screen</text>
+  <text x="92" y="380" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">I(y)</text>
+
+  <!-- Single-slit envelope (broad, orange) — sinc² profile -->
+  <path d="M 100 430 Q 200 425 280 410 Q 320 380 350 330 Q 380 380 420 410 Q 500 425 600 430" stroke="#C8860E" stroke-width="1.5" fill="none" stroke-dasharray="4 2"/>
+  <text x="430" y="402" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8860E">single-slit envelope</text>
+  <text x="430" y="416" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#545454">first dark at y = λL/a</text>
+
+  <!-- Two-slit fringes (vermillion) modulated by envelope -->
+  <g stroke="#C8102E" stroke-width="2" fill="none">
+    <line x1="240" y1="430" x2="240" y2="416"/>
+    <line x1="270" y1="430" x2="270" y2="402"/>
+    <line x1="300" y1="430" x2="300" y2="380"/>
+    <line x1="330" y1="430" x2="330" y2="342"/>
+    <line x1="350" y1="430" x2="350" y2="332"/>
+    <line x1="370" y1="430" x2="370" y2="342"/>
+    <line x1="400" y1="430" x2="400" y2="380"/>
+    <line x1="430" y1="430" x2="430" y2="402"/>
+    <line x1="460" y1="430" x2="460" y2="416"/>
+  </g>
+
+  <text x="180" y="380" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">fringes Δy = λL/d</text>
+
+  <!-- Formula box -->
+  <rect x="60" y="450" width="580" height="24" fill="#F5F5F5" stroke="#C8102E" stroke-width="1"/>
+  <text x="350" y="466" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#2a1a0e">d sin θ = mλ  (bright fringes)    ·    a sin θ = mλ  (envelope dark)</text>
+</svg>

@@ -1,0 +1,131 @@
+<!--
+  Dielectric Microphysics — Induced Dipoles, Bound Charges, Reduced Field
+  Book: Physics +1: Electromagnetism
+  Chapter: 05-capacitance-dielectrics
+  Figure: 04
+  Type: Mechanism cross-section
+  Generated: 2026-05-25
+  Source: pantry/05-capacitance-dielectrics-cajal.md
+-->
+<svg viewBox="0 0 700 460" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title">
+  <title id="fig-title">Dielectric Microphysics — Induced Dipoles Reduce the Field</title>
+  <desc>Three panels of a parallel-plate capacitor. Panel A: no dielectric, uniform field E zero between plates. Panel B: dielectric inserted, atoms shown with electron clouds shifted, induced dipoles align with field, bound surface charges accumulate at the dielectric edges. Panel C: net result, field inside dielectric is reduced by a factor of kappa.</desc>
+  <metadata>
+    <cajal:figure
+      xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Physics +1: Electromagnetism"
+      book-slug="physics-electromagnetism"
+      chapter="05-capacitance-dielectrics"
+      figure-number="04"
+      figure-title="Dielectric Microphysics"
+      figure-slug="dielectric-microphysics"
+      figure-type="mechanism"
+      priority="Important"
+      author="Humanitarians AI"
+      date-generated="2026-05-25"
+      source-file="pantry/05-capacitance-dielectrics-cajal.md"
+    />
+  </metadata>
+  <defs>
+    <marker id="arrowoch" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#C8860E"/>
+    </marker>
+    <marker id="arrowoch-sm" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#C8860E"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="700" height="460" fill="#FFFFFF"/>
+
+  <text x="32" y="36" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="14" fill="#2a1a0e">Dielectric Microphysics — Why κ Reduces the Field</text>
+  <text x="32" y="56" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="11" fill="#545454">Bound surface charges produce a counter-field. The dielectric adds opposition, not blockage.</text>
+
+  <line x1="240" y1="80" x2="240" y2="380" stroke="#2a1a0e" stroke-width="0.5"/>
+  <line x1="460" y1="80" x2="460" y2="380" stroke="#2a1a0e" stroke-width="0.5"/>
+
+  <!-- Panel A: No dielectric -->
+  <text x="120" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#2a1a0e" letter-spacing="0.08em">(A) NO DIELECTRIC</text>
+  <rect x="50" y="140" width="140" height="5" fill="#56B4E9" stroke="#2a1a0e" stroke-width="0.75"/>
+  <rect x="50" y="290" width="140" height="5" fill="#56B4E9" stroke="#2a1a0e" stroke-width="0.75"/>
+  <g font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#C8102E" text-anchor="middle">
+    <text x="70" y="138">+</text>
+    <text x="100" y="138">+</text>
+    <text x="140" y="138">+</text>
+    <text x="170" y="138">+</text>
+  </g>
+  <g font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="13" fill="#56B4E9" text-anchor="middle">
+    <text x="70" y="310">−</text>
+    <text x="100" y="310">−</text>
+    <text x="140" y="310">−</text>
+    <text x="170" y="310">−</text>
+  </g>
+  <!-- E arrows (large) -->
+  <g stroke="#C8860E" stroke-width="1.5" fill="none">
+    <line x1="80" y1="160" x2="80" y2="280" marker-end="url(#arrowoch)"/>
+    <line x1="120" y1="160" x2="120" y2="280" marker-end="url(#arrowoch)"/>
+    <line x1="160" y1="160" x2="160" y2="280" marker-end="url(#arrowoch)"/>
+  </g>
+  <text x="120" y="344" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#C8102E">E = E₀ = σ/ε₀</text>
+
+  <!-- Panel B: Dielectric inserted (microphysics) -->
+  <text x="350" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#2a1a0e" letter-spacing="0.08em">(B) DIELECTRIC INSERTED — DIPOLES FORM</text>
+  <rect x="270" y="140" width="140" height="5" fill="#56B4E9" stroke="#2a1a0e" stroke-width="0.75"/>
+  <rect x="270" y="290" width="140" height="5" fill="#56B4E9" stroke="#2a1a0e" stroke-width="0.75"/>
+  <!-- Dielectric slab -->
+  <rect x="278" y="155" width="124" height="125" fill="#F5F5F5" stroke="#2a1a0e" stroke-width="1" stroke-dasharray="4 3"/>
+  <!-- Bound charge on top of dielectric (− near +plate) -->
+  <g font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#C8860E" text-anchor="middle">
+    <text x="294" y="164">−</text>
+    <text x="318" y="164">−</text>
+    <text x="342" y="164">−</text>
+    <text x="366" y="164">−</text>
+    <text x="390" y="164">−</text>
+  </g>
+  <!-- Bound charge on bottom (+ near -plate) -->
+  <g font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#C8860E" text-anchor="middle">
+    <text x="294" y="277">+</text>
+    <text x="318" y="277">+</text>
+    <text x="342" y="277">+</text>
+    <text x="366" y="277">+</text>
+    <text x="390" y="277">+</text>
+  </g>
+  <!-- Atom dipoles inside -->
+  <g stroke="#545454" stroke-width="0.5">
+    <line x1="300" y1="200" x2="300" y2="230"/>
+    <circle cx="300" cy="200" r="3" fill="#56B4E9"/>
+    <circle cx="300" cy="230" r="3" fill="#C8102E"/>
+    <line x1="340" y1="200" x2="340" y2="230"/>
+    <circle cx="340" cy="200" r="3" fill="#56B4E9"/>
+    <circle cx="340" cy="230" r="3" fill="#C8102E"/>
+    <line x1="380" y1="200" x2="380" y2="230"/>
+    <circle cx="380" cy="200" r="3" fill="#56B4E9"/>
+    <circle cx="380" cy="230" r="3" fill="#C8102E"/>
+    <line x1="320" y1="240" x2="320" y2="265"/>
+    <circle cx="320" cy="240" r="3" fill="#56B4E9"/>
+    <circle cx="320" cy="265" r="3" fill="#C8102E"/>
+    <line x1="360" y1="240" x2="360" y2="265"/>
+    <circle cx="360" cy="240" r="3" fill="#56B4E9"/>
+    <circle cx="360" cy="265" r="3" fill="#C8102E"/>
+  </g>
+  <text x="350" y="344" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8860E">induced dipoles · bound σ_b on edges</text>
+
+  <!-- Panel C: Net result (reduced field) -->
+  <text x="570" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#C8102E" letter-spacing="0.08em">(C) NET FIELD REDUCED BY κ</text>
+  <rect x="490" y="140" width="140" height="5" fill="#56B4E9" stroke="#2a1a0e" stroke-width="0.75"/>
+  <rect x="490" y="290" width="140" height="5" fill="#56B4E9" stroke="#2a1a0e" stroke-width="0.75"/>
+  <rect x="498" y="155" width="124" height="125" fill="#F5F5F5" stroke="#2a1a0e" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <!-- Smaller E arrows inside dielectric -->
+  <g stroke="#C8860E" stroke-width="1" fill="none">
+    <line x1="520" y1="180" x2="520" y2="260" marker-end="url(#arrowoch-sm)"/>
+    <line x1="560" y1="180" x2="560" y2="260" marker-end="url(#arrowoch-sm)"/>
+    <line x1="600" y1="180" x2="600" y2="260" marker-end="url(#arrowoch-sm)"/>
+  </g>
+  <text x="570" y="344" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#C8102E">E_inside = E₀ / κ</text>
+
+  <!-- Caption -->
+  <rect x="60" y="384" width="580" height="60" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.25"/>
+  <text x="350" y="404" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="12" fill="#2a1a0e">Bound surface charges produce a counter-field that partly cancels the plate field.</text>
+  <text x="350" y="424" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#C8102E">The dielectric isn't blocking the field — it's adding an opposing one.</text>
+  <text x="350" y="440" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">For V fixed: C goes up by κ.  For Q fixed: V goes down by κ.</text>
+</svg>

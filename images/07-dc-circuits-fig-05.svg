@@ -1,0 +1,109 @@
+<!--
+  Real Battery — EMF, Internal Resistance, V_terminal vs I
+  Book: Physics +1: Electromagnetism
+  Chapter: 07-dc-circuits
+  Figure: 05
+  Type: Annotated example + statistical / quantitative
+  Generated: 2026-05-25
+  Source: pantry/07-dc-circuits-cajal.md
+-->
+<svg viewBox="0 0 700 460" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title">
+  <title id="fig-title">Real Battery — Terminal Voltage Sags Linearly with Current</title>
+  <desc>Two-panel composite. Panel A schematic: ideal EMF epsilon in series with internal resistance little r, with terminals on the right and external load R beyond. Panel B plot: terminal voltage equals epsilon minus I times r — a straight line with y-intercept epsilon (open circuit) and x-intercept epsilon over r (short circuit). The slope is the internal resistance.</desc>
+  <metadata>
+    <cajal:figure
+      xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Physics +1: Electromagnetism"
+      book-slug="physics-electromagnetism"
+      chapter="07-dc-circuits"
+      figure-number="05"
+      figure-title="EMF and Internal Resistance"
+      figure-slug="emf-internal-r"
+      figure-type="annotated-example"
+      priority="Important"
+      author="Humanitarians AI"
+      date-generated="2026-05-25"
+      source-file="pantry/07-dc-circuits-cajal.md"
+    />
+  </metadata>
+  <rect x="0" y="0" width="700" height="460" fill="#FFFFFF"/>
+
+  <text x="32" y="36" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="14" fill="#2a1a0e">Real Battery — Ideal EMF in Series with Internal Resistance</text>
+  <text x="32" y="56" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="11" fill="#545454">Terminal voltage drops linearly with current. Slope = internal resistance.</text>
+
+  <line x1="350" y1="80" x2="350" y2="380" stroke="#2a1a0e" stroke-width="0.5"/>
+
+  <!-- Panel A: Schematic -->
+  <text x="180" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#2a1a0e" letter-spacing="0.08em">(A) THE MODEL</text>
+
+  <!-- Battery box (ideal ε + r enclosed) -->
+  <rect x="60" y="160" width="160" height="120" fill="none" stroke="#2a1a0e" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="140" y="148" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">real battery</text>
+
+  <!-- Ideal ε -->
+  <line x1="80" y1="200" x2="80" y2="240" stroke="#56B4E9" stroke-width="3"/>
+  <line x1="88" y1="190" x2="88" y2="250" stroke="#56B4E9" stroke-width="1.5"/>
+  <text x="70" y="270" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#56B4E9">ε</text>
+
+  <!-- internal r -->
+  <line x1="88" y1="220" x2="130" y2="220" stroke="#2a1a0e" stroke-width="1"/>
+  <path d="M 130 220 L 136 212 L 142 228 L 148 212 L 154 228 L 160 212 L 166 228 L 172 212 L 178 228 L 184 220" stroke="#C8102E" stroke-width="1.25" fill="none"/>
+  <text x="157" y="270" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#C8102E">r (internal)</text>
+  <line x1="184" y1="220" x2="210" y2="220" stroke="#2a1a0e" stroke-width="1"/>
+
+  <!-- Terminals -->
+  <circle cx="220" cy="220" r="3" fill="#2a1a0e"/>
+  <text x="226" y="220" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#2a1a0e">+</text>
+
+  <!-- External wire + load R -->
+  <line x1="220" y1="220" x2="260" y2="220" stroke="#2a1a0e" stroke-width="1"/>
+  <line x1="260" y1="220" x2="260" y2="320" stroke="#2a1a0e" stroke-width="1"/>
+  <path d="M 260 320 L 252 326 L 268 332 L 252 338 L 268 344 L 252 350 L 268 356 L 260 362" stroke="#C8860E" stroke-width="1.25" fill="none"/>
+  <text x="280" y="346" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#C8860E">R (load)</text>
+  <line x1="260" y1="362" x2="260" y2="380" stroke="#2a1a0e" stroke-width="1"/>
+  <line x1="260" y1="380" x2="50" y2="380" stroke="#2a1a0e" stroke-width="1"/>
+  <line x1="50" y1="380" x2="50" y2="220" stroke="#2a1a0e" stroke-width="1"/>
+  <line x1="50" y1="220" x2="72" y2="220" stroke="#2a1a0e" stroke-width="1"/>
+  <circle cx="50" cy="220" r="3" fill="#2a1a0e"/>
+  <text x="40" y="220" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#2a1a0e">−</text>
+
+  <!-- V_terminal label across terminals -->
+  <text x="135" y="320" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#2a1a0e">V_term = ε − I r</text>
+
+  <!-- Panel B: plot -->
+  <text x="510" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#2a1a0e" letter-spacing="0.08em">(B) V_TERMINAL vs CURRENT</text>
+
+  <!-- Axes -->
+  <line x1="400" y1="340" x2="660" y2="340" stroke="#2a1a0e" stroke-width="1"/>
+  <line x1="400" y1="120" x2="400" y2="340" stroke="#2a1a0e" stroke-width="1"/>
+
+  <!-- Line: V = ε - Ir. y-intercept (I=0): V=ε at y=130. x-intercept (V=0): I=ε/r at x=660 -->
+  <line x1="400" y1="130" x2="660" y2="340" stroke="#56B4E9" stroke-width="2.5"/>
+
+  <!-- Y-intercept marker -->
+  <circle cx="400" cy="130" r="4" fill="#56B4E9"/>
+  <text x="392" y="124" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#56B4E9">ε</text>
+  <text x="392" y="138" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#545454">open circuit</text>
+
+  <!-- X-intercept marker -->
+  <circle cx="660" cy="340" r="4" fill="#C8102E"/>
+  <text x="660" y="358" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#C8102E">ε/r</text>
+  <text x="660" y="370" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#545454">short circuit</text>
+
+  <!-- Operating point -->
+  <circle cx="520" cy="227" r="4" fill="#C8860E"/>
+  <text x="530" y="222" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8860E">operating point</text>
+
+  <!-- Slope annotation -->
+  <text x="540" y="280" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#2a1a0e">slope = −r</text>
+
+  <text x="412" y="356" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">0</text>
+  <text x="380" y="240" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="9" fill="#545454" transform="rotate(-90 380 240)">V_terminal</text>
+  <text x="530" y="380" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="9" fill="#545454">CURRENT I</text>
+
+  <!-- Caption -->
+  <rect x="60" y="400" width="580" height="44" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.25"/>
+  <text x="350" y="420" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="12" fill="#2a1a0e">A real battery is an ideal EMF in series with a small resistance.</text>
+  <text x="350" y="438" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#C8102E">The sag under load measures the internal resistance.</text>
+</svg>

@@ -12,6 +12,9 @@ The problem is: *how does charge A know where charge B is?*
 
 In Newton's gravity, the same question arises. The Earth and the Moon attract each other across three hundred and eighty thousand kilometers of vacuum. Nothing visible connects them. Newton himself found this deeply unsatisfying — he called action at a distance "so great an Absurdity that I believe no Man who has in philosophical Matters a competent Faculty of thinking can ever fall into it." He gave us the formula anyway because it worked. He just couldn't tell you *why* it worked.
 
+![portrait or sketch of Faraday in his lab at the Royal Institution, contrasted with a diagram of action-at-a-distance lines between two point masses — to set up the conceptual problem the field solves](../images/02-electric-field-fig-01.png)
+*Figure 2.1 — Operational Definition*
+
 <!-- → [IMAGE: portrait or sketch of Faraday in his lab at the Royal Institution, contrasted with a diagram of action-at-a-distance lines between two point masses — to set up the conceptual problem the field solves] -->
 
 For gravity, the problem stayed unsolved until Einstein. For electrostatics, it was solved — or at least transformed into something we can work with — by a self-educated bookbinder's apprentice named Michael Faraday, who never went to university and couldn't follow the mathematical papers of his contemporaries. What he had instead was an extraordinary physical intuition. And in the 1830s, that intuition produced one of the most productive ideas in the history of physics: the **field**.
@@ -23,6 +26,9 @@ For gravity, the problem stayed unsolved until Einstein. For electrostatics, it 
 Here is Faraday's idea. Don't ask what charge A does to charge B directly. Ask instead: what does charge A do to *the space around it*? And separately: what does space do to charge B when B is sitting in it?
 
 The space around a charge, Faraday said, is *modified*. It is in a state of stress, of tension, of something. He called this the field — a condition of the space itself, not a force between objects.
+
+![side-by-side showing (left) action-at-a-distance: two charges with a dashed arrow labeled "force" jumping between them; (right) field picture: one charge surrounded by field lines filling space, second charge sitting...](../images/02-electric-field-fig-02.png)
+*Figure 2.2 — Field-Line Atlas*
 
 <!-- → [INFOGRAPHIC: side-by-side showing (left) action-at-a-distance: two charges with a dashed arrow labeled "force" jumping between them; (right) field picture: one charge surrounded by field lines filling space, second charge sitting inside that field — to make the conceptual difference stark] -->
 
@@ -46,6 +52,9 @@ $$\vec{E}(\vec{r}) = \frac{kq}{r^2}\,\hat{r}$$
 
 Radially outward if $q$ is positive, radially inward if $q$ is negative. The magnitude falls as $1/r^2$. The direction is always along the line from the charge to the field point.
 
+![two clean diagrams side by side — left: positive charge with arrows radiating uniformly outward in 2D, right: negative charge with arrows pointing uniformly inward — labels showing E direction and the 1/r² falloff not...](../images/02-electric-field-fig-03.png)
+*Figure 2.3 — Ring on Axis*
+
 <!-- → [IMAGE: two clean diagrams side by side — left: positive charge with arrows radiating uniformly outward in 2D, right: negative charge with arrows pointing uniformly inward — labels showing E direction and the 1/r² falloff noted on one radial line] -->
 
 This is precisely the same content as Coulomb's law, reorganized. The field is what the source charge does to space; the force on a second charge $q'$ placed at $\vec{r}$ is then $\vec{F} = q'\vec{E}(\vec{r})$. Positive test charge: force in the direction of $\vec{E}$. Negative test charge: force opposite to $\vec{E}$.
@@ -62,6 +71,9 @@ $$\vec{E}(\vec{r}) = \sum_i \frac{k q_i}{|\vec{r} - \vec{r}_i|^3}(\vec{r} - \vec
 
 The numerator uses the cube because we've absorbed one power of $|\vec{r} - \vec{r}_i|$ into the unit vector — $(\vec{r} - \vec{r}_i)/|\vec{r} - \vec{r}_i|$ is the unit vector pointing from source $i$ to the field point.
 
+![three-panel sequence showing (1) charge q₁ alone with its field arrows at a test point, (2) charge q₂ alone with its field arrows at the same test point, (3) both charges with the vector sum drawn — to make superposit...](../images/02-electric-field-fig-04.png)
+*Figure 2.4 — Field-Line Density vs Vector Arrows*
+
 <!-- → [INFOGRAPHIC: three-panel sequence showing (1) charge q₁ alone with its field arrows at a test point, (2) charge q₂ alone with its field arrows at the same test point, (3) both charges with the vector sum drawn — to make superposition visually concrete before the prose explains linearity] -->
 
 Superposition is not an approximation or a convenient fiction. It is inherited directly from the fact that Maxwell's equations are *linear* in the sources. Double all the charges, and the field doubles everywhere. Put two separate charge distributions in space, and the field is the sum of what each would produce alone. This linearity is exact and fundamental — it means you can treat any complicated charge arrangement by breaking it into simple pieces.
@@ -71,6 +83,9 @@ Superposition is not an approximation or a convenient fiction. It is inherited d
 ## Faraday's lines of force
 
 Faraday, lacking the mathematical apparatus to think in vectors, thought in pictures. He imagined the space around a charge threaded by **lines of force** — curves that go everywhere in the direction the field points. What we now call field lines.
+
+![sketch in the style of Faraday's notebook showing field lines around a positive charge — hand-drawn aesthetic to connect to the historical framing](../images/02-electric-field-fig-05.png)
+*Figure 2.5 — Field Falloff*
 
 <!-- → [IMAGE: sketch in the style of Faraday's notebook showing field lines around a positive charge — hand-drawn aesthetic to connect to the historical framing] -->
 

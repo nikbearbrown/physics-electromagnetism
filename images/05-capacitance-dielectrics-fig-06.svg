@@ -1,0 +1,77 @@
+<!--
+  Half-Energy-Lost — Where Does Battery Energy Go During Charging?
+  Book: Physics +1: Electromagnetism
+  Chapter: 05-capacitance-dielectrics
+  Figure: 06
+  Type: Statistical / quantitative / annotated example
+  Generated: 2026-05-25
+  Source: pantry/05-capacitance-dielectrics-cajal.md
+-->
+<svg viewBox="0 0 700 460" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title">
+  <title id="fig-title">Half-Energy-Lost — Independent of R</title>
+  <desc>Stacked bar showing total energy delivered by the battery during RC charging equals C epsilon squared. Bottom half (half C epsilon squared) is stored in the capacitor. Top half (also half C epsilon squared) is dissipated as heat in the resistor. Same result regardless of R.</desc>
+  <metadata>
+    <cajal:figure
+      xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Physics +1: Electromagnetism"
+      book-slug="physics-electromagnetism"
+      chapter="05-capacitance-dielectrics"
+      figure-number="06"
+      figure-title="Half-Energy-Lost Result"
+      figure-slug="half-energy-lost"
+      figure-type="quantitative"
+      priority="Important"
+      author="Humanitarians AI"
+      date-generated="2026-05-25"
+      source-file="pantry/05-capacitance-dielectrics-cajal.md"
+    />
+  </metadata>
+  <rect x="0" y="0" width="700" height="460" fill="#FFFFFF"/>
+
+  <text x="32" y="36" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="14" fill="#2a1a0e">Half the Battery's Energy Becomes Heat — Always</text>
+  <text x="32" y="56" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="11" fill="#545454">You cannot charge a capacitor through a passive resistor without losing half.</text>
+
+  <!-- Y-axis -->
+  <line x1="180" y1="380" x2="180" y2="100" stroke="#2a1a0e" stroke-width="1"/>
+  <line x1="180" y1="380" x2="540" y2="380" stroke="#2a1a0e" stroke-width="1"/>
+
+  <!-- Y-axis labels (energy fraction of Cε²) -->
+  <g font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454" text-anchor="end">
+    <text x="174" y="384">0</text>
+    <text x="174" y="244">½ C ε²</text>
+    <text x="174" y="104">C ε²</text>
+  </g>
+  <g stroke="#2a1a0e" stroke-width="0.5">
+    <line x1="175" y1="240" x2="185" y2="240"/>
+    <line x1="175" y1="100" x2="185" y2="100"/>
+  </g>
+  <text x="120" y="240" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#545454" letter-spacing="0.06em" transform="rotate(-90 120 240)">ENERGY</text>
+
+  <!-- Stacked bar -->
+  <!-- Stored in capacitor (bottom half, sky-blue): from y=380 to y=240 -->
+  <rect x="280" y="240" width="160" height="140" fill="#56B4E9" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="360" y="316" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="13" fill="#FFFFFF">stored in C</text>
+  <text x="360" y="336" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#FFFFFF">U_C = ½ C ε²</text>
+
+  <!-- Dissipated in resistor (top half, vermillion): from y=240 to y=100 -->
+  <rect x="280" y="100" width="160" height="140" fill="#C8102E" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="360" y="166" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="13" fill="#FFFFFF">dissipated in R</text>
+  <text x="360" y="186" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#FFFFFF">W_R = ½ C ε²</text>
+
+  <!-- Bar label -->
+  <text x="360" y="394" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#2a1a0e">W_battery = C ε²</text>
+
+  <!-- Annotation outside -->
+  <line x1="440" y1="170" x2="500" y2="170" stroke="#C8102E" stroke-width="0.75"/>
+  <text x="508" y="160" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#C8102E">heat</text>
+  <text x="508" y="174" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">(50% of input)</text>
+
+  <line x1="440" y1="310" x2="500" y2="310" stroke="#56B4E9" stroke-width="0.75"/>
+  <text x="508" y="300" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#56B4E9">stored</text>
+  <text x="508" y="314" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">(other 50%)</text>
+
+  <!-- Caption -->
+  <rect x="60" y="416" width="580" height="32" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.25"/>
+  <text x="350" y="436" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#2a1a0e">Half-and-half regardless of R. Larger R takes longer but loses the same fraction.</text>
+</svg>

@@ -1,0 +1,145 @@
+<!--
+  Maxwell to Relativity — E and B as One Tensor
+  Book: Physics +1: Electromagnetism
+  Chapter: 12-capstone-unified-field
+  Figure: 05
+  Type: Conceptual map (the book's closing visual)
+  Generated: 2026-05-25
+  Source: pantry/12-capstone-unified-field-cajal.md
+-->
+<svg viewBox="0 0 700 460" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title">
+  <title id="fig-title">Maxwell to Relativity — E and B as One Tensor</title>
+  <desc>Two panels showing the same wire in two reference frames. Panel A: wire's rest frame. Electrons drift, ions stationary, lattice neutral. Pure B field around the wire. A test charge at rest nearby feels no force. Panel B: observer moving along with the electron drift. Now ions move, length-contraction asymmetry between positive and negative line charges makes the wire appear net charged. Both E and B exist in this frame. The test charge feels both electric and magnetic forces — summing to identical physical motion. Lorentz transformation rotates E and B into each other.</desc>
+  <metadata>
+    <cajal:figure
+      xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Physics +1: Electromagnetism"
+      book-slug="physics-electromagnetism"
+      chapter="12-capstone-unified-field"
+      figure-number="05"
+      figure-title="E and B as One Tensor"
+      figure-slug="E-B-one-tensor"
+      figure-type="conceptual"
+      priority="Critical"
+      author="Humanitarians AI"
+      date-generated="2026-05-25"
+      source-file="pantry/12-capstone-unified-field-cajal.md"
+    />
+  </metadata>
+  <defs>
+    <marker id="arrowpurp" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#7B61A8"/>
+    </marker>
+    <marker id="arrowoch" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#C8860E"/>
+    </marker>
+    <marker id="arrowred" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#C8102E"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="700" height="460" fill="#FFFFFF"/>
+
+  <text x="32" y="36" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="14" fill="#2a1a0e">Maxwell to Relativity — Same Physics, Two Frames</text>
+  <text x="32" y="56" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="11" fill="#545454">What's pure B here is a mix of E and B to someone moving past.</text>
+
+  <line x1="350" y1="80" x2="350" y2="380" stroke="#2a1a0e" stroke-width="0.5"/>
+
+  <!-- Panel A: Wire's rest frame -->
+  <text x="180" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#2a1a0e" letter-spacing="0.08em">(A) WIRE'S REST FRAME — PURE B⃗</text>
+
+  <!-- Wire (horizontal) -->
+  <rect x="60" y="200" width="240" height="20" fill="#F5F5F5" stroke="#56B4E9" stroke-width="1.5"/>
+
+  <!-- Positive ions (stationary, +) -->
+  <g font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E" text-anchor="middle">
+    <text x="80" y="214">+</text>
+    <text x="110" y="214">+</text>
+    <text x="140" y="214">+</text>
+    <text x="170" y="214">+</text>
+    <text x="200" y="214">+</text>
+    <text x="230" y="214">+</text>
+    <text x="260" y="214">+</text>
+    <text x="290" y="214">+</text>
+  </g>
+
+  <!-- Electrons drifting leftward (current rightward) -->
+  <g fill="#56B4E9">
+    <circle cx="90" cy="210" r="2.5"/>
+    <circle cx="125" cy="210" r="2.5"/>
+    <circle cx="160" cy="210" r="2.5"/>
+    <circle cx="195" cy="210" r="2.5"/>
+    <circle cx="230" cy="210" r="2.5"/>
+    <circle cx="265" cy="210" r="2.5"/>
+  </g>
+  <line x1="290" y1="240" x2="250" y2="240" stroke="#56B4E9" stroke-width="1.5" marker-end="url(#arrowoch)"/>
+  <text x="280" y="252" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#56B4E9">e⁻ drift ←</text>
+
+  <!-- B field circling above (purple) -->
+  <ellipse cx="180" cy="160" rx="60" ry="14" fill="none" stroke="#7B61A8" stroke-width="1.5"/>
+  <polygon points="240 160, 232 156, 232 164" fill="#7B61A8"/>
+  <text x="180" y="146" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#7B61A8">B⃗ (pure)</text>
+
+  <!-- Test charge (at rest in this frame) -->
+  <circle cx="180" cy="280" r="8" fill="#C8102E" stroke="#2a1a0e" stroke-width="0.75"/>
+  <text x="180" y="284" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#FFFFFF">+</text>
+  <text x="180" y="304" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#2a1a0e">test q · at rest</text>
+  <text x="180" y="320" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#3AAE3A">F = 0</text>
+
+  <text x="180" y="350" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">net charge = 0 → no E⃗</text>
+
+  <!-- Panel B: Moving frame -->
+  <text x="510" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#C8102E" letter-spacing="0.08em">(B) MOVING WITH ELECTRONS — E⃗ + B⃗</text>
+
+  <rect x="390" y="200" width="240" height="20" fill="#F5F5F5" stroke="#56B4E9" stroke-width="1.5"/>
+
+  <!-- Now electrons stationary, ions drift right; length contraction asymmetry → net negative -->
+  <!-- Show ions slightly more spaced (length-contracted gaps differ) -->
+  <g font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E" text-anchor="middle">
+    <text x="410" y="214">+</text>
+    <text x="445" y="214">+</text>
+    <text x="480" y="214">+</text>
+    <text x="515" y="214">+</text>
+    <text x="550" y="214">+</text>
+    <text x="585" y="214">+</text>
+    <text x="620" y="214">+</text>
+  </g>
+  <line x1="430" y1="240" x2="470" y2="240" stroke="#C8102E" stroke-width="1.5" marker-end="url(#arrowoch)"/>
+  <text x="450" y="252" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">ions drift →</text>
+
+  <!-- Electrons (now stationary, denser) -->
+  <g fill="#56B4E9">
+    <circle cx="416" cy="210" r="2.5"/>
+    <circle cx="446" cy="210" r="2.5"/>
+    <circle cx="476" cy="210" r="2.5"/>
+    <circle cx="506" cy="210" r="2.5"/>
+    <circle cx="536" cy="210" r="2.5"/>
+    <circle cx="566" cy="210" r="2.5"/>
+    <circle cx="596" cy="210" r="2.5"/>
+    <circle cx="626" cy="210" r="2.5"/>
+  </g>
+
+  <!-- Now both E (orange, from net charge) AND B (purple, smaller) -->
+  <line x1="510" y1="280" x2="510" y2="232" stroke="#C8860E" stroke-width="1.5" marker-end="url(#arrowoch)"/>
+  <text x="522" y="260" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8860E">E⃗ (induced)</text>
+  <ellipse cx="510" cy="160" rx="40" ry="10" fill="none" stroke="#7B61A8" stroke-width="1"/>
+  <polygon points="550 160, 542 156, 542 164" fill="#7B61A8"/>
+  <text x="510" y="148" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#7B61A8">B⃗ (smaller)</text>
+
+  <!-- Test charge (now moves at v_drift opposite, so feels both E and B; net same physics) -->
+  <circle cx="510" cy="290" r="8" fill="#C8102E" stroke="#2a1a0e" stroke-width="0.75"/>
+  <text x="510" y="294" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#FFFFFF">+</text>
+  <text x="510" y="314" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#2a1a0e">test q · in motion</text>
+  <text x="510" y="330" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#3AAE3A">F_E + F_B → same motion</text>
+
+  <text x="510" y="350" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">length contraction → net charge</text>
+
+  <!-- Connecting arrow: Lorentz transformation -->
+  <line x1="282" y1="376" x2="418" y2="376" stroke="#C8102E" stroke-width="1.5" marker-end="url(#arrowred)"/>
+  <text x="350" y="372" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">Lorentz boost rotates E⃗ ↔ B⃗</text>
+
+  <!-- Caption -->
+  <rect x="60" y="394" width="580" height="50" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.25"/>
+  <text x="350" y="414" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="12" fill="#2a1a0e">Same physical trajectory — only the decomposition into "electric" and "magnetic" changes.</text>
+  <text x="350" y="432" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#C8102E">Maxwell's equations were already relativistic. Einstein just had to read them carefully (1905).</text>
+</svg>

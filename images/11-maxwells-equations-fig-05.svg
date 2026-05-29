@@ -1,0 +1,86 @@
+<!--
+  Poynting Vector — Energy Flow in a Plane Wave
+  Book: Physics +1: Electromagnetism
+  Chapter: 11-maxwells-equations
+  Figure: 05
+  Type: Annotated example
+  Generated: 2026-05-25
+  Source: pantry/11-maxwells-equations-cajal.md
+-->
+<svg viewBox="0 0 700 460" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title">
+  <title id="fig-title">Poynting Vector — Where the Wave Carries Energy</title>
+  <desc>A snapshot of a plane wave. At points along the wave, E and B are drawn, and the local Poynting vector S equals one over mu zero times E cross B is drawn at each point — always pointing along the propagation direction. S is maximum at the wave peak and zero at the nodes. Time-averaged intensity equals E zero squared over two mu zero c. Sunlight at Earth's surface is about 1000 watts per square meter.</desc>
+  <metadata>
+    <cajal:figure
+      xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Physics +1: Electromagnetism"
+      book-slug="physics-electromagnetism"
+      chapter="11-maxwells-equations"
+      figure-number="05"
+      figure-title="Poynting Vector"
+      figure-slug="poynting-vector"
+      figure-type="annotated-example"
+      priority="Important"
+      author="Humanitarians AI"
+      date-generated="2026-05-25"
+      source-file="pantry/11-maxwells-equations-cajal.md"
+    />
+  </metadata>
+  <defs>
+    <marker id="arrowoch" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#C8860E"/>
+    </marker>
+    <marker id="arrowpurp" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#7B61A8"/>
+    </marker>
+    <marker id="arrowred" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#C8102E"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="700" height="460" fill="#FFFFFF"/>
+
+  <text x="32" y="36" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="14" fill="#2a1a0e">Poynting Vector — E⃗ × B⃗ Points Where the Energy Goes</text>
+  <text x="32" y="56" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="11" fill="#545454">Energy flows along the propagation direction, at the rate the wave carries.</text>
+
+  <!-- Propagation baseline -->
+  <line x1="60" y1="240" x2="640" y2="240" stroke="#545454" stroke-width="0.75"/>
+
+  <!-- E sinusoid (orange) -->
+  <path d="M 60 240 Q 100 200 140 160 Q 180 200 220 240 Q 260 280 300 320 Q 340 280 380 240 Q 420 200 460 160 Q 500 200 540 240 Q 580 280 620 320" stroke="#C8860E" stroke-width="2" fill="none"/>
+  <text x="100" y="148" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#C8860E">E⃗ (y)</text>
+
+  <!-- B sinusoid (purple, same phase, offset slightly for visibility) -->
+  <path d="M 60 240 Q 100 220 140 200 Q 180 220 220 240 Q 260 260 300 280 Q 340 260 380 240 Q 420 220 460 200 Q 500 220 540 240 Q 580 260 620 280" stroke="#7B61A8" stroke-width="2" fill="none" stroke-dasharray="6 2"/>
+  <text x="100" y="212" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#7B61A8">B⃗ (z)</text>
+
+  <!-- Poynting vectors (vermillion) at multiple sample points -->
+  <!-- At peak (x=140): S = max -->
+  <line x1="140" y1="356" x2="190" y2="356" stroke="#C8102E" stroke-width="2.5" marker-end="url(#arrowred)"/>
+  <text x="142" y="380" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">S_max</text>
+
+  <!-- At node (x=220, E=0, B=0): S = 0 — show tiny tick -->
+  <line x1="220" y1="356" x2="226" y2="356" stroke="#C8102E" stroke-width="2.5" marker-end="url(#arrowred)"/>
+  <text x="222" y="380" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">S = 0</text>
+
+  <!-- At negative peak (x=300): both E and B reversed, but S = E×B still positive -->
+  <line x1="300" y1="356" x2="350" y2="356" stroke="#C8102E" stroke-width="2.5" marker-end="url(#arrowred)"/>
+  <text x="302" y="380" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">S_max again</text>
+
+  <!-- Another node (x=380) -->
+  <line x1="380" y1="356" x2="386" y2="356" stroke="#C8102E" stroke-width="2.5" marker-end="url(#arrowred)"/>
+
+  <!-- Another peak (x=460) -->
+  <line x1="460" y1="356" x2="510" y2="356" stroke="#C8102E" stroke-width="2.5" marker-end="url(#arrowred)"/>
+
+  <!-- And so on -->
+  <line x1="540" y1="356" x2="546" y2="356" stroke="#C8102E" stroke-width="2.5" marker-end="url(#arrowred)"/>
+  <line x1="620" y1="356" x2="640" y2="356" stroke="#C8102E" stroke-width="2.5" marker-end="url(#arrowred)"/>
+
+  <text x="350" y="120" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#C8102E">S⃗ = (1/μ₀) E⃗ × B⃗</text>
+
+  <!-- Caption -->
+  <rect x="60" y="394" width="580" height="50" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.25"/>
+  <text x="350" y="414" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#2a1a0e">⟨I⟩ = E₀² / (2 μ₀ c)    ·    sunlight at Earth ≈ 1000 W/m²</text>
+  <text x="350" y="432" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#C8102E">A kilowatt per square meter — enough to power a household, if you can capture it.</text>
+</svg>

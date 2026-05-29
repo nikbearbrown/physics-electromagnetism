@@ -1,0 +1,138 @@
+<!--
+  Ampère's Law — Three Symmetry Templates (mirror of Ch 3 Fig 3.3)
+  Book: Physics +1: Electromagnetism
+  Chapter: 09-sources-magnetic-fields
+  Figure: 03
+  Type: Comparison panels
+  Generated: 2026-05-25
+  Source: pantry/09-sources-magnetic-fields-cajal.md
+-->
+<svg viewBox="0 0 700 460" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title">
+  <title id="fig-title">Ampère's Law — Three Symmetry Templates</title>
+  <desc>Three Amperian loops for the symmetries where Ampère's law solves B directly. Cylindrical: coaxial circle around a wire, B equals mu zero I over two pi r. Planar: rectangular loop straddling an infinite current sheet, B equals mu zero K over two on each side. Solenoid: rectangular loop with one side inside and one outside, B equals mu zero n I inside.</desc>
+  <metadata>
+    <cajal:figure
+      xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Physics +1: Electromagnetism"
+      book-slug="physics-electromagnetism"
+      chapter="09-sources-magnetic-fields"
+      figure-number="03"
+      figure-title="Ampère Symmetry Templates"
+      figure-slug="ampere-templates"
+      figure-type="comparison"
+      priority="Important"
+      author="Humanitarians AI"
+      date-generated="2026-05-25"
+      source-file="pantry/09-sources-magnetic-fields-cajal.md"
+    />
+  </metadata>
+  <defs>
+    <marker id="arrowoch" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#C8860E"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="700" height="460" fill="#FFFFFF"/>
+
+  <text x="32" y="36" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="14" fill="#2a1a0e">Ampère's Law — Three Amperian Loops, One Recipe</text>
+  <text x="32" y="56" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="11" fill="#545454">Same as Gauss for E (Ch 3 Fig 3.3): pick the loop so B pulls out of the integral.</text>
+
+  <line x1="240" y1="80" x2="240" y2="370" stroke="#2a1a0e" stroke-width="0.5"/>
+  <line x1="460" y1="80" x2="460" y2="370" stroke="#2a1a0e" stroke-width="0.5"/>
+
+  <!-- Panel A: Cylindrical (wire) -->
+  <text x="120" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#2a1a0e" letter-spacing="0.08em">(A) CYLINDRICAL</text>
+
+  <!-- Wire (dot = out of page) -->
+  <circle cx="120" cy="220" r="5" fill="#56B4E9"/>
+  <text x="120" y="200" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#56B4E9">I (out of page)</text>
+
+  <!-- Amperian loop (dashed vermillion circle) -->
+  <circle cx="120" cy="220" r="50" fill="none" stroke="#C8102E" stroke-width="1.25" stroke-dasharray="4 3"/>
+  <text x="120" y="280" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">Amperian loop</text>
+
+  <!-- B arrows tangent to loop -->
+  <g stroke="#C8860E" stroke-width="1.25" fill="none">
+    <line x1="170" y1="220" x2="170" y2="200" marker-end="url(#arrowoch)"/>
+    <line x1="70" y1="220" x2="70" y2="240" marker-end="url(#arrowoch)"/>
+    <line x1="120" y1="170" x2="140" y2="170" marker-end="url(#arrowoch)"/>
+    <line x1="120" y1="270" x2="100" y2="270" marker-end="url(#arrowoch)"/>
+  </g>
+
+  <rect x="40" y="330" width="160" height="36" fill="#F5F5F5" stroke="#C8102E" stroke-width="1"/>
+  <text x="120" y="352" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#C8102E">B = μ₀ I / (2π r)</text>
+
+  <!-- Panel B: Planar (sheet) -->
+  <text x="350" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#2a1a0e" letter-spacing="0.08em">(B) PLANAR SHEET</text>
+
+  <!-- Current sheet -->
+  <line x1="270" y1="220" x2="430" y2="220" stroke="#56B4E9" stroke-width="2.5"/>
+  <g fill="#56B4E9">
+    <circle cx="280" cy="220" r="2"/>
+    <circle cx="310" cy="220" r="2"/>
+    <circle cx="340" cy="220" r="2"/>
+    <circle cx="370" cy="220" r="2"/>
+    <circle cx="400" cy="220" r="2"/>
+    <circle cx="420" cy="220" r="2"/>
+  </g>
+  <text x="350" y="246" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#56B4E9">current sheet · K (out)</text>
+
+  <!-- Amperian rectangular loop -->
+  <rect x="310" y="180" width="80" height="80" fill="none" stroke="#C8102E" stroke-width="1.25" stroke-dasharray="4 3"/>
+
+  <!-- B arrows above (leftward) and below (rightward) — same magnitude, opposite directions -->
+  <line x1="370" y1="200" x2="320" y2="200" stroke="#C8860E" stroke-width="1.25" marker-end="url(#arrowoch)"/>
+  <line x1="320" y1="240" x2="370" y2="240" stroke="#C8860E" stroke-width="1.25" marker-end="url(#arrowoch)"/>
+
+  <rect x="260" y="330" width="180" height="36" fill="#F5F5F5" stroke="#C8102E" stroke-width="1"/>
+  <text x="350" y="352" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#C8102E">B = μ₀ K / 2  (each side)</text>
+
+  <!-- Panel C: Solenoid -->
+  <text x="570" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#2a1a0e" letter-spacing="0.08em">(C) SOLENOID</text>
+
+  <!-- Solenoid (horizontal, two rows of turns indicators) -->
+  <g fill="#56B4E9">
+    <circle cx="490" cy="180" r="2.5"/>
+    <circle cx="510" cy="180" r="2.5"/>
+    <circle cx="530" cy="180" r="2.5"/>
+    <circle cx="550" cy="180" r="2.5"/>
+    <circle cx="570" cy="180" r="2.5"/>
+    <circle cx="590" cy="180" r="2.5"/>
+    <circle cx="610" cy="180" r="2.5"/>
+    <circle cx="630" cy="180" r="2.5"/>
+    <circle cx="650" cy="180" r="2.5"/>
+  </g>
+  <g stroke="#56B4E9" stroke-width="1.25">
+    <line x1="486" y1="276" x2="494" y2="284"/>
+    <line x1="494" y1="276" x2="486" y2="284"/>
+    <line x1="506" y1="276" x2="514" y2="284"/>
+    <line x1="514" y1="276" x2="506" y2="284"/>
+    <line x1="526" y1="276" x2="534" y2="284"/>
+    <line x1="534" y1="276" x2="526" y2="284"/>
+    <line x1="546" y1="276" x2="554" y2="284"/>
+    <line x1="554" y1="276" x2="546" y2="284"/>
+    <line x1="566" y1="276" x2="574" y2="284"/>
+    <line x1="574" y1="276" x2="566" y2="284"/>
+    <line x1="586" y1="276" x2="594" y2="284"/>
+    <line x1="594" y1="276" x2="586" y2="284"/>
+    <line x1="606" y1="276" x2="614" y2="284"/>
+    <line x1="614" y1="276" x2="606" y2="284"/>
+    <line x1="626" y1="276" x2="634" y2="284"/>
+    <line x1="634" y1="276" x2="626" y2="284"/>
+  </g>
+
+  <!-- Amperian rect loop -->
+  <rect x="520" y="200" width="120" height="60" fill="none" stroke="#C8102E" stroke-width="1.25" stroke-dasharray="4 3"/>
+
+  <!-- B inside (rightward) -->
+  <line x1="540" y1="230" x2="620" y2="230" stroke="#C8860E" stroke-width="1.5" marker-end="url(#arrowoch)"/>
+  <text x="580" y="222" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8860E">B inside</text>
+
+  <rect x="480" y="330" width="180" height="36" fill="#F5F5F5" stroke="#C8102E" stroke-width="1"/>
+  <text x="570" y="352" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#C8102E">B = μ₀ n I</text>
+
+  <!-- Caption -->
+  <rect x="60" y="394" width="580" height="50" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.25"/>
+  <text x="350" y="414" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="12" fill="#2a1a0e">∮ B⃗ · dℓ⃗ = μ₀ I_enc  —  same recipe as Gauss for E.</text>
+  <text x="350" y="432" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#C8102E">Coordinate with Ch 3 Fig 3.3 — symmetry sets the loop.</text>
+</svg>

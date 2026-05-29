@@ -1,0 +1,92 @@
+<!--
+  Field Falloff: Point Charge, Dipole, Infinite Plane
+  Book: Physics +1: Electromagnetism
+  Chapter: 02-electric-field
+  Figure: 05
+  Type: Statistical / quantitative
+  Generated: 2026-05-25
+  Source: pantry/02-electric-field-cajal.md
+-->
+<svg viewBox="0 0 700 460" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title">
+  <title id="fig-title">Field Falloff — Geometry Sets the Slope</title>
+  <desc>Log-log plot of electric-field magnitude versus distance. Point charge falls as 1 over r squared (slope minus two). Dipole falls as 1 over r cubed (slope minus three). Infinite plane is constant (slope zero). Fewer source dimensions relative to the field point means slower falloff with distance.</desc>
+  <metadata>
+    <cajal:figure
+      xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Physics +1: Electromagnetism"
+      book-slug="physics-electromagnetism"
+      chapter="02-electric-field"
+      figure-number="05"
+      figure-title="Field Falloff Comparison"
+      figure-slug="field-falloff"
+      figure-type="quantitative"
+      priority="Important"
+      author="Humanitarians AI"
+      date-generated="2026-05-25"
+      source-file="pantry/02-electric-field-cajal.md"
+    />
+  </metadata>
+  <rect x="0" y="0" width="700" height="460" fill="#FFFFFF"/>
+
+  <text x="32" y="36" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="14" fill="#2a1a0e">Three Geometries, Three Slopes — Falloff vs Distance (log-log)</text>
+  <text x="32" y="56" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="11" fill="#545454">The fewer dimensions the source spans, the slower the field decays with distance.</text>
+
+  <!-- Axes -->
+  <line x1="100" y1="380" x2="640" y2="380" stroke="#2a1a0e" stroke-width="1"/>
+  <line x1="100" y1="100" x2="100" y2="380" stroke="#2a1a0e" stroke-width="1"/>
+
+  <!-- X-axis: log(r) from 0 to 2 (r = 1 to 100) -->
+  <g stroke="#2a1a0e" stroke-width="0.75">
+    <line x1="100" y1="375" x2="100" y2="385"/>
+    <line x1="235" y1="375" x2="235" y2="385"/>
+    <line x1="370" y1="375" x2="370" y2="385"/>
+    <line x1="505" y1="375" x2="505" y2="385"/>
+    <line x1="640" y1="375" x2="640" y2="385"/>
+  </g>
+  <g font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454" text-anchor="middle">
+    <text x="100" y="398">1</text>
+    <text x="235" y="398">3</text>
+    <text x="370" y="398">10</text>
+    <text x="505" y="398">30</text>
+    <text x="640" y="398">100</text>
+  </g>
+  <text x="370" y="418" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#545454" letter-spacing="0.06em">DISTANCE r (LOG)</text>
+
+  <!-- Y-axis: log |E| -->
+  <g stroke="#2a1a0e" stroke-width="0.75">
+    <line x1="95" y1="100" x2="105" y2="100"/>
+    <line x1="95" y1="170" x2="105" y2="170"/>
+    <line x1="95" y1="240" x2="105" y2="240"/>
+    <line x1="95" y1="310" x2="105" y2="310"/>
+    <line x1="95" y1="380" x2="105" y2="380"/>
+  </g>
+  <g font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454" text-anchor="end">
+    <text x="92" y="104">10⁴</text>
+    <text x="92" y="174">10³</text>
+    <text x="92" y="244">10²</text>
+    <text x="92" y="314">10¹</text>
+    <text x="92" y="384">10⁰</text>
+  </g>
+  <text x="50" y="240" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#545454" letter-spacing="0.06em" transform="rotate(-90 50 240)">FIELD |E| (LOG, ARBITRARY UNITS)</text>
+
+  <!-- Infinite plane: slope 0 (horizontal line) -->
+  <line x1="100" y1="180" x2="640" y2="180" stroke="#C8102E" stroke-width="2"/>
+  <text x="600" y="172" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">infinite plane · slope 0</text>
+
+  <!-- Point charge: slope -2 -->
+  <!-- starts at (100, 130) ends at (640, 270) -->
+  <line x1="100" y1="130" x2="640" y2="270" stroke="#56B4E9" stroke-width="2"/>
+  <text x="550" y="262" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#56B4E9">point · slope −2 (1/r²)</text>
+
+  <!-- Dipole: slope -3 -->
+  <line x1="100" y1="130" x2="640" y2="340" stroke="#C8860E" stroke-width="2"/>
+  <text x="560" y="332" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8860E">dipole · slope −3 (1/r³)</text>
+
+  <!-- Annotation: log-scale rationale -->
+  <text x="370" y="80" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">log-scale spans 4+ orders of magnitude — y-axis-from-zero exception documented</text>
+
+  <!-- Caption -->
+  <rect x="100" y="430" width="540" height="20" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.25"/>
+  <text x="370" y="445" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#2a1a0e">Geometry sets the slope. Point ~ 1/r²,  dipole ~ 1/r³,  plane = constant.</text>
+</svg>

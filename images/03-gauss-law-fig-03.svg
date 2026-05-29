@@ -1,0 +1,105 @@
+<!--
+  Three Symmetry Templates — Gauss's Law Computes E
+  Book: Physics +1: Electromagnetism
+  Chapter: 03-gauss-law
+  Figure: 03
+  Type: Comparison panels
+  Generated: 2026-05-25
+  Source: pantry/03-gauss-law-cajal.md
+-->
+<svg viewBox="0 0 700 460" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title">
+  <title id="fig-title">Three Symmetry Templates for Gauss's Law</title>
+  <desc>Three side-by-side panels showing the three configurations where Gauss's law solves E directly. Spherical: concentric Gaussian sphere around a charged sphere, E radial, result E = Q over four pi epsilon zero r squared. Cylindrical: coaxial Gaussian cylinder around an infinite line charge, result E = lambda over two pi epsilon zero r. Planar: pillbox cylinder straddling an infinite charged plane, result E = sigma over two epsilon zero.</desc>
+  <metadata>
+    <cajal:figure
+      xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Physics +1: Electromagnetism"
+      book-slug="physics-electromagnetism"
+      chapter="03-gauss-law"
+      figure-number="03"
+      figure-title="Three Symmetry Templates"
+      figure-slug="gauss-symmetry-templates"
+      figure-type="comparison"
+      priority="Critical"
+      author="Humanitarians AI"
+      date-generated="2026-05-25"
+      source-file="pantry/03-gauss-law-cajal.md"
+    />
+  </metadata>
+  <defs>
+    <marker id="arrowoch" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#C8860E"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="700" height="460" fill="#FFFFFF"/>
+
+  <text x="32" y="36" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="14" fill="#2a1a0e">Three Symmetries, Three Gaussian Surfaces</text>
+  <text x="32" y="56" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="11" fill="#545454">Pick the surface so E is parallel to n̂ and constant in magnitude; then E pulls out.</text>
+
+  <line x1="240" y1="80" x2="240" y2="370" stroke="#2a1a0e" stroke-width="0.5"/>
+  <line x1="460" y1="80" x2="460" y2="370" stroke="#2a1a0e" stroke-width="0.5"/>
+
+  <!-- Panel A: Spherical -->
+  <text x="120" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#2a1a0e" letter-spacing="0.08em">(A) SPHERICAL</text>
+  <circle cx="120" cy="220" r="28" fill="#56B4E9" opacity="0.35" stroke="#2a1a0e" stroke-width="1"/>
+  <circle cx="120" cy="220" r="70" fill="none" stroke="#C8102E" stroke-width="1.25" stroke-dasharray="4 3"/>
+  <g stroke="#C8860E" stroke-width="1.25" fill="none">
+    <line x1="120" y1="148" x2="120" y2="130" marker-end="url(#arrowoch)"/>
+    <line x1="120" y1="290" x2="120" y2="310" marker-end="url(#arrowoch)"/>
+    <line x1="48" y1="220" x2="30" y2="220" marker-end="url(#arrowoch)"/>
+    <line x1="192" y1="220" x2="210" y2="220" marker-end="url(#arrowoch)"/>
+    <line x1="171" y1="170" x2="184" y2="158" marker-end="url(#arrowoch)"/>
+    <line x1="69" y1="170" x2="56" y2="158" marker-end="url(#arrowoch)"/>
+    <line x1="171" y1="270" x2="184" y2="282" marker-end="url(#arrowoch)"/>
+    <line x1="69" y1="270" x2="56" y2="282" marker-end="url(#arrowoch)"/>
+  </g>
+  <text x="120" y="224" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#FFFFFF">Q</text>
+  <text x="120" y="326" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">Gaussian sphere</text>
+  <text x="120" y="354" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#2a1a0e">E = Q / (4πε₀r²)</text>
+
+  <!-- Panel B: Cylindrical -->
+  <text x="350" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#2a1a0e" letter-spacing="0.08em">(B) CYLINDRICAL</text>
+  <line x1="350" y1="130" x2="350" y2="310" stroke="#2a1a0e" stroke-width="2.5"/>
+  <text x="290" y="150" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#2a1a0e">line · λ</text>
+  <!-- Gaussian cylinder (rectangle with rounded ellipse caps) -->
+  <rect x="312" y="160" width="76" height="120" fill="none" stroke="#C8102E" stroke-width="1.25" stroke-dasharray="4 3"/>
+  <ellipse cx="350" cy="160" rx="38" ry="8" fill="none" stroke="#C8102E" stroke-width="1.25" stroke-dasharray="4 3"/>
+  <ellipse cx="350" cy="280" rx="38" ry="8" fill="none" stroke="#C8102E" stroke-width="1.25" stroke-dasharray="4 3"/>
+  <!-- Radial E arrows -->
+  <g stroke="#C8860E" stroke-width="1.25" fill="none">
+    <line x1="350" y1="190" x2="406" y2="190" marker-end="url(#arrowoch)"/>
+    <line x1="350" y1="220" x2="406" y2="220" marker-end="url(#arrowoch)"/>
+    <line x1="350" y1="250" x2="406" y2="250" marker-end="url(#arrowoch)"/>
+    <line x1="350" y1="190" x2="294" y2="190" marker-end="url(#arrowoch)"/>
+    <line x1="350" y1="220" x2="294" y2="220" marker-end="url(#arrowoch)"/>
+    <line x1="350" y1="250" x2="294" y2="250" marker-end="url(#arrowoch)"/>
+  </g>
+  <text x="350" y="326" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">Gaussian cylinder</text>
+  <text x="350" y="354" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#2a1a0e">E = λ / (2πε₀r)</text>
+
+  <!-- Panel C: Planar -->
+  <text x="570" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#2a1a0e" letter-spacing="0.08em">(C) PLANAR</text>
+  <!-- Plane (horizontal) -->
+  <rect x="490" y="218" width="160" height="4" fill="#56B4E9" opacity="0.7"/>
+  <text x="500" y="240" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#2a1a0e">plane · σ</text>
+
+  <!-- Gaussian pillbox -->
+  <rect x="552" y="170" width="40" height="100" fill="none" stroke="#C8102E" stroke-width="1.25" stroke-dasharray="4 3"/>
+  <ellipse cx="572" cy="170" rx="20" ry="6" fill="none" stroke="#C8102E" stroke-width="1.25" stroke-dasharray="4 3"/>
+  <ellipse cx="572" cy="270" rx="20" ry="6" fill="none" stroke="#C8102E" stroke-width="1.25" stroke-dasharray="4 3"/>
+
+  <!-- E arrows perpendicular to plane (top and bottom of pillbox) -->
+  <g stroke="#C8860E" stroke-width="1.25" fill="none">
+    <line x1="572" y1="170" x2="572" y2="140" marker-end="url(#arrowoch)"/>
+    <line x1="572" y1="270" x2="572" y2="300" marker-end="url(#arrowoch)"/>
+  </g>
+
+  <text x="570" y="326" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">Gaussian pillbox</text>
+  <text x="570" y="354" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#2a1a0e">E = σ / (2ε₀)</text>
+
+  <!-- Caption -->
+  <rect x="60" y="392" width="580" height="50" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.25"/>
+  <text x="350" y="412" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="12" fill="#2a1a0e">Three symmetries cover the textbook problems.</text>
+  <text x="350" y="432" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#C8102E">Choose the Gaussian surface so that E pulls out of the integral.</text>
+</svg>

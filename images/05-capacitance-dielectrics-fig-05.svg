@@ -1,0 +1,100 @@
+<!--
+  RC Charging and Discharging — Time Constant τ = RC
+  Book: Physics +1: Electromagnetism
+  Chapter: 05-capacitance-dielectrics
+  Figure: 05
+  Type: Statistical / quantitative
+  Generated: 2026-05-25
+  Source: pantry/05-capacitance-dielectrics-cajal.md
+-->
+<svg viewBox="0 0 700 460" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title">
+  <title id="fig-title">RC Charging and Discharging — One Time Constant</title>
+  <desc>Plot of charge Q as a fraction of final value versus time in units of tau equals R C. Charging curve rises from zero toward one as one minus e to the minus t over tau. Discharging curve falls from one toward zero as e to the minus t over tau. At t equals tau, the charging curve is at 0.63 and the discharging curve is at 0.37. After five tau, both reach within 1 percent of their asymptotes.</desc>
+  <metadata>
+    <cajal:figure
+      xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Physics +1: Electromagnetism"
+      book-slug="physics-electromagnetism"
+      chapter="05-capacitance-dielectrics"
+      figure-number="05"
+      figure-title="RC Charging and Discharging"
+      figure-slug="rc-time-constant"
+      figure-type="quantitative"
+      priority="Important"
+      author="Humanitarians AI"
+      date-generated="2026-05-25"
+      source-file="pantry/05-capacitance-dielectrics-cajal.md"
+    />
+  </metadata>
+  <rect x="0" y="0" width="700" height="460" fill="#FFFFFF"/>
+
+  <text x="32" y="36" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="14" fill="#2a1a0e">RC Dynamics — 63% at One τ, 99.3% at Five τ</text>
+  <text x="32" y="56" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="11" fill="#545454">Same τ = RC governs both directions.</text>
+
+  <!-- Axes -->
+  <line x1="100" y1="380" x2="640" y2="380" stroke="#2a1a0e" stroke-width="1"/>
+  <line x1="100" y1="100" x2="100" y2="380" stroke="#2a1a0e" stroke-width="1"/>
+
+  <!-- Y-axis 0..1 -->
+  <g font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454" text-anchor="end">
+    <text x="94" y="104">1.0</text>
+    <text x="94" y="174">0.75</text>
+    <text x="94" y="244">0.5</text>
+    <text x="94" y="314">0.25</text>
+    <text x="94" y="384">0</text>
+  </g>
+  <g stroke="#2a1a0e" stroke-width="0.5">
+    <line x1="95" y1="100" x2="105" y2="100"/>
+    <line x1="95" y1="170" x2="105" y2="170"/>
+    <line x1="95" y1="240" x2="105" y2="240"/>
+    <line x1="95" y1="310" x2="105" y2="310"/>
+  </g>
+  <text x="50" y="240" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#545454" letter-spacing="0.06em" transform="rotate(-90 50 240)">Q / Q∞</text>
+
+  <!-- X-axis 0..5τ -->
+  <g font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454" text-anchor="middle">
+    <text x="100" y="396">0</text>
+    <text x="208" y="396">τ</text>
+    <text x="316" y="396">2τ</text>
+    <text x="424" y="396">3τ</text>
+    <text x="532" y="396">4τ</text>
+    <text x="640" y="396">5τ</text>
+  </g>
+  <g stroke="#2a1a0e" stroke-width="0.5">
+    <line x1="208" y1="375" x2="208" y2="385"/>
+    <line x1="316" y1="375" x2="316" y2="385"/>
+    <line x1="424" y1="375" x2="424" y2="385"/>
+    <line x1="532" y1="375" x2="532" y2="385"/>
+  </g>
+  <text x="370" y="418" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#545454" letter-spacing="0.06em">TIME (units of τ = RC)</text>
+
+  <!-- τ vertical marker -->
+  <line x1="208" y1="100" x2="208" y2="380" stroke="#C8102E" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="208" y="90" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">t = τ</text>
+
+  <!-- Charging curve: Q = 1 - e^(-t/τ). At y-scale 380 (0) to 100 (1). Δ = 280. -->
+  <!-- t=0: y=380; t=τ (208): 1-1/e ≈ 0.632 → y=380-176.96=203.0 -->
+  <!-- t=2τ (316): 0.865 → y=380-242.2=137.8 -->
+  <!-- t=3τ (424): 0.950 → y=380-266=114 -->
+  <!-- t=5τ (640): 0.993 → y=380-278=102 -->
+  <path d="M 100 380 Q 154 318 208 203 Q 262 156 316 138 Q 370 124 424 114 Q 478 108 532 105 Q 586 102 640 102" stroke="#56B4E9" stroke-width="2.5" fill="none"/>
+  <text x="500" y="118" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#56B4E9">Q = Cε (1 − e^(−t/τ))</text>
+
+  <!-- Discharging curve: Q = e^(-t/τ). Falls from 1 (y=100) to ~0 (y=380). -->
+  <!-- t=τ (208): 0.368 → y=380-103=277 -->
+  <!-- t=2τ (316): 0.135 → y=380-37.8=342 -->
+  <!-- t=5τ (640): 0.0067 → y=378 -->
+  <path d="M 100 100 Q 154 162 208 277 Q 262 324 316 342 Q 370 356 424 366 Q 478 372 532 376 Q 586 378 640 378" stroke="#C8102E" stroke-width="2.5" fill="none"/>
+  <text x="490" y="358" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#C8102E">Q = Q₀ e^(−t/τ)</text>
+
+  <!-- Markers at τ -->
+  <circle cx="208" cy="203" r="4" fill="#56B4E9"/>
+  <text x="220" y="200" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#56B4E9">63%</text>
+  <circle cx="208" cy="277" r="4" fill="#C8102E"/>
+  <text x="220" y="290" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">37%</text>
+
+  <!-- Caption -->
+  <rect x="100" y="430" width="540" height="20" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.25"/>
+  <text x="370" y="445" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#2a1a0e">One τ to be 63% there. Five τ to be essentially done. Same constant for both directions.</text>
+</svg>

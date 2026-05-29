@@ -1,0 +1,91 @@
+<!--
+  Why Gauss's Law Works — The Solid-Angle Argument
+  Book: Physics +1: Electromagnetism
+  Chapter: 03-gauss-law
+  Figure: 02
+  Type: Mechanism cross-section / annotated example
+  Generated: 2026-05-25
+  Source: pantry/03-gauss-law-cajal.md
+-->
+<svg viewBox="0 0 700 460" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title">
+  <title id="fig-title">Solid-Angle Argument — Why the Surface Shape Doesn't Matter</title>
+  <desc>Panel A: a point charge inside a closed surface. A radial line outward from the charge pierces both an inscribed sphere and an arbitrary irregular surface exactly once. Each solid-angle element contributes the same flux regardless of distance. Panel B: a point charge outside an irregular surface. A radial line passes through the surface twice — entry plus exit — and the contributions cancel. Net flux from outside charges is zero.</desc>
+  <metadata>
+    <cajal:figure
+      xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Physics +1: Electromagnetism"
+      book-slug="physics-electromagnetism"
+      chapter="03-gauss-law"
+      figure-number="02"
+      figure-title="Solid-Angle Argument"
+      figure-slug="solid-angle-argument"
+      figure-type="mechanism"
+      priority="Critical"
+      author="Humanitarians AI"
+      date-generated="2026-05-25"
+      source-file="pantry/03-gauss-law-cajal.md"
+    />
+  </metadata>
+  <defs>
+    <marker id="arrowgray" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#545454"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="700" height="460" fill="#FFFFFF"/>
+
+  <text x="32" y="36" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="14" fill="#2a1a0e">Why Gauss's Law Doesn't Care About Surface Shape</text>
+  <text x="32" y="56" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="11" fill="#545454">Every radial direction from an enclosed charge pierces the surface exactly once.</text>
+
+  <line x1="350" y1="80" x2="350" y2="380" stroke="#2a1a0e" stroke-width="0.5"/>
+
+  <!-- Panel A: charge inside -->
+  <text x="180" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#2a1a0e" letter-spacing="0.08em">(A) CHARGE INSIDE — ALL dΩ CONTRIBUTE</text>
+
+  <!-- Inscribed sphere (dashed) -->
+  <circle cx="180" cy="230" r="60" fill="none" stroke="#56B4E9" stroke-width="1" stroke-dasharray="4 3"/>
+  <!-- Irregular blob surface -->
+  <path d="M 100 230 Q 90 170 160 150 Q 230 130 260 180 Q 290 230 270 280 Q 240 320 170 310 Q 110 300 100 230 Z" fill="none" stroke="#56B4E9" stroke-width="1.5"/>
+
+  <!-- Charge at center -->
+  <circle cx="180" cy="230" r="6" fill="#C8102E"/>
+  <text x="180" y="234" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#FFFFFF">+</text>
+  <text x="190" y="246" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">q</text>
+
+  <!-- Radial probe -->
+  <line x1="180" y1="230" x2="260" y2="155" stroke="#545454" stroke-width="0.75" stroke-dasharray="3 2" marker-end="url(#arrowgray)"/>
+  <!-- dΩ wedge -->
+  <path d="M 180 230 L 245 145 L 260 165 Z" fill="#C8860E" opacity="0.25" stroke="#C8860E" stroke-width="0.75"/>
+  <text x="252" y="138" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8860E">dΩ</text>
+
+  <text x="180" y="346" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#2a1a0e">each dΩ → +(kq) dΩ</text>
+  <text x="180" y="362" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#C8102E">Φ_total = q / ε₀</text>
+
+  <!-- Panel B: charge outside -->
+  <text x="510" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#C8102E" letter-spacing="0.08em">(B) CHARGE OUTSIDE — ENTRY + EXIT CANCEL</text>
+
+  <!-- Irregular surface -->
+  <path d="M 470 230 Q 460 170 530 150 Q 600 130 630 180 Q 660 230 640 280 Q 610 320 540 310 Q 480 300 470 230 Z" fill="none" stroke="#56B4E9" stroke-width="1.5"/>
+
+  <!-- Charge outside (to the left) -->
+  <circle cx="400" cy="230" r="6" fill="#C8102E"/>
+  <text x="400" y="234" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#FFFFFF">+</text>
+  <text x="396" y="252" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">q</text>
+
+  <!-- Radial line passes through surface twice -->
+  <line x1="400" y1="230" x2="660" y2="230" stroke="#545454" stroke-width="0.75" stroke-dasharray="3 2"/>
+
+  <!-- Mark entry and exit points -->
+  <circle cx="470" cy="230" r="4" fill="none" stroke="#2a1a0e" stroke-width="1.25"/>
+  <text x="465" y="218" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#2a1a0e">in (−)</text>
+  <circle cx="652" cy="230" r="4" fill="none" stroke="#2a1a0e" stroke-width="1.25"/>
+  <text x="652" y="218" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#2a1a0e">out (+)</text>
+
+  <text x="510" y="346" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#2a1a0e">entry + exit = 0 per direction</text>
+  <text x="510" y="362" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#C8102E">Φ_total = 0</text>
+
+  <!-- Caption -->
+  <rect x="60" y="394" width="580" height="50" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.25"/>
+  <text x="350" y="414" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="12" fill="#2a1a0e">The shape of the surface doesn't matter; the 4π of solid angle does.</text>
+  <text x="350" y="434" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#C8102E">Outside charges enter once, leave once — and contribute nothing net.</text>
+</svg>

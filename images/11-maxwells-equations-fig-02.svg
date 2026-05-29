@@ -1,0 +1,83 @@
+<!--
+  Maxwell's Four Equations — One-Page Reference Card
+  Book: Physics +1: Electromagnetism
+  Chapter: 11-maxwells-equations
+  Figure: 02
+  Type: Comparison panels (promoted table)
+  Generated: 2026-05-25
+  Source: pantry/11-maxwells-equations-cajal.md
+-->
+<svg viewBox="0 0 700 540" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title">
+  <title id="fig-title">Maxwell's Four Equations — Reference Card</title>
+  <desc>Four boxed panels in a two-by-two grid. Top-left: Gauss for E in integral and differential form, references Chapter 3. Top-right: Gauss for B, references Chapter 9. Bottom-left: Faraday's law, references Chapter 10. Bottom-right: Ampère-Maxwell law with the displacement-current term highlighted, references Chapter 9 plus Maxwell's 1865 addition. The displacement-current term is the one that predicts light.</desc>
+  <metadata>
+    <cajal:figure
+      xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Physics +1: Electromagnetism"
+      book-slug="physics-electromagnetism"
+      chapter="11-maxwells-equations"
+      figure-number="02"
+      figure-title="Maxwell's Four Equations"
+      figure-slug="maxwell-four-equations"
+      figure-type="comparison"
+      priority="Critical"
+      author="Humanitarians AI"
+      date-generated="2026-05-25"
+      source-file="pantry/11-maxwells-equations-cajal.md"
+    />
+  </metadata>
+  <rect x="0" y="0" width="700" height="540" fill="#FFFFFF"/>
+
+  <text x="32" y="36" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="14" fill="#2a1a0e">Maxwell's Four Equations — The Whole of Classical Electromagnetism</text>
+  <text x="32" y="56" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="11" fill="#545454">Three older laws + one Maxwell addition = light.</text>
+
+  <line x1="350" y1="80" x2="350" y2="490" stroke="#2a1a0e" stroke-width="0.5"/>
+  <line x1="60" y1="280" x2="640" y2="280" stroke="#2a1a0e" stroke-width="0.5"/>
+
+  <!-- Panel 1 (top-left): Gauss for E -->
+  <rect x="60" y="90" width="280" height="180" fill="#F5F5F5" stroke="#56B4E9" stroke-width="1.5"/>
+  <text x="200" y="112" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="13" fill="#2a1a0e">Gauss's Law for E</text>
+  <line x1="80" y1="120" x2="320" y2="120" stroke="#56B4E9" stroke-width="0.5"/>
+  <text x="200" y="146" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="13" fill="#2a1a0e">∮ E⃗ · dA⃗ = Q_enc / ε₀</text>
+  <text x="200" y="174" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#545454">∇ · E⃗ = ρ / ε₀</text>
+  <line x1="100" y1="194" x2="300" y2="194" stroke="#56B4E9" stroke-width="0.25"/>
+  <text x="200" y="216" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#2a1a0e">"Charges source E."</text>
+  <text x="200" y="252" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#56B4E9">→ Ch 3 (Gauss · Fig 3.3)</text>
+
+  <!-- Panel 2 (top-right): Gauss for B -->
+  <rect x="360" y="90" width="280" height="180" fill="#F5F5F5" stroke="#56B4E9" stroke-width="1.5"/>
+  <text x="500" y="112" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="13" fill="#2a1a0e">Gauss's Law for B</text>
+  <line x1="380" y1="120" x2="620" y2="120" stroke="#56B4E9" stroke-width="0.5"/>
+  <text x="500" y="146" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="13" fill="#2a1a0e">∮ B⃗ · dA⃗ = 0</text>
+  <text x="500" y="174" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#545454">∇ · B⃗ = 0</text>
+  <line x1="400" y1="194" x2="600" y2="194" stroke="#56B4E9" stroke-width="0.25"/>
+  <text x="500" y="216" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#2a1a0e">"No magnetic monopoles."</text>
+  <text x="500" y="252" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#56B4E9">→ Ch 9 (Fig 9.5)</text>
+
+  <!-- Panel 3 (bottom-left): Faraday -->
+  <rect x="60" y="290" width="280" height="180" fill="#F5F5F5" stroke="#56B4E9" stroke-width="1.5"/>
+  <text x="200" y="312" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="13" fill="#2a1a0e">Faraday's Law</text>
+  <line x1="80" y1="320" x2="320" y2="320" stroke="#56B4E9" stroke-width="0.5"/>
+  <text x="200" y="346" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="13" fill="#2a1a0e">∮ E⃗ · dℓ⃗ = − dΦ_B / dt</text>
+  <text x="200" y="374" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#545454">∇ × E⃗ = − ∂B⃗/∂t</text>
+  <line x1="100" y1="394" x2="300" y2="394" stroke="#56B4E9" stroke-width="0.25"/>
+  <text x="200" y="416" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#2a1a0e">"Changing B sources curl of E."</text>
+  <text x="200" y="452" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#56B4E9">→ Ch 10 (Fig 10.1)</text>
+
+  <!-- Panel 4 (bottom-right): Ampère-Maxwell — HIGHLIGHTED -->
+  <rect x="360" y="290" width="280" height="180" fill="#F5F5F5" stroke="#C8102E" stroke-width="2"/>
+  <text x="500" y="312" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="13" fill="#2a1a0e">Ampère-Maxwell Law</text>
+  <line x1="380" y1="320" x2="620" y2="320" stroke="#C8102E" stroke-width="0.5"/>
+  <text x="500" y="346" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="12" fill="#2a1a0e">∮ B⃗·dℓ⃗ = μ₀I_enc + <tspan fill="#C8102E">μ₀ε₀ dΦ_E/dt</tspan></text>
+  <text x="500" y="372" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#545454">∇ × B⃗ = μ₀J⃗ + <tspan fill="#C8102E">μ₀ε₀ ∂E⃗/∂t</tspan></text>
+  <line x1="400" y1="394" x2="600" y2="394" stroke="#C8102E" stroke-width="0.25"/>
+  <text x="500" y="416" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#2a1a0e">"Currents + changing E source curl of B."</text>
+  <text x="500" y="436" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">Maxwell's 1865 addition (red term)</text>
+  <text x="500" y="452" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#56B4E9">→ Ch 9 + Fig 11.1</text>
+
+  <!-- Caption -->
+  <rect x="60" y="490" width="580" height="40" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.25"/>
+  <text x="350" y="510" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="12" fill="#2a1a0e">Four equations. The vermillion term is the one that predicts light.</text>
+  <text x="350" y="524" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">Combine 3 and 4 in vacuum → wave equation with c = 1/√(μ₀ε₀).</text>
+</svg>

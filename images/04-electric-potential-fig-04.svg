@@ -1,0 +1,111 @@
+<!--
+  V-vs-E Saddle Point — Why High V Doesn't Mean High E
+  Book: Physics +1: Electromagnetism
+  Chapter: 04-electric-potential
+  Figure: 04
+  Type: Annotated example / comparison panels
+  Generated: 2026-05-25
+  Source: pantry/04-electric-potential-cajal.md
+-->
+<svg viewBox="0 0 700 460" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title">
+  <title id="fig-title">High V Does Not Mean High E — The Saddle Point</title>
+  <desc>Two equal positive charges. Panel A: V heatmap is bright (high) everywhere near both charges, especially between them. Panel B: E magnitude heatmap is dark exactly at the midpoint between the two charges, where the gradient of V vanishes. Panel C: equipotential contours plus field arrows showing the saddle structure — at the midpoint, V is high but E is zero. V and E are derivative-related, not value-related.</desc>
+  <metadata>
+    <cajal:figure
+      xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Physics +1: Electromagnetism"
+      book-slug="physics-electromagnetism"
+      chapter="04-electric-potential"
+      figure-number="04"
+      figure-title="V-vs-E Saddle Point"
+      figure-slug="V-E-saddle"
+      figure-type="annotated-example"
+      priority="Critical"
+      author="Humanitarians AI"
+      date-generated="2026-05-25"
+      source-file="pantry/04-electric-potential-cajal.md"
+    />
+  </metadata>
+  <rect x="0" y="0" width="700" height="460" fill="#FFFFFF"/>
+
+  <text x="32" y="36" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="14" fill="#2a1a0e">V High, E Zero — The Saddle Point Between Two Like Charges</text>
+  <text x="32" y="56" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="11" fill="#545454">V and E are derivative-related, not value-related.</text>
+
+  <line x1="240" y1="80" x2="240" y2="380" stroke="#2a1a0e" stroke-width="0.5"/>
+  <line x1="460" y1="80" x2="460" y2="380" stroke="#2a1a0e" stroke-width="0.5"/>
+
+  <!-- Panel A: V heatmap -->
+  <text x="120" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#2a1a0e" letter-spacing="0.08em">(A) V(x,y) — HIGH AT MIDPOINT</text>
+  <!-- Heatmap concentric blobs (bright between the charges) -->
+  <ellipse cx="120" cy="220" rx="90" ry="60" fill="#C8102E" opacity="0.18"/>
+  <ellipse cx="120" cy="220" rx="65" ry="42" fill="#C8102E" opacity="0.28"/>
+  <ellipse cx="120" cy="220" rx="42" ry="28" fill="#C8102E" opacity="0.45"/>
+  <ellipse cx="120" cy="220" rx="22" ry="14" fill="#C8102E" opacity="0.65"/>
+  <!-- Charges -->
+  <circle cx="90" cy="220" r="7" fill="#C8102E" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="90" y="224" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#FFFFFF">+</text>
+  <circle cx="150" cy="220" r="7" fill="#C8102E" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="150" y="224" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#FFFFFF">+</text>
+  <text x="120" y="320" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">midpoint is the hottest spot</text>
+  <text x="120" y="340" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#C8102E">V ≫ 0</text>
+
+  <!-- Panel B: |E| heatmap -->
+  <text x="350" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#56B4E9" letter-spacing="0.08em">(B) |E(x,y)| — DARK AT MIDPOINT</text>
+  <!-- |E| heatmap: hot near each charge, DARK between them (null) -->
+  <circle cx="320" cy="220" r="32" fill="#56B4E9" opacity="0.5"/>
+  <circle cx="320" cy="220" r="22" fill="#56B4E9" opacity="0.7"/>
+  <circle cx="380" cy="220" r="32" fill="#56B4E9" opacity="0.5"/>
+  <circle cx="380" cy="220" r="22" fill="#56B4E9" opacity="0.7"/>
+  <!-- Null point at midpoint (dark) -->
+  <circle cx="350" cy="220" r="6" fill="#2a1a0e"/>
+  <!-- Charges -->
+  <circle cx="320" cy="220" r="7" fill="#C8102E" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="320" y="224" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#FFFFFF">+</text>
+  <circle cx="380" cy="220" r="7" fill="#C8102E" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="380" y="224" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#FFFFFF">+</text>
+  <text x="350" y="320" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#56B4E9">midpoint is dark</text>
+  <text x="350" y="340" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#2a1a0e">|E| = 0</text>
+
+  <!-- Panel C: Overlay (contours + arrows) -->
+  <text x="570" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#2a1a0e" letter-spacing="0.08em">(C) SADDLE — V HIGH, ∇V = 0</text>
+  <!-- Equipotential contours -->
+  <g fill="none" stroke="#3AAE3A" stroke-width="1" stroke-dasharray="3 2">
+    <ellipse cx="540" cy="220" rx="14" ry="10"/>
+    <ellipse cx="600" cy="220" rx="14" ry="10"/>
+    <path d="M 500 220 Q 540 200 570 213 Q 600 200 640 220 Q 600 240 570 227 Q 540 240 500 220 Z"/>
+    <ellipse cx="570" cy="220" rx="60" ry="32"/>
+  </g>
+  <!-- Field arrows outward from each charge, none at midpoint -->
+  <g fill="none" stroke="#56B4E9" stroke-width="1.25">
+    <line x1="530" y1="220" x2="510" y2="220"/>
+    <line x1="610" y1="220" x2="630" y2="220"/>
+    <line x1="540" y1="208" x2="540" y2="190"/>
+    <line x1="540" y1="232" x2="540" y2="250"/>
+    <line x1="600" y1="208" x2="600" y2="190"/>
+    <line x1="600" y1="232" x2="600" y2="250"/>
+  </g>
+  <g fill="#56B4E9">
+    <polygon points="510 220, 518 216, 518 224"/>
+    <polygon points="630 220, 622 216, 622 224"/>
+    <polygon points="540 190, 536 198, 544 198"/>
+    <polygon points="540 250, 536 242, 544 242"/>
+    <polygon points="600 190, 596 198, 604 198"/>
+    <polygon points="600 250, 596 242, 604 242"/>
+  </g>
+  <!-- Midpoint with E=0 -->
+  <circle cx="570" cy="220" r="3" fill="#C8102E"/>
+  <text x="578" y="216" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">∇V = 0</text>
+  <circle cx="540" cy="220" r="7" fill="#C8102E" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="540" y="224" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#FFFFFF">+</text>
+  <circle cx="600" cy="220" r="7" fill="#C8102E" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="600" y="224" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#FFFFFF">+</text>
+  <text x="570" y="320" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#2a1a0e">flat slope, high value</text>
+  <text x="570" y="340" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#C8102E">saddle of V</text>
+
+  <!-- Caption -->
+  <rect x="60" y="386" width="580" height="60" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.25"/>
+  <text x="350" y="406" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="12" fill="#2a1a0e">V is large at the midpoint; E is zero there.</text>
+  <text x="350" y="424" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#C8102E">E⃗ = −∇V — a value can be high while its slope is flat.</text>
+  <text x="350" y="440" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">Saddle points: high V, ∇V = 0.</text>
+</svg>

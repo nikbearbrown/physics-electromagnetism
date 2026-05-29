@@ -64,6 +64,9 @@ Symmetry-seekers will notice what this does: Faraday's law (equation 3) says cha
 
 That propagation is light.
 
+![side-by-side panels showing the two cross-creation laws — left: Faraday, a changing B (shown as decreasing flux through a loop) driving circulating E; right: Maxwell, a changing E (growing flux between capacitor plate...](../images/11-maxwells-equations-fig-01.png)
+*Figure 11.1 — Maxwell's Paradox*
+
 <!-- → [IMAGE: side-by-side panels showing the two cross-creation laws — left: Faraday, a changing B (shown as decreasing flux through a loop) driving circulating E; right: Maxwell, a changing E (growing flux between capacitor plates) driving circulating B — arrows and labels showing the direction of each induced field] -->
 
 ---
@@ -86,6 +89,9 @@ This is the wave equation. Compare it to the standard form $\nabla^2 f = (1/v^2)
 
 The manipulation is clean, but the surprise is not in the algebra. The surprise is that $\mu_0$ and $\varepsilon_0$ were measured independently — one from the force between magnets, one from the force between charges — and their product, when combined here, gives $1/c^2$. Maxwell did not put $c$ into the equations. He found it there.
 
+![diagram of the wave equation derivation — starting from Faraday and Ampère-Maxwell equations at the top, arrow down showing "take curl of Faraday", arrow to "substitute Ampère-Maxwell on the right", arrow to the boxed...](../images/11-maxwells-equations-fig-02.png)
+*Figure 11.2 — Maxwell's Four Equations*
+
 <!-- → [IMAGE: diagram of the wave equation derivation — starting from Faraday and Ampère-Maxwell equations at the top, arrow down showing "take curl of Faraday", arrow to "substitute Ampère-Maxwell on the right", arrow to the boxed wave equation, final arrow to "wave speed = 1/√(μ₀ε₀) = c"] -->
 
 ---
@@ -105,6 +111,9 @@ Substituting into Maxwell's equations in vacuum yields three constraints that th
 **Transverse geometry**: $\vec{E}$, $\vec{B}$, and the propagation direction are mutually perpendicular. $\vec{E} \times \vec{B}$ points along the propagation direction. Neither $\vec{E}$ nor $\vec{B}$ has a component along the propagation direction. This is not an assumption — it follows from $\nabla \cdot \vec{E} = 0$ in vacuum: the spatial variation of a plane wave along $\hat{x}$ requires the field components perpendicular to $\hat{x}$ to be the wave.
 
 **Polarization** is the direction of $\vec{E}$ in the transverse plane. Linear polarization: $\vec{E}$ oscillates back and forth along a fixed direction. Circular: $\vec{E}$ rotates while maintaining constant magnitude. Elliptical: the general case. Sunlight is unpolarized — a superposition of all polarization orientations; a polarizing filter selects one.
+
+![3D perspective diagram of a plane EM wave propagating along +x̂ — E field shown as orange arrows oscillating along ŷ, B field as purple arrows oscillating along ẑ, propagation direction along x̂, the three vectors lab...](../images/11-maxwells-equations-fig-03.png)
+*Figure 11.3 — Plane Electromagnetic Wave*
 
 <!-- → [IMAGE: 3D perspective diagram of a plane EM wave propagating along +x̂ — E field shown as orange arrows oscillating along ŷ, B field as purple arrows oscillating along ẑ, propagation direction along x̂, the three vectors labeled and shown perpendicular to each other, a few wavelengths of the wave shown along x] -->
 
@@ -138,7 +147,13 @@ $$P_{\text{rad}} = I/c \text{ (absorbed)}, \qquad P_{\text{rad}} = 2I/c \text{ (
 
 Solar radiation pressure at Earth: roughly $9 \times 10^{-6}$ N/m² — small enough to ignore for most purposes, but real enough to matter for spacecraft trajectory planning and to provide the thrust for solar sails. JAXA's IKAROS spacecraft, launched in 2010, was the first to demonstrate interplanetary propulsion by photon pressure alone.
 
+![radiation pressure diagram — a plane wave (labeled intensity I) incident on two surfaces side by side: left surface labeled "absorber, P_rad = I/c" with a single arrow showing force in propagation direction; right sur...](../images/11-maxwells-equations-fig-04.png)
+*Figure 11.4 — Electromagnetic Spectrum*
+
 <!-- → [IMAGE: radiation pressure diagram — a plane wave (labeled intensity I) incident on two surfaces side by side: left surface labeled "absorber, P_rad = I/c" with a single arrow showing force in propagation direction; right surface labeled "perfect reflector, P_rad = 2I/c" with wave bouncing back and a double arrow — student should see the factor-of-2 comes from momentum reversal] -->
+
+![Poynting vector diagram — plane wave propagating along +x̂ with E along ŷ and B along ẑ, the cross product E×B shown pointing along +x̂ labeled as S (energy flux), with a flat surface perpendicular to propagation show...](../images/11-maxwells-equations-fig-05.png)
+*Figure 11.5 — Poynting Vector*
 
 <!-- → [IMAGE: Poynting vector diagram — plane wave propagating along +x̂ with E along ŷ and B along ẑ, the cross product E×B shown pointing along +x̂ labeled as S (energy flux), with a flat surface perpendicular to propagation showing "I watts per square meter flowing through this surface"] -->
 
@@ -165,6 +180,9 @@ His apparatus: a spark-gap oscillator, essentially a capacitor discharging rapid
 Hertz then did exactly what a physicist should do: he measured. He showed the waves propagate at $c$ by reflecting them off a metal wall and producing standing waves whose spacing he measured. He showed they could be reflected, refracted, and polarized — all properties of Maxwell's predicted transverse oscillations. His experiments were definitive.
 
 Hertz reportedly dismissed the practical implications: *"It's of no use whatsoever... this is just an experiment that proves Maestro Maxwell was right."* Marconi began commercial radio telegraphy between England and Newfoundland in 1901, fourteen years after Hertz's experiment, four years after Hertz's death. Every wireless device in the world runs on the physics Hertz confirmed.
+
+![Hertz experiment schematic — left: spark-gap oscillator (inductor + capacitor, sparking electrode) labeled "transmitter, ~100 MHz"; right: small resonant wire loop with gap labeled "receiver — sparks appear when trans...](../images/11-maxwells-equations-fig-06.png)
+*Figure 11.6 — Hertz's 1887 Spark-Gap Experiment*
 
 <!-- → [IMAGE: Hertz experiment schematic — left: spark-gap oscillator (inductor + capacitor, sparking electrode) labeled "transmitter, ~100 MHz"; right: small resonant wire loop with gap labeled "receiver — sparks appear when transmitter fires"; between them: wavy lines representing the EM wave; a metal wall shown to the right of the receiver labeled "reflecting wall used to create standing waves and measure λ"] -->
 
@@ -276,3 +294,6 @@ Hertz's 1887 experiment confirmed the predicted waves exist and propagate at $c$
 ---
 
 **Tags:** Maxwell's equations, displacement current, wave equation, electromagnetic wave, Poynting vector, EM spectrum, Hertz, light, plane wave
+![Radiation Pressure](../images/11-maxwells-equations-fig-07.png)
+*Figure 11.7 — Radiation Pressure*
+

@@ -1,0 +1,143 @@
+<!--
+  Equipotential Atlas — Four Canonical Configurations
+  Book: Physics +1: Electromagnetism
+  Chapter: 04-electric-potential
+  Figure: 03
+  Type: Comparison panels
+  Generated: 2026-05-25
+  Source: pantry/04-electric-potential-cajal.md
+-->
+<svg viewBox="0 0 700 460" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title">
+  <title id="fig-title">Equipotential Atlas for Four Canonical Configurations</title>
+  <desc>Four panels showing equipotential contours (dashed green) and field-line arrows (solid blue). Panel A: single positive charge with concentric circular equipotentials and radial field lines. Panel B: dipole with closed-loop equipotentials around each charge and the V equals zero plane perpendicular to the dipole axis. Panel C: two equal positive charges with figure-eight equipotentials and a saddle at the midline. Panel D: parallel plates with evenly spaced linear equipotentials between them. The field arrows always cross equipotentials at right angles.</desc>
+  <metadata>
+    <cajal:figure
+      xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Physics +1: Electromagnetism"
+      book-slug="physics-electromagnetism"
+      chapter="04-electric-potential"
+      figure-number="03"
+      figure-title="Equipotential Atlas"
+      figure-slug="equipotential-atlas"
+      figure-type="comparison"
+      priority="Important"
+      author="Humanitarians AI"
+      date-generated="2026-05-25"
+      source-file="pantry/04-electric-potential-cajal.md"
+    />
+  </metadata>
+  <rect x="0" y="0" width="700" height="460" fill="#FFFFFF"/>
+
+  <text x="32" y="32" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="14" fill="#2a1a0e">Equipotentials (dashed) Cross Field Lines (solid) at Right Angles — Always</text>
+  <text x="32" y="52" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="11" fill="#545454">Four configurations, one rule.</text>
+
+  <line x1="350" y1="70" x2="350" y2="380" stroke="#2a1a0e" stroke-width="0.5"/>
+  <line x1="60" y1="225" x2="640" y2="225" stroke="#2a1a0e" stroke-width="0.5"/>
+
+  <!-- Panel A (top-left): Single +q -->
+  <text x="180" y="84" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="9" fill="#2a1a0e" letter-spacing="0.08em">(A) SINGLE +q</text>
+  <!-- Equipotentials (concentric circles, dashed green) -->
+  <g fill="none" stroke="#3AAE3A" stroke-width="1" stroke-dasharray="3 2">
+    <circle cx="180" cy="150" r="22"/>
+    <circle cx="180" cy="150" r="38"/>
+    <circle cx="180" cy="150" r="56"/>
+    <circle cx="180" cy="150" r="74"/>
+  </g>
+  <!-- Field lines (radial, sky-blue) -->
+  <g stroke="#56B4E9" stroke-width="1.25" fill="none">
+    <line x1="180" y1="142" x2="180" y2="100"/>
+    <line x1="180" y1="158" x2="180" y2="200"/>
+    <line x1="172" y1="150" x2="120" y2="150"/>
+    <line x1="188" y1="150" x2="240" y2="150"/>
+    <line x1="174" y1="144" x2="140" y2="110"/>
+    <line x1="186" y1="144" x2="220" y2="110"/>
+    <line x1="174" y1="156" x2="140" y2="190"/>
+    <line x1="186" y1="156" x2="220" y2="190"/>
+  </g>
+  <circle cx="180" cy="150" r="6" fill="#C8102E" stroke="#2a1a0e" stroke-width="0.75"/>
+  <text x="180" y="153" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#FFFFFF">+</text>
+
+  <!-- Panel B (top-right): Dipole -->
+  <text x="510" y="84" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="9" fill="#2a1a0e" letter-spacing="0.08em">(B) DIPOLE (+q, −q)</text>
+  <!-- Equipotentials (closed loops around each charge, dashed) -->
+  <g fill="none" stroke="#3AAE3A" stroke-width="1" stroke-dasharray="3 2">
+    <ellipse cx="475" cy="150" rx="18" ry="14"/>
+    <ellipse cx="475" cy="150" rx="32" ry="22"/>
+    <ellipse cx="545" cy="150" rx="18" ry="14"/>
+    <ellipse cx="545" cy="150" rx="32" ry="22"/>
+  </g>
+  <!-- V=0 plane (vertical dashed line between charges) -->
+  <line x1="510" y1="90" x2="510" y2="210" stroke="#3AAE3A" stroke-width="1.25" stroke-dasharray="5 3"/>
+  <text x="510" y="216" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#3AAE3A">V = 0</text>
+  <!-- Field lines (curve from + to -) -->
+  <g fill="none" stroke="#56B4E9" stroke-width="1.25">
+    <path d="M 482 150 L 538 150"/>
+    <path d="M 480 142 Q 510 122 540 142"/>
+    <path d="M 480 158 Q 510 178 540 158"/>
+  </g>
+  <circle cx="475" cy="150" r="6" fill="#C8102E" stroke="#2a1a0e" stroke-width="0.75"/>
+  <text x="475" y="153" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#FFFFFF">+</text>
+  <circle cx="545" cy="150" r="6" fill="#56B4E9" stroke="#2a1a0e" stroke-width="0.75"/>
+  <text x="545" y="154" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#2a1a0e">−</text>
+
+  <!-- Panel C (bottom-left): Two like +q -->
+  <text x="180" y="240" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="9" fill="#C8102E" letter-spacing="0.08em">(C) TWO LIKE +q — SADDLE</text>
+  <!-- Equipotentials (figure-eight at moderate distance) -->
+  <g fill="none" stroke="#3AAE3A" stroke-width="1" stroke-dasharray="3 2">
+    <ellipse cx="148" cy="320" rx="16" ry="12"/>
+    <ellipse cx="212" cy="320" rx="16" ry="12"/>
+    <path d="M 100 320 Q 148 290 180 308 Q 212 290 260 320 Q 212 350 180 332 Q 148 350 100 320 Z"/>
+    <ellipse cx="180" cy="320" rx="92" ry="50"/>
+  </g>
+  <!-- Field arrows (outward from both charges, away from midline saddle) -->
+  <g fill="none" stroke="#56B4E9" stroke-width="1.25">
+    <line x1="142" y1="316" x2="118" y2="312"/>
+    <line x1="142" y1="324" x2="118" y2="328"/>
+    <line x1="218" y1="316" x2="242" y2="312"/>
+    <line x1="218" y1="324" x2="242" y2="328"/>
+    <line x1="148" y1="306" x2="148" y2="284"/>
+    <line x1="212" y1="306" x2="212" y2="284"/>
+    <line x1="148" y1="332" x2="148" y2="354"/>
+    <line x1="212" y1="332" x2="212" y2="354"/>
+  </g>
+  <!-- Saddle point marker -->
+  <circle cx="180" cy="320" r="3" fill="#C8102E"/>
+  <text x="186" y="312" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="7" fill="#C8102E">saddle</text>
+  <circle cx="148" cy="320" r="6" fill="#C8102E" stroke="#2a1a0e" stroke-width="0.75"/>
+  <text x="148" y="323" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#FFFFFF">+</text>
+  <circle cx="212" cy="320" r="6" fill="#C8102E" stroke="#2a1a0e" stroke-width="0.75"/>
+  <text x="212" y="323" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#FFFFFF">+</text>
+
+  <!-- Panel D (bottom-right): Parallel plates -->
+  <text x="510" y="240" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="9" fill="#2a1a0e" letter-spacing="0.08em">(D) PARALLEL PLATES — UNIFORM</text>
+  <!-- Plates -->
+  <line x1="430" y1="260" x2="590" y2="260" stroke="#C8102E" stroke-width="3"/>
+  <line x1="430" y1="380" x2="590" y2="380" stroke="#56B4E9" stroke-width="3"/>
+  <text x="600" y="265" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">+</text>
+  <text x="600" y="385" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#56B4E9">−</text>
+  <!-- Equipotentials (horizontal dashed green lines between plates) -->
+  <g stroke="#3AAE3A" stroke-width="1" stroke-dasharray="3 2">
+    <line x1="430" y1="290" x2="590" y2="290"/>
+    <line x1="430" y1="320" x2="590" y2="320"/>
+    <line x1="430" y1="350" x2="590" y2="350"/>
+  </g>
+  <!-- Field arrows (downward, uniform) -->
+  <g stroke="#56B4E9" stroke-width="1.25" fill="none">
+    <line x1="450" y1="266" x2="450" y2="374"/>
+    <line x1="490" y1="266" x2="490" y2="374"/>
+    <line x1="530" y1="266" x2="530" y2="374"/>
+    <line x1="570" y1="266" x2="570" y2="374"/>
+  </g>
+  <g fill="#56B4E9">
+    <polygon points="450 374, 446 366, 454 366"/>
+    <polygon points="490 374, 486 366, 494 366"/>
+    <polygon points="530 374, 526 366, 534 366"/>
+    <polygon points="570 374, 566 366, 574 366"/>
+  </g>
+
+  <!-- Caption -->
+  <rect x="60" y="400" width="580" height="44" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.25"/>
+  <text x="350" y="420" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="12" fill="#2a1a0e">Four configurations, one rule: E ⊥ equipotential everywhere.</text>
+  <text x="350" y="436" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#C8102E">If your field arrows don't cross at right angles, your math is wrong.</text>
+</svg>

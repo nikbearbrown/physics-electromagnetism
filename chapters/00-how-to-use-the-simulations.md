@@ -194,3 +194,9 @@ The Brutalist three-file system rests on one empirical claim: that splitting the
 
 **Tags:** D3, point charge, Coulomb's law, simulation pedagogy, Brutalist, four-move prompt, RK4, field lines, LLM-assisted learning
 
+![The Three-File Architecture for LLM-Assisted Simulation](../images/00-how-to-use-the-simulations-fig-01.png)
+*Figure 0.1 — The Three-File Architecture for LLM-Assisted Simulation*
+
+![The Four-Move Prompt Scaffold](../images/00-how-to-use-the-simulations-fig-02.png)
+*Figure 0.2 — The Four-Move Prompt Scaffold*
+

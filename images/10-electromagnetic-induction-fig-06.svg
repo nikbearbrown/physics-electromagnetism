@@ -1,0 +1,106 @@
+<!--
+  RL Circuit — Exponential Rise with τ = L/R
+  Book: Physics +1: Electromagnetism
+  Chapter: 10-electromagnetic-induction
+  Figure: 06
+  Type: Statistical / quantitative
+  Generated: 2026-05-25
+  Source: pantry/10-electromagnetic-induction-cajal.md
+-->
+<svg viewBox="0 0 700 460" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title">
+  <title id="fig-title">RL Circuit — Same Shape as RC, Inverted Time Constant</title>
+  <desc>Plot of current as fraction of final value versus time in units of tau equals L over R. Rising curve: I of t equals epsilon over R times one minus e to the minus t over tau. Decaying curve: I of t equals I zero e to the minus t over tau. At one tau the rising curve is at 63 percent and the decaying curve is at 37 percent. Same shape as RC charging but tau equals L over R — larger R makes RL faster, not slower.</desc>
+  <metadata>
+    <cajal:figure
+      xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Physics +1: Electromagnetism"
+      book-slug="physics-electromagnetism"
+      chapter="10-electromagnetic-induction"
+      figure-number="06"
+      figure-title="RL Circuit Dynamics"
+      figure-slug="rl-dynamics"
+      figure-type="quantitative"
+      priority="Important"
+      author="Humanitarians AI"
+      date-generated="2026-05-25"
+      source-file="pantry/10-electromagnetic-induction-cajal.md"
+    />
+  </metadata>
+  <rect x="0" y="0" width="700" height="460" fill="#FFFFFF"/>
+
+  <text x="32" y="36" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="14" fill="#2a1a0e">RL Dynamics — Same Shape, Inverted Time Constant</text>
+  <text x="32" y="56" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="11" fill="#545454">τ = L/R.  Bigger R makes RL faster.  (Mirror of Ch 5 Fig 5.5.)</text>
+
+  <!-- Axes -->
+  <line x1="100" y1="380" x2="600" y2="380" stroke="#2a1a0e" stroke-width="1"/>
+  <line x1="100" y1="100" x2="100" y2="380" stroke="#2a1a0e" stroke-width="1"/>
+
+  <!-- Y-axis -->
+  <g font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454" text-anchor="end">
+    <text x="94" y="104">1.0</text>
+    <text x="94" y="174">0.75</text>
+    <text x="94" y="244">0.5</text>
+    <text x="94" y="314">0.25</text>
+    <text x="94" y="384">0</text>
+  </g>
+  <g stroke="#2a1a0e" stroke-width="0.5">
+    <line x1="95" y1="100" x2="105" y2="100"/>
+    <line x1="95" y1="170" x2="105" y2="170"/>
+    <line x1="95" y1="240" x2="105" y2="240"/>
+    <line x1="95" y1="310" x2="105" y2="310"/>
+  </g>
+  <text x="50" y="240" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#545454" letter-spacing="0.06em" transform="rotate(-90 50 240)">I / (ε/R)</text>
+
+  <!-- X-axis -->
+  <g font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454" text-anchor="middle">
+    <text x="100" y="396">0</text>
+    <text x="200" y="396">τ</text>
+    <text x="300" y="396">2τ</text>
+    <text x="400" y="396">3τ</text>
+    <text x="500" y="396">4τ</text>
+    <text x="600" y="396">5τ</text>
+  </g>
+  <g stroke="#2a1a0e" stroke-width="0.5">
+    <line x1="200" y1="375" x2="200" y2="385"/>
+    <line x1="300" y1="375" x2="300" y2="385"/>
+    <line x1="400" y1="375" x2="400" y2="385"/>
+    <line x1="500" y1="375" x2="500" y2="385"/>
+  </g>
+  <text x="350" y="418" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#545454" letter-spacing="0.06em">TIME (units of τ = L/R)</text>
+
+  <!-- τ marker -->
+  <line x1="200" y1="100" x2="200" y2="380" stroke="#C8102E" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="200" y="90" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">t = τ</text>
+
+  <!-- Rising curve -->
+  <path d="M 100 380 Q 150 318 200 203 Q 250 156 300 138 Q 350 124 400 114 Q 450 108 500 105 Q 550 102 600 102" stroke="#56B4E9" stroke-width="2.5" fill="none"/>
+  <text x="460" y="118" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#56B4E9">I = (ε/R)(1 − e^(−t/τ))</text>
+
+  <!-- Decaying curve -->
+  <path d="M 100 100 Q 150 162 200 277 Q 250 324 300 342 Q 350 356 400 366 Q 450 372 500 376 Q 550 378 600 378" stroke="#C8102E" stroke-width="2.5" fill="none"/>
+  <text x="450" y="358" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#C8102E">I = I₀ e^(−t/τ)</text>
+
+  <!-- Markers at τ -->
+  <circle cx="200" cy="203" r="4" fill="#56B4E9"/>
+  <text x="212" y="200" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#56B4E9">63%</text>
+  <circle cx="200" cy="277" r="4" fill="#C8102E"/>
+  <text x="212" y="290" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">37%</text>
+
+  <!-- Inset schematic -->
+  <rect x="510" y="240" width="160" height="100" fill="#F5F5F5" stroke="#545454" stroke-width="0.75"/>
+  <text x="590" y="258" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454" letter-spacing="0.06em">RL CIRCUIT</text>
+  <!-- ε source -->
+  <line x1="528" y1="280" x2="540" y2="280" stroke="#56B4E9" stroke-width="2"/>
+  <line x1="534" y1="288" x2="534" y2="272" stroke="#56B4E9" stroke-width="1"/>
+  <text x="524" y="284" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#56B4E9">ε</text>
+  <line x1="540" y1="280" x2="568" y2="280" stroke="#2a1a0e" stroke-width="1"/>
+  <!-- R -->
+  <path d="M 568 280 L 572 274 L 580 286 L 588 274 L 596 286 L 604 274 L 612 286 L 616 280" stroke="#C8102E" stroke-width="1.25" fill="none"/>
+  <line x1="616" y1="280" x2="640" y2="280" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="592" y="266" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#2a1a0e">R</text>
+  <!-- L (drawn as loops) -->
+  <line x1="640" y1="280" x2="640" y2="300" stroke="#2a1a0e" stroke-width="1"/>
+  <path d="M 640 300 Q 632 310 640 320 Q 632 330 640 340" stroke="#7B61A8" stroke-width="1.5" fill="none"/>
+  <text x="652" y="320" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#7B61A8">L</text>
+</svg>

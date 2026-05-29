@@ -32,6 +32,9 @@ This is conservation of energy. A charge carried around any closed loop returns 
 
 These two laws plus Ohm's law ($V = IR$) are sufficient to solve any DC circuit. Everything else in this chapter is technique.
 
+![node diagram illustrating KCL — three currents arriving at a junction (labeled I₁, I₂, I₃) and two currents leaving (labeled I₄, I₅), with the equation I₁+I₂+I₃ = I₄+I₅ written beneath](../images/07-dc-circuits-fig-01.png)
+*Figure 7.1 — Kirchhoff's Two Laws*
+
 <!-- → [IMAGE: node diagram illustrating KCL — three currents arriving at a junction (labeled I₁, I₂, I₃) and two currents leaving (labeled I₄, I₅), with the equation I₁+I₂+I₃ = I₄+I₅ written beneath] -->
 
 ---
@@ -58,6 +61,9 @@ $$V_{\text{out}} = V_{\text{in}} \cdot \frac{R_2}{R_1 + R_2}$$
 
 The output is a fixed fraction of the input, set by the ratio of resistances. This circuit appears everywhere — setting reference voltages, biasing transistors, building adjustable attenuators. Its dual is the **current divider**: two resistors in parallel sharing a total current $I$, where the larger resistor gets the smaller current (opposite of the voltage divider's intuition, and worth keeping straight).
 
+![voltage divider schematic — R₁ and R₂ in series across V_in, output V_out tapped across R₂, formula V_out = V_in × R₂/(R₁+R₂) labeled — annotate that the output voltage is a fixed fraction of the input set by the resi...](../images/07-dc-circuits-fig-02.png)
+*Figure 7.2 — Series and Parallel Resistors*
+
 <!-- → [IMAGE: voltage divider schematic — R₁ and R₂ in series across V_in, output V_out tapped across R₂, formula V_out = V_in × R₂/(R₁+R₂) labeled — annotate that the output voltage is a fixed fraction of the input set by the resistance ratio, not the absolute values] -->
 
 ---
@@ -75,6 +81,9 @@ A car battery has $r \sim 0.01$ Ω. The starter motor draws 200 A. Terminal volt
 The maximum current any battery can deliver is $I_{\max} = \varepsilon/r$, the short-circuit current. For a car battery: roughly 1200 A. The internal resistance is the limiting factor.
 
 The laptop-charger problem from the opening is exactly this physics, with the power strip's wiring playing the role of internal resistance. The "battery" is the outlet at 120 V; the "internal resistance" is the wiring; the laptop charger is a high-current load dragging down the terminal voltage seen at the lamp.
+
+![circuit diagram of real battery model — ideal EMF ε in series with internal resistance r, terminal voltage V_terminal labeled, load resistance R_ext shown, with annotation showing V_terminal = ε - Ir](../images/07-dc-circuits-fig-03.png)
+*Figure 7.3 — Two-Loop Circuit*
 
 <!-- → [IMAGE: circuit diagram of real battery model — ideal EMF ε in series with internal resistance r, terminal voltage V_terminal labeled, load resistance R_ext shown, with annotation showing V_terminal = ε - Ir] -->
 
@@ -133,6 +142,9 @@ $12 - I_1 \cdot 4 = 12 - 6.24 = 5.76 \approx V$. ✓ (small rounding error from 
 
 **The limit.** This works for DC circuits with resistors and ideal voltage sources. Add capacitors or inductors and the currents become time-varying; the equations become differential. Add diodes or transistors and the equations become nonlinear. Both are doable — industrial simulators like SPICE handle them routinely — but the foundation is always KCL and KVL.
 
+![circuit diagram for the two-battery worked example — battery 1 (12V) and R₁ (4Ω) on the left, battery 2 (8V) and R₂ (6Ω) on the right, both meeting at the central node V, with R₃ (3Ω) going from the node to ground — b...](../images/07-dc-circuits-fig-04.png)
+*Figure 7.4 — Voltage Divider Loading*
+
 <!-- → [IMAGE: circuit diagram for the two-battery worked example — battery 1 (12V) and R₁ (4Ω) on the left, battery 2 (8V) and R₂ (6Ω) on the right, both meeting at the central node V, with R₃ (3Ω) going from the node to ground — branch currents I₁, I₂, I₃ labeled with directions] -->
 
 ---
@@ -146,6 +158,9 @@ An ammeter measures the current through a branch. Ideally, it has zero resistanc
 The **loading effect** applies to meters: any meter changes the circuit by being in it. A voltmeter in parallel with a 100 Ω resistor is negligible if the meter has 10 MΩ resistance — the parallel combination is $100 \times 10^7 / (100 + 10^7) \approx 100$ Ω, essentially unchanged. But the same voltmeter measuring a 50 MΩ source resistance is in trouble: the parallel combination is now $50 \times 10 / (50 + 10) = 8.3$ MΩ — not 50 MΩ. The meter is pulling down the reading.
 
 A useful habit: before trusting a meter reading, check whether the meter's resistance is at least 100× the source impedance. Below that ratio, correct for the loading explicitly.
+
+![loading-effect diagram — left: voltmeter (R_meter = 10MΩ) measuring across a 100Ω resistor, showing negligible effect; right: same voltmeter measuring across a 50MΩ resistor, showing the parallel combination drops to...](../images/07-dc-circuits-fig-05.png)
+*Figure 7.5 — Real Battery*
 
 <!-- → [IMAGE: loading-effect diagram — left: voltmeter (R_meter = 10MΩ) measuring across a 100Ω resistor, showing negligible effect; right: same voltmeter measuring across a 50MΩ resistor, showing the parallel combination drops to 8.3MΩ and the reading is wrong — the change in the equivalent resistance is labeled in both cases] -->
 

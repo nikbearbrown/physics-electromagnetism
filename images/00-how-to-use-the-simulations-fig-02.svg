@@ -1,0 +1,85 @@
+<!--
+  Four-Move Prompt Scaffold: Show → Say → Constrain → Verify
+  Book: Physics +1: Electromagnetism
+  Chapter: 00-how-to-use-the-simulations
+  Figure: 02
+  Type: Process flowchart
+  Generated: 2026-05-25
+  Source: pantry/00-how-to-use-the-simulations-cajal.md
+-->
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title">
+  <title id="fig-title">The Four-Move Prompt Scaffold</title>
+  <desc>Every LLM exercise in the book follows four moves. Show: paste the reference. Say: state the task in one sentence. Constrain: name the rules and library. Verify: list explicit checks the student will perform. The fourth move is the one students skip — and it is the move that builds the diagnostic habit the rest of the book depends on.</desc>
+  <metadata>
+    <cajal:figure
+      xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Physics +1: Electromagnetism"
+      book-slug="physics-electromagnetism"
+      chapter="00-how-to-use-the-simulations"
+      figure-number="02"
+      figure-title="Four-Move Prompt Scaffold"
+      figure-slug="four-move-prompt"
+      figure-type="process-flowchart"
+      priority="Foundational"
+      author="Humanitarians AI"
+      date-generated="2026-05-25"
+      source-file="pantry/00-how-to-use-the-simulations-cajal.md"
+    />
+  </metadata>
+  <defs>
+    <marker id="arrowink" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#2a1a0e"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="700" height="420" fill="#FFFFFF"/>
+
+  <text x="32" y="36" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="14" fill="#2a1a0e">The Four Moves — How Every LLM Exercise Is Written</text>
+  <text x="32" y="56" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="11" fill="#545454">Show, Say, Constrain, Verify. The fourth is the one students skip.</text>
+
+  <!-- Box 1: SHOW -->
+  <rect x="40" y="120" width="140" height="100" fill="#F5F5F5" stroke="#2a1a0e" stroke-width="1.5"/>
+  <text x="110" y="148" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#2a1a0e" letter-spacing="0.08em">1. SHOW</text>
+  <line x1="55" y1="158" x2="165" y2="158" stroke="#2a1a0e" stroke-width="0.75"/>
+  <text x="110" y="178" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#2a1a0e">paste reference</text>
+  <text x="110" y="194" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">image, snippet,</text>
+  <text x="110" y="208" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">prior file</text>
+
+  <!-- Box 2: SAY -->
+  <rect x="200" y="120" width="140" height="100" fill="#F5F5F5" stroke="#2a1a0e" stroke-width="1.5"/>
+  <text x="270" y="148" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#2a1a0e" letter-spacing="0.08em">2. SAY</text>
+  <line x1="215" y1="158" x2="325" y2="158" stroke="#2a1a0e" stroke-width="0.75"/>
+  <text x="270" y="178" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#2a1a0e">one-sentence task</text>
+  <text x="270" y="194" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">verb + object</text>
+  <text x="270" y="208" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">no preamble</text>
+
+  <!-- Box 3: CONSTRAIN -->
+  <rect x="360" y="120" width="140" height="100" fill="#F5F5F5" stroke="#2a1a0e" stroke-width="1.5"/>
+  <text x="430" y="148" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#2a1a0e" letter-spacing="0.08em">3. CONSTRAIN</text>
+  <line x1="375" y1="158" x2="485" y2="158" stroke="#2a1a0e" stroke-width="0.75"/>
+  <text x="430" y="178" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#2a1a0e">name rules + library</text>
+  <text x="430" y="194" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">no jQuery, ES6,</text>
+  <text x="430" y="208" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">single file</text>
+
+  <!-- Box 4: VERIFY (highlighted) -->
+  <rect x="520" y="120" width="140" height="100" fill="#FFFFFF" stroke="#C8102E" stroke-width="2"/>
+  <text x="590" y="148" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#C8102E" letter-spacing="0.08em">4. VERIFY</text>
+  <line x1="535" y1="158" x2="645" y2="158" stroke="#C8102E" stroke-width="0.75"/>
+  <text x="590" y="178" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#C8102E">explicit checks</text>
+  <text x="590" y="194" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">unit test, plot,</text>
+  <text x="590" y="208" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">limit case</text>
+
+  <!-- Arrows between boxes -->
+  <line x1="180" y1="170" x2="200" y2="170" stroke="#2a1a0e" stroke-width="1" marker-end="url(#arrowink)"/>
+  <line x1="340" y1="170" x2="360" y2="170" stroke="#2a1a0e" stroke-width="1" marker-end="url(#arrowink)"/>
+  <line x1="500" y1="170" x2="520" y2="170" stroke="#C8102E" stroke-width="1.5" marker-end="url(#arrowink)"/>
+
+  <!-- Footnote indicator -->
+  <text x="590" y="246" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">↑ the move students skip</text>
+
+  <!-- Caption block -->
+  <rect x="60" y="290" width="580" height="84" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.25"/>
+  <text x="350" y="312" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="12" fill="#2a1a0e">Without VERIFY, you generate code you can't trust.</text>
+  <text x="350" y="332" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#2a1a0e">The fourth move is what turns a prompt into an experiment.</text>
+  <text x="350" y="356" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">Show what · Say what · Constrain how · Verify whether</text>
+</svg>

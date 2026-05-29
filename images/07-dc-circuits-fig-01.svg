@@ -1,0 +1,104 @@
+<!--
+  Kirchhoff's Two Laws — Conservation Made Visual
+  Book: Physics +1: Electromagnetism
+  Chapter: 07-dc-circuits
+  Figure: 01
+  Type: Comparison panels
+  Generated: 2026-05-25
+  Source: pantry/07-dc-circuits-cajal.md
+-->
+<svg viewBox="0 0 700 460" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title">
+  <title id="fig-title">Kirchhoff's Two Laws — Charge and Energy Conservation</title>
+  <desc>Two side-by-side panels. Panel A is Kirchhoff's current law: a node with three branches. Currents I one and I two enter, I three leaves. The sum balances. Panel B is Kirchhoff's voltage law: a closed loop with battery and two resistors. The EMF gained at the battery equals the I R drops summed around the loop.</desc>
+  <metadata>
+    <cajal:figure
+      xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Physics +1: Electromagnetism"
+      book-slug="physics-electromagnetism"
+      chapter="07-dc-circuits"
+      figure-number="01"
+      figure-title="Kirchhoff's Two Laws"
+      figure-slug="kirchhoff-laws"
+      figure-type="comparison"
+      priority="Critical"
+      author="Humanitarians AI"
+      date-generated="2026-05-25"
+      source-file="pantry/07-dc-circuits-cajal.md"
+    />
+  </metadata>
+  <defs>
+    <marker id="arrowblue" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#56B4E9"/>
+    </marker>
+    <marker id="arrowred" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#C8102E"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="700" height="460" fill="#FFFFFF"/>
+
+  <text x="32" y="36" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="14" fill="#2a1a0e">Two Laws, Two Conservation Principles</text>
+  <text x="32" y="56" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="11" fill="#545454">KCL: charge doesn't pile up.  KVL: energy doesn't appear from nowhere around a loop.</text>
+
+  <line x1="350" y1="80" x2="350" y2="380" stroke="#2a1a0e" stroke-width="0.5"/>
+
+  <!-- Panel A: KCL -->
+  <text x="180" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#56B4E9" letter-spacing="0.08em">(A) KCL — CHARGE CONSERVATION</text>
+
+  <!-- Node -->
+  <circle cx="180" cy="220" r="6" fill="#2a1a0e"/>
+
+  <!-- I1 (entering from left) -->
+  <line x1="80" y1="200" x2="170" y2="215" stroke="#56B4E9" stroke-width="2" marker-end="url(#arrowblue)"/>
+  <text x="100" y="194" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#56B4E9">I₁ →</text>
+
+  <!-- I2 (entering from upper left) -->
+  <line x1="100" y1="290" x2="170" y2="230" stroke="#56B4E9" stroke-width="2" marker-end="url(#arrowblue)"/>
+  <text x="98" y="306" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#56B4E9">I₂ →</text>
+
+  <!-- I3 (leaving to right) -->
+  <line x1="190" y1="220" x2="290" y2="220" stroke="#56B4E9" stroke-width="2" marker-end="url(#arrowblue)"/>
+  <text x="276" y="240" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#56B4E9">→ I₃</text>
+
+  <!-- KCL equation -->
+  <rect x="60" y="340" width="240" height="40" fill="#F5F5F5" stroke="#56B4E9" stroke-width="1"/>
+  <text x="180" y="365" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="12" fill="#56B4E9">I₁ + I₂ = I₃</text>
+
+  <text x="180" y="320" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">"in = out at every node"</text>
+
+  <!-- Panel B: KVL -->
+  <text x="510" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#C8102E" letter-spacing="0.08em">(B) KVL — ENERGY CONSERVATION</text>
+
+  <!-- Loop: battery (left), two resistors (top and right) -->
+  <!-- Wires forming a rectangle -->
+  <rect x="400" y="150" width="220" height="140" fill="none" stroke="#2a1a0e" stroke-width="1"/>
+
+  <!-- Battery on left side -->
+  <line x1="394" y1="210" x2="406" y2="210" stroke="#2a1a0e" stroke-width="0.5"/>
+  <line x1="396" y1="200" x2="396" y2="220" stroke="#C8102E" stroke-width="3"/>
+  <line x1="404" y1="190" x2="404" y2="230" stroke="#C8102E" stroke-width="1.5"/>
+  <text x="376" y="218" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#C8102E">+ε −</text>
+
+  <!-- R1 on top -->
+  <path d="M 460 150 L 466 142 L 472 158 L 478 142 L 484 158 L 490 142 L 496 158 L 502 142 L 508 158 L 514 150" stroke="#C8102E" stroke-width="1.5" fill="none"/>
+  <text x="487" y="138" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#2a1a0e">R₁</text>
+
+  <!-- R2 on right -->
+  <path d="M 620 200 L 612 206 L 628 212 L 612 218 L 628 224 L 612 230 L 628 236 L 612 242 L 628 248 L 620 256" stroke="#C8102E" stroke-width="1.5" fill="none"/>
+  <text x="640" y="226" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#2a1a0e">R₂</text>
+
+  <!-- Current direction arrow around loop -->
+  <path d="M 430 286 Q 470 296 510 286" stroke="#C8102E" stroke-width="1" fill="none" marker-end="url(#arrowred)"/>
+  <text x="470" y="306" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">trace one direction</text>
+
+  <!-- KVL equation -->
+  <rect x="390" y="340" width="240" height="40" fill="#F5F5F5" stroke="#C8102E" stroke-width="1"/>
+  <text x="510" y="365" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="12" fill="#C8102E">+ε − I R₁ − I R₂ = 0</text>
+
+  <text x="510" y="320" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">"return to start V → return to start"</text>
+
+  <!-- Caption -->
+  <rect x="60" y="400" width="580" height="44" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.25"/>
+  <text x="350" y="420" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="12" fill="#2a1a0e">KCL: charge can't accumulate at a node.</text>
+  <text x="350" y="438" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#C8102E">KVL: a charge that returns to its starting node returns to its starting potential.</text>
+</svg>

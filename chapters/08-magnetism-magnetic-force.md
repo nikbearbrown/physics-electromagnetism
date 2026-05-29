@@ -36,6 +36,9 @@ Three things to notice immediately.
 
 The unit of magnetic field is the **tesla** (T). For scale: Earth's surface field is 25–65 µT. A bar magnet at arm's length, ~0.01 T. A clinical MRI, 1.5–3 T. The LHC's bending dipoles, 8.3 T.
 
+![diagram of the Lorentz force — a positive charge moving right with velocity v, a magnetic field B pointing into the page, and the resulting force F pointing upward, with the right-hand rule illustrated — then the same...](../images/08-magnetism-magnetic-force-fig-01.png)
+*Figure 8.1 — Lorentz Force*
+
 <!-- → [IMAGE: diagram of the Lorentz force — a positive charge moving right with velocity v, a magnetic field B pointing into the page, and the resulting force F pointing upward, with the right-hand rule illustrated — then the same diagram for a negative charge showing force downward — to establish the direction rule concretely before any discussion] -->
 
 ---
@@ -55,6 +58,9 @@ The kinetic energy of a charged particle moving in a pure magnetic field is cons
 Newtonian intuition rebels slightly here. We are used to thinking "force causes acceleration causes speed change." But acceleration means rate of change of velocity — a vector — and changing direction is acceleration just as much as changing speed. The magnetic force produces centripetal acceleration: it constantly deflects the particle but never adds to its kinetic energy.
 
 If you watch a particle spiral in a magnetic field and it *is* gaining speed, there is an electric field somewhere. The electric force does work; the magnetic force does not.
+
+![circular orbit of a positive charge in a uniform B field (into page) — the velocity vector tangent to the circle, the magnetic force vector pointing radially inward (centripetal), and the speed labeled as constant — t...](../images/08-magnetism-magnetic-force-fig-02.png)
+*Figure 8.2 — Circular and Helical Motion in a Uniform Magnetic Field*
 
 <!-- → [IMAGE: circular orbit of a positive charge in a uniform B field (into page) — the velocity vector tangent to the circle, the magnetic force vector pointing radially inward (centripetal), and the speed labeled as constant — to make the work-free deflection visual] -->
 
@@ -84,6 +90,9 @@ Look at what is not in that last formula: $v$ is absent. The cyclotron frequency
 
 Ernest Lawrence figured this out in 1930 and built the first cyclotron. You accelerate a particle across a gap between two D-shaped electrodes at the cyclotron frequency; each time the particle crosses the gap it gains energy and spirals outward, but the frequency needed to synchronize the kicks stays constant. You can keep adding energy indefinitely (up to the relativistic corrections that set the practical upper limit on cyclotrons).
 
+![cyclotron schematic — two D-shaped electrodes (dees) with a particle spiraling outward from center, each half-circle labeled with increasing radius, the accelerating gap labeled with the alternating voltage — showing...](../images/08-magnetism-magnetic-force-fig-03.png)
+*Figure 8.3 — Mass Spectrometer*
+
 <!-- → [IMAGE: cyclotron schematic — two D-shaped electrodes (dees) with a particle spiraling outward from center, each half-circle labeled with increasing radius, the accelerating gap labeled with the alternating voltage — showing how the constant cyclotron frequency allows repeated kicks at every crossing] -->
 
 ---
@@ -95,6 +104,9 @@ What if the initial velocity has a component along $\vec{B}$, not just perpendic
 Decompose: $\vec{v} = \vec{v}_\parallel + \vec{v}_\perp$ where $\vec{v}_\parallel$ is along $\vec{B}$ and $\vec{v}_\perp$ is perpendicular to it. The magnetic force on $\vec{v}_\parallel$ is $q\vec{v}_\parallel \times \vec{B} = 0$ — no force. The magnetic force on $\vec{v}_\perp$ produces circular motion as before, with radius $r = mv_\perp/(|q|B)$.
 
 The result: the particle spirals. The perpendicular component drives it around a circle; the parallel component carries it straight along the field line simultaneously. The combined motion is a **helix** — a corkscrew winding along $\vec{B}$.
+
+![helical trajectory of a charged particle — the circular component shown in the plane perpendicular to B, the forward motion along B, and the resulting corkscrew path with pitch labeled as p = v_parallel × T_c — to mak...](../images/08-magnetism-magnetic-force-fig-04.png)
+*Figure 8.4 — Hall Effect*
 
 <!-- → [IMAGE: helical trajectory of a charged particle — the circular component shown in the plane perpendicular to B, the forward motion along B, and the resulting corkscrew path with pitch labeled as p = v_parallel × T_c — to make the superposition of circular + linear motion geometric] -->
 
@@ -111,6 +123,9 @@ Ionize a sample: each molecule acquires charge $+e$. Accelerate the ions through
 $$r = \frac{mv}{eB} = \frac{1}{B}\sqrt{\frac{2mV}{e}}$$
 
 Two isotopes of the same element have the same charge but different masses. They land at different positions on a detector strip. From the landing position, read the mass; from the count rate, read the abundance.
+
+![mass spectrometer schematic — ions accelerated through voltage V, entering a uniform B field region, following circular arcs of different radii for different masses, landing at separated spots on a detector strip — wi...](../images/08-magnetism-magnetic-force-fig-05.png)
+*Figure 8.5 — Force on a Current-Carrying Wire*
 
 <!-- → [IMAGE: mass spectrometer schematic — ions accelerated through voltage V, entering a uniform B field region, following circular arcs of different radii for different masses, landing at separated spots on a detector strip — with radius formula labeled] -->
 
@@ -145,6 +160,9 @@ $$\vec{F} = I\vec{L} \times \vec{B}$$
 For a more general wire shape, integrate: $\vec{F} = \int I\,d\vec{\ell} \times \vec{B}$.
 
 This is the force law for the electric motor. Wind a coil of wire, run a current through it, place it in a magnetic field from a permanent magnet — the coil experiences a force on each of its sides, and the geometry is arranged so those forces produce a torque. The coil rotates. A commutator switches the current direction at the right moment to keep the torque always in the same sense. Every electric motor on the planet — from the servo in your car's power window to the megawatt drive in an electric locomotive — is this equation at work.
+
+![rectangular current loop in a uniform magnetic field — forces on the two current-carrying sides shown as arrows (one up, one down, net torque) — the magnetic moment vector m shown normal to the loop, the field B shown...](../images/08-magnetism-magnetic-force-fig-06.png)
+*Figure 8.6 — Torque on a Current Loop*
 
 <!-- → [IMAGE: rectangular current loop in a uniform magnetic field — forces on the two current-carrying sides shown as arrows (one up, one down, net torque) — the magnetic moment vector m shown normal to the loop, the field B shown horizontal, and the torque vector τ = m × B shown — to make the motor principle visible] -->
 

@@ -1,0 +1,93 @@
+<!--
+  Operational Definition of the Electric Field
+  Book: Physics +1: Electromagnetism
+  Chapter: 02-electric-field
+  Figure: 01
+  Type: Annotated example / comparison panels
+  Generated: 2026-05-25
+  Source: pantry/02-electric-field-cajal.md
+-->
+<svg viewBox="0 0 700 460" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title">
+  <title id="fig-title">Operational Definition — the Test Charge Must Not Disturb the Field</title>
+  <desc>Panel A shows a dipole source with a large test charge nearby: the field lines visibly bend toward the test charge. Panel B shows the same dipole with a tiny test charge: the field lines are unperturbed. The operational definition takes the limit as the test charge goes to zero, so the test charge samples the field without disturbing it.</desc>
+  <metadata>
+    <cajal:figure
+      xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Physics +1: Electromagnetism"
+      book-slug="physics-electromagnetism"
+      chapter="02-electric-field"
+      figure-number="01"
+      figure-title="Operational Definition of E"
+      figure-slug="operational-definition-E"
+      figure-type="annotated-example"
+      priority="Important"
+      author="Humanitarians AI"
+      date-generated="2026-05-25"
+      source-file="pantry/02-electric-field-cajal.md"
+    />
+  </metadata>
+  <rect x="0" y="0" width="700" height="460" fill="#FFFFFF"/>
+
+  <text x="32" y="36" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="14" fill="#2a1a0e">The Test Charge — Small Enough Not to Disturb What It Samples</text>
+  <text x="32" y="56" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="11" fill="#545454">E ⃗ = lim_{q₀ → 0}  F⃗ / q₀.  The limit is the whole point.</text>
+
+  <line x1="350" y1="80" x2="350" y2="380" stroke="#2a1a0e" stroke-width="0.5"/>
+
+  <!-- Panel A: large test charge (distorts) -->
+  <text x="180" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#C8102E" letter-spacing="0.08em">(A) TOO LARGE — DISTORTS THE FIELD</text>
+
+  <!-- Source +Q (left) -->
+  <circle cx="85" cy="230" r="11" fill="#545454" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="85" y="234" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#FFFFFF">+</text>
+  <text x="85" y="258" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#2a1a0e">+Q</text>
+
+  <!-- Source -Q (right) -->
+  <circle cx="245" cy="230" r="11" fill="#545454" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="245" y="235" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="13" fill="#FFFFFF">−</text>
+  <text x="245" y="258" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#2a1a0e">−Q</text>
+
+  <!-- Field lines bend toward test charge (below) -->
+  <g fill="none" stroke="#56B4E9" stroke-width="1.25">
+    <path d="M 95 230 Q 165 220 235 230"/>
+    <path d="M 92 220 Q 165 180 238 220"/>
+    <path d="M 95 240 Q 130 280 165 305 Q 200 280 235 240"/>
+    <path d="M 90 250 Q 130 320 165 318 Q 200 320 240 250"/>
+  </g>
+
+  <!-- Large test charge (distorts the field) -->
+  <circle cx="165" cy="320" r="14" fill="#C8102E" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="165" y="324" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#FFFFFF">q₀</text>
+  <text x="165" y="350" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">large test charge</text>
+
+  <!-- Panel B: tiny test charge (does not distort) -->
+  <text x="510" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#2a1a0e" letter-spacing="0.08em">(B) SMALL ENOUGH — FIELD UNDISTURBED</text>
+
+  <!-- Source +Q -->
+  <circle cx="415" cy="230" r="11" fill="#545454" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="415" y="234" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#FFFFFF">+</text>
+  <text x="415" y="258" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#2a1a0e">+Q</text>
+
+  <!-- Source -Q -->
+  <circle cx="575" cy="230" r="11" fill="#545454" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="575" y="235" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="13" fill="#FFFFFF">−</text>
+  <text x="575" y="258" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#2a1a0e">−Q</text>
+
+  <!-- Clean dipole field lines (no distortion) -->
+  <g fill="none" stroke="#56B4E9" stroke-width="1.25">
+    <path d="M 425 230 Q 495 230 565 230"/>
+    <path d="M 422 220 Q 495 190 568 220"/>
+    <path d="M 422 240 Q 495 270 568 240"/>
+    <path d="M 420 215 Q 495 160 570 215"/>
+    <path d="M 420 245 Q 495 300 570 245"/>
+  </g>
+
+  <!-- Tiny test charge -->
+  <circle cx="495" cy="320" r="3" fill="#C8102E"/>
+  <text x="495" y="340" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">q₀ → 0</text>
+
+  <!-- Caption -->
+  <rect x="60" y="390" width="580" height="56" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.25"/>
+  <text x="350" y="410" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="12" fill="#2a1a0e">The test charge must be small enough not to disturb the field it samples.</text>
+  <text x="350" y="430" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#C8102E">The limit q₀ → 0 is a conceptual idealization, not a measurement procedure.</text>
+</svg>

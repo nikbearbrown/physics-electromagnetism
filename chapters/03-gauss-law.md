@@ -34,6 +34,9 @@ The physical picture: flux is the net number of field lines crossing the surface
 
 Units: flux has units of $\text{V} \cdot \text{m}$, equivalently $\text{N} \cdot \text{m}^2/\text{C}$.
 
+![closed surface (sphere) with arrows representing electric field lines — some exiting (positive flux, labeled red), some entering (negative flux, labeled blue), and some skimming tangentially (zero contribution, labele...](../images/03-gauss-law-fig-01.png)
+*Figure 3.1 — Electric Flux*
+
 <!-- → [IMAGE: closed surface (sphere) with arrows representing electric field lines — some exiting (positive flux, labeled red), some entering (negative flux, labeled blue), and some skimming tangentially (zero contribution, labeled gray)] -->
 
 ---
@@ -70,6 +73,9 @@ Superposition does the rest. For any collection of charges, the field is the vec
 
 The whole derivation uses two ingredients: the inverse-square law and superposition. Those are the load-bearing pillars. If either failed, Gauss's law would fail with it.
 
+![solid-angle diagram — cone from origin charge q intersecting first a nearby spherical surface (small area, close in) and then a larger deformed surface (larger area, farther out) — annotations showing r² area growth a...](../images/03-gauss-law-fig-02.png)
+*Figure 3.2 — Solid-Angle Argument*
+
 <!-- → [IMAGE: solid-angle diagram — cone from origin charge q intersecting first a nearby spherical surface (small area, close in) and then a larger deformed surface (larger area, farther out) — annotations showing r² area growth and 1/r² field falloff exactly canceling] -->
 
 ---
@@ -99,6 +105,9 @@ where $\sigma$ is the surface charge density.
 In each case the computational trick is the same: choose your Gaussian surface so that $\vec{E}$ is either parallel to the normal and constant in magnitude (contributing $E \cdot A$) or perpendicular to the normal (contributing zero). Then $E$ pulls out of the integral and you do arithmetic.
 
 <!-- → [TABLE: three Gauss-law symmetries — columns: symmetry type, example distribution, Gaussian surface shape, result for E(r)] -->
+
+![three-panel side-by-side showing the three symmetry cases — (1) sphere with radial arrows and spherical Gaussian surface, (2) infinite line with cylindrical Gaussian surface and radial arrows, (3) infinite plane with...](../images/03-gauss-law-fig-03.png)
+*Figure 3.3 — Three Symmetry Templates for Gauss's Law*
 
 <!-- → [INFOGRAPHIC: three-panel side-by-side showing the three symmetry cases — (1) sphere with radial arrows and spherical Gaussian surface, (2) infinite line with cylindrical Gaussian surface and radial arrows, (3) infinite plane with pillbox Gaussian surface and perpendicular arrows — each panel labeled with its E(r) result] -->
 
@@ -132,6 +141,9 @@ Linear in $r$ inside. Zero at the center.
 
 What would have been required without Gauss's law? A direct integration of $d\vec{F}$ contributions from every volume element of the sphere — an integral that requires significant setup even in spherical coordinates. Gauss's law collapses it to two lines. That compression is the whole point.
 
+![E(r) vs. r for the uniformly charged solid sphere — linear rise inside from 0 to kQ/R² at r=R, then 1/r² falloff outside; kink at r=R labeled; student should see the piecewise structure](../images/03-gauss-law-fig-04.png)
+*Figure 3.4 — Electric Field Profile for a Uniformly Charged Solid Sphere*
+
 <!-- → [CHART: E(r) vs. r for the uniformly charged solid sphere — linear rise inside from 0 to kQ/R² at r=R, then 1/r² falloff outside; kink at r=R labeled; student should see the piecewise structure] -->
 
 ---
@@ -148,7 +160,13 @@ A conductor is a material where charges can move freely. In **electrostatic equi
 
 **Fourth: just outside, $E = \sigma/\varepsilon_0$.** Apply a Gaussian pillbox at the surface: one cap is just outside (field $E$ pointing outward), one cap is just inside (field zero). Flux through the pillbox: $EA = \sigma A/\varepsilon_0$, so $E = \sigma/\varepsilon_0$. Note this is twice the result for an isolated infinite plane, because here *all* the flux is on the outside.
 
+![Gaussian pillbox at the surface of a conductor — one cap inside (E=0, labeled), one cap outside (E=σ/ε₀, labeled), charge density σ on the surface, arrows showing outward flux only on the exterior cap](../images/03-gauss-law-fig-05.png)
+*Figure 3.5 — Conductor in Electrostatic Equilibrium*
+
 <!-- → [IMAGE: Gaussian pillbox at the surface of a conductor — one cap inside (E=0, labeled), one cap outside (E=σ/ε₀, labeled), charge density σ on the surface, arrows showing outward flux only on the exterior cap] -->
+
+![cross-section of a conducting shell with a cavity — left panel: no charge in cavity, field lines shown outside but interior is blank (E=0 labeled); right panel: point charge +q inside cavity, field lines in cavity and...](../images/03-gauss-law-fig-06.png)
+*Figure 3.6 — Faraday Cage*
 
 <!-- → [IMAGE: cross-section of a conducting shell with a cavity — left panel: no charge in cavity, field lines shown outside but interior is blank (E=0 labeled); right panel: point charge +q inside cavity, field lines in cavity and induced -q on inner wall, +q on outer wall, field lines outside — student should see the asymmetry between inward and outward shielding] -->
 

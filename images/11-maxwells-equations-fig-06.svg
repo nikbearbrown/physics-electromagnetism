@@ -1,0 +1,117 @@
+<!--
+  Hertz's 1887 Spark-Gap Experiment
+  Book: Physics +1: Electromagnetism
+  Chapter: 11-maxwells-equations
+  Figure: 06
+  Type: Mechanism cross-section / historical schematic
+  Generated: 2026-05-25
+  Source: pantry/11-maxwells-equations-cajal.md
+-->
+<svg viewBox="0 0 700 460" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title">
+  <title id="fig-title">Hertz's 1887 Spark-Gap Experiment</title>
+  <desc>Schematic of Hertz's 1887 laboratory setup. On the left a transmitter: induction coil drives capacitor plates with a small spark gap, oscillation around 100 megahertz. On the right a receiver: a small wire loop with its own micro-gap; sparks appear across that gap when the transmitter fires. Wavefronts propagate across the room from transmitter to receiver. Three confirmations: waves travel at the speed of light, reflect refract and polarize like light, and are transverse.</desc>
+  <metadata>
+    <cajal:figure
+      xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Physics +1: Electromagnetism"
+      book-slug="physics-electromagnetism"
+      chapter="11-maxwells-equations"
+      figure-number="06"
+      figure-title="Hertz's Spark-Gap Experiment"
+      figure-slug="hertz-experiment"
+      figure-type="historical-schematic"
+      priority="Important"
+      author="Humanitarians AI"
+      date-generated="2026-05-25"
+      source-file="pantry/11-maxwells-equations-cajal.md"
+    />
+  </metadata>
+  <rect x="0" y="0" width="700" height="460" fill="#FFFFFF"/>
+
+  <text x="32" y="36" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="14" fill="#2a1a0e">Hertz 1887 — Maxwell's Waves, Made Visible</text>
+  <text x="32" y="56" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="11" fill="#545454">Equation 1864 → confirmation 1887 → industry (Marconi) 1901.</text>
+
+  <!-- Transmitter (left side) -->
+  <text x="130" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#2a1a0e" letter-spacing="0.08em">TRANSMITTER</text>
+
+  <!-- Induction coil (box) -->
+  <rect x="60" y="280" width="80" height="50" fill="#F5F5F5" stroke="#2a1a0e" stroke-width="1.25"/>
+  <text x="100" y="306" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#2a1a0e">induction</text>
+  <text x="100" y="318" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#2a1a0e">coil</text>
+
+  <!-- Wires from coil up to plates -->
+  <line x1="80" y1="280" x2="80" y2="180" stroke="#2a1a0e" stroke-width="1"/>
+  <line x1="120" y1="280" x2="120" y2="180" stroke="#2a1a0e" stroke-width="1"/>
+
+  <!-- Capacitor plates -->
+  <line x1="60" y1="180" x2="100" y2="180" stroke="#56B4E9" stroke-width="3"/>
+  <line x1="100" y1="180" x2="140" y2="180" stroke="#56B4E9" stroke-width="3"/>
+
+  <!-- Wires up to spark gap -->
+  <line x1="80" y1="180" x2="80" y2="150" stroke="#2a1a0e" stroke-width="1"/>
+  <line x1="120" y1="180" x2="120" y2="150" stroke="#2a1a0e" stroke-width="1"/>
+  <!-- Spark gap balls -->
+  <circle cx="80" cy="148" r="5" fill="#C8102E"/>
+  <circle cx="120" cy="148" r="5" fill="#C8102E"/>
+  <!-- Spark indicator -->
+  <g stroke="#C8102E" stroke-width="1">
+    <line x1="86" y1="146" x2="92" y2="142"/>
+    <line x1="94" y1="146" x2="100" y2="150"/>
+    <line x1="103" y1="142" x2="108" y2="148"/>
+    <line x1="111" y1="146" x2="114" y2="148"/>
+  </g>
+  <text x="100" y="130" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">⚡ spark (~100 MHz)</text>
+
+  <!-- Wavefronts propagating right (concentric arcs centered at transmitter) -->
+  <g fill="none" stroke="#7B61A8" stroke-width="1.25">
+    <path d="M 200 240 Q 300 160 200 80" opacity="0.4"/>
+    <path d="M 250 240 Q 350 160 250 80" opacity="0.5"/>
+    <path d="M 300 240 Q 400 160 300 80" opacity="0.6"/>
+    <path d="M 350 240 Q 450 160 350 80" opacity="0.7"/>
+    <path d="M 400 240 Q 500 160 400 80" opacity="0.8"/>
+    <path d="M 200 360 Q 300 440 200 520" opacity="0.4"/>
+    <path d="M 250 360 Q 350 440 250 520" opacity="0.5"/>
+    <path d="M 300 360 Q 400 440 300 520" opacity="0.6"/>
+    <path d="M 350 360 Q 450 440 350 520" opacity="0.7"/>
+    <path d="M 400 360 Q 500 440 400 520" opacity="0.8"/>
+  </g>
+  <text x="320" y="246" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#7B61A8">EM wavefronts → at c</text>
+
+  <!-- Receiver (right side) -->
+  <text x="580" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#2a1a0e" letter-spacing="0.08em">RECEIVER</text>
+
+  <!-- Receiver loop -->
+  <circle cx="580" cy="200" r="40" fill="none" stroke="#56B4E9" stroke-width="2"/>
+  <!-- Micro-gap balls on loop top -->
+  <circle cx="572" cy="162" r="3.5" fill="#C8102E"/>
+  <circle cx="588" cy="162" r="3.5" fill="#C8102E"/>
+  <line x1="572" y1="158" x2="568" y2="156" stroke="#2a1a0e" stroke-width="0.5"/>
+  <line x1="588" y1="158" x2="592" y2="156" stroke="#2a1a0e" stroke-width="0.5"/>
+  <!-- Tiny spark on receiver gap -->
+  <g stroke="#C8102E" stroke-width="0.75">
+    <line x1="576" y1="158" x2="580" y2="155"/>
+    <line x1="580" y1="155" x2="584" y2="158"/>
+  </g>
+  <text x="580" y="142" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">⚡ tiny sparks</text>
+  <text x="580" y="262" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#2a1a0e">wire loop + micro-gap</text>
+
+  <!-- Distance marker (~ several meters in Hertz's lab) -->
+  <line x1="150" y1="430" x2="540" y2="430" stroke="#545454" stroke-width="0.5"/>
+  <line x1="150" y1="425" x2="150" y2="435" stroke="#545454" stroke-width="0.5"/>
+  <line x1="540" y1="425" x2="540" y2="435" stroke="#545454" stroke-width="0.5"/>
+  <text x="345" y="446" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">~ several meters across Hertz's lab</text>
+
+  <!-- Three confirmations -->
+  <rect x="60" y="320" width="280" height="86" fill="#F5F5F5" stroke="#3AAE3A" stroke-width="1"/>
+  <text x="200" y="338" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#3AAE3A" letter-spacing="0.06em">CONFIRMED</text>
+  <text x="74" y="358" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#2a1a0e">(1) propagate at c</text>
+  <text x="74" y="376" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#2a1a0e">(2) reflect, refract, polarize</text>
+  <text x="74" y="394" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#2a1a0e">(3) are transverse</text>
+
+  <!-- Quote box -->
+  <rect x="360" y="320" width="280" height="86" fill="#F5F5F5" stroke="#C8102E" stroke-width="1"/>
+  <text x="500" y="346" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#2a1a0e" font-style="italic">"It's of no use whatsoever."</text>
+  <text x="500" y="364" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">— Hertz, asked about applications</text>
+  <text x="500" y="388" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="10" fill="#C8102E">(Marconi proved otherwise.)</text>
+</svg>

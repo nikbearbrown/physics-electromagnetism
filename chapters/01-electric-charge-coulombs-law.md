@@ -18,6 +18,9 @@ $$F = \frac{k q_1 q_2}{r^2}$$
 
 The constant $k \approx 8.99 \times 10^9 \text{ N·m}^2/\text{C}^2$ looks arbitrary until you compare it to its gravitational counterpart. For two electrons — one electron-mass gravitational force versus one electron-charge electrical force — the electrical force is roughly $10^{42}$ times stronger. Gravity between elementary particles is so feeble as to be unmeasurable; the electrical force is what actually holds atoms together. That ratio is one of the deep unexplained numbers in physics. We will not explain it here. But you should know it is unexplained, and that honest uncertainty is where the interesting physics lives.
 
+![log-scale comparison of electromagnetic vs. gravitational force for an electron-electron pair at 1 Å — student should see the ~10⁴² ratio viscerally](../images/01-electric-charge-coulombs-law-fig-01.png)
+*Figure 1.1 — Coulomb's Torsion Balance*
+
 <!-- → [CHART: log-scale comparison of electromagnetic vs. gravitational force for an electron-electron pair at 1 Å — student should see the ~10⁴² ratio viscerally] -->
 
 ---
@@ -54,6 +57,9 @@ The reason I am telling you this before the math: every problem where you apply 
 
 <!-- → [TABLE: conductors vs. insulators vs. semiconductors — columns: material class, example materials, charge mobility, timescale for charge redistribution, where it appears in this book] -->
 
+![three-step diagram of charge transfer by induction — (1) charged rod brought near neutral conductor, (2) charges separate inside conductor, (3) conductor grounded and disconnected, leaving net charge — each step shows...](../images/01-electric-charge-coulombs-law-fig-02.png)
+*Figure 1.2 — Coulomb's Law in Vector Form*
+
 <!-- → [INFOGRAPHIC: three-step diagram of charge transfer by induction — (1) charged rod brought near neutral conductor, (2) charges separate inside conductor, (3) conductor grounded and disconnected, leaving net charge — each step shows the charge distribution schematically] -->
 
 ---
@@ -76,6 +82,9 @@ $$k = \frac{1}{4\pi\varepsilon_0}, \qquad \varepsilon_0 = 8.854 \times 10^{-12} 
 
 $\varepsilon_0$ is the **permittivity of free space**. The $4\pi$ in the denominator looks like it complicates things. It pays for itself in Gauss's law, where the $4\pi$ from the surface area of a sphere cancels it and the result is clean. For now, treat $k$ and $1/4\pi\varepsilon_0$ as interchangeable.
 
+![two charges with position vectors r₁ and r₂, the separation vector (r₂ − r₁), and the force arrows — one for same-sign (repulsion) and one for opposite-sign (attraction), labeled clearly](../images/01-electric-charge-coulombs-law-fig-03.png)
+*Figure 1.3 — Three Charges in a Line*
+
 <!-- → [IMAGE: diagram showing two charges with position vectors r₁ and r₂, the separation vector (r₂ − r₁), and the force arrows — one for same-sign (repulsion) and one for opposite-sign (attraction), labeled clearly] -->
 
 ---
@@ -91,6 +100,9 @@ This is called **superposition**. It is a separate empirical fact from Coulomb's
 Superposition holds because Maxwell's equations are *linear* in charge and field. We cannot derive that linearity from first principles here — it is a fact about how the equations of electromagnetism happen to be structured. But it is important to name it explicitly, because in other areas of physics (gravity in general relativity, for instance) superposition fails. Here it holds, and that makes calculation vastly simpler.
 
 A concrete check: place two positive charges near each other. They repel. Now place a negative charge nearby. Does the negative charge change the repulsion between the first two? No. It adds its own attractive pull on each, but the repulsion between the original pair is unmodified. If you ever doubt superposition, that is the experiment you would run.
+
+![three-charge diagram showing (left) two positive charges with repulsion arrow between them, then (right) same two charges with a negative charge added nearby — the pairwise repulsion arrow between the original pair is...](../images/01-electric-charge-coulombs-law-fig-04.png)
+*Figure 1.4 — Three Materials, One Variable*
 
 <!-- → [IMAGE: three-charge diagram showing (left) two positive charges with repulsion arrow between them, then (right) same two charges with a negative charge added nearby — the pairwise repulsion arrow between the original pair is identical in both panels; only new force vectors are added, not modified] -->
 

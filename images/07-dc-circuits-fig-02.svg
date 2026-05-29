@@ -1,0 +1,93 @@
+<!--
+  Series/Parallel Resistors — Mirror of Ch 5 Fig 5.3
+  Book: Physics +1: Electromagnetism
+  Chapter: 07-dc-circuits
+  Figure: 02
+  Type: Comparison panels
+  Generated: 2026-05-25
+  Source: pantry/07-dc-circuits-cajal.md
+-->
+<svg viewBox="0 0 700 460" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title">
+  <title id="fig-title">Series and Parallel Resistors — Mirror of the Capacitor Rules</title>
+  <desc>Two side-by-side panels. Panel A: two resistors in series share the same current. The voltages add and the equivalent resistance is R one plus R two. Panel B: two resistors in parallel share the same voltage. The currents add and the inverse of the equivalent resistance is the sum of the inverses. The rules are the mirror of Chapter 5 Figure 5.3 for capacitors.</desc>
+  <metadata>
+    <cajal:figure
+      xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Physics +1: Electromagnetism"
+      book-slug="physics-electromagnetism"
+      chapter="07-dc-circuits"
+      figure-number="02"
+      figure-title="Series and Parallel Resistors"
+      figure-slug="resistor-series-parallel"
+      figure-type="comparison"
+      priority="Important"
+      author="Humanitarians AI"
+      date-generated="2026-05-25"
+      source-file="pantry/07-dc-circuits-cajal.md"
+    />
+  </metadata>
+  <rect x="0" y="0" width="700" height="460" fill="#FFFFFF"/>
+
+  <text x="32" y="36" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="14" fill="#2a1a0e">Series and Parallel Resistors — Opposite of Capacitors</text>
+  <text x="32" y="56" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="11" fill="#545454">Series adds resistance; parallel reduces it. See Ch 5 Fig 5.3 for the C mirror.</text>
+
+  <line x1="350" y1="80" x2="350" y2="400" stroke="#2a1a0e" stroke-width="0.5"/>
+
+  <!-- Panel A: Series -->
+  <text x="180" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#C8102E" letter-spacing="0.08em">(A) SERIES — SAME CURRENT</text>
+
+  <!-- Wires + R1 + R2 -->
+  <line x1="60" y1="220" x2="100" y2="220" stroke="#2a1a0e" stroke-width="1"/>
+  <path d="M 100 220 L 106 210 L 112 230 L 118 210 L 124 230 L 130 210 L 136 230 L 142 210 L 148 230 L 152 220" stroke="#C8102E" stroke-width="1.5" fill="none"/>
+  <text x="126" y="202" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#2a1a0e">R₁</text>
+  <line x1="152" y1="220" x2="200" y2="220" stroke="#2a1a0e" stroke-width="1"/>
+  <path d="M 200 220 L 206 210 L 212 230 L 218 210 L 224 230 L 230 210 L 236 230 L 242 210 L 248 230 L 252 220" stroke="#C8102E" stroke-width="1.5" fill="none"/>
+  <text x="226" y="202" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#2a1a0e">R₂</text>
+  <line x1="252" y1="220" x2="300" y2="220" stroke="#2a1a0e" stroke-width="1"/>
+
+  <!-- Current I (same through both) -->
+  <text x="80" y="244" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#56B4E9">I →</text>
+  <text x="178" y="244" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#56B4E9">I →</text>
+  <text x="276" y="244" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#56B4E9">I →</text>
+
+  <!-- Result -->
+  <rect x="60" y="290" width="240" height="50" fill="#F5F5F5" stroke="#C8102E" stroke-width="1"/>
+  <text x="180" y="312" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#2a1a0e">V_total = I(R₁ + R₂)</text>
+  <text x="180" y="330" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="12" fill="#C8102E">R_eq = R₁ + R₂</text>
+
+  <!-- Panel B: Parallel -->
+  <text x="510" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#56B4E9" letter-spacing="0.08em">(B) PARALLEL — SAME VOLTAGE</text>
+
+  <!-- Wires + parallel resistors -->
+  <line x1="400" y1="220" x2="440" y2="220" stroke="#2a1a0e" stroke-width="1"/>
+  <line x1="440" y1="180" x2="440" y2="260" stroke="#2a1a0e" stroke-width="1"/>
+  <!-- Top branch R1 -->
+  <line x1="440" y1="180" x2="470" y2="180" stroke="#2a1a0e" stroke-width="1"/>
+  <path d="M 470 180 L 476 170 L 482 190 L 488 170 L 494 190 L 500 170 L 506 190 L 512 170 L 518 190 L 522 180" stroke="#C8102E" stroke-width="1.5" fill="none"/>
+  <text x="496" y="164" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#2a1a0e">R₁</text>
+  <line x1="522" y1="180" x2="560" y2="180" stroke="#2a1a0e" stroke-width="1"/>
+  <!-- Bottom branch R2 -->
+  <line x1="440" y1="260" x2="470" y2="260" stroke="#2a1a0e" stroke-width="1"/>
+  <path d="M 470 260 L 476 250 L 482 270 L 488 250 L 494 270 L 500 250 L 506 270 L 512 250 L 518 270 L 522 260" stroke="#C8102E" stroke-width="1.5" fill="none"/>
+  <text x="496" y="284" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#2a1a0e">R₂</text>
+  <line x1="522" y1="260" x2="560" y2="260" stroke="#2a1a0e" stroke-width="1"/>
+  <line x1="560" y1="180" x2="560" y2="260" stroke="#2a1a0e" stroke-width="1"/>
+  <line x1="560" y1="220" x2="600" y2="220" stroke="#2a1a0e" stroke-width="1"/>
+
+  <!-- I splitting -->
+  <text x="420" y="244" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#56B4E9">I_tot →</text>
+  <text x="540" y="170" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#56B4E9">I₁ →</text>
+  <text x="540" y="252" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#56B4E9">I₂ →</text>
+
+  <!-- Result -->
+  <rect x="390" y="290" width="240" height="50" fill="#F5F5F5" stroke="#56B4E9" stroke-width="1"/>
+  <text x="510" y="312" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#2a1a0e">I_tot = V(1/R₁ + 1/R₂)</text>
+  <text x="510" y="330" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="12" fill="#56B4E9">1/R_eq = 1/R₁ + 1/R₂</text>
+
+  <!-- Caption -->
+  <rect x="60" y="370" width="580" height="76" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.25"/>
+  <text x="350" y="390" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="12" fill="#2a1a0e">Series shares current; parallel shares voltage.</text>
+  <text x="350" y="410" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#C8102E">Opposite of capacitors — see Ch 5 Fig 5.3.</text>
+  <text x="350" y="430" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">R obstructs current; C stores charge. The shared quantity determines which adds and which inverts.</text>
+</svg>

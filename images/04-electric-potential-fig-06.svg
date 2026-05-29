@@ -1,0 +1,103 @@
+<!--
+  Electron-Volt Energy Scales Across Physics
+  Book: Physics +1: Electromagnetism
+  Chapter: 04-electric-potential
+  Figure: 06
+  Type: Statistical / quantitative (log bar chart)
+  Generated: 2026-05-25
+  Source: pantry/04-electric-potential-cajal.md
+-->
+<svg viewBox="0 0 700 460" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title">
+  <title id="fig-title">Electron-Volt Energy Scales — 22 Orders of Magnitude</title>
+  <desc>Vertical log bar chart from one hundredth of an eV up to one followed by twenty zeros eV. Bars: thermal at room temperature 0.026 eV, visible photon 2 eV, hydrogen Rydberg 13.6 eV, X-ray photon a kilo-eV, nuclear binding per nucleon ten mega-eV, proton mass-energy 938 mega-eV, LHC beam per proton 6.8 tera-eV, Amaterasu cosmic ray 240 exa-eV. The Amaterasu particle carried about 40 joules — macroscopic kinetic energy concentrated in a single proton.</desc>
+  <metadata>
+    <cajal:figure
+      xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Physics +1: Electromagnetism"
+      book-slug="physics-electromagnetism"
+      chapter="04-electric-potential"
+      figure-number="06"
+      figure-title="eV Energy Scale Ladder"
+      figure-slug="ev-scale-ladder"
+      figure-type="quantitative"
+      priority="Important"
+      author="Humanitarians AI"
+      date-generated="2026-05-25"
+      source-file="pantry/04-electric-potential-cajal.md"
+    />
+  </metadata>
+  <rect x="0" y="0" width="700" height="460" fill="#FFFFFF"/>
+
+  <text x="32" y="36" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="14" fill="#2a1a0e">Energy Scales in eV — Thermal Noise to Amaterasu</text>
+  <text x="32" y="56" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="11" fill="#545454">22 orders of magnitude on one log axis (y-from-zero exception documented).</text>
+
+  <!-- Axes -->
+  <line x1="100" y1="380" x2="640" y2="380" stroke="#2a1a0e" stroke-width="1"/>
+  <line x1="100" y1="80" x2="100" y2="380" stroke="#2a1a0e" stroke-width="1"/>
+
+  <!-- Y-axis: log scale 10^-2 (380) to 10^21 (80). 300 px / 23 decades = ~13 px per decade -->
+  <g font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454" text-anchor="end">
+    <text x="94" y="384">10⁻²</text>
+    <text x="94" y="318">10²</text>
+    <text x="94" y="252">10⁸</text>
+    <text x="94" y="186">10¹⁴</text>
+    <text x="94" y="120">10²⁰</text>
+  </g>
+  <g stroke="#2a1a0e" stroke-width="0.5">
+    <line x1="95" y1="380" x2="105" y2="380"/>
+    <line x1="95" y1="314" x2="105" y2="314"/>
+    <line x1="95" y1="248" x2="105" y2="248"/>
+    <line x1="95" y1="182" x2="105" y2="182"/>
+    <line x1="95" y1="116" x2="105" y2="116"/>
+  </g>
+  <text x="48" y="230" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#545454" letter-spacing="0.06em" transform="rotate(-90 48 230)">ENERGY (eV, LOG)</text>
+
+  <!-- Bars. y = 380 - (log10(E)+2) * 11 -->
+  <!-- thermal 0.026 eV: log = -1.585 → y = 380 - 0.415*11 = 375.4 -->
+  <rect x="125" y="375" width="40" height="5" fill="#56B4E9"/>
+  <text x="145" y="395" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#545454">thermal</text>
+  <text x="145" y="406" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#545454">300 K</text>
+
+  <!-- visible photon ~2 eV: log = 0.3 → y = 380 - 2.3*11 = 354.7 -->
+  <rect x="185" y="354" width="40" height="26" fill="#56B4E9"/>
+  <text x="205" y="395" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#545454">visible</text>
+  <text x="205" y="406" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#545454">photon</text>
+
+  <!-- Rydberg 13.6 eV: log = 1.13 → y = 380 - 3.13*11 = 345.6 -->
+  <rect x="245" y="345" width="40" height="35" fill="#56B4E9"/>
+  <text x="265" y="395" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#545454">Rydberg</text>
+  <text x="265" y="406" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#545454">13.6 eV</text>
+
+  <!-- X-ray ~10^3 eV: y = 380 - 5*11 = 325 -->
+  <rect x="305" y="325" width="40" height="55" fill="#56B4E9"/>
+  <text x="325" y="395" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#545454">X-ray</text>
+  <text x="325" y="406" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#545454">~ keV</text>
+
+  <!-- Nuclear binding 10^7 eV: y = 380 - 9*11 = 281 -->
+  <rect x="365" y="281" width="40" height="99" fill="#56B4E9"/>
+  <text x="385" y="395" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#545454">nuclear</text>
+  <text x="385" y="406" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#545454">~ 10 MeV</text>
+
+  <!-- Proton mass-energy 9.38e8 eV: log = 8.97 → y = 380 - 10.97*11 = 259.3 -->
+  <rect x="425" y="259" width="40" height="121" fill="#56B4E9"/>
+  <text x="445" y="395" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#545454">p mc²</text>
+  <text x="445" y="406" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#545454">938 MeV</text>
+
+  <!-- LHC 6.8e12 eV: log = 12.83 → y = 380 - 14.83*11 = 216.9 -->
+  <rect x="485" y="217" width="40" height="163" fill="#56B4E9"/>
+  <text x="505" y="395" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#545454">LHC</text>
+  <text x="505" y="406" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#545454">6.8 TeV</text>
+
+  <!-- Amaterasu 2.4e20 eV: log = 20.38 → y = 380 - 22.38*11 = 133.8 (VERMILLION outlier) -->
+  <rect x="545" y="134" width="40" height="246" fill="#C8102E"/>
+  <text x="565" y="395" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#C8102E">Amaterasu</text>
+  <text x="565" y="406" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="8" fill="#C8102E">240 EeV</text>
+
+  <!-- Amaterasu annotation -->
+  <text x="610" y="138" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">≈ 40 J in one particle</text>
+
+  <!-- Caption -->
+  <rect x="100" y="425" width="540" height="20" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.25"/>
+  <text x="370" y="440" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#2a1a0e">Twenty-two orders of magnitude. The eV is convenient because it spans them all.</text>
+</svg>

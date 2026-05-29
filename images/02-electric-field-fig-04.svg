@@ -1,0 +1,118 @@
+<!--
+  Field-Line Density vs Vector Arrows — Comparison
+  Book: Physics +1: Electromagnetism
+  Chapter: 02-electric-field
+  Figure: 04
+  Type: Comparison panels
+  Generated: 2026-05-25
+  Source: pantry/02-electric-field-cajal.md
+-->
+<svg viewBox="0 0 700 460" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title">
+  <title id="fig-title">Field-Line Density vs Vector Arrows — Same Field, Two Views</title>
+  <desc>Two panels of the same dipole. Panel A shows field-line streamlines: shape is right but line density in 2D projection gives misleading magnitudes. Panel B shows a vector-arrow grid: arrow length scaled by field magnitude reveals where the field is genuinely strongest, particularly along the dipole axis.</desc>
+  <metadata>
+    <cajal:figure
+      xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Physics +1: Electromagnetism"
+      book-slug="physics-electromagnetism"
+      chapter="02-electric-field"
+      figure-number="04"
+      figure-title="Field-Line vs Vector Arrow"
+      figure-slug="field-line-vs-vector"
+      figure-type="comparison"
+      priority="Important"
+      author="Humanitarians AI"
+      date-generated="2026-05-25"
+      source-file="pantry/02-electric-field-cajal.md"
+    />
+  </metadata>
+  <rect x="0" y="0" width="700" height="460" fill="#FFFFFF"/>
+
+  <text x="32" y="36" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="14" fill="#2a1a0e">Two Views of the Same Dipole — When Each Misleads</text>
+  <text x="32" y="56" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="11" fill="#545454">Lines give shape; arrows give magnitudes. Use them together.</text>
+
+  <line x1="350" y1="80" x2="350" y2="400" stroke="#2a1a0e" stroke-width="0.5"/>
+
+  <!-- Panel A: field-line view -->
+  <text x="180" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#2a1a0e" letter-spacing="0.08em">(A) FIELD LINES — RIGHT SHAPE</text>
+
+  <g fill="none" stroke="#56B4E9" stroke-width="1.25">
+    <path d="M 110 240 Q 180 240 250 240"/>
+    <path d="M 107 230 Q 180 210 253 230"/>
+    <path d="M 107 250 Q 180 270 253 250"/>
+    <path d="M 103 220 Q 180 184 257 220"/>
+    <path d="M 103 260 Q 180 296 257 260"/>
+    <path d="M 98 208 Q 180 150 262 208"/>
+    <path d="M 98 272 Q 180 330 262 272"/>
+    <path d="M 93 196 Q 180 120 267 196"/>
+    <path d="M 93 284 Q 180 360 267 284"/>
+  </g>
+
+  <circle cx="102" cy="240" r="10" fill="#C8102E" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="102" y="244" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#FFFFFF">+</text>
+  <circle cx="258" cy="240" r="10" fill="#56B4E9" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="258" y="245" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="13" fill="#2a1a0e">−</text>
+
+  <text x="180" y="380" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">density misleads in 2D projection</text>
+
+  <!-- Panel B: vector arrow grid -->
+  <text x="510" y="100" text-anchor="middle" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="10" fill="#C8102E" letter-spacing="0.08em">(B) VECTOR ARROWS — RIGHT MAGNITUDES</text>
+
+  <!-- Vector grid: dipole at (432,240) and (588,240), 7x5 grid of arrows -->
+  <g stroke="#56B4E9" stroke-width="1" fill="none">
+    <!-- top row -->
+    <line x1="420" y1="160" x2="428" y2="158"/>
+    <line x1="450" y1="160" x2="460" y2="156"/>
+    <line x1="480" y1="160" x2="490" y2="155"/>
+    <line x1="510" y1="160" x2="520" y2="156"/>
+    <line x1="540" y1="160" x2="550" y2="156"/>
+    <line x1="570" y1="160" x2="578" y2="158"/>
+    <line x1="600" y1="160" x2="606" y2="161"/>
+    <!-- row 2 -->
+    <line x1="420" y1="200" x2="432" y2="195"/>
+    <line x1="450" y1="200" x2="464" y2="190"/>
+    <line x1="480" y1="200" x2="496" y2="186"/>
+    <line x1="510" y1="200" x2="528" y2="188"/>
+    <line x1="540" y1="200" x2="556" y2="190"/>
+    <line x1="570" y1="200" x2="582" y2="194"/>
+    <line x1="600" y1="200" x2="608" y2="198"/>
+    <!-- middle row (axis - strongest) -->
+    <line x1="420" y1="240" x2="440" y2="240" stroke-width="2"/>
+    <line x1="450" y1="240" x2="476" y2="240" stroke-width="2.5"/>
+    <line x1="480" y1="240" x2="510" y2="240" stroke-width="3"/>
+    <line x1="510" y1="240" x2="540" y2="240" stroke-width="3"/>
+    <line x1="540" y1="240" x2="566" y2="240" stroke-width="2.5"/>
+    <line x1="570" y1="240" x2="590" y2="240" stroke-width="2"/>
+    <line x1="600" y1="240" x2="612" y2="240"/>
+    <!-- row 4 -->
+    <line x1="420" y1="280" x2="432" y2="285"/>
+    <line x1="450" y1="280" x2="464" y2="290"/>
+    <line x1="480" y1="280" x2="496" y2="294"/>
+    <line x1="510" y1="280" x2="528" y2="292"/>
+    <line x1="540" y1="280" x2="556" y2="290"/>
+    <line x1="570" y1="280" x2="582" y2="286"/>
+    <line x1="600" y1="280" x2="608" y2="282"/>
+    <!-- bottom row -->
+    <line x1="420" y1="320" x2="428" y2="322"/>
+    <line x1="450" y1="320" x2="460" y2="324"/>
+    <line x1="480" y1="320" x2="490" y2="325"/>
+    <line x1="510" y1="320" x2="520" y2="324"/>
+    <line x1="540" y1="320" x2="550" y2="324"/>
+    <line x1="570" y1="320" x2="578" y2="322"/>
+    <line x1="600" y1="320" x2="606" y2="319"/>
+  </g>
+
+  <!-- Dipole charges in panel B -->
+  <circle cx="432" cy="240" r="9" fill="#C8102E" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="432" y="244" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#FFFFFF">+</text>
+  <circle cx="588" cy="240" r="9" fill="#56B4E9" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="588" y="245" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="12" fill="#2a1a0e">−</text>
+
+  <text x="510" y="380" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#C8102E">arrow length ∝ log(1 + |E|) — axis is strongest</text>
+
+  <!-- Caption -->
+  <rect x="60" y="410" width="580" height="44" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.25"/>
+  <text x="350" y="430" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="12" fill="#2a1a0e">Field-line density gives the right shape but the wrong magnitudes in 2D.</text>
+  <text x="350" y="448" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#C8102E">For quantitative work, vector arrows.</text>
+</svg>

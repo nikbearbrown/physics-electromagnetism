@@ -1,0 +1,83 @@
+<!--
+  Path Independence — Two Routes, One Work
+  Book: Physics +1: Electromagnetism
+  Chapter: 04-electric-potential
+  Figure: 01
+  Type: Annotated example
+  Generated: 2026-05-25
+  Source: pantry/04-electric-potential-cajal.md
+-->
+<svg viewBox="0 0 700 460" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title">
+  <title id="fig-title">Path Independence — Tangential Motion Costs No Work</title>
+  <desc>A source charge plus q sits at the origin. Two test-charge paths from point A near the charge to point B far from it: a direct radial path, and a curving spiral path. Tangential segments of the curving path do zero work because E is perpendicular to displacement; radial segments contribute the same total as the direct path. Both routes yield kq times one over r A minus one over r B.</desc>
+  <metadata>
+    <cajal:figure
+      xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Physics +1: Electromagnetism"
+      book-slug="physics-electromagnetism"
+      chapter="04-electric-potential"
+      figure-number="01"
+      figure-title="Path Independence"
+      figure-slug="path-independence"
+      figure-type="annotated-example"
+      priority="Important"
+      author="Humanitarians AI"
+      date-generated="2026-05-25"
+      source-file="pantry/04-electric-potential-cajal.md"
+    />
+  </metadata>
+  <defs>
+    <marker id="arrowblue" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#56B4E9"/>
+    </marker>
+    <marker id="arrowred" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#C8102E"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="700" height="460" fill="#FFFFFF"/>
+
+  <text x="32" y="36" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="14" fill="#2a1a0e">Two Paths, One Work — Why V Is Path-Independent</text>
+  <text x="32" y="56" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="11" fill="#545454">Tangential motion costs nothing. Only radial motion against E does work.</text>
+
+  <!-- Source charge -->
+  <circle cx="200" cy="280" r="10" fill="#C8102E" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="200" y="284" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#FFFFFF">+</text>
+  <text x="200" y="306" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#2a1a0e">q (source)</text>
+
+  <!-- Background field lines (radial, faint) -->
+  <g stroke="#D4D4D4" stroke-width="0.75" fill="none">
+    <line x1="208" y1="272" x2="320" y2="160"/>
+    <line x1="210" y1="280" x2="360" y2="280"/>
+    <line x1="208" y1="288" x2="320" y2="400"/>
+    <line x1="192" y1="272" x2="80" y2="160"/>
+    <line x1="190" y1="280" x2="40" y2="280"/>
+    <line x1="192" y1="288" x2="80" y2="400"/>
+    <line x1="200" y1="270" x2="200" y2="180"/>
+    <line x1="200" y1="290" x2="200" y2="380"/>
+  </g>
+
+  <!-- Point A (near charge) -->
+  <circle cx="280" cy="280" r="4" fill="#2a1a0e"/>
+  <text x="284" y="298" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#2a1a0e">A (r_A)</text>
+
+  <!-- Point B (far from charge) -->
+  <circle cx="560" cy="180" r="4" fill="#2a1a0e"/>
+  <text x="568" y="178" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#2a1a0e">B (r_B)</text>
+
+  <!-- Direct path (sky-blue, straight line A→B) -->
+  <line x1="284" y1="278" x2="556" y2="182" stroke="#56B4E9" stroke-width="2" marker-end="url(#arrowblue)"/>
+  <text x="380" y="220" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#56B4E9">direct path</text>
+
+  <!-- Curving path (vermillion, spiral via radial + tangential) -->
+  <path d="M 284 280 Q 340 220 380 280 Q 420 340 480 280 Q 520 220 560 180" stroke="#C8102E" stroke-width="2" fill="none" marker-end="url(#arrowred)"/>
+  <text x="380" y="356" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#C8102E">spiral path (curving)</text>
+
+  <!-- Annotate one tangential segment (zero work, perpendicular to E) -->
+  <text x="420" y="160" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">tangential dℓ ⊥ E → no work</text>
+
+  <!-- Result equation -->
+  <rect x="60" y="400" width="580" height="48" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.25"/>
+  <text x="350" y="420" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="12" fill="#C8102E">W_A→B = k q ( 1/r_A − 1/r_B )</text>
+  <text x="350" y="438" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#2a1a0e">Same total along either route. V depends only on endpoints.</text>
+</svg>

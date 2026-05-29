@@ -1,0 +1,88 @@
+<!--
+  Energy Lives in the Field, Not on the Plates
+  Book: Physics +1: Electromagnetism
+  Chapter: 05-capacitance-dielectrics
+  Figure: 02
+  Type: Annotated example
+  Generated: 2026-05-25
+  Source: pantry/05-capacitance-dielectrics-cajal.md
+-->
+<svg viewBox="0 0 700 460" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title">
+  <title id="fig-title">Energy Density Lives in the Field Between the Plates</title>
+  <desc>Cross-section of a parallel plate capacitor. The volume between the plates is shaded with the energy density u E equals one-half epsilon zero E squared. The plates themselves are flat with surface charges marked but no shading. An arrow connects the volume shading to the equation U total equals the integral of u E over volume, which equals one-half C V squared.</desc>
+  <metadata>
+    <cajal:figure
+      xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Physics +1: Electromagnetism"
+      book-slug="physics-electromagnetism"
+      chapter="05-capacitance-dielectrics"
+      figure-number="02"
+      figure-title="Energy in the Field"
+      figure-slug="energy-in-field"
+      figure-type="annotated-example"
+      priority="Critical"
+      author="Humanitarians AI"
+      date-generated="2026-05-25"
+      source-file="pantry/05-capacitance-dielectrics-cajal.md"
+    />
+  </metadata>
+  <defs>
+    <marker id="arrowred" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#C8102E"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="700" height="460" fill="#FFFFFF"/>
+
+  <text x="32" y="36" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="14" fill="#2a1a0e">The Energy Is in the Field — Not on the Plates</text>
+  <text x="32" y="56" font-family="'Inter', -apple-system, 'Helvetica Neue', sans-serif" font-size="11" fill="#545454">u_E = ½ ε₀ E² is distributed throughout the volume where E⃗ is nonzero.</text>
+
+  <!-- Top plate (+) -->
+  <rect x="120" y="110" width="380" height="8" fill="#56B4E9" stroke="#2a1a0e" stroke-width="1"/>
+  <g font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#FFFFFF" text-anchor="middle">
+    <text x="150" y="118">+</text>
+    <text x="200" y="118">+</text>
+    <text x="250" y="118">+</text>
+    <text x="300" y="118">+</text>
+    <text x="350" y="118">+</text>
+    <text x="400" y="118">+</text>
+    <text x="450" y="118">+</text>
+    <text x="490" y="118">+</text>
+  </g>
+
+  <!-- Energy density shading (between plates) -->
+  <rect x="120" y="118" width="380" height="172" fill="#C8102E" opacity="0.15"/>
+  <rect x="120" y="160" width="380" height="88" fill="#C8102E" opacity="0.18"/>
+  <rect x="120" y="180" width="380" height="48" fill="#C8102E" opacity="0.25"/>
+
+  <!-- Bottom plate (-) -->
+  <rect x="120" y="290" width="380" height="8" fill="#56B4E9" stroke="#2a1a0e" stroke-width="1"/>
+  <g font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="13" fill="#56B4E9" text-anchor="middle">
+    <text x="150" y="312">−</text>
+    <text x="200" y="312">−</text>
+    <text x="250" y="312">−</text>
+    <text x="300" y="312">−</text>
+    <text x="350" y="312">−</text>
+    <text x="400" y="312">−</text>
+    <text x="450" y="312">−</text>
+    <text x="490" y="312">−</text>
+  </g>
+
+  <!-- Annotation: u_E inside the shaded region -->
+  <text x="310" y="208" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="13" fill="#C8102E">u_E = ½ ε₀ E²</text>
+  <text x="310" y="226" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">energy density at every point in the field</text>
+
+  <!-- Arrow from the shaded region to the equation -->
+  <line x1="500" y1="200" x2="560" y2="200" stroke="#C8102E" stroke-width="1.5" marker-end="url(#arrowred)"/>
+
+  <!-- Equation panel -->
+  <rect x="568" y="178" width="98" height="56" fill="#F5F5F5" stroke="#C8102E" stroke-width="1"/>
+  <text x="617" y="200" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#C8102E">U = ∫ u_E dV</text>
+  <text x="617" y="220" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#C8102E">= ½ C V²</text>
+
+  <!-- Caption -->
+  <rect x="60" y="384" width="580" height="60" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.25"/>
+  <text x="350" y="404" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="12" fill="#2a1a0e">The energy is in the field — distributed throughout the volume.</text>
+  <text x="350" y="422" text-anchor="middle" font-family="'EB Garamond', 'Garamond', Georgia, serif" font-size="11" fill="#C8102E">Empty plates with no field between them store no energy regardless of size.</text>
+  <text x="350" y="438" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="9" fill="#545454">Same idea returns in Ch 11 — EM waves carry ½ε₀E² + ½B²/μ₀ through empty space.</text>
+</svg>
